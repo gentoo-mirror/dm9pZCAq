@@ -1,0 +1,91 @@
+diff --git a/Makefile b/Makefile
+index 89e1385..0f0f1d6 100644
+--- a/Makefile
++++ b/Makefile
+@@ -54,7 +54,7 @@ WEB=0
+ # NB. Under Linux, the BSD regex functions are _MUCH_ faster
+ #     than the POSIX ones, but your mileage may vary.
+ #
+-REGEXDEFS=-DHAVE_REGEX_H -DBSD_REGEX -DHAVE_STDBOOL
++REGEXDEFS=-DHAVE_REGEX_H -DPOSIX_REGEX -DHAVE_STDBOOL
+ 
+ #
+ # If your system's regex functions are not in its standard C library,
+diff --git a/fortune/Makefile b/fortune/Makefile
+index c2cf2a7..48beeac 100644
+--- a/fortune/Makefile
++++ b/fortune/Makefile
+@@ -7,10 +7,10 @@
+ 
+ all: fortune
+ 
+-fortune: fortune.o
+-	$(CC) $(LDFLAGS) -o fortune fortune.o $(LIBS)
++fortune: fortune.o error.o
++	$(CC) $(LDFLAGS) -o fortune fortune.o error.o $(LIBS)
+ 
+ clean:
+-	rm -f fortune.o fortune fortune.man
++	rm -f fortune.o error.o fortune fortune.man
+ 
+ 
+diff --git a/fortune/error.c b/fortune/error.c
+new file mode 100644
+index 0000000..7b12fe4
+--- /dev/null
++++ b/fortune/error.c
+@@ -0,0 +1,19 @@
++#include <stdarg.h>
++#include <stdio.h>
++#define _GNU_SOURCE
++#include <errno.h>
++
++void error(int status, int errnum, const char* format, ...)
++{
++	va_list ap;
++
++	fflush(stdout);
++	fprintf(stderr, "%s: ", program_invocation_name);
++	va_start(ap, format);
++	vfprintf(stderr, format, ap);
++	va_end(ap);
++	if (errnum)
++		fprintf(stderr, ":%d", errnum);
++	if (status)
++		exit(status);
++}
+diff --git a/fortune/error.h b/fortune/error.h
+new file mode 100644
+index 0000000..81a410f
+--- /dev/null
++++ b/fortune/error.h
+@@ -0,0 +1,4 @@
++#ifndef _ERROR_H_
++#define _ERROR_H_
++void error(int status, int errnum, const char* format, ...);
++#endif	/* _ERROR_H_ */
+diff --git a/util/strfile.h b/util/strfile.h
+index 6be8240..415bc36 100644
+--- a/util/strfile.h
++++ b/util/strfile.h
+@@ -43,14 +43,14 @@
+ 
+ typedef struct {				/* information table */
+ #define	VERSION		2
+-	u_int32_t	str_version;		/* version number */
+-	u_int32_t	str_numstr;		/* # of strings in the file */
+-	u_int32_t	str_longlen;		/* length of longest string */
+-	u_int32_t	str_shortlen;		/* length of shortest string */
++	uint32_t	str_version;		/* version number */
++	uint32_t	str_numstr;		/* # of strings in the file */
++	uint32_t	str_longlen;		/* length of longest string */
++	uint32_t	str_shortlen;		/* length of shortest string */
+ #define	STR_RANDOM	0x1			/* randomized pointers */
+ #define	STR_ORDERED	0x2			/* ordered pointers */
+ #define	STR_ROTATED	0x4			/* rot-13'd text */
+-	u_int32_t	str_flags;		/* bit field for flags */
+-	u_int8_t	stuff[4];		/* long aligned space */
++	uint32_t	str_flags;		/* bit field for flags */
++	uint8_t	stuff[4];		/* long aligned space */
+ #define	str_delim	stuff[0]		/* delimiting character */
+ } STRFILE;
