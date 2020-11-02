@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+	</maintainer>
+	<upstream>
+		<bugs-to>https://github.com/LonamiWebs/Telethon/issues</bugs-to>
+		<doc>https://docs.telethon.dev</doc>
+		<remote-id type="pypi">Telethon</remote-id>
+	</upstream>
+</pkgmetadata>
