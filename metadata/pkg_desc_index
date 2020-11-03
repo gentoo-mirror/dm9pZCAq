@@ -5,4 +5,4 @@ dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real wo
 dev-python/pygame_sdl2 7.4.0: Reimplementation of portions of the pygame API using SDL2
 games-engines/renpy 7.4.0: Visual novel engine written in python
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
-net-misc/instalooter 2.0.0 2.4.4: Another API-less Instagram pictures and videos downloader
+net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
