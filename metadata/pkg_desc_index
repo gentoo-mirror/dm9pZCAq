@@ -1,0 +1,8 @@
+app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
+app-misc/lf 16 17: Terminal file manager
+dev-python/Telethon 1.17.5: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
+dev-python/pygame_sdl2 7.4.0: Reimplementation of portions of the pygame API using SDL2
+games-engines/renpy 7.4.0: Visual novel engine written in python
+games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
+net-misc/instalooter 2.0.0 2.4.4: Another API-less Instagram pictures and videos downloader
