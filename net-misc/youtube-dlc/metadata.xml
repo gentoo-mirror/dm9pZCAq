@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<longdescription>
+		youtube-dlc is a command-line program to download videos
+		from YouTube.com and a few more sites.
+		It requires the Python interpreter, version 2.6, 2.7, or 3.2+,
+		and it is not platform specific.
+		It should work on your Unix box, on Windows or on macOS.
+		It is released to the public domain, which means you can modify it,
+		redistribute it or use it however you like.
+	</longdescription>
+	<use>
+		<flag name="doc">Compile man page</flag>
+		<flag name="fish-completion">Enable fish completion support</flag>
+	</use>
+	<upstream>
+		<changelog>https://github.com/blackjack4494/yt-dlc/raw/master/ChangeLog</changelog>
+		<bugs-to>https://github.com/blackjack4494/yt-dlc/issues</bugs-to>
+		<remote-id type="pypi">youtube-dlc</remote-id>
+	</upstream>
+</pkgmetadata>
