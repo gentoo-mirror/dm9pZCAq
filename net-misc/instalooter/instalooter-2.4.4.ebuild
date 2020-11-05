@@ -31,6 +31,7 @@ DEPEND="
 	dev-python/six[${PYTHON_USEDEP}]
 	dev-python/tqdm[${PYTHON_USEDEP}]
 	dev-python/tenacity[${PYTHON_USEDEP}]
+	dev-python/verboselogs[${PYTHON_USEDEP}]
 "
 RDEPEND="${DEPEND}"
 
