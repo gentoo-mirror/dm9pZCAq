@@ -19,6 +19,9 @@
 
 * [net-misc/](net-misc/)
   * [instalooter](net-misc/instalooter) - **[uniq]** Instagram pictures and videos downloader
+  * [youtube-dlc](net-misc/youtube-dlc) - **[uniq]** Continuation of [youtube-dl](https://notabug.org/dm9pZCAq/youtube-dl) life
 
 ### misc
 in **[ square brackets ]** info about difference with other overlays
+
+- [youtube-dlc](https://notabug.org/dm9pZCAq/youtube-dlc) mirror just in case
