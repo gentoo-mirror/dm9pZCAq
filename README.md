@@ -2,6 +2,9 @@
 
 ### detailed information about packages
 
+* [app-crypt/](app-crypt/)
+  * [veracrypt](app-crypt/veracrypt) - **[[difference](#veracrypt)]** Disk encryption with strong security based on TrueCrypt
+
 * [app-eselect/](app-eselect/)
   * [eselect-repository](app-eselect/eselect-repository) - **[you can use curl instead of wget]** Manage repos.conf via eselect
 
@@ -18,7 +21,7 @@
   * [renpy](games-engines/renpy) - **[with python3 support]** Visual novel engine
 
 * [games-misc/](games-misc/)
-  * [fortune-mod](games-misc/fortune-mod) - **[with musl patch]** The notorious fortune program
+  * [fortune-mod](games-misc/fortune-mod) - **[with musl support]** The notorious fortune program
 
 * [net-misc/](net-misc/)
   * [instalooter](net-misc/instalooter) - **[uniq]** Instagram pictures and videos downloader
@@ -28,3 +31,8 @@
 in **[ square brackets ]** info about difference with other overlays
 
 - [youtube-dlc](https://notabug.org/dm9pZCAq/youtube-dlc) mirror just in case
+
+#### veracrypt
+`app-crypt/veracrypt` difference:
+ * `app-admin/sudo` needed only if `X` used
+ * with musl support
