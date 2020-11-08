@@ -2,6 +2,9 @@
 
 ### detailed information about packages
 
+* [app-eselect/](app-eselect/)
+  * [eselect-repository](app-eselect/eselect-repository) - **[you can use curl instead of wget]** Manage repos.conf via eselect
+
 * [app-misc/](app-misc/)
   * [cpufetch](app-misc/cpufetch) - **[uniq]** Simplistic yet fancy CPU architecture fetching tool
   * [lf](app-misc/lf) - **[More USE flags]** Terminal file manager
