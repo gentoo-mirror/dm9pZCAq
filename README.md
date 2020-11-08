@@ -27,6 +27,9 @@
   * [instalooter](net-misc/instalooter) - **[uniq]** Instagram pictures and videos downloader
   * [youtube-dlc](net-misc/youtube-dlc) - **[uniq]** Continuation of [youtube-dl](https://notabug.org/dm9pZCAq/youtube-dl) life
 
+* [www-client/](www-client/)
+  * [firefox-musl-bin](www-client/firefox-musl-bin) - [uniq] `firefox-bin` for musl libc
+
 ### misc
 in **[ square brackets ]** info about difference with other overlays
 
