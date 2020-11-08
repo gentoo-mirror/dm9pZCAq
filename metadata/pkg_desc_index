@@ -1,3 +1,4 @@
+app-crypt/veracrypt 1.24_p4 1.24_p7: Disk encryption with strong security based on TrueCrypt
 app-eselect/eselect-repository 8: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/lf 16 17: Terminal file manager
