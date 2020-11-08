@@ -9,3 +9,4 @@ games-engines/renpy 7.4.0: Visual novel engine written in python
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-misc/youtube-dlc 2020.11.07: media downloader and libray for various sites
+www-client/firefox-musl-bin 81.0-r1: Firefox binary from KISS linux (for musl libc)
