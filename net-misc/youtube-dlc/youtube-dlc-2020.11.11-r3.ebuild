@@ -9,6 +9,8 @@ DISTUTILS_USE_SETUPTOOLS=rdepend
 
 inherit bash-completion-r1 distutils-r1
 
+MY_PVR="${PVR/r/}"
+
 DESCRIPTION="media downloader and libray for various sites"
 HOMEPAGE="
 	https://pypi.org/project/youtube-dlc
@@ -16,8 +18,8 @@ HOMEPAGE="
 "
 
 SRC_URI="
-	https://github.com/blackjack4494/yt-dlc/archive/${PV}.tar.gz
-		-> ${P}.tar.gz
+	https://github.com/blackjack4494/yt-dlc/archive/${MY_PVR}.tar.gz
+		-> ${PN}-${MY_PVR}.tar.gz
 "
 
 LICENSE="Unlicense"
@@ -40,7 +42,7 @@ DEPEND="
 	)
 "
 
-S="${WORKDIR}/${P/youtube/yt}"
+S="${WORKDIR}/${PN/youtube/yt}-${MY_PVR}"
 
 distutils_enable_tests nose
 
