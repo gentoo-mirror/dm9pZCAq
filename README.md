@@ -31,6 +31,9 @@
   * [instalooter](net-misc/instalooter) - **[uniq]** Instagram pictures and videos downloader
   * [youtube-dlc](net-misc/youtube-dlc) - **[uniq]** Continuation of [youtube-dl](https://notabug.org/dm9pZCAq/youtube-dl) life
 
+* [sys-process/](sys-process/)
+  * [bottom](sys-process/bottom) - **[uniq]** TUI process/system monitor with multitude of features
+
 * [www-client/](www-client/)
   * [firefox-musl-bin](www-client/firefox-musl-bin) - **[uniq]** `firefox-bin` for musl libc
 
