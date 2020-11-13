@@ -11,4 +11,5 @@ net-libs/telebot 9999: Telegram Bot API in C
 net-misc/gping 0.1.4: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
+sys-process/bottom 0.4.7: TUI process/system monitor with multitude of features
 www-client/firefox-musl-bin 81.0-r1: Firefox binary from KISS linux (for musl libc)
