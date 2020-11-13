@@ -27,6 +27,7 @@
   * [telebot](net-libs/telebot) - **[uniq]** Telegram Bot API in C
 
 * [net-misc/](net-misc/)
+  * [gping](net-misc/gping) - **[uniq]** Ping, but with a graph
   * [instalooter](net-misc/instalooter) - **[uniq]** Instagram pictures and videos downloader
   * [youtube-dlc](net-misc/youtube-dlc) - **[uniq]** Continuation of [youtube-dl](https://notabug.org/dm9pZCAq/youtube-dl) life
 
