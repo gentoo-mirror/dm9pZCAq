@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<longdescription>
+		Graphical (TUI) process/system monitor with a customizable interface
+		and a multitude of features
+	</longdescription>
+	<upstream>
+		<remote-id type="github">ClementTsang/bottom</remote-id>
+	</upstream>
+</pkgmetadata>
