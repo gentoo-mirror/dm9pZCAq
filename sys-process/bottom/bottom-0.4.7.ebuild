@@ -175,7 +175,7 @@ RESTRICT="mirror"
 
 LICENSE="Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 CC0-1.0 MIT Unlicense"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="amd64 ~arm ~arm64 ~ppc64"
 
 src_install() {
 	cargo_src_install
