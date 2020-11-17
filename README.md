@@ -20,6 +20,9 @@
   * [fake-useragent](dev-python/fake-useragent) - **[uniq]** dependency for instalooter
   * [pygame_sdl2](dev-python/pygame_sdl2) - **[with python3 support]** dependency for renpy
 
+* [dev-vcs/](dev-vcs/)
+  * [gitui](dev-vcs/gitui) - **[uniq]** Blazing fast terminal-ui for git
+
 * [games-engines/](games-engines/)
   * [renpy](games-engines/renpy) - **[with python3 support]** Visual novel engine
 
