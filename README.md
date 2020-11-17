@@ -5,6 +5,9 @@
 * [app-crypt/](app-crypt/)
   * [veracrypt](app-crypt/veracrypt) - **[[difference](#veracrypt)]** Disk encryption with strong security based on TrueCrypt
 
+* [app-editors/](app-editors/)
+  * [vim](app-editors/vim) - **[Symlinks to use neovim as vim]**
+
 * [app-eselect/](app-eselect/)
   * [eselect-repository](app-eselect/eselect-repository) - **[you can use curl instead of wget]** Manage repos.conf via eselect
 
@@ -36,6 +39,9 @@
 
 * [www-client/](www-client/)
   * [firefox-musl-bin](www-client/firefox-musl-bin) - **[uniq]** `firefox-bin` for musl libc
+
+* [www-plugins/](www-plugins/)
+  * [LegacyFox](www-plugins/LegacyFox) - **[uniq]** Firefox legacy plugins support (for example [VimFx](https://git.gir.st/VimFx.git))
 
 * [x11-misc/](x11-misc/)
   * [xinput-gui](x11-misc/xinput-gui) - **[newer version]** simple GUI for `xinput`
