@@ -1,0 +1,8 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Symlinks to use neovim as vim
+EAPI=7
+HOMEPAGE=https://neovim.io/
+LICENSE=Apache-2.0
+RDEPEND=app-editors/neovim
+SLOT=0
+_md5_=f19287a5c1b4476ce8635ebe2df5ea6b

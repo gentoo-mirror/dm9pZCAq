@@ -1,4 +1,5 @@
 app-crypt/veracrypt 1.24_p4 1.24_p7: Disk encryption with strong security based on TrueCrypt
+app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 8: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/lf 16 17: Terminal file manager
@@ -13,4 +14,5 @@ net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downl
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
 sys-process/bottom 0.4.7: TUI process/system monitor with multitude of features
 www-client/firefox-musl-bin 81.0-r1: Firefox binary from KISS linux (for musl libc)
+www-plugins/LegacyFox 2.3 9999: Monkeypatching Firefox Quantum to run VimFx
 x11-misc/xinput-gui 0.3.1 9999: A simple GUI for Xorg's Xinput tool
