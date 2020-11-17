@@ -5,6 +5,9 @@
 * [app-crypt/](app-crypt/)
   * [veracrypt](app-crypt/veracrypt) - **[[difference](#veracrypt)]** Disk encryption with strong security based on TrueCrypt
 
+* [app-editors/](app-editors/)
+  * [vim](app-editors/vim) - **[Symlinks to use neovim as vim]**
+
 * [app-eselect/](app-eselect/)
   * [eselect-repository](app-eselect/eselect-repository) - **[you can use curl instead of wget]** Manage repos.conf via eselect
 
