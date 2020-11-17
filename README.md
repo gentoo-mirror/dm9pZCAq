@@ -37,6 +37,9 @@
 * [www-client/](www-client/)
   * [firefox-musl-bin](www-client/firefox-musl-bin) - **[uniq]** `firefox-bin` for musl libc
 
+* [www-plugins/](www-plugins/)
+  * [LegacyFox](www-plugins/LegacyFox) - **[uniq]** Firefox legacy plugins support (for example [VimFx](https://git.gir.st/VimFx.git))
+
 * [x11-misc/](x11-misc/)
   * [xinput-gui](x11-misc/xinput-gui) - **[newer version]** simple GUI for `xinput`
 
