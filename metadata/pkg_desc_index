@@ -13,3 +13,4 @@ net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downl
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
 sys-process/bottom 0.4.7: TUI process/system monitor with multitude of features
 www-client/firefox-musl-bin 81.0-r1: Firefox binary from KISS linux (for musl libc)
+x11-misc/xinput-gui 0.3.1 9999: A simple GUI for Xorg's Xinput tool
