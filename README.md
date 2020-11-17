@@ -37,12 +37,15 @@
 * [www-client/](www-client/)
   * [firefox-musl-bin](www-client/firefox-musl-bin) - **[uniq]** `firefox-bin` for musl libc
 
+* [x11-misc/](x11-misc/)
+  * [xinput-gui](x11-misc/xinput-gui) - **[newer version]** simple GUI for `xinput`
+
 ### misc
 in **[ square brackets ]** info about difference with other overlays
 
-- [youtube-dlc](https://notabug.org/dm9pZCAq/youtube-dlc) mirror just in case
+- [youtube-dlc mirror](https://notabug.org/dm9pZCAq/youtube-dlc) just in case
 
-#### veracrypt
+### veracrypt
 `app-crypt/veracrypt` difference:
  * `app-admin/sudo` needed only if `X` used
  * with musl support
