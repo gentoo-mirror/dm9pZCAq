@@ -25,13 +25,13 @@ libc-0.2.80
 lock_api-0.3.4
 log-0.4.11
 memchr-2.3.4
-mio-0.7.5
-miow-0.3.5
+mio-0.7.6
+miow-0.3.6
 ntapi-0.3.6
 os_info-3.0.1
 parking_lot-0.10.2
 parking_lot_core-0.7.2
-pinger-0.1.7
+pinger-0.1.8
 proc-macro-error-1.0.4
 proc-macro-error-attr-1.0.4
 proc-macro2-1.0.24
@@ -54,7 +54,7 @@ thiserror-1.0.22
 thiserror-impl-1.0.22
 thread_local-1.0.1
 tui-0.12.0
-unicode-segmentation-1.6.0
+unicode-segmentation-1.7.0
 unicode-width-0.1.8
 unicode-xid-0.2.1
 vec_map-0.8.2
