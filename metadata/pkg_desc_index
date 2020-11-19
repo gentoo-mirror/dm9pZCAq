@@ -14,6 +14,7 @@ net-misc/gping 0.1.7: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
 sys-process/bottom 0.4.7: TUI process/system monitor with multitude of features
+sys-process/ytop 0.6.2: A TUI system monitor written in Rust
 www-client/firefox-musl-bin 81.0-r1: Firefox binary from KISS linux (for musl libc)
 www-plugins/LegacyFox 2.3 9999: Monkeypatching Firefox Quantum to run VimFx
 x11-misc/xinput-gui 0.3.1 9999: A simple GUI for Xorg's Xinput tool
