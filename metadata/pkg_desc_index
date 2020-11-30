@@ -10,7 +10,7 @@ dev-vcs/gitui 0.10.1: Blazing fast terminal-ui for git
 games-engines/renpy 7.4.0: Visual novel engine written in python
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 net-libs/telebot 9999: Telegram Bot API in C
-net-misc/gping 0.1.7: Ping, but with a graph
+net-misc/gping 1.0.1: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
 net-news/newsboat 2.21: An RSS/Atom feed reader for text terminals
