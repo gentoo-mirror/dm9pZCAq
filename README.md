@@ -15,6 +15,9 @@
   * [cpufetch](app-misc/cpufetch) - **[uniq]** Simplistic yet fancy CPU architecture fetching tool
   * [lf](app-misc/lf) - **[More USE flags]** Terminal file manager
 
+* [app-shells/](app-shells/)
+  * [gitstatus](app-shells/gitstatus) - **[uniq]** Git status for Bash and Zsh prompt
+
 * [dev-python/](dev-python/)
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
   * [fake-useragent](dev-python/fake-useragent) - **[uniq]** dependency for instalooter
