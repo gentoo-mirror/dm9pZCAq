@@ -3,6 +3,8 @@ app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 8: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/lf 16 17: Terminal file manager
+app-shells/gitstatus 1.4.3: Git status for Bash and Zsh prompt
+app-shells/zsh-powerlevel10k 1.14.3: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 dev-python/Telethon 1.18.2: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
 dev-python/pygame_sdl2 7.4.0: Reimplementation of portions of the pygame API using SDL2
