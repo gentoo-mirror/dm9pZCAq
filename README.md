@@ -45,6 +45,7 @@
   * [newsboat](net-news/newsboat) - **[asciidoctor is optional]** RSS/Atom feed reader for terminals
 
 * [sys-apps/](sys-apps/)
+  * [tealdeer](sys-apps/tealdeer) - **[more use flags]** Very fast implementation of tldr in Rust
   * [tldr](sys-apps/tldr) - **[using go-module inherit, misc ebuild changes]** fast and interactive tldr client written with go
 
 * [sys-process/](sys-process/)
