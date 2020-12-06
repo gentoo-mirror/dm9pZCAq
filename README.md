@@ -6,14 +6,14 @@
   * [veracrypt](app-crypt/veracrypt) - **[[difference](#veracrypt)]** Disk encryption with strong security based on TrueCrypt
 
 * [app-editors/](app-editors/)
-  * [vim](app-editors/vim) - **[Symlinks to use neovim as vim]**
+  * [vim](app-editors/vim) - **[symlinks to use neovim as vim]**
 
 * [app-eselect/](app-eselect/)
   * [eselect-repository](app-eselect/eselect-repository) - **[you can use curl instead of wget]** Manage repos.conf via eselect
 
 * [app-misc/](app-misc/)
   * [cpufetch](app-misc/cpufetch) - **[uniq]** Simplistic yet fancy CPU architecture fetching tool
-  * [lf](app-misc/lf) - **[More USE flags]** Terminal file manager
+  * [lf](app-misc/lf) - **[more USE flags]** Terminal file manager
 
 * [app-shells/](app-shells/)
   * [gitstatus](app-shells/gitstatus) - **[uniq]** Git status for Bash and Zsh prompt
@@ -21,8 +21,8 @@
 
 * [dev-python/](dev-python/)
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
-  * [fake-useragent](dev-python/fake-useragent) - **[uniq]** dependency for instalooter
-  * [pygame_sdl2](dev-python/pygame_sdl2) - **[with python3 support]** dependency for renpy
+  * [fake-useragent](dev-python/fake-useragent) - **[uniq]** Dependency for instalooter
+  * [pygame_sdl2](dev-python/pygame_sdl2) - **[with python3 support]** Dependency for renpy
 
 * [dev-vcs/](dev-vcs/)
   * [gitui](dev-vcs/gitui) - **[uniq]** Blazing fast terminal-ui for git
@@ -45,8 +45,8 @@
   * [newsboat](net-news/newsboat) - **[asciidoctor is optional]** RSS/Atom feed reader for terminals
 
 * [sys-apps/](sys-apps/)
-  * [tealdeer](sys-apps/tealdeer) - **[more use flags]** Very fast implementation of tldr in Rust
-  * [tldr](sys-apps/tldr) - **[using go-module inherit, misc ebuild changes]** fast and interactive tldr client written with go
+  * [tealdeer](sys-apps/tealdeer) - **[more USE flags]** Very fast implementation of tldr in Rust
+  * [tldr](sys-apps/tldr) - **[using go-module inherit, misc ebuild changes]** Fast and interactive tldr client written with go
 
 * [sys-process/](sys-process/)
   * [bottom](sys-process/bottom) - **[uniq]** TUI process/system monitor with multitude of features
@@ -59,7 +59,7 @@
   * [LegacyFox](www-plugins/LegacyFox) - **[uniq]** Firefox legacy plugins support (for example [VimFx](https://git.gir.st/VimFx.git))
 
 * [x11-misc/](x11-misc/)
-  * [xinput-gui](x11-misc/xinput-gui) - **[newer version]** simple GUI for `xinput`
+  * [xinput-gui](x11-misc/xinput-gui) - **[newer version]** Simple GUI for `xinput`
 
 ### misc
 in **[ square brackets ]** info about difference with other overlays
