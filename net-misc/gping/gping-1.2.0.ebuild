@@ -6,21 +6,23 @@ EAPI=7
 CRATES="
 aho-corasick-0.7.15
 ansi_term-0.11.0
-anyhow-1.0.34
+anyhow-1.0.35
 atty-0.2.14
+autocfg-1.0.1
 bitflags-1.2.1
 cassowary-0.3.0
 cfg-if-0.1.10
 cfg-if-1.0.0
+chrono-0.4.19
 clap-2.33.3
-cloudabi-0.1.0
 crossterm-0.18.2
 crossterm_winapi-0.6.2
 dns-lookup-1.0.5
+either-1.6.1
 heck-0.3.1
 hermit-abi-0.1.17
-histogram-0.6.9
 instant-0.1.9
+itertools-0.9.0
 lazy_static-1.4.0
 libc-0.2.80
 lock_api-0.4.2
@@ -29,9 +31,11 @@ memchr-2.3.4
 mio-0.7.6
 miow-0.3.6
 ntapi-0.3.6
+num-integer-0.1.44
+num-traits-0.2.14
 os_info-3.0.1
 parking_lot-0.11.1
-parking_lot_core-0.8.0
+parking_lot_core-0.8.1
 pinger-0.3.1
 proc-macro-error-1.0.4
 proc-macro-error-attr-1.0.4
@@ -43,23 +47,25 @@ regex-syntax-0.6.21
 scopeguard-1.1.0
 signal-hook-0.1.16
 signal-hook-registry-1.2.2
-smallvec-1.5.0
+smallvec-1.5.1
 socket2-0.3.17
 static_assertions-1.1.0
 strsim-0.8.0
-structopt-0.3.20
-structopt-derive-0.4.13
-syn-1.0.52
+structopt-0.3.21
+structopt-derive-0.4.14
+syn-1.0.53
 textwrap-0.11.0
 thiserror-1.0.22
 thiserror-impl-1.0.22
 thread_local-1.0.1
+time-0.1.44
 tui-0.13.0
 unicode-segmentation-1.7.1
 unicode-width-0.1.8
 unicode-xid-0.2.1
 vec_map-0.8.2
 version_check-0.9.2
+wasi-0.10.0+wasi-snapshot-preview1
 winapi-0.3.9
 winapi-i686-pc-windows-gnu-0.4.0
 winapi-x86_64-pc-windows-gnu-0.4.0
@@ -81,4 +87,4 @@ RESTRICT="mirror"
 
 LICENSE="Apache-2.0 BSD-2 MIT Unlicense"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="amd64 ~arm64 ~x86"
