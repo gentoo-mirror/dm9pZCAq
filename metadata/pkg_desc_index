@@ -12,10 +12,11 @@ dev-vcs/gitui 0.10.1: Blazing fast terminal-ui for git
 games-engines/renpy 7.4.0: Visual novel engine written in python
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 net-libs/telebot 9999: Telegram Bot API in C
-net-misc/gping 1.0.1: Ping, but with a graph
+net-misc/gping 1.2.0: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
 net-news/newsboat 2.21: An RSS/Atom feed reader for text terminals
+sys-apps/tealdeer 1.4.1: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-process/bottom 0.5.3: TUI process/system monitor with multitude of features
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust

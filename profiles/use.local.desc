@@ -9,3 +9,4 @@ dev-vcs/gitui:nerd - Use nerd fonts icons
 games-engines/renpy:development - Install IDE for game developers and an empty game template
 net-misc/youtube-dlc:doc - Compile man page
 net-misc/youtube-dlc:fish-completion - Enable fish completion support
+sys-apps/tealdeer:fish-completion - Enable fish completion support
