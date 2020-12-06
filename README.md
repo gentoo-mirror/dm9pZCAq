@@ -44,6 +44,9 @@
 * [net-news/](net-news/)
   * [newsboat](net-news/newsboat) - **[asciidoctor is optional]** RSS/Atom feed reader for terminals
 
+* [sys-apps/](sys-apps/)
+  * [tldr](sys-apps/tldr) - **[using go-module inherit, misc ebuild changes]** fast and interactive tldr client written with go
+
 * [sys-process/](sys-process/)
   * [bottom](sys-process/bottom) - **[uniq]** TUI process/system monitor with multitude of features
   * [ytop](sys-process/ytop) - **[uniq]** [gotop](https://github.com/xxxserxxx/gotop) RIIR (Rewrite It in Rust)
