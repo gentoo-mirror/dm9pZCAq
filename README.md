@@ -19,6 +19,9 @@
   * [gitstatus](app-shells/gitstatus) - **[uniq]** Git status for Bash and Zsh prompt
   * [zsh-powerlevel10k](app-shells/zsh-powerlevel10k) - **[uniq]** Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 
+* [app-text/](app-text/)
+  * [pandoc-bin](app-text/pandoc-bin) - **[better ebuild]** Universal markup converter
+
 * [dev-python/](dev-python/)
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
   * [fake-useragent](dev-python/fake-useragent) - **[uniq]** Dependency for instalooter
