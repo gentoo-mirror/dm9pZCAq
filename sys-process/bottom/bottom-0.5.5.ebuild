@@ -14,6 +14,7 @@ atty-0.2.14
 autocfg-1.0.1
 backtrace-0.3.54
 battery-0.7.8
+beef-0.4.4
 bitflags-1.2.1
 cargo-husky-1.5.0
 cassowary-0.3.0
@@ -42,6 +43,7 @@ doc-comment-0.3.3
 either-1.6.1
 fern-0.6.0
 float-cmp-0.8.0
+fnv-1.0.7
 futures-0.3.8
 futures-channel-0.3.8
 futures-core-0.3.8
@@ -130,17 +132,17 @@ strsim-0.8.0
 syn-1.0.48
 sysinfo-0.15.3
 textwrap-0.11.0
-thiserror-1.0.21
-thiserror-impl-1.0.21
+thiserror-1.0.22
+thiserror-impl-1.0.22
 thread_local-1.0.1
 threadpool-1.8.1
 time-0.1.44
 toml-0.5.7
 treeline-0.1.0
 tui-0.13.0
-typed-builder-0.7.0
+typed-builder-0.7.1
 typenum-1.12.0
-unicode-segmentation-1.7.0
+unicode-segmentation-1.7.1
 unicode-width-0.1.8
 unicode-xid-0.2.1
 uom-0.30.0
