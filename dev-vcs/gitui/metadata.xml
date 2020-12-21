@@ -11,7 +11,7 @@
 		</flag>
 	</use>
 	<upstream>
-		<changelog>https://github.com/extrawurst/gitui/releases</changelog>
+		<changelog>https://github.com/extrawurst/gitui/raw/master/CHANGELOG.md</changelog>
 		<bugs-to>https://github.com/extrawurst/gitui/issues</bugs-to>
 		<remote-id type="github">extrawurst/gitui</remote-id>
 	</upstream>
