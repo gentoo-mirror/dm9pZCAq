@@ -16,7 +16,7 @@ net-libs/telebot 9999: Telegram Bot API in C
 net-misc/gping 1.2.0: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
-net-news/newsboat 2.21: An RSS/Atom feed reader for text terminals
+net-news/newsboat 2.22: An RSS/Atom feed reader for text terminals
 sys-apps/tealdeer 1.4.1: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-process/bottom 0.5.6: TUI process/system monitor with multitude of features
