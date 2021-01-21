@@ -24,7 +24,7 @@ SRC_URI="
 			-> ${PN}.vendor-${HARDENED_PV}.js
 	)
 "
-IUSE="+hardened"
+IUSE="elibc_musl +hardened"
 
 LICENSE="MIT MPL-2.0 GPL-2 LGPL-2.1"
 SLOT="0"
@@ -49,7 +49,8 @@ RDEPEND="
 	x11-libs/libXt
 	>=x11-libs/pango-1.22.0
 	media-video/ffmpeg
-	sys-libs/musl
+	<sys-libs/musl-1.2.2
+	>sys-libs/musl-1.1
 "
 
 src_unpack() {
