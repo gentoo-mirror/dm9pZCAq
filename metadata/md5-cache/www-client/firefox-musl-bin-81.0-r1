@@ -2,11 +2,11 @@ DEFINED_PHASES=install unpack
 DESCRIPTION=Firefox binary from KISS linux (for musl libc)
 EAPI=7
 HOMEPAGE=https://github.com/kisslinux/repo https://github.com/kisslinux/repo/tree/master/extra/firefox
-IUSE=+hardened
+IUSE=elibc_musl +hardened
 KEYWORDS=amd64
 LICENSE=MIT MPL-2.0 GPL-2 LGPL-2.1
-RDEPEND=dev-libs/atk >=dev-libs/glib-2.26:2 media-libs/fontconfig >=media-libs/freetype-2.4.10 >=x11-libs/cairo-1.10[X] x11-libs/gdk-pixbuf >=x11-libs/gtk+-3.4.0:3 x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXrender x11-libs/libXt >=x11-libs/pango-1.22.0 media-video/ffmpeg sys-libs/musl
+RDEPEND=dev-libs/atk >=dev-libs/glib-2.26:2 media-libs/fontconfig >=media-libs/freetype-2.4.10 >=x11-libs/cairo-1.10[X] x11-libs/gdk-pixbuf >=x11-libs/gtk+-3.4.0:3 x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXrender x11-libs/libXt >=x11-libs/pango-1.22.0 media-video/ffmpeg <sys-libs/musl-1.2.2 >sys-libs/musl-1.1
 RESTRICT=strip
 SLOT=0
 SRC_URI=https://github.com/kisslinux/repo/releases/download/2020.9-2/firefox.81.0-1.tar.gz -> firefox-musl-bin.81.0-1.tar.gz hardened? ( https://github.com/kisslinux/repo/raw/master/extra/firefox-privacy/files/policies-1.0.json -> firefox-musl-bin.policies-1.0.json https://github.com/kisslinux/repo/raw/master/extra/firefox-privacy/files/vendor-1.0.js -> firefox-musl-bin.vendor-1.0.js )
-_md5_=74d5a85b676265dd8eb533ec02d43db9
+_md5_=3fa4e57c048a81e51097dca51effb337
