@@ -2,7 +2,7 @@ app-crypt/veracrypt 1.24_p7 1.24_p8: Disk encryption with strong security based 
 app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 8: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
-app-misc/lf 18: Terminal file manager
+app-misc/lf 19: Terminal file manager
 app-shells/gitstatus 1.4.4: Git status for Bash and Zsh prompt
 app-shells/zsh-powerlevel10k 1.14.6: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-text/pandoc-bin 2.11.4: Universal markup converter
