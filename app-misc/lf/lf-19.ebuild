@@ -32,7 +32,7 @@ DESCRIPTION="Terminal file manager"
 HOMEPAGE="https://github.com/gokcehan/lf"
 IUSE="+static X bash-completion zsh-completion fish-completion"
 
-KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
+KEYWORDS="amd64 ~arm arm64 ppc64 ~s390 x86"
 LICENSE="MIT"
 SLOT="0"
 
