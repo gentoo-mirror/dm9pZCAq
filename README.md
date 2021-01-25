@@ -2,6 +2,9 @@
 
 ### detailed information about packages
 
+* [app-benchmarks/](app-benchmarks/)
+  * [hyperfine](app-benchmarks/hyperfine) - **[more USE flags]** A command-line benchmarking tool
+
 * [app-crypt/](app-crypt/)
   * [veracrypt](app-crypt/veracrypt) - **[[difference](#veracrypt)]** Disk encryption with strong security based on TrueCrypt
 
