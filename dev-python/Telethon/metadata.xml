@@ -3,8 +3,10 @@
 <pkgmetadata>
 	<maintainer type="person">
 		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
 	</maintainer>
 	<upstream>
+		<changelog>https://docs.telethon.dev/en/latest/misc/changelog.html</changelog>
 		<bugs-to>https://github.com/LonamiWebs/Telethon/issues</bugs-to>
 		<doc>https://docs.telethon.dev</doc>
 		<remote-id type="pypi">Telethon</remote-id>
