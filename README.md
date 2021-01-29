@@ -66,6 +66,7 @@
   * [LegacyFox](www-plugins/LegacyFox) - **[uniq]** Firefox legacy plugins support (for example [VimFx](https://git.gir.st/VimFx.git))
 
 * [x11-misc/](x11-misc/)
+  * [screenkey](x11-misc/screenkey) - **[better ebuild]** Screencast your keys
   * [xinput-gui](x11-misc/xinput-gui) - **[newer version]** Simple GUI for `xinput`
 
 ### misc
