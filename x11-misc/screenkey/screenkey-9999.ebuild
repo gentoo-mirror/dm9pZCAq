@@ -16,7 +16,7 @@ if [[ "${PV}" == *9999* ]]; then
 	EGIT_REPO_URI="https://gitlab.com/screenkey/${PN}.git"
 else
 	SRC_URI="${HOMEPAGE}/releases/${P}.tar.gz"
-	KEYWORDS="amd64 ~arm ~arm64 ppc x86"
+	KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ppc ppc64 s390 sparc x86 ~x64-macos"
 fi
 
 RESTRICT="test"
