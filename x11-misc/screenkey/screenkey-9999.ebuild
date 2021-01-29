@@ -23,6 +23,9 @@ RESTRICT="test"
 LICENSE="GPL-3"
 SLOT="0"
 
+BDEPEND="
+	dev-python/Babel[${PYTHON_USEDEP}]
+"
 RDEPEND="
 	dev-python/pycairo[${PYTHON_USEDEP}]
 	dev-python/pygobject[cairo,${PYTHON_USEDEP}]
