@@ -9,7 +9,11 @@
 		Graphical (TUI) process/system monitor with a customizable interface
 		and a multitude of features
 	</longdescription>
+	<use>
+		<flag name="fish-completion">Enable fish completion support</flag>
+	</use>
 	<upstream>
 		<remote-id type="github">ClementTsang/bottom</remote-id>
+		<changelog>https://github.com/ClementTsang/bottom/raw/master/CHANGELOG.md</changelog>
 	</upstream>
 </pkgmetadata>

@@ -1,4 +1,4 @@
-# Copyright 2017-2020 Gentoo Authors
+# Copyright 2017-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -113,7 +113,7 @@ pin-project-internal-1.0.2
 pin-project-lite-0.1.11
 pin-utils-0.1.0
 polling-2.0.2
-predicates-1.0.5
+predicates-1.0.6
 predicates-core-1.0.0
 predicates-tree-1.0.0
 proc-macro-hack-0.5.19
@@ -164,7 +164,6 @@ widestring-0.4.3
 winapi-0.3.9
 winapi-i686-pc-windows-gnu-0.4.0
 winapi-x86_64-pc-windows-gnu-0.4.0
-${P}
 "
 
 inherit cargo
@@ -174,15 +173,36 @@ HOMEPAGE="
 	https://crates.io/crates/bottom
 	https://github.com/ClementTsang/bottom
 "
-SRC_URI="$(cargo_crate_uris ${CRATES})"
+SRC_URI="
+	https://github.com/ClementTsang/${PN}/archive/${PV}.tar.gz
+		-> ${P}.tar.gz
+	$(cargo_crate_uris ${CRATES})
+"
 RESTRICT="mirror"
 
 LICENSE="Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD BSD-2 CC0-1.0 MIT Unlicense ZLIB"
 SLOT="0"
 KEYWORDS="amd64 ~arm64 ~ppc64"
+IUSE="bash-completion zsh-completion fish-completion"
 
 src_install() {
+
 	cargo_src_install
 
 	dodoc README.md
+
+	cd "target/release/build/${PN}-"*/out || die 'failed to cd'
+
+	local SHORT_PN=btm
+	use bash-completion && dobashcomp "./${SHORT_PN}.bash"
+
+	use zsh-completion && {
+		insinto /usr/share/zsh/site-functions
+		doins "./_${SHORT_PN}"
+	}
+
+	use fish-completion && {
+		insinto /usr/share/fish/vendor_completions.d
+		doins "./${SHORT_PN}.fish"
+	}
 }
