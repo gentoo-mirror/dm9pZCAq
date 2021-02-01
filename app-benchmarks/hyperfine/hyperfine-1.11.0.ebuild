@@ -115,10 +115,10 @@ QA_FLAGS_IGNORED="usr/bin/${PN}"
 src_install() {
 	cargo_src_install
 
-	insinto /usr/share/hyperfine/scripts
+	insinto "/usr/share/${PN}/scripts"
 	doins -r scripts/*
 
-	doman doc/hyperfine.1
+	doman "doc/${PN}.1"
 
 	einstalldocs
 
