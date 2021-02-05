@@ -52,6 +52,9 @@
 * [net-news/](net-news/)
   * [newsboat](net-news/newsboat) - **[asciidoctor is optional]** RSS/Atom feed reader for terminals
 
+* [net-p2p/](net-p2p/)
+  * [stig](net-p2p/stig) - **[better ebuild]** TUI and CLI for the BitTorrent client Transmission
+
 * [sys-apps/](sys-apps/)
   * [tealdeer](sys-apps/tealdeer) - **[more USE flags]** Very fast implementation of tldr in Rust
   * [tldr](sys-apps/tldr) - **[using go-module inherit, misc ebuild changes]** Fast and interactive tldr client written with go
