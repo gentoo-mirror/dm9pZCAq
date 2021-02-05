@@ -15,5 +15,6 @@ net-libs/webkit-gtk:geolocation - Enable geolocation support through app-misc/ge
 net-libs/webkit-gtk:jumbo-build - Combine source files to speed up build process
 net-misc/youtube-dlc:doc - Compile man page
 net-misc/youtube-dlc:fish-completion - Enable fish completion support
+net-p2p/stig:proctitle - Prettifies the process name
 sys-apps/tealdeer:fish-completion - Enable fish completion support
 sys-process/bottom:fish-completion - Enable fish completion support

@@ -8,7 +8,7 @@ app-misc/onefetch 2.9.1: Git repository summary on your terminal
 app-shells/gitstatus 1.4.4: Git status for Bash and Zsh prompt
 app-shells/zsh-powerlevel10k 1.14.6: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-text/pandoc-bin 2.11.4: Universal markup converter
-dev-python/Telethon 1.19.1: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/Telethon 1.19.2: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
 dev-python/pygame_sdl2 7.4.0: Reimplementation of portions of the pygame API using SDL2
 dev-vcs/gitui 0.11.0: Blazing fast terminal-ui for git
@@ -20,6 +20,7 @@ net-misc/gping 1.2.0: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
 net-news/newsboat 2.22: An RSS/Atom feed reader for text terminals
+net-p2p/stig 0.11.2a_pre0: TUI and CLI for the BitTorrent client Transmission
 sys-apps/tealdeer 1.4.1: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-process/bottom 0.5.7: TUI process/system monitor with multitude of features
