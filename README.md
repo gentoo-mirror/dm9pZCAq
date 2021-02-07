@@ -56,6 +56,7 @@
   * [stig](net-p2p/stig) - **[better ebuild]** TUI and CLI for the BitTorrent client Transmission
 
 * [sys-apps/](sys-apps/)
+  * [huxdemp](sys-apps/huxdemp) - **[uniq]** A better hexdump
   * [tealdeer](sys-apps/tealdeer) - **[more USE flags]** Very fast implementation of tldr in Rust
   * [tldr](sys-apps/tldr) - **[using go-module inherit, misc ebuild changes]** Fast and interactive tldr client written with go
 
