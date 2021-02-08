@@ -40,8 +40,8 @@ src_prepare() {
 		-e '/^\(C\|LD\)FLAGS/s/=/+&/' \
 		-e '/^LDFLAGS/s/-fuse-ld=[^ ]\+//' \
 		-e '/^release:/{
-			/O_LDFLAGS/s/=.*/= $(LDFLAGS)/;
 			/O_CFLAGS/s/-O[0-9]\+//;
+			/O_LDFLAGS/s/=.*/= $(LDFLAGS)/;
 		}' \
 	|| die 'sed failed'
 
@@ -59,6 +59,4 @@ src_compile() {
 
 src_install() {
 	emake DESTDIR="${ED}" PREFIX=/usr install
-
-	dodoc *.md
 }
