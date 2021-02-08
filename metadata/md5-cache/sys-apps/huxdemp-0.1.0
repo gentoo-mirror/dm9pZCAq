@@ -1,0 +1,13 @@
+BDEPEND=doc? ( app-text/scdoc )
+DEFINED_PHASES=compile install prepare
+DEPEND=!dev-util/hxd
+DESCRIPTION=A better hexdump
+EAPI=7
+HOMEPAGE=https://github.com/lptstr/hxd
+IUSE=+doc
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=GPL-3 MIT
+SLOT=0
+SRC_URI=https://github.com/lptstr/hxd/archive/0.1.0.tar.gz -> huxdemp-0.1.0.tar.gz
+_eclasses_=multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_md5_=e59d055d405780072a884045d4d24193
