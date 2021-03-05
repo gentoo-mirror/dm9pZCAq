@@ -11,7 +11,7 @@ app-text/pandoc-bin 2.11.4: Universal markup converter
 dev-python/Telethon 1.19.5: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
 dev-python/pygame_sdl2 7.4.0: Reimplementation of portions of the pygame API using SDL2
-dev-vcs/gitui 0.11.0: Blazing fast terminal-ui for git
+dev-vcs/gitui 0.12.0: Blazing fast terminal-ui for git
 games-engines/renpy 7.4.0: Visual novel engine written in python
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 net-libs/telebot 9999: Telegram Bot API in C
