@@ -47,7 +47,7 @@
 * [net-misc/](net-misc/)
   * [gping](net-misc/gping) - **[uniq]** Ping, but with a graph
   * [instalooter](net-misc/instalooter) - **[uniq]** Instagram pictures and videos downloader
-  * [youtube-dlc](net-misc/youtube-dlc) - **[uniq]** Continuation of [youtube-dl](https://notabug.org/dm9pZCAq/youtube-dl) life
+  * [youtube-dlc](net-misc/youtube-dlc) - **[uniq]** ?better? [youtube-dl](https://notabug.org/dm9pZCAq/youtube-dl)
 
 * [net-news/](net-news/)
   * [newsboat](net-news/newsboat) - **[asciidoctor is optional]** RSS/Atom feed reader for terminals
@@ -77,8 +77,6 @@
 
 ### misc
 in **[ square brackets ]** info about difference with other overlays
-
-- [youtube-dlc mirror](https://notabug.org/dm9pZCAq/youtube-dlc) just in case
 
 ### veracrypt
 `app-crypt/veracrypt` difference:
