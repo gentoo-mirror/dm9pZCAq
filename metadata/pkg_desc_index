@@ -7,7 +7,7 @@ app-misc/lf 21: Terminal file manager
 app-misc/onefetch 2.9.1: Git repository summary on your terminal
 app-shells/gitstatus 1.4.4: Git status for Bash and Zsh prompt
 app-shells/zsh-powerlevel10k 1.14.6: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
-app-text/pandoc-bin 2.11.4: Universal markup converter
+app-text/pandoc-bin 2.12: Universal markup converter
 dev-python/Telethon 1.19.5: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
 dev-python/pygame_sdl2 7.4.0: Reimplementation of portions of the pygame API using SDL2
