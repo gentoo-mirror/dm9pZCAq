@@ -8,7 +8,6 @@ app-eselect/eselect-repository:curl - Use curl instead of wget
 app-misc/lf:fish-completion - Enable fish completion support
 dev-python/Telethon:tgcrypto - Enable faster AES IGE implementation using dev-python/TgCrypto
 dev-vcs/gitui:nerd - Use nerd fonts icons
-games-engines/renpy:development - Install IDE for game developers and an empty game template
 net-libs/webkit-gtk:egl - Enable EGL support
 net-libs/webkit-gtk:examples - Install the MiniBrowser example application
 net-libs/webkit-gtk:gamepad - Enable gamepad input support via dev-libs/libmanette
