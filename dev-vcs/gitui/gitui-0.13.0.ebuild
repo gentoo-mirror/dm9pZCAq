@@ -9,7 +9,6 @@ adler-1.0.2
 ahash-0.6.3
 anyhow-1.0.38
 arrayvec-0.4.12
-asyncgit-0.12.0
 atty-0.2.14
 autocfg-1.0.1
 backtrace-0.3.56
@@ -43,7 +42,7 @@ glob-0.3.0
 hashbrown-0.9.1
 hermit-abi-0.1.18
 idna-0.2.2
-indexmap-1.6.1
+indexmap-1.6.2
 inferno-0.10.3
 instant-0.1.9
 invalidstring-0.1.2
@@ -51,7 +50,7 @@ itertools-0.10.0
 itoa-0.4.7
 jobserver-0.1.21
 lazy_static-1.4.0
-libc-0.2.87
+libc-0.2.88
 libgit2-sys-0.12.18+1.1.0
 libssh2-sys-0.2.21
 libz-sys-1.1.2
@@ -98,8 +97,8 @@ ron-0.6.4
 rustc-demangle-0.1.18
 scopeguard-1.1.0
 scopetime-0.1.1
-serde-1.0.123
-serde_derive-1.0.123
+serde-1.0.124
+serde_derive-1.0.124
 serial_test-0.5.1
 serial_test_derive-0.5.1
 signal-hook-0.1.17
@@ -112,7 +111,7 @@ stable_deref_trait-1.2.0
 str_stack-0.1.0
 symbolic-common-8.0.5
 symbolic-demangle-8.0.5
-syn-1.0.60
+syn-1.0.63
 tempfile-3.2.0
 textwrap-0.11.0
 textwrap-0.13.4
@@ -136,6 +135,7 @@ which-4.0.2
 winapi-0.3.9
 winapi-i686-pc-windows-gnu-0.4.0
 winapi-x86_64-pc-windows-gnu-0.4.0
+asyncgit-${PV}
 ${P}
 "
 
@@ -157,13 +157,17 @@ IUSE="nerd"
 RESTRICT="mirror"
 
 src_prepare() {
-	{
+	(
 		# https://github.com/extrawurst/gitui/issues/459
 		#   `vendored-openssl` is for portability and static linking,
-		#   wich we are dont use
-		sed -i "${S}/asyncgit/Cargo.toml" \
-			-e '/^git2/s/"vendored-openssl"//'
-	}
+		#   wich we are don't use
+		set -e
+
+		cd "${CARGO_HOME}"
+		source="$(sed -n '/^replace-with/{s/.*"\(.*\)"$/\1/p;q}' <./config)"
+		sed -i "./${source}/asyncgit-${PV}/Cargo.toml" \
+			-e '/"vendored-openssl"/d'
+	) || die 'failed to `sed` asyncgit'
 
 	if use nerd; then
 		sed -i "${S}/src/keys.rs" \
