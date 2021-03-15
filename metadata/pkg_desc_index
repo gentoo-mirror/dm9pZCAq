@@ -11,7 +11,7 @@ app-text/pandoc-bin 2.12: Universal markup converter
 dev-python/Telethon 1.21: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
-dev-vcs/gitui 0.12.0: Blazing fast terminal-ui for git
+dev-vcs/gitui 0.13.0: Blazing fast terminal-ui for git
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.30.4: Open source web browser engine
