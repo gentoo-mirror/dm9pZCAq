@@ -28,15 +28,11 @@
 
 * [dev-python/](dev-python/)
   * [fake-useragent](dev-python/fake-useragent) - **[uniq]** Dependency for instalooter
-  * [pygame_sdl2](dev-python/pygame_sdl2) - **[with python3 support]** Dependency for renpy
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
   * [TgCrypto](dev-python/TgCrypto) - **[uniq]** Fast and Portable Telegram Crypto Library for Python
 
 * [dev-vcs/](dev-vcs/)
   * [gitui](dev-vcs/gitui) - **[uniq]** Blazing fast terminal-ui for git
-
-* [games-engines/](games-engines/)
-  * [renpy](games-engines/renpy) - **[with python3 support]** Visual novel engine
 
 * [games-misc/](games-misc/)
   * [fortune-mod](games-misc/fortune-mod) - **[with musl support]** The notorious fortune program
