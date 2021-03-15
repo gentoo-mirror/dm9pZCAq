@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6..9} )
+PYTHON_COMPAT=( python3_{7..9} )
 inherit distutils-r1
 
 DESCRIPTION="Pure Python 3 MTProto API Telegram client library, for bots too!"
@@ -12,11 +12,13 @@ SRC_URI="mirror://pypi/${PN::1}/${PN}/${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 ppc ~ppc64 sparc x86"
+KEYWORDS="amd64 ~arm ~arm64 ~ppc ~ppc64 ~sparc ~x86"
+IUSE="+tgcrypto"
 
 DEPEND="
-	dev-python/pyaes
 	dev-python/rsa
+	dev-python/pyaes
+	tgcrypto? ( dev-python/TgCrypto )
 "
 RDEPEND="${DEPEND}"
 
