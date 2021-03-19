@@ -20,6 +20,7 @@ net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downl
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
 net-news/newsboat 2.22: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.11.2a_pre0: TUI and CLI for the BitTorrent client Transmission
+net-wireless/eiwd 1.12-r1: iwd without dbus
 sys-apps/hexyl 0.8.0: A command-line hex viewer
 sys-apps/huxdemp 0.1.0: A better hexdump
 sys-apps/tealdeer 1.4.1: Very fast implementation of tldr in Rust
