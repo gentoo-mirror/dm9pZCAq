@@ -24,6 +24,8 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 arm ppc x86 ~amd64-linux ~x86-linux"
 
+REQUIRED_USE="${LUA_REQUIRED_USE}"
+
 RDEPEND="${LUA_DEPS}"
 DEPEND="${RDEPEND}"
 
