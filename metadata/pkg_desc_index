@@ -8,6 +8,8 @@ app-misc/onefetch 2.9.1: Git repository summary on your terminal
 app-shells/gitstatus 1.4.4: Git status for Bash and Zsh prompt
 app-shells/zsh-powerlevel10k 1.14.6: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-text/pandoc-bin 2.12: Universal markup converter
+dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
+dev-lua/moonscript 0.5.0: A programmer friendly language that compiles into Lua
 dev-python/Telethon 1.21.1: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
