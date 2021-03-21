@@ -26,6 +26,9 @@
 * [app-text/](app-text/)
   * [pandoc-bin](app-text/pandoc-bin) - **[better ebuild]** Universal markup converter
 
+* [dev-lua/](dev-lua/)
+  * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
+
 * [dev-python/](dev-python/)
   * [fake-useragent](dev-python/fake-useragent) - **[uniq]** Dependency for instalooter
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
