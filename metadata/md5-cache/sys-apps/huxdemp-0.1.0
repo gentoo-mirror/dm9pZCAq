@@ -4,6 +4,7 @@ DEPEND=!dev-util/hxd
 DESCRIPTION=A better hexdump
 EAPI=7
 HOMEPAGE=https://github.com/lptstr/hxd
+INHERIT=toolchain-funcs
 IUSE=+doc
 KEYWORDS=~amd64 ~arm ~arm64 ~x86
 LICENSE=GPL-3 MIT

@@ -4,6 +4,7 @@ DEPEND=!sys-apps/tealdeer
 DESCRIPTION=fast and interactive tldr client written with go
 EAPI=7
 HOMEPAGE=https://isacikgoz.me/tldr/ https://github.com/isacikgoz/tldr
+INHERIT=go-module
 IUSE=+static
 KEYWORDS=~amd64 ~arm ~arm64 ~x86
 LICENSE=MIT
