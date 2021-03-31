@@ -7,7 +7,7 @@ app-misc/lf 21: Terminal file manager
 app-misc/onefetch 2.9.1: Git repository summary on your terminal
 app-shells/gitstatus 1.4.4: Git status for Bash and Zsh prompt
 app-shells/zsh-powerlevel10k 1.14.6: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
-app-text/pandoc-bin 2.12: Universal markup converter
+app-text/pandoc-bin 2.13: Universal markup converter
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/moonscript 0.5.0: A programmer friendly language that compiles into Lua
 dev-python/Telethon 1.21.1: Pure Python 3 MTProto API Telegram client library, for bots too!
@@ -20,7 +20,7 @@ net-libs/webkit-gtk 2.30.5: Open source web browser engine
 net-misc/gping 1.2.1: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
-net-news/newsboat 2.22: An RSS/Atom feed reader for text terminals
+net-news/newsboat 2.23: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.11.2a_pre0: TUI and CLI for the BitTorrent client Transmission
 net-wireless/eiwd 1.12-r1: iwd without dbus
 sys-apps/hexyl 0.8.0: A command-line hex viewer
