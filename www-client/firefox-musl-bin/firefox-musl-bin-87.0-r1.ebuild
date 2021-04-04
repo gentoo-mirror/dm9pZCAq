@@ -44,8 +44,7 @@ RDEPEND="
 	>=media-libs/harfbuzz-2.6.8:0=
 	>=media-libs/libpng-1.6.35:0=[apng]
 	sys-devel/gcc:10=
-	>=sys-libs/musl-1.2.2
-	<sys-libs/musl-1.2.3
+	~sys-libs/musl-1.2.2
 	>=sys-libs/zlib-1.2.3
 	>=x11-libs/cairo-1.10[X]
 	x11-libs/gdk-pixbuf
