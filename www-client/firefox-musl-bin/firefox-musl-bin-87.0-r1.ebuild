@@ -71,6 +71,10 @@ RDEPEND="
 	>=media-libs/dav1d-0.8.1:=
 	>=media-libs/libaom-1.0.0:=
 "
+DEPEND="
+	!www-client/firefox
+	${RDEPEND}
+"
 
 src_unpack() {
 	mkdir -- "${P}" && cd -- "${P}" || die 'failed to prepare unpack dir'
