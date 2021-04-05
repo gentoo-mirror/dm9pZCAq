@@ -1,0 +1,2 @@
+# for sys-apps/uutils-coreutils
+USE_EXPAND="UU_PROGS UU_UNIX_PROGS"
