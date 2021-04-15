@@ -8,8 +8,8 @@ inherit go-module bash-completion-r1
 EGO_SUM=(
 	"github.com/gdamore/encoding v1.0.0"
 	"github.com/gdamore/encoding v1.0.0/go.mod"
-	"github.com/gdamore/tcell/v2 v2.2.0"
-	"github.com/gdamore/tcell/v2 v2.2.0/go.mod"
+	"github.com/gokcehan/tcell/v2 v2.2.1-0.20210329222449-4dd2d52e83ef"
+	"github.com/gokcehan/tcell/v2 v2.2.1-0.20210329222449-4dd2d52e83ef/go.mod"
 	"github.com/lucasb-eyer/go-colorful v1.0.3"
 	"github.com/lucasb-eyer/go-colorful v1.0.3/go.mod"
 	"github.com/mattn/go-runewidth v0.0.10"
@@ -18,7 +18,6 @@ EGO_SUM=(
 	"github.com/rivo/uniseg v0.1.0/go.mod"
 	"golang.org/x/sys v0.0.0-20201119102817-f84b799fce68"
 	"golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod"
-	"golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf"
 	"golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf/go.mod"
 	"golang.org/x/term v0.0.0-20210220032956-6a3ed077a48d"
 	"golang.org/x/term v0.0.0-20210220032956-6a3ed077a48d/go.mod"
@@ -44,12 +43,13 @@ S="${WORKDIR}/${PN}-r${PV}"
 DOCS=( README.md etc/lfrc.example )
 
 src_compile() {
-	local my_flags=( -ldflags='-s -w' )
-	use static \
-		&& my_flags+=( -ldflags='-w -extldflags "-static"' )
+	local ldflags="-s -w -X main.gVersion=r${PV}"
+	use static && {
+		export CGO_ENABLED=0
+		ldflags+=' -extldflags "-static"'
+	}
 
-	CGO_ENABLED=0 GO111MODULE=on go build "${my_flags[@]}" \
-		|| die 'go build failed'
+	go build -ldflags="${ldflags}" || die 'go build failed'
 }
 
 src_install() {
