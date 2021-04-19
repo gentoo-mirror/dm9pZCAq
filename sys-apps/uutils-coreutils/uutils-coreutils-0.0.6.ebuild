@@ -199,7 +199,7 @@ SRC_URI="
 
 LICENSE="Apache-2.0 BSD BSD-2 CC0-1.0 ISC MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 
 UU_PROGS=(
 	base32 base64 basename cat cksum comm csplit cut dircolors dirname echo env

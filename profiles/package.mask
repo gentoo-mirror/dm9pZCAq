@@ -1,0 +1,4 @@
+# dm9pZCAq <v@0x0c.xyz> (2021-04-19)
+# has many incompatibilities with GNU cereutils
+# still may be used, so unmask on your own risc
+sys-apps/uutils-coreutils
