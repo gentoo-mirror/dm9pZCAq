@@ -11,7 +11,7 @@ anyhow-1.0.40
 arrayvec-0.4.12
 atty-0.2.14
 autocfg-1.0.1
-backtrace-0.3.56
+backtrace-0.3.57
 base64-0.13.0
 bitflags-1.2.1
 bytemuck-1.5.1
@@ -33,15 +33,16 @@ crossterm_winapi-0.7.0
 debugid-0.7.2
 dirs-next-2.0.0
 dirs-sys-next-0.1.2
+easy-cast-0.4.4
 either-1.6.1
 form_urlencoded-1.0.1
 getrandom-0.2.2
 gimli-0.23.0
-git2-0.13.17
+git2-0.13.18
 glob-0.3.0
 hashbrown-0.9.1
 hermit-abi-0.1.18
-idna-0.2.2
+idna-0.2.3
 indexmap-1.6.2
 inferno-0.10.3
 instant-0.1.9
@@ -51,7 +52,7 @@ itoa-0.4.7
 jobserver-0.1.21
 lazy_static-1.4.0
 libc-0.2.93
-libgit2-sys-0.12.18+1.1.0
+libgit2-sys-0.12.19+1.1.0
 libssh2-sys-0.2.21
 libz-sys-1.1.2
 lock_api-0.4.3
@@ -88,7 +89,7 @@ rand_chacha-0.3.0
 rand_core-0.6.2
 rand_hc-0.3.0
 rayon-core-1.9.0
-redox_syscall-0.2.5
+redox_syscall-0.2.6
 redox_users-0.4.0
 remove_dir_all-0.5.3
 rgb-0.8.27
@@ -127,7 +128,7 @@ unicode-width-0.1.8
 unicode-xid-0.2.1
 url-2.2.1
 uuid-0.8.2
-vcpkg-0.2.11
+vcpkg-0.2.12
 version_check-0.9.3
 wasi-0.10.2+wasi-snapshot-preview1
 which-4.1.0
