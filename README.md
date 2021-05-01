@@ -77,6 +77,7 @@
   * [LegacyFox](www-plugins/LegacyFox) - **[uniq]** Firefox legacy plugins support (for example [VimFx](https://git.gir.st/VimFx.git))
 
 * [x11-misc/](x11-misc/)
+  * [lemonbar](x11-misc/lemonbar) - **[better ebuild]** A featherweight, lemon-scented, bar based on xcb
   * [screenkey](x11-misc/screenkey) - **[better ebuild]** Screencast your keys
   * [xinput-gui](x11-misc/xinput-gui) - **[newer version]** Simple GUI for `xinput`
 
