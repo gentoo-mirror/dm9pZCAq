@@ -32,5 +32,6 @@ sys-process/bottom 0.5.7: TUI process/system monitor with multitude of features
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
 www-client/firefox-musl-bin 87.0-r1: Firefox binary from KISS linux (for musl libc)
 www-plugins/LegacyFox 2.3 9999: Monkeypatching Firefox Quantum to run VimFx
+x11-misc/lemonbar 1.4: A featherweight, lemon-scented, bar based on xcb
 x11-misc/screenkey 1.4 9999: A screencast tool to display your keys inspired by Screenflick
 x11-misc/xinput-gui 0.3.1 9999: A simple GUI for Xorg's Xinput tool
