@@ -5,9 +5,4 @@
 		<email>v@0x0c.xyz</email>
 		<name>dm9pZCAq</name>
 	</maintainer>
-	<use>
-		<flag name="fish-completion">
-			Enable fish completion support
-		</flag>
-	</use>
 </pkgmetadata>

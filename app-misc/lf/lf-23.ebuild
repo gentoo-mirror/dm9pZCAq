@@ -8,8 +8,8 @@ inherit go-module bash-completion-r1
 EGO_SUM=(
 	"github.com/gdamore/encoding v1.0.0"
 	"github.com/gdamore/encoding v1.0.0/go.mod"
-	"github.com/gokcehan/tcell/v2 v2.2.1-0.20210329222449-4dd2d52e83ef"
-	"github.com/gokcehan/tcell/v2 v2.2.1-0.20210329222449-4dd2d52e83ef/go.mod"
+	"github.com/gdamore/tcell/v2 v2.3.1"
+	"github.com/gdamore/tcell/v2 v2.3.1/go.mod"
 	"github.com/lucasb-eyer/go-colorful v1.0.3"
 	"github.com/lucasb-eyer/go-colorful v1.0.3/go.mod"
 	"github.com/mattn/go-runewidth v0.0.10"
@@ -33,14 +33,13 @@ SRC_URI="https://github.com/gokcehan/lf/archive/r${PV}.tar.gz -> ${P}.tar.gz
 
 DESCRIPTION="Terminal file manager"
 HOMEPAGE="https://github.com/gokcehan/lf"
-IUSE="+static X bash-completion zsh-completion fish-completion"
+IUSE="+static X"
 
 KEYWORDS="amd64 ~arm arm64 ppc64 ~s390 x86"
 LICENSE="MIT"
 SLOT="0"
 
 S="${WORKDIR}/${PN}-r${PV}"
-DOCS=( README.md etc/lfrc.example )
 
 src_compile() {
 	local ldflags="-s -w -X main.gVersion=r${PV}"
@@ -53,31 +52,30 @@ src_compile() {
 }
 
 src_install() {
+	local DOCS=( README.md etc/lfrc.example )
+
 	dobin "${PN}"
 
 	einstalldocs
 
 	doman "${PN}.1"
 
-	if use bash-completion || use zsh-completion; then
-		insinto "/usr/share/${PN}"
-		doins "etc/${PN}cd.sh"
-	fi
+	# bash & zsh
+	insinto "/usr/share/${PN}"
+	doins "etc/${PN}cd.sh"
 
-	use bash-completion \
-		&& newbashcomp "etc/${PN}.bash" "${PN}"
+	# bash-completion
+	newbashcomp "etc/${PN}.bash" "${PN}"
 
-	use zsh-completion && {
-		insinto /usr/share/zsh/site-functions
-		newins "etc/${PN}.zsh" "_${PN}"
-	}
+	# zsh-completion
+	insinto /usr/share/zsh/site-functions
+	newins "etc/${PN}.zsh" "_${PN}"
 
-	use fish-completion && {
-		insinto /usr/share/fish/vendor_completions.d
-		doins "etc/${PN}.fish"
-		insinto /usr/share/fish/vendor_functions.d
-		doins "etc/${PN}cd.fish"
-	}
+	# fish-completion
+	insinto /usr/share/fish/vendor_completions.d
+	doins "etc/${PN}.fish"
+	insinto /usr/share/fish/vendor_functions.d
+	doins "etc/${PN}cd.fish"
 
 	use X && {
 		insinto /usr/share/applications
