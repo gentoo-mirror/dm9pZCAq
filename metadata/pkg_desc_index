@@ -3,7 +3,7 @@ app-crypt/veracrypt 1.24_p8: Disk encryption with strong security based on TrueC
 app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 8: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
-app-misc/lf 22: Terminal file manager
+app-misc/lf 23: Terminal file manager
 app-misc/onefetch 2.9.1: Git repository summary on your terminal
 app-shells/gitstatus 1.4.4: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.7.0: A smarter cd command
@@ -15,7 +15,7 @@ dev-lua/moonscript 0.5.0: A programmer friendly language that compiles into Lua
 dev-python/Telethon 1.21.1: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
-dev-vcs/gitui 0.16.0: Blazing fast terminal-ui for git
+dev-vcs/gitui 0.16.1: Blazing fast terminal-ui for git
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.30.5: Open source web browser engine

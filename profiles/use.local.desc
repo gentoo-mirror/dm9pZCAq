@@ -5,7 +5,6 @@
 app-benchmarks/hyperfine:fish-completion - Enable fish completion support
 app-crypt/veracrypt:asm - Enable assembly for optimization
 app-eselect/eselect-repository:curl - Use curl instead of wget
-app-misc/lf:fish-completion - Enable fish completion support
 dev-python/Telethon:tgcrypto - Enable faster AES IGE implementation using dev-python/TgCrypto
 dev-vcs/gitui:nerd - Use nerd fonts icons
 net-libs/webkit-gtk:egl - Enable EGL support
