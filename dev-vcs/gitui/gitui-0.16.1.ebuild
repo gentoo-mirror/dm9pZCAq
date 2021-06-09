@@ -3,10 +3,10 @@
 
 EAPI=7
 
-AG_PV=0.16.1
+AG_PV=0.16.2
 
 CRATES="
-addr2line-0.15.1
+addr2line-0.15.2
 adler-1.0.2
 ahash-0.6.3
 aho-corasick-0.7.18
@@ -15,7 +15,7 @@ anyhow-1.0.40
 arrayvec-0.4.12
 atty-0.2.14
 autocfg-1.0.1
-backtrace-0.3.59
+backtrace-0.3.60
 base64-0.13.0
 bincode-1.3.3
 bit-set-0.5.2
@@ -25,7 +25,7 @@ bugreport-0.4.0
 bytemuck-1.5.1
 bytesize-1.0.1
 cassowary-0.3.0
-cc-1.0.67
+cc-1.0.68
 cfg-if-1.0.0
 chrono-0.4.19
 clap-2.33.3
@@ -33,8 +33,8 @@ cpp_demangle-0.3.2
 crc32fast-1.2.1
 crossbeam-channel-0.5.1
 crossbeam-deque-0.8.0
-crossbeam-epoch-0.9.4
-crossbeam-utils-0.8.4
+crossbeam-epoch-0.9.5
+crossbeam-utils-0.8.5
 crossterm-0.19.0
 crossterm_winapi-0.7.0
 ctor-0.1.20
@@ -45,7 +45,7 @@ dirs-sys-next-0.1.2
 easy-cast-0.4.4
 either-1.6.1
 fancy-regex-0.3.5
-filetreelist-0.1.1
+filetreelist-0.1.2
 flate2-1.0.20
 fnv-1.0.7
 form_urlencoded-1.0.1
@@ -59,7 +59,7 @@ hashbrown-0.9.1
 hermit-abi-0.1.18
 idna-0.2.3
 indexmap-1.6.2
-inferno-0.10.5
+inferno-0.10.6
 instant-0.1.9
 invalidstring-0.1.2
 itertools-0.10.0
@@ -67,7 +67,7 @@ itoa-0.4.7
 jobserver-0.1.22
 lazy_static-1.4.0
 lazycell-1.3.0
-libc-0.2.94
+libc-0.2.95
 libgit2-sys-0.12.21+1.1.0
 libssh2-sys-0.2.21
 libz-sys-1.1.3
@@ -78,7 +78,7 @@ log-0.4.14
 matches-0.1.8
 memchr-2.4.0
 memmap-0.7.0
-memoffset-0.6.3
+memoffset-0.6.4
 miniz_oxide-0.4.4
 mio-0.7.11
 miow-0.3.7
@@ -89,7 +89,7 @@ num-format-0.4.0
 num-integer-0.1.44
 num-traits-0.2.14
 num_cpus-1.13.0
-object-0.24.0
+object-0.25.2
 once_cell-1.7.2
 openssl-probe-0.1.4
 openssl-src-111.15.0+1.1.1k
@@ -132,7 +132,7 @@ serial_test-0.5.1
 serial_test_derive-0.5.1
 shell-escape-0.1.5
 signal-hook-0.1.17
-signal-hook-registry-1.3.0
+signal-hook-registry-1.4.0
 simplelog-0.10.0
 smallvec-1.6.1
 smawk-0.3.1
@@ -153,7 +153,7 @@ tinyvec-1.2.0
 tinyvec_macros-0.1.0
 tui-0.15.0
 unicode-bidi-0.3.5
-unicode-normalization-0.1.17
+unicode-normalization-0.1.19
 unicode-segmentation-1.7.1
 unicode-truncate-0.2.0
 unicode-width-0.1.8
@@ -245,6 +245,6 @@ src_install() {
 }
 
 pkg_postinst() {
-	elog "Example of vim keybindings config stored in '/usr/share/${P}/examples'"
-	elog 'to use it put example config in `$XDG_CONFIG_HOME/gitui/key_config.ron`'
+	einfo "Example of vim keybindings config stored in '/usr/share/${P}/examples'"
+	einfo 'to use it put example config in `$XDG_CONFIG_HOME/gitui/key_config.ron`'
 }
