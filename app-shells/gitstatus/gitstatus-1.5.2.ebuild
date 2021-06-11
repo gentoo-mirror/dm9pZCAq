@@ -67,6 +67,8 @@ src_compile() {
 }
 
 src_install() {
+	local DOCS=( {README,docs/listdir}.md )
+
 	insinto "/usr/share/${PN}"
 	exeinto "${_}"
 
@@ -79,5 +81,5 @@ src_install() {
 	dosym "../../../libexec/${PN}/gitstatusd" \
 		"/usr/share/${PN}/usrbin/gitstatusd"
 
-	dodoc {README,docs/listdir}.md
+	einstalldocs
 }
