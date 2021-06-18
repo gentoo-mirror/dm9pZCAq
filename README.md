@@ -68,6 +68,9 @@
   * [tldr](sys-apps/tldr) - **[using go-module inherit, misc ebuild changes]** Fast and interactive tldr client written with go
   * [uutils-coreutils](sys-apps/uutils-coreutils) - **[uniq]** Cross-platform Rust rewrite of the GNU coreutils
 
+* [sys-fs/](sys-fs/)
+  * [duf](sys-fs/duf) - **[uniq]** Disk Usage/Free Utility - a better 'df' alternative
+
 * [sys-process/](sys-process/)
   * [bottom](sys-process/bottom) - **[uniq]** TUI process/system monitor with multitude of features
   * [ytop](sys-process/ytop) - **[uniq]** [gotop](https://github.com/xxxserxxx/gotop) RIIR (Rewrite It in Rust)
