@@ -18,6 +18,7 @@
   * [cpufetch](app-misc/cpufetch) - **[uniq]** Simplistic yet fancy CPU architecture fetching tool
   * [lf](app-misc/lf) - **[more USE flags]** Terminal file manager
   * [onefetch](app-misc/onefetch) - **[better ebuild]** Git repository summary on your terminal
+  * [xplr](app-misc/xplr) - **[uniq]** A hackable, minimal, fast TUI file explorer
 
 * [app-shells/](app-shells/)
   * [gitstatus](app-shells/gitstatus) - **[uniq]** Git status for Bash and Zsh prompt
