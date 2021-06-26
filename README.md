@@ -6,6 +6,7 @@
   * [hyperfine](app-benchmarks/hyperfine) - **[more USE flags]** A command-line benchmarking tool
 
 * [app-crypt/](app-crypt/)
+  * [gpg-tui](app-crypt/gpg-tui) - **[uniq]** Terminal User Interface for GnuPG
   * [veracrypt](app-crypt/veracrypt) - **[[difference](#veracrypt)]** Disk encryption with strong security based on TrueCrypt
 
 * [app-editors/](app-editors/)
