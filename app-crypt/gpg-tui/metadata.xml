@@ -8,5 +8,6 @@
 	<upstream>
 		<bugs-to>https://github.com/orhun/gpg-tui/issues</bugs-to>
 		<remote-id type="github">orhun/gpg-tui</remote-id>
+		<changelog>https://github.com/orhun/gpg-tui/raw/master/CHANGELOG.md</changelog>
 	</upstream>
 </pkgmetadata>

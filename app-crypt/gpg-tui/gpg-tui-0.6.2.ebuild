@@ -129,6 +129,7 @@ x11-clipboard-0.5.1
 xcb-0.9.0
 xcursor-0.3.3
 xml-rs-0.8.3
+${P}
 "
 
 inherit cargo
@@ -140,8 +141,7 @@ HOMEPAGE="
 "
 SRC_URI="
 	$(cargo_crate_uris ${CRATES})
-	https://github.com/orhun/${PN}/archive/refs/tags/v${PV}.tar.gz
-		-> ${P}.tar.gz
+	https://github.com/orhun/${PN}/raw/v${PV}/man/${PN}.1
 "
 
 LICENSE="Apache-2.0 BSD Boost-1.0 ISC LGPL-2.1 MIT Unlicense"
@@ -150,7 +150,7 @@ KEYWORDS="amd64 ~x86"
 RESTRICT="mirror"
 
 src_install() {
-	doman man/*
+	doman "${DISTDIR}/${PN}.1"
 
 	dobin "target/release/${PN}"
 }
