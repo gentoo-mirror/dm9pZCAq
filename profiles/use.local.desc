@@ -117,4 +117,3 @@ sys-apps/uutils-coreutils:uu_unix_progs_unlink - Build the unlink program
 sys-apps/uutils-coreutils:uu_unix_progs_uptime - Build the uptime program
 sys-apps/uutils-coreutils:uu_unix_progs_users - Build the users program
 sys-apps/uutils-coreutils:uu_unix_progs_who - Build the who program
-sys-process/bottom:fish-completion - Enable fish completion support
