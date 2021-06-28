@@ -42,6 +42,7 @@ core-foundation-0.7.0
 core-foundation-0.9.1
 core-foundation-sys-0.7.0
 core-foundation-sys-0.8.2
+crc32fast-1.2.1
 crossbeam-channel-0.5.0
 crossbeam-deque-0.8.0
 crossbeam-epoch-0.9.1
@@ -50,13 +51,14 @@ crossterm-0.18.2
 crossterm_winapi-0.6.2
 ctrlc-3.1.9
 difference-2.0.0
-dirs-next-2.0.0
-dirs-sys-next-0.1.1
+dirs-3.0.2
+dirs-sys-0.3.6
 doc-comment-0.3.3
 either-1.6.1
 event-listener-2.5.1
 fastrand-1.4.0
 fern-0.6.0
+flate2-1.0.20
 float-cmp-0.8.0
 futures-0.3.14
 futures-channel-0.3.14
@@ -70,7 +72,7 @@ futures-task-0.3.14
 futures-timer-3.0.2
 futures-util-0.3.14
 fxhash-0.2.1
-getrandom-0.1.15
+getrandom-0.2.3
 gimli-0.24.0
 glob-0.3.0
 hashbrown-0.9.1
@@ -83,6 +85,7 @@ heim-net-0.1.0-rc.1
 heim-runtime-0.1.0-rc.1
 heim-sensors-0.1.0-rc.1
 hermit-abi-0.1.17
+hex-0.4.3
 indexmap-1.6.2
 instant-0.1.9
 itertools-0.10.0
@@ -121,12 +124,14 @@ predicates-core-1.0.0
 predicates-tree-1.0.0
 proc-macro-hack-0.5.19
 proc-macro-nested-0.1.6
-proc-macro2-1.0.24
+proc-macro2-1.0.27
+procfs-0.9.1
 quote-1.0.7
 rayon-1.5.0
 rayon-core-1.9.0
 redox_syscall-0.1.57
-redox_users-0.3.5
+redox_syscall-0.2.8
+redox_users-0.4.0
 regex-1.5.4
 regex-automata-0.1.9
 regex-syntax-0.6.25
@@ -141,8 +146,8 @@ smallvec-1.5.1
 smol-1.2.5
 socket2-0.3.17
 strsim-0.8.0
-syn-1.0.60
-sysinfo-0.17.3
+syn-1.0.72
+sysinfo-0.18.2
 textwrap-0.11.0
 thiserror-1.0.24
 thiserror-impl-1.0.24
@@ -160,7 +165,6 @@ vec-arena-1.0.0
 vec_map-0.8.2
 wait-timeout-0.2.0
 waker-fn-1.1.0
-wasi-0.9.0+wasi-snapshot-preview1
 wasi-0.10.0+wasi-snapshot-preview1
 wepoll-sys-3.0.1
 widestring-0.4.3
@@ -187,14 +191,14 @@ SLOT="0"
 KEYWORDS="amd64 ~arm64 ~ppc64"
 
 src_install() {
+	local _PN=btm
+	local DOCS=( README.md )
 
-	cargo_src_install
+	dobin "target/release/${_PN}"
 
-	dodoc README.md
+	einstalldocs
 
 	cd "target/release/build/${PN}-"*/out || die 'failed to cd'
-
-	local _PN=btm
 
 	# bash
 	dobashcomp "./${_PN}.bash"
