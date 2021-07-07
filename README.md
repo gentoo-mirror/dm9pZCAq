@@ -45,6 +45,9 @@
 * [games-misc/](games-misc/)
   * [fortune-mod](games-misc/fortune-mod) - **[with musl support]** The notorious fortune program
 
+* [net-dns/](net-dns/)
+  * [alfis](net-dns/alfis) - **[uniq]** Alternative Free Identity System
+
 * [net-libs/](net-libs/)
   * [telebot](net-libs/telebot) - **[uniq]** Telegram Bot API in C
   * [webkit-gtk](net-libs/webkit-gtk) - **[dbus is optional, musl support]** Open source web browser engine
