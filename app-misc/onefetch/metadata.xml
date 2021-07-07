@@ -6,6 +6,7 @@
 		<name>dm9pZCAq</name>
 	</maintainer>
 	<upstream>
+		<bugs-to>https://github.com/o2sh/onefetch/issues</bugs-to>
 		<remote-id type="github">o2sh/onefetch</remote-id>
 	</upstream>
 </pkgmetadata>
