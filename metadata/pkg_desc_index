@@ -1,3 +1,5 @@
+acct-group/alfis 0: System group: alfis
+acct-user/alfis 0: User for alfis
 app-benchmarks/hyperfine 1.11.0: A command-line benchmarking tool (runs other benchmarks)
 app-crypt/gpg-tui 0.6.2: Terminal User Interface for GnuPG
 app-crypt/veracrypt 1.24_p8: Disk encryption with strong security based on TrueCrypt
@@ -19,6 +21,7 @@ dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
 dev-vcs/gitui 0.16.1: Blazing fast terminal-ui for git
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
+net-dns/alfis 0.6.5: Alternative Free Identity System
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.30.5: Open source web browser engine
 net-misc/gping 1.2.1: Ping, but with a graph
