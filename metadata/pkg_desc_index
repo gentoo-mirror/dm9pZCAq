@@ -1,7 +1,7 @@
 acct-group/alfis 0: System group: alfis
 acct-user/alfis 0: User for alfis
 app-benchmarks/hyperfine 1.11.0: A command-line benchmarking tool (runs other benchmarks)
-app-crypt/gpg-tui 0.6.2: Terminal User Interface for GnuPG
+app-crypt/gpg-tui 0.7.0: Terminal User Interface for GnuPG
 app-crypt/veracrypt 1.24_p8: Disk encryption with strong security based on TrueCrypt
 app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 8: Manage repos.conf via eselect
