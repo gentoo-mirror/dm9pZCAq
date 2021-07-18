@@ -6,7 +6,7 @@ EAPI=7
 CRATES="
 	ansi_term-0.11.0
 	ansi_term-0.12.1
-	anyhow-1.0.41
+	anyhow-1.0.42
 	atty-0.2.14
 	autocfg-1.0.1
 	bitflags-1.2.1
