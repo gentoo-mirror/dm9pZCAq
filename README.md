@@ -64,7 +64,7 @@
   * [stig](net-p2p/stig) - **[better ebuild]** TUI and CLI for the BitTorrent client Transmission
 
 * [net-wireless/](net-wireless/)
-  * [eiwd](net-wireless/eiwd) - **[newer version, better ebuild]** iwd without dbus
+  * [eiwd](net-wireless/eiwd) - **[newer version, better ebuild, clang patches]** iwd without dbus
 
 * [sys-apps/](sys-apps/)
   * [hexyl](sys-apps/hexyl) - **[uniq]** A command-line hex viewer
