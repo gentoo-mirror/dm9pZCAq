@@ -15,8 +15,8 @@ HOMEPAGE="
 	https://github.com/kiss-community/repo-main/tree/master/extra/firefox
 "
 SRC_URI="
-	https://github.com/kiss-community/repo-bin/releases/download/ff-${PV}/${MY_PN}@${MY_PV}.tar.xz
-		-> ${P}.tar.xz
+	https://github.com/kiss-community/repo-bin/releases/download/ff-${PV}/${MY_PN}@${MY_PV}.tar.gz
+		-> ${P}.tar.gz
 	hardened? (
 		${PRIVACY}/files/policies-${HARDENED_PV}.json
 			-> ${PN}.policies-${HARDENED_PV}.json
@@ -28,7 +28,7 @@ IUSE="elibc_musl +hardened"
 
 LICENSE="MIT MPL-2.0 GPL-2 LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 
 RESTRICT="strip"
 
@@ -43,7 +43,7 @@ RDEPEND="
 	>=media-libs/freetype-2.4.10
 	>=media-libs/harfbuzz-2.6.8:0=
 	>=media-libs/libpng-1.6.35:0=[apng]
-	sys-devel/gcc:11=
+	sys-devel/gcc:10=
 	~sys-libs/musl-1.2.2
 	>=sys-libs/zlib-1.2.3
 	>=x11-libs/cairo-1.10[X]
