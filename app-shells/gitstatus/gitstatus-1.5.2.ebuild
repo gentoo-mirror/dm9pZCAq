@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake flag-o-matic
+inherit cmake flag-o-matic toolchain-funcs
 
 LIBGIT_TAG=tag-82cefe2b42300224ad3c148f8b1a569757cc617a
 LIBGIT_P="libgit2-romkatv-${LIBGIT_TAG}"
@@ -27,6 +27,14 @@ SRC_URI="
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
+
+pkg_pretend() {
+	tc-is-clang || return 0
+
+	ewarn 'if you are using sys-libs/libcxx to compile this,'
+	ewarn 'please make sure to compile sys-libs/libcxx with static-libs'
+	ewarn 'echo "sys-libs/libcxx static-libs" >> /etc/portage/package.use/libcxx'
+}
 
 src_configure() {
 	mycmakeargs=(
