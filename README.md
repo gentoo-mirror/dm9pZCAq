@@ -33,6 +33,9 @@
 * [dev-lang/](dev-lang/)
   * [ghc](dev-lang/ghc) - **[[ghc](#ghc)]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
 
+* [dev-libs/](dev-libs/)
+  * [libexecinfo](dev-libs/libexecinfo) - **[uniq]** BSD licensed clone of the GNU libc backtrace facility (for musl libc)
+
 * [dev-lua/](dev-lua/)
   * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
   * [moonscript](dev-lua/moonscript) - **[uniq]** A programmer friendly language that compiles into Lua
