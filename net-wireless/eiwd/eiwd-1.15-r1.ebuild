@@ -16,11 +16,11 @@ LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE="
-	+builtin-dns crda monitor ofono wired static
+	+builtin-dns crda monitor ofono wired
 	cpu_flags_x86_aes cpu_flags_x86_ssse3
 "
 
-DEPEND=">=dev-libs/ell-0.38"
+DEPEND="~dev-libs/ell-0.41"
 RDEPEND="
 	${DEPEND}
 	!net-wireless/iwd
@@ -31,7 +31,10 @@ RDEPEND="
 BDEPEND="virtual/pkgconfig"
 
 S="${WORKDIR}/${P#e}"
-PATCHES=( "${FILESDIR}/${P}-clang.patch" )
+PATCHES=(
+	"${FILESDIR}/${PN}-1.12-clang.patch"
+	"${FILESDIR}/${P}-clang.patch"
+)
 
 pkg_setup() {
 	CONFIG_CHECK="
@@ -114,7 +117,6 @@ src_configure() {
 		$(use_enable monitor)
 		$(use_enable ofono)
 		$(use_enable wired)
-		$(use_enable static)
 	)
 	econf "${myeconfargs[@]}"
 }
