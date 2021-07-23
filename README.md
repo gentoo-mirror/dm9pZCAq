@@ -30,6 +30,9 @@
 * [app-text/](app-text/)
   * [pandoc-bin](app-text/pandoc-bin) - **[better ebuild]** Universal markup converter
 
+* [dev-lang/](dev-lang/)
+  * [ghc](dev-lang/ghc) - **[[ghc](#ghc)]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
+
 * [dev-lua/](dev-lua/)
   * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
   * [moonscript](dev-lua/moonscript) - **[uniq]** A programmer friendly language that compiles into Lua
@@ -99,3 +102,13 @@ in **[ square brackets ]** info about difference with other overlays
 `app-crypt/veracrypt` difference:
  * `app-admin/sudo` needed only if `X` used
  * with musl support
+
+### ghc
+`dev-lang/ghc::dm9pZCAq` package is here for `ghcbootstrap`
+to build `dev-lang/ghc::haskell` on musl libc
+
+```sh
+echo ghcbootstrap >> /etc/portage/package.use/ghc
+ACCEPT_KEYWORDS='**' emerge -1 dev-lang/ghc::dm9pZCAq \
+  && emerge dev-lang/ghc
+```
