@@ -29,6 +29,7 @@
 
 * [app-text/](app-text/)
   * [pandoc-bin](app-text/pandoc-bin) - **[better ebuild]** Universal markup converter
+  * [smu](app-text/smu) - **[uniq]** Simple markup - markdown like syntax
 
 * [dev-lang/](dev-lang/)
   * [ghc](dev-lang/ghc) - **[[ghc](#ghc)]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
