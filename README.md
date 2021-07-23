@@ -33,6 +33,9 @@
 * [dev-lang/](dev-lang/)
   * [ghc](dev-lang/ghc) - **[[ghc](#ghc)]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
 
+* [dev-libs/](dev-libs/)
+  * [libexecinfo](dev-libs/libexecinfo) - **[uniq]** BSD licensed clone of the GNU libc backtrace facility (for musl libc)
+
 * [dev-lua/](dev-lua/)
   * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
   * [moonscript](dev-lua/moonscript) - **[uniq]** A programmer friendly language that compiles into Lua
@@ -70,6 +73,7 @@
   * [eiwd](net-wireless/eiwd) - **[newer version, better ebuild, clang patches]** iwd without dbus
 
 * [sys-apps/](sys-apps/)
+  * [exa](sys-apps/exa) - **[mainteined version]** A modern replacement for 'ls' written in Rust
   * [hexyl](sys-apps/hexyl) - **[uniq]** A command-line hex viewer
   * [huxdemp](sys-apps/huxdemp) - **[uniq]** A better hexdump
   * [tealdeer](sys-apps/tealdeer) - **[more USE flags]** Very fast implementation of tldr in Rust
