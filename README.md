@@ -73,6 +73,7 @@
   * [eiwd](net-wireless/eiwd) - **[newer version, better ebuild, clang patches]** iwd without dbus
 
 * [sys-apps/](sys-apps/)
+  * [exa](sys-apps/exa) - **[man pages without pandoc]** A modern replacement for 'ls' written in Rust
   * [hexyl](sys-apps/hexyl) - **[uniq]** A command-line hex viewer
   * [huxdemp](sys-apps/huxdemp) - **[uniq]** A better hexdump
   * [tealdeer](sys-apps/tealdeer) - **[more USE flags]** Very fast implementation of tldr in Rust
