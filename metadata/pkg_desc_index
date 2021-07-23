@@ -14,6 +14,7 @@ app-shells/zoxide 0.7.2: A smarter cd command
 app-shells/zsh-powerlevel10k 1.15.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/pandoc-bin 2.14.1: Universal markup converter
+dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/moonscript 0.5.0: A programmer friendly language that compiles into Lua
 dev-python/Telethon 1.23.0: Pure Python 3 MTProto API Telegram client library, for bots too!
@@ -30,6 +31,7 @@ net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various site
 net-news/newsboat 2.24: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.11.2a_pre0: TUI and CLI for the BitTorrent client Transmission
 net-wireless/eiwd 1.15-r1: iwd without dbus
+sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
 sys-apps/hexyl 0.9.0: A command-line hex viewer
 sys-apps/huxdemp 0.1.0: A better hexdump
 sys-apps/tealdeer 1.4.1: Very fast implementation of tldr in Rust
