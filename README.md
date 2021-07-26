@@ -55,6 +55,7 @@
 * [net-dns/](net-dns/)
   * [meshname](net-dns/meshname) - **[uniq]** A universal naming system for all IPv6-based mesh networks
   * [alfis](net-dns/alfis) - **[uniq]** Alternative Free Identity System
+  * [meshname](net-dns/meshname) - **[uniq]** A universal naming system for all IPv6-based mesh networks
 
 * [net-libs/](net-libs/)
   * [telebot](net-libs/telebot) - **[uniq]** Telegram Bot API in C
