@@ -53,6 +53,7 @@
   * [fortune-mod](games-misc/fortune-mod) - **[with musl support]** The notorious fortune program
 
 * [net-dns/](net-dns/)
+  * [meshname](net-dns/meshname) - **[uniq]** A universal naming system for all IPv6-based mesh networks
   * [alfis](net-dns/alfis) - **[uniq]** Alternative Free Identity System
 
 * [net-libs/](net-libs/)
