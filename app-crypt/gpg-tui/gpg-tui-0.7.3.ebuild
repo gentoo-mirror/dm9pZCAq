@@ -24,7 +24,7 @@ CRATES="
 	colorsys-0.6.3
 	conv-0.3.3
 	copypasta-0.7.1
-	copypasta-ext-0.3.4
+	copypasta-ext-0.3.7
 	crossterm-0.19.0
 	crossterm-0.20.0
 	crossterm_winapi-0.7.0
@@ -148,6 +148,13 @@ LICENSE="Apache-2.0 BSD Boost-1.0 ISC LGPL-2.1 MIT Unlicense"
 SLOT="0"
 KEYWORDS="amd64 ~x86"
 RESTRICT="mirror"
+
+DEPEND="
+	app-crypt/gpgme
+	dev-libs/libgpg-error
+	x11-libs/libxcb
+"
+RDEPEND="${DEPEND}"
 
 src_unpack() {
 	cargo_src_unpack
