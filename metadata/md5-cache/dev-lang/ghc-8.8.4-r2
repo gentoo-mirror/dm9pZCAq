@@ -1,0 +1,12 @@
+BDEPEND=app-arch/zstd sys-apps/findutils
+DEFINED_PHASES=install prepare pretend unpack
+DEPEND=sys-libs/musl
+DESCRIPTION=The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
+EAPI=7
+HOMEPAGE=https://www.haskell.org/ghc/
+IUSE=elibc_musl
+LICENSE=BSD
+RDEPEND=sys-libs/musl
+SLOT=0/8.8.4
+SRC_URI=amd64? ( https://alpha.de.repo.voidlinux.org/current/musl/ghc-8.8.4_2.x86_64-musl.xbps -> ghc-8.8.4-r2.xbps )
+_md5_=964482041fa0796443226bafcf547230
