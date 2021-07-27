@@ -3,18 +3,15 @@
 
 EAPI=7
 
-case "${ARCH}" in
-	amd64) arch=x86_64;;
-	*) die 'only for amd64 ARCH';;
-esac
-
 MY_PVR="${PVR/-r/_}"
 
 DESCRIPTION="The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)"
 HOMEPAGE="https://www.haskell.org/ghc/"
 SRC_URI="
-	https://alpha.de.repo.voidlinux.org/current/musl/${PN}-${MY_PVR}.${arch:?}-musl.xbps
-		-> ${PF}.xbps
+	amd64? (
+		https://alpha.de.repo.voidlinux.org/current/musl/${PN}-${MY_PVR}.x86_64-musl.xbps
+			-> ${PF}.xbps
+	)
 "
 
 LICENSE="BSD"
@@ -28,6 +25,13 @@ BDEPEND="
 	app-arch/zstd
 	sys-apps/findutils
 "
+
+pkg_pretend() {
+	case "${ARCH:?}" in
+	amd64) :;;
+	*) die 'only for amd64 ARCH';;
+	esac
+}
 
 src_unpack() {
 	mkdir -- "${S}" || die
