@@ -114,7 +114,7 @@ in **[ square brackets ]** info about difference with other overlays
 to build `dev-lang/ghc::haskell` on musl libc
 
 ```sh
-echo ghcbootstrap >> /etc/portage/package.use/ghc
+echo 'dev-lang/ghc ghcbootstrap' >> /etc/portage/package.use/ghc
 ACCEPT_KEYWORDS='**' emerge -1 dev-lang/ghc::dm9pZCAq \
   && emerge dev-lang/ghc
 ```
