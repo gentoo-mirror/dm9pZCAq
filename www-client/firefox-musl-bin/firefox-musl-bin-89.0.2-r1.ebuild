@@ -16,7 +16,7 @@ HOMEPAGE="
 "
 SRC_URI="
 	https://github.com/kiss-community/repo-bin/releases/download/ff-${PV}/${MY_PN}@${MY_PV}.tar.xz
-		-> ${P}.tar.xz
+		-> ${PF}.tar.xz
 	hardened? (
 		${PRIVACY}/files/policies-${HARDENED_PV}.json
 			-> ${PN}.policies-${HARDENED_PV}.json
@@ -35,7 +35,7 @@ RESTRICT="strip"
 RDEPEND="
 	dev-libs/atk
 	>=dev-libs/glib-2.26:2
-	>=dev-libs/libffi-3.0.10:=
+	dev-libs/libffi:0/7
 	>=dev-libs/nspr-4.29
 	>=dev-libs/nss-3.62
 	media-libs/alsa-lib
