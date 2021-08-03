@@ -1,0 +1,105 @@
+diff --git a/src/crypto.c b/src/crypto.c
+index 3f51694..c4bf86f 100644
+--- a/src/crypto.c
++++ b/src/crypto.c
+@@ -1139,6 +1139,8 @@ enum l_checksum_type crypto_sae_hash_from_ecc_prime_len(enum crypto_sae type,
+ 	return L_CHECKSUM_SHA512;
+ }
+ 
++void cleanup_point(void *ptr) { l_ecc_point_free(*(void **) ptr); }
++void cleanup_scalar(void *ptr) { l_ecc_scalar_free(*(void **) ptr); }
+ struct l_ecc_point *crypto_derive_sae_pt_ecc(unsigned int group,
+ 						const char *ssid,
+ 						const char *password,
+@@ -1150,11 +1152,11 @@ struct l_ecc_point *crypto_derive_sae_pt_ecc(unsigned int group,
+ 	uint8_t pwd_seed[64]; /* SHA512 is the biggest possible right now */
+ 	uint8_t pwd_value[128];
+ 	size_t pwd_value_len;
+-	_auto_(l_ecc_scalar_free) struct l_ecc_scalar *u1 = NULL;
+-	_auto_(l_ecc_scalar_free) struct l_ecc_scalar *u2 = NULL;
+-	_auto_(l_ecc_point_free) struct l_ecc_point *p1 = NULL;
+-	_auto_(l_ecc_point_free) struct l_ecc_point *p2 = NULL;
+-	_auto_(l_ecc_point_free) struct l_ecc_point *pt = NULL;
++	__attribute__((cleanup(cleanup_scalar))) struct l_ecc_scalar *u1 = NULL;
++	__attribute__((cleanup(cleanup_scalar))) struct l_ecc_scalar *u2 = NULL;
++	__attribute__((cleanup(cleanup_point))) struct l_ecc_point *p1 = NULL;
++	__attribute__((cleanup(cleanup_point))) struct l_ecc_point *p2 = NULL;
++	__attribute__((cleanup(cleanup_point))) struct l_ecc_point *pt = NULL;
+ 
+ 	if (!curve)
+ 		return NULL;
+diff --git a/src/network.c b/src/network.c
+index f6df333..c9e7bba 100644
+--- a/src/network.c
++++ b/src/network.c
+@@ -527,14 +527,17 @@ int network_handshake_setup(struct network *network,
+ 	return 0;
+ }
+ 
++void cleanup_network(void *ptr) { l_free(*(void **) ptr); }
+ static int network_settings_load_pt_ecc(struct network *network,
+ 					const char *path,
+ 					unsigned int group,
+ 					struct l_ecc_point **out_pt)
+ {
+-	_auto_(l_free) char *key = l_strdup_printf(SAE_PT_SETTING, group);
++	__attribute__((cleanup(cleanup_network)))
++		char *key = l_strdup_printf(SAE_PT_SETTING, group);
+ 	size_t pt_len;
+-	_auto_(l_free) uint8_t *pt = l_settings_get_bytes(network->settings,
++	__attribute__((cleanup(cleanup_network)))
++		uint8_t *pt = l_settings_get_bytes(network->settings,
+ 						"Security", key, &pt_len);
+ 	const struct l_ecc_curve *curve = l_ecc_curve_from_ike_group((group));
+ 
+@@ -566,13 +569,12 @@ generate:
+ 	return -EIO;
+ }
+ 
+-void cleanup_network(void *ptr) { l_free(*(void **) ptr); }
+ static int network_load_psk(struct network *network, bool need_passphrase)
+ {
+ 	const char *ssid = network_get_ssid(network);
+ 	enum security security = network_get_security(network);
+ 	size_t psk_len;
+-	_auto_(l_free) uint8_t *psk =
++	__attribute__((cleanup(cleanup_network))) uint8_t *psk =
+ 			l_settings_get_bytes(network->settings, "Security",
+ 						"PreSharedKey", &psk_len);
+ 	__attribute__((cleanup(cleanup_network))) char *passphrase =
+@@ -621,7 +623,8 @@ static void network_settings_save_sae_pt_ecc(struct l_settings *settings,
+ {
+ 	const struct l_ecc_curve *curve = l_ecc_point_get_curve(pt);
+ 	unsigned int group = l_ecc_curve_get_ike_group(curve);
+-	_auto_(l_free) char *key = l_strdup_printf(SAE_PT_SETTING, group);
++	__attribute__((cleanup(cleanup_network)))
++		char *key = l_strdup_printf(SAE_PT_SETTING, group);
+ 	uint8_t buf[256];
+ 	ssize_t len;
+ 
+diff --git a/src/wsc.c b/src/wsc.c
+index 86a18f7..4ee7d97 100644
+--- a/src/wsc.c
++++ b/src/wsc.c
+@@ -520,6 +520,8 @@ static void wsc_try_credentials(struct wsc_station_dbus *wsc,
+ 	station_set_autoconnect(wsc->station, true);
+ }
+ 
++void cleanup_config_wsc(void *ptr) { l_settings_free(*(void **) ptr); }
++void cleanup_network_wsc(void *ptr) { l_free(*(void **) ptr); }
+ static void wsc_store_credentials(struct wsc_credentials_info *creds,
+ 					unsigned int n_creds)
+ {
+@@ -529,9 +531,9 @@ static void wsc_store_credentials(struct wsc_credentials_info *creds,
+ 	for (i = 0; i < n_creds; i++) {
+ 		enum security security = creds[i].security;
+ 		const char *ssid = creds[i].ssid;
+-		_auto_(l_settings_free) struct l_settings *settings =
+-							l_settings_new();
+-		_auto_(l_free) char *path =
++		__attribute__((cleanup(cleanup_config_wsc)))
++			struct l_settings *settings = l_settings_new();
++		__attribute__((cleanup(cleanup_network_wsc))) char *path =
+ 				storage_get_network_file_path(security, ssid);
+ 
+ 		if (l_settings_load_from_file(settings, path)) {

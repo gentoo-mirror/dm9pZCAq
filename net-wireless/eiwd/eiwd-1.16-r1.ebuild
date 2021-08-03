@@ -8,7 +8,7 @@ inherit linux-info
 DESCRIPTION="iwd without dbus"
 HOMEPAGE="https://github.com/illiliti/eiwd"
 SRC_URI="
-	${HOMEPAGE}/releases/download/${PVR/r/}/iwd-${PV}.tar.xz
+	${HOMEPAGE}/releases/download/${PVR/r/}/${P##e}.tar.xz
 		-> ${PF}.tar.xz
 "
 
@@ -20,7 +20,7 @@ IUSE="
 	cpu_flags_x86_aes cpu_flags_x86_ssse3
 "
 
-DEPEND="~dev-libs/ell-0.41"
+DEPEND="~dev-libs/ell-0.42"
 RDEPEND="
 	${DEPEND}
 	!net-wireless/iwd
@@ -33,6 +33,7 @@ BDEPEND="virtual/pkgconfig"
 S="${WORKDIR}/${P#e}"
 PATCHES=(
 	"${FILESDIR}/${PN}-1.12-clang.patch"
+	"${FILESDIR}/${PN}-1.15-clang.patch"
 	"${FILESDIR}/${P}-clang.patch"
 )
 
