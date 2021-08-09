@@ -2,6 +2,9 @@
 
 ### detailed information about packages
 
+* [app-admin/](app-admin/)
+  * [aslstatus](app-admin/aslstatus) - **[my, uniq]** Async suckless status monitor
+
 * [app-benchmarks/](app-benchmarks/)
   * [hyperfine](app-benchmarks/hyperfine) - **[more USE flags]** A command-line benchmarking tool
 
