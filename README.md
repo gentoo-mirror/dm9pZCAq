@@ -85,6 +85,9 @@
   * [tldr](sys-apps/tldr) - **[using go-module inherit, misc ebuild changes]** Fast and interactive tldr client written with go
   * [uutils-coreutils](sys-apps/uutils-coreutils) - **[uniq]** Cross-platform Rust rewrite of the GNU coreutils
 
+* [sys-devel/](sys-devel/)
+  * [just](sys-devel/just) - **[uniq]** Just a command runner (with syntax inspired by `make`)
+
 * [sys-fs/](sys-fs/)
   * [duf](sys-fs/duf) - **[uniq]** Disk Usage/Free Utility - a better 'df' alternative
 
