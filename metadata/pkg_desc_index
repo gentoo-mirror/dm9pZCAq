@@ -1,6 +1,6 @@
 acct-group/alfis 0: System group: alfis
 acct-user/alfis 0: User for alfis
-app-admin/aslstatus 0.1 9999: async suckless status monitor
+app-admin/aslstatus 0.1.2 9999: async suckless status monitor
 app-benchmarks/hyperfine 1.11.0: A command-line benchmarking tool (runs other benchmarks)
 app-crypt/gpg-tui 0.7.4: Terminal User Interface for GnuPG
 app-crypt/veracrypt 1.24_p8: Disk encryption with strong security based on TrueCrypt
