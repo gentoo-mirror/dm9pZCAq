@@ -11,7 +11,7 @@ app-misc/lf 24: Terminal file manager
 app-misc/onefetch 2.10.2: Git repository summary on your terminal
 app-misc/xplr 0.14.5: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.2: Git status for Bash and Zsh prompt
-app-shells/zoxide 0.7.3: A smarter cd command
+app-shells/zoxide 0.7.4: A smarter cd command
 app-shells/zsh-powerlevel10k 1.15.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/pandoc-bin 2.14.1: Universal markup converter
