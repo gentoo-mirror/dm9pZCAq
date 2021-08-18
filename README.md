@@ -43,6 +43,7 @@
 * [dev-lua/](dev-lua/)
   * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
   * [moonscript](dev-lua/moonscript) - **[uniq]** A programmer friendly language that compiles into Lua
+  * [readline](dev-lua/readline) - **[uniq]** Interface to the readline library
 
 * [dev-python/](dev-python/)
   * [fake-useragent](dev-python/fake-useragent) - **[uniq]** Dependency for instalooter
