@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<longdescription lang="en">
+		This Lua module offers a simple calling interface
+		to the GNU Readline/History Library.
+	</longdescription>
+	<upstream>
+		<changelog>https://pjb.com.au/comp/lua/readline.html#changes</changelog>
+	</upstream>
+</pkgmetadata>
