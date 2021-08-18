@@ -19,6 +19,7 @@ app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
 dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
+dev-lua/fennel 0.5.0: Lua Lisp Language
 dev-lua/moonscript 0.5.0: A programmer friendly language that compiles into Lua
 dev-lua/readline 3.0: Interface to the readline library
 dev-python/Telethon 1.23.0: Pure Python 3 MTProto API Telegram client library, for bots too!
