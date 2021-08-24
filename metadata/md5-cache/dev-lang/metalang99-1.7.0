@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install
+DESCRIPTION=Full-blown preprocessor metaprogramming
+EAPI=8
+HOMEPAGE=https://metalang99.readthedocs.io/en/latest/ https://github.com/Hirrolot/metalang99
+KEYWORDS=amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~sparc ~x86 ~amd64-linux ~x64-macos
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://github.com/Hirrolot/metalang99/archive/refs/tags/v1.7.0.tar.gz -> metalang99-1.7.0.tar.gz
+_md5_=c3a03a84e1266b82d9cb15a57f88fa68
