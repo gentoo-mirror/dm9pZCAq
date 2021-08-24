@@ -20,7 +20,7 @@ IUSE="
 	cpu_flags_x86_aes cpu_flags_x86_ssse3
 "
 
-DEPEND="~dev-libs/ell-0.42"
+DEPEND=">=dev-libs/ell-0.43"
 RDEPEND="
 	${DEPEND}
 	!net-wireless/iwd
@@ -34,7 +34,7 @@ S="${WORKDIR}/${P#e}"
 PATCHES=(
 	"${FILESDIR}/${PN}-1.12-clang.patch"
 	"${FILESDIR}/${PN}-1.15-clang.patch"
-	"${FILESDIR}/${P}-clang.patch"
+	"${FILESDIR}/${PN}-1.16-clang.patch"
 )
 
 pkg_setup() {
@@ -61,17 +61,17 @@ pkg_setup() {
 		~RFKILL
 		~X509_CERTIFICATE_PARSER
 	"
-	if use crda;then
+	if use crda; then
 		CONFIG_CHECK="${CONFIG_CHECK} ~CFG80211_CRDA_SUPPORT"
 		WARNING_CFG80211_CRDA_SUPPORT="REGULATORY DOMAIN PROBLEM: please enable CFG80211_CRDA_SUPPORT for proper regulatory domain support"
 	fi
 
-	if use amd64;then
+	if use amd64; then
 		CONFIG_CHECK="${CONFIG_CHECK} ~CRYPTO_DES3_EDE_X86_64"
 		WARNING_CRYPTO_DES3_EDE_X86_64="CRYPTO_DES3_EDE_X86_64: enable for increased performance"
 	fi
 
-	if use cpu_flags_x86_aes;then
+	if use cpu_flags_x86_aes; then
 		CONFIG_CHECK="${CONFIG_CHECK} ~CRYPTO_AES_NI_INTEL"
 		WARNING_CRYPTO_AES_NI_INTEL="CRYPTO_AES_NI_INTEL: enable for increased performance"
 	fi
