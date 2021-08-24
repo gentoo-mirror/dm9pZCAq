@@ -36,6 +36,7 @@
 
 * [dev-lang/](dev-lang/)
   * [ghc](dev-lang/ghc) - **[[ghc](#ghc)]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
+  * [metalang99](dev-lang/metalang99) - **[uniq]** Full-blown preprocessor metaprogramming
 
 * [dev-libs/](dev-libs/)
   * [libexecinfo](dev-libs/libexecinfo) - **[uniq]** BSD licensed clone of the GNU libc backtrace facility (for musl libc)
