@@ -103,6 +103,9 @@
   * [bottom](sys-process/bottom) - **[uniq]** TUI process/system monitor with multitude of features
   * [ytop](sys-process/ytop) - **[uniq]** [gotop](https://github.com/xxxserxxx/gotop) RIIR (Rewrite It in Rust)
 
+* [virtual/](virtual/)
+  * [libudev](virtual/libudev) - **[[udev](#udev)]** Virtual for libudev providers
+
 * [www-client/](www-client/)
   * [firefox-musl-bin](www-client/firefox-musl-bin) - **[uniq]** `firefox-bin` for musl libc
 
