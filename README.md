@@ -40,6 +40,7 @@
 
 * [dev-libs/](dev-libs/)
   * [libexecinfo](dev-libs/libexecinfo) - **[uniq]** BSD licensed clone of the GNU libc backtrace facility (for musl libc)
+  * [skalibs](dev-libs/skalibs) - **[temporary]** General-purpose libraries from skarnet.org
 
 * [dev-lua/](dev-lua/)
   * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
