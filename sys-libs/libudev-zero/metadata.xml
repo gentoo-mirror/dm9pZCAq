@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<use>
+		<flag name="hotplug">Build and install hotplug helper</flag>
+	</use>
+	<longdescription lang="en">
+		Drop-in replacement for libudev
+		intended to work with any device manager
+	</longdescription>
+	<upstream>
+		<remote-id type="github">illiliti/libudev-zero</remote-id>
+		<bugs-to>https://github.com/illiliti/libudev-zero/issues</bugs-to>
+	</upstream>
+</pkgmetadata>
