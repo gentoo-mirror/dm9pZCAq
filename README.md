@@ -96,6 +96,9 @@
   * [duf](sys-fs/duf) - **[uniq]** Disk Usage/Free Utility - a better 'df' alternative
   * [mdevd](sys-fs/mdevd) - **[uniq]** A kernel event manager compatible with mdev.conf
 
+* [sys-libs/](sys-libs/)
+  * [libudev-zero](sys-libs/libudev-zero) - **[uniq]** Daemonless replacement for libudev
+
 * [sys-process/](sys-process/)
   * [bottom](sys-process/bottom) - **[uniq]** TUI process/system monitor with multitude of features
   * [ytop](sys-process/ytop) - **[uniq]** [gotop](https://github.com/xxxserxxx/gotop) RIIR (Rewrite It in Rust)
