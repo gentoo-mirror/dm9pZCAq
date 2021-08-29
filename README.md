@@ -105,6 +105,7 @@
 
 * [virtual/](virtual/)
   * [libudev](virtual/libudev) - **[[udev](#udev)]** Virtual for libudev providers
+  * [udev](virtual/udev) - **[[udev](#udev)]** Virtual to select between different udev daemon providers
 
 * [www-client/](www-client/)
   * [firefox-musl-bin](www-client/firefox-musl-bin) - **[uniq]** `firefox-bin` for musl libc
