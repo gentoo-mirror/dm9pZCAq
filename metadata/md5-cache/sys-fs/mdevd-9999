@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure install unpack
+DEPEND=~dev-libs/skalibs-9999
+DESCRIPTION=A kernel event manager compatible with mdev.conf
+EAPI=8
+HOMEPAGE=https://skarnet.org/software/mdevd/ https://github.com/skarnet/mdevd
+INHERIT=git-r3
+LICENSE=ISC
+PROPERTIES=live
+RDEPEND=~dev-libs/skalibs-9999
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=8a82df1bfcfd9ac4023b9e648a4ba2e9

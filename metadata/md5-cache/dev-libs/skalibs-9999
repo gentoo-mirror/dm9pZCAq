@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure prepare unpack
+DESCRIPTION=General-purpose libraries from skarnet.org
+EAPI=7
+HOMEPAGE=https://www.skarnet.org/software/skalibs/
+INHERIT=git-r3
+IUSE=doc ipv6 static-libs
+LICENSE=ISC
+PROPERTIES=live
+SLOT=0/9999
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=d585e1af9151e4a4ab2e06d51009597a
