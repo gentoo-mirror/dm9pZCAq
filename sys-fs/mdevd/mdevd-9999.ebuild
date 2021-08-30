@@ -24,4 +24,7 @@ src_configure() {
 
 src_install() {
 	dobin "${PN}"{,-coldplug}
+
+	insinto /etc
+	doins "${FILESDIR}/${PN}.conf"
 }
