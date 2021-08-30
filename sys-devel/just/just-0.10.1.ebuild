@@ -8,14 +8,15 @@ CRATES="
 	ansi_term-0.11.0
 	ansi_term-0.12.1
 	atty-0.2.14
-	bitflags-1.2.1
+	autocfg-1.0.1
+	bitflags-1.3.2
 	camino-1.0.5
 	cc-1.0.69
 	cfg-if-1.0.0
 	clap-2.33.3
-	cradle-0.0.16
+	cradle-0.0.22
 	ctor-0.1.20
-	ctrlc-3.1.9
+	ctrlc-3.2.0
 	derivative-2.2.0
 	diff-0.1.12
 	doc-comment-0.3.3
@@ -30,11 +31,12 @@ CRATES="
 	humantime-2.1.0
 	lazy_static-1.4.0
 	lexiclean-0.0.1
-	libc-0.2.98
+	libc-0.2.101
 	linked-hash-map-0.5.4
 	log-0.4.14
-	memchr-2.4.0
-	nix-0.20.0
+	memchr-2.4.1
+	memoffset-0.6.4
+	nix-0.22.0
 	output_vt100-0.1.2
 	ppv-lite86-0.2.10
 	pretty_assertions-0.7.2
@@ -44,7 +46,7 @@ CRATES="
 	rand_chacha-0.3.1
 	rand_core-0.6.3
 	rand_hc-0.3.1
-	redox_syscall-0.2.9
+	redox_syscall-0.2.10
 	regex-1.5.4
 	regex-syntax-0.6.25
 	remove_dir_all-0.5.3
@@ -54,10 +56,11 @@ CRATES="
 	strsim-0.8.0
 	strum-0.21.0
 	strum_macros-0.21.1
-	syn-1.0.74
-	target-1.1.0
+	syn-1.0.75
+	target-2.0.0
 	tempfile-3.2.0
 	temptree-0.2.0
+	term_size-0.3.2
 	termcolor-1.1.2
 	textwrap-0.11.0
 	typed-arena-2.0.1
