@@ -40,6 +40,7 @@
 
 * [dev-libs/](dev-libs/)
   * [libexecinfo](dev-libs/libexecinfo) - **[uniq]** BSD licensed clone of the GNU libc backtrace facility (for musl libc)
+  * [skalibs](dev-libs/skalibs) - **[temporary, [udev](#udev)]** General-purpose libraries from skarnet.org
 
 * [dev-lua/](dev-lua/)
   * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
@@ -93,10 +94,18 @@
 
 * [sys-fs/](sys-fs/)
   * [duf](sys-fs/duf) - **[uniq]** Disk Usage/Free Utility - a better 'df' alternative
+  * [mdevd](sys-fs/mdevd) - **[uniq, [udev](#udev)]** A kernel event manager compatible with mdev.conf
+
+* [sys-libs/](sys-libs/)
+  * [libudev-zero](sys-libs/libudev-zero) - **[uniq, [udev](#udev)]** Daemonless replacement for libudev
 
 * [sys-process/](sys-process/)
   * [bottom](sys-process/bottom) - **[uniq]** TUI process/system monitor with multitude of features
   * [ytop](sys-process/ytop) - **[uniq]** [gotop](https://github.com/xxxserxxx/gotop) RIIR (Rewrite It in Rust)
+
+* [virtual/](virtual/)
+  * [libudev](virtual/libudev) - **[[udev](#udev)]** Virtual for libudev providers
+  * [udev](virtual/udev) - **[[udev](#udev)]** Virtual to select between different udev daemon providers
 
 * [www-client/](www-client/)
   * [firefox-musl-bin](www-client/firefox-musl-bin) - **[uniq]** `firefox-bin` for musl libc
@@ -127,3 +136,44 @@ echo 'dev-lang/ghc ghcbootstrap' >> /etc/portage/package.use/ghc
 ACCEPT_KEYWORDS='**' emerge -1 dev-lang/ghc::dm9pZCAq \
   && emerge dev-lang/ghc
 ```
+
+### udev
+here is instruction on how to manage devices totally without systemd
+(with `sys-fs/mdevd` and `sys-libs/libudev-zero`)
+
+you need version `0.1.5.0` of `sys-fs/mdevd` that currently not released (needed for `-O` flag)
+(see: [NEWS](https://github.com/skarnet/mdevd/raw/master/NEWS) and [NOTE](https://github.com/illiliti/libudev-zero/blob/8044ed8fd6568a31cece25673b0cb00a54468be0/contrib/mdev.conf#L3-L7))
+
+also this version depend on version of `dev-libs/skalibs` that also currently not released
+
+so both `sys-fs/mdevd` and `dev-libs/skalibs` are temporary `9999`
+
+---
+
+and to use all of this you need:
+* for now add to `package.accept_keywords`:
+
+```
+~dev-libs/skalibs-9999::dm9pZCAq	**
+~sys-fs/mdevd-9999::dm9pZCAq		**
+virtual/udev::dm9pZCAq			**
+```
+* reemerge some packages:
+
+```sh
+emerge -C "${yours_udev}" "${yours_libudev}"  # it may be the same package
+emerge -1 \
+  virtual/udev::dm9pZCAq  \
+  virtual/libudev::::dm9pZCAq \
+  sys-fs/mdevd::dm9pZCAq \
+  sys-libs/libudev-zero::dm9pZCAq
+```
+* change yours init scripts
+  * [runit](https://notabug.org/dm9pZCAq/etcfiles/src/master/sv/mdevd)
+  * openrc: you can add yours through PR, issue or directly contact me (see contact info at my website)
+
+#### some useful links
+* https://github.com/illiliti/libudev-zero
+  * [closed issues](https://github.com/illiliti/libudev-zero/issues?q=is%3Aissue+is%3Aclosed)
+* https://kisslinux.org/wiki/device-management
+* https://github.com/slashbeast/mdev-like-a-boss
