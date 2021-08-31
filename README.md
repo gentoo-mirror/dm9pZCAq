@@ -77,6 +77,7 @@
 
 * [net-p2p/](net-p2p/)
   * [stig](net-p2p/stig) - **[better ebuild]** TUI and CLI for the BitTorrent client Transmission
+  * [yggdrasil-go](net-p2p/yggdrasil-go) - **[newer version, better ebuild, can run as non-root user]** An experiment in scalable routing as an encrypted IPv6 overlay network
 
 * [net-wireless/](net-wireless/)
   * [eiwd](net-wireless/eiwd) - **[newer version, better ebuild, clang patches]** iwd without dbus
