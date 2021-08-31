@@ -164,7 +164,7 @@ virtual/udev::dm9pZCAq			**
 emerge -C "${yours_udev}" "${yours_libudev}"  # it may be the same package
 emerge -1 \
   virtual/udev::dm9pZCAq  \
-  virtual/libudev::::dm9pZCAq \
+  virtual/libudev::dm9pZCAq \
   sys-fs/mdevd::dm9pZCAq \
   sys-libs/libudev-zero::dm9pZCAq
 ```
