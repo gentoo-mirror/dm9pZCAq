@@ -77,9 +77,10 @@
 
 * [net-p2p/](net-p2p/)
   * [stig](net-p2p/stig) - **[better ebuild]** TUI and CLI for the BitTorrent client Transmission
+  * [yggdrasil-go](net-p2p/yggdrasil-go) - **[maintained, better ebuild, can run as non-root user]** An experiment in scalable routing as an encrypted IPv6 overlay network
 
 * [net-wireless/](net-wireless/)
-  * [eiwd](net-wireless/eiwd) - **[newer version, better ebuild, clang patches]** iwd without dbus
+  * [eiwd](net-wireless/eiwd) - **[maintained, better ebuild, clang patches]** iwd without dbus
 
 * [sys-apps/](sys-apps/)
   * [exa](sys-apps/exa) - **[man pages without pandoc]** A modern replacement for 'ls' written in Rust
@@ -117,7 +118,7 @@
   * [herbe](x11-misc/herbe) - **[uniq]** Daemon-less notifications without D-Bus
   * [lemonbar](x11-misc/lemonbar) - **[better ebuild]** A featherweight, lemon-scented, bar based on xcb
   * [screenkey](x11-misc/screenkey) - **[better ebuild]** Screencast your keys
-  * [xinput-gui](x11-misc/xinput-gui) - **[newer version]** Simple GUI for `xinput`
+  * [xinput-gui](x11-misc/xinput-gui) - **[maintained]** Simple GUI for `xinput`
 
 ### misc
 in **[ square brackets ]** info about difference with other overlays
