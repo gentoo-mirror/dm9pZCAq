@@ -138,7 +138,7 @@ src_compile() {
 		ldflags+=' -extldflags "-static"'
 	}
 
-	for cmd in yggdrasil{,ctl}; do
+	for cmd in "${PN%-*}"{,ctl}; do
 		go_info -ldflags="${ldflags}" -o "${cmd}" "./cmd/${cmd}"
 	done
 }
@@ -155,6 +155,8 @@ src_install() {
 
 pkg_postinst() {
 	local issue=''
+
+	fcaps_pkg_postinst
 
 	einfo "runit service: https://notabug.org/dm9pZCAq/etcfiles/src/master/sv/${PN%-*}"
 	einfo "which can run ${PN%-*} as non-root user"
