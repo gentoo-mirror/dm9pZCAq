@@ -54,7 +54,7 @@ sys-fs/mdevd 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.0: Daemonless replacement for libudev
 sys-process/bottom 0.6.3: TUI process/system monitor with multitude of features
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
-virtual/libudev 232-r4: Virtual for libudev providers
+virtual/libudev 232-r5: Virtual for libudev providers
 virtual/udev 217-r3: Virtual to select between different udev daemon providers
 www-client/firefox-musl-bin 87.0-r1 89.0.2-r1: Firefox binary from KISS linux (for musl libc)
 www-plugins/LegacyFox 2.3 9999: Monkeypatching Firefox Quantum to run VimFx
