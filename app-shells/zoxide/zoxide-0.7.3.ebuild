@@ -89,7 +89,7 @@ CRATES="
 	${P}
 "
 
-inherit cargo
+inherit bash-completion-r1 cargo
 
 DESCRIPTION="A smarter cd command"
 HOMEPAGE="
@@ -104,10 +104,19 @@ SLOT="0"
 KEYWORDS="amd64 ~x86"
 
 src_install() {
-	local DOCS=( README.md )
-
 	doman man/*
 	einstalldocs
 
 	dobin "target/release/${PN}"
+
+	# bash-completion
+	newbashcomp "contrib/completions/${PN}.bash" "${PN}"
+
+	# zsh-completion
+	insinto /usr/share/zsh/site-functions
+	doins "contrib/completions/_${PN}"
+
+	# fish-completion
+	insinto /usr/share/fish/vendor_completions.d
+	doins "contrib/completions/${PN}.fish"
 }
