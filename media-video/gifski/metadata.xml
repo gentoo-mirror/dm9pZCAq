@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<use>
+		<flag name="video">add supports for decoding video directly</flag>
+	</use>
+	<longdescription lang="en">
+		gifski converts video frames to GIF animations using pngquant's fancy
+		features for efficient cross-frame palettes and temporal dithering.
+		It produces animated GIFs that use thousands of colors per frame.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">ImageOptim/gifski</remote-id>
+		<bugs-to>https://github.com/ImageOptim/gifski/issues</bugs-to>
+	</upstream>
+</pkgmetadata>
