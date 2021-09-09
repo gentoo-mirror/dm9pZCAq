@@ -10,13 +10,13 @@ CRATES="
 	askama_derive-0.10.5
 	askama_escape-0.10.1
 	askama_shared-0.11.1
-	assert_cmd-1.0.8
+	assert_cmd-2.0.1
 	atty-0.2.14
 	autocfg-1.0.1
 	bincode-1.3.3
-	bitflags-1.3.1
+	bitflags-1.3.2
 	bitvec-0.19.5
-	bstr-0.2.15
+	bstr-0.2.16
 	cfg-if-1.0.0
 	clap-3.0.0-beta.4
 	clap_derive-3.0.0-beta.4
@@ -37,19 +37,19 @@ CRATES="
 	itertools-0.10.1
 	lazy_static-1.4.0
 	lexical-core-0.7.6
-	libc-0.2.99
-	memchr-2.3.4
-	nom-6.2.1
+	libc-0.2.101
+	memchr-2.4.1
+	nom-6.1.2
 	num-traits-0.2.14
-	ordered-float-2.7.0
+	ordered-float-2.8.0
 	os_str_bytes-3.1.0
 	ppv-lite86-0.2.10
-	predicates-2.0.1
+	predicates-2.0.2
 	predicates-core-1.0.2
 	predicates-tree-1.0.3
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
-	proc-macro2-1.0.28
+	proc-macro2-1.0.29
 	quote-1.0.9
 	radium-0.5.3
 	rand-0.8.4
@@ -64,11 +64,11 @@ CRATES="
 	rustc_version-0.4.0
 	ryu-1.0.5
 	semver-1.0.4
-	serde-1.0.127
-	serde_derive-1.0.127
+	serde-1.0.130
+	serde_derive-1.0.130
 	static_assertions-1.1.0
 	strsim-0.10.0
-	syn-1.0.74
+	syn-1.0.76
 	tap-1.0.1
 	tempfile-3.2.0
 	termcolor-1.1.2
@@ -89,7 +89,7 @@ CRATES="
 	${P}
 "
 
-inherit cargo
+inherit bash-completion-r1 cargo
 
 DESCRIPTION="A smarter cd command"
 HOMEPAGE="
@@ -106,10 +106,19 @@ KEYWORDS="~amd64 ~x86"
 BDEPEND=">=virtual/rust-1.54.0"
 
 src_install() {
-	local DOCS=( README.md )
-
 	doman man/*
 	einstalldocs
 
 	dobin "target/release/${PN}"
+
+	# bash-completion
+	newbashcomp "contrib/completions/${PN}.bash" "${PN}"
+
+	# zsh-completion
+	insinto /usr/share/zsh/site-functions
+	doins "contrib/completions/_${PN}"
+
+	# fish-completion
+	insinto /usr/share/fish/vendor_completions.d
+	doins "contrib/completions/${PN}.fish"
 }
