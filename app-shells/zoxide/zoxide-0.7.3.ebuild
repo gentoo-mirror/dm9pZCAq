@@ -4,7 +4,7 @@
 EAPI=7
 
 CRATES="
-	anyhow-1.0.43
+	anyhow-1.0.42
 	arrayvec-0.5.2
 	askama-0.10.5
 	askama_derive-0.10.5
@@ -14,13 +14,13 @@ CRATES="
 	atty-0.2.14
 	autocfg-1.0.1
 	bincode-1.3.3
-	bitflags-1.3.1
+	bitflags-1.2.1
 	bitvec-0.19.5
 	bstr-0.2.15
 	cfg-if-1.0.0
-	clap-3.0.0-beta.4
-	clap_derive-3.0.0-beta.4
-	clap_generate-3.0.0-beta.4
+	clap-3.0.0-beta.2
+	clap_derive-3.0.0-beta.2
+	clap_generate-3.0.0-beta.2
 	difflib-0.4.0
 	dirs-next-2.0.0
 	dirs-sys-next-0.1.2
@@ -37,16 +37,16 @@ CRATES="
 	itertools-0.10.1
 	lazy_static-1.4.0
 	lexical-core-0.7.6
-	libc-0.2.99
+	libc-0.2.98
 	memchr-2.3.4
 	nom-6.2.1
 	num-traits-0.2.14
 	ordered-float-2.7.0
-	os_str_bytes-3.1.0
+	os_str_bytes-2.4.0
 	ppv-lite86-0.2.10
 	predicates-2.0.1
 	predicates-core-1.0.2
-	predicates-tree-1.0.3
+	predicates-tree-1.0.2
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
 	proc-macro2-1.0.28
@@ -56,7 +56,7 @@ CRATES="
 	rand_chacha-0.3.1
 	rand_core-0.6.3
 	rand_hc-0.3.1
-	redox_syscall-0.2.10
+	redox_syscall-0.2.9
 	redox_users-0.4.0
 	regex-automata-0.1.10
 	remove_dir_all-0.5.3
@@ -72,7 +72,7 @@ CRATES="
 	tap-1.0.1
 	tempfile-3.2.0
 	termcolor-1.1.2
-	textwrap-0.14.2
+	textwrap-0.12.1
 	treeline-0.1.0
 	unicode-segmentation-1.8.0
 	unicode-width-0.1.8
@@ -101,9 +101,7 @@ RESTRICT="mirror"
 
 LICENSE="Apache-2.0 CC0-1.0 MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
-
-BDEPEND=">=virtual/rust-1.54.0"
+KEYWORDS="amd64 ~x86"
 
 src_install() {
 	local DOCS=( README.md )
