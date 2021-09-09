@@ -101,7 +101,9 @@ RESTRICT="mirror"
 
 LICENSE="Apache-2.0 CC0-1.0 MIT"
 SLOT="0"
-KEYWORDS="amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
+
+BDEPEND=">=virtual/rust-1.54.0"
 
 src_install() {
 	local DOCS=( README.md )
