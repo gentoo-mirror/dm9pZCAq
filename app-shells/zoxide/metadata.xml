@@ -6,6 +6,7 @@
 		<name>dm9pZCAq</name>
 	</maintainer>
 	<upstream>
+		<changelog>https://github.com/ajeetdsouza/zoxide/raw/main/CHANGELOG.md</changelog>
 		<bugs-to>https://github.com/ajeetdsouza/zoxide/issues</bugs-to>
 		<remote-id type="github">ajeetdsouza/zoxide</remote-id>
 	</upstream>
