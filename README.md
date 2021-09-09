@@ -50,6 +50,7 @@
 
 * [dev-python/](dev-python/)
   * [fake-useragent](dev-python/fake-useragent) - **[uniq]** Dependency for instalooter
+  * [mobi](dev-python/mobi) - **[uniq]** Library for unpacking unencrypted mobi files
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
   * [TgCrypto](dev-python/TgCrypto) - **[uniq]** Fast and Portable Telegram Crypto Library for Python
 
