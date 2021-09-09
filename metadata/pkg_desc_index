@@ -16,6 +16,7 @@ app-shells/gitstatus 1.5.2: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.7.3 0.7.4: A smarter cd command
 app-shells/zsh-powerlevel10k 1.15.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
+app-text/epy 2021.8.14 9999: CLI Ebook Reader
 app-text/pandoc-bin 2.14.2: Universal markup converter
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
@@ -29,6 +30,7 @@ dev-lua/readline 3.0: Interface to the readline library
 dev-python/Telethon 1.23.0: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
+dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
 dev-vcs/gitui 0.16.2: Blazing fast terminal-ui for git
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
