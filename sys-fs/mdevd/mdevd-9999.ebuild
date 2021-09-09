@@ -3,19 +3,35 @@
 
 EAPI=8
 
-inherit git-r3
-
 DESCRIPTION="A kernel event manager compatible with mdev.conf"
 HOMEPAGE="
 	https://skarnet.org/software/mdevd/
 	https://github.com/skarnet/mdevd
 "
-EGIT_REPO_URI="https://github.com/skarnet/${PN}.git"
+
+case "${PVR}" in
+*9999*)
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/skarnet/${PN}.git"
+	DEPEND="~dev-libs/skalibs-9999"
+	;;
+*_pre*)
+	COMMIT=8797fba30db6f2587753346bee4d1f11c9d5b8ed
+	SRC_URI="
+		https://github.com/skarnet/${PN}/archive/${COMMIT}.tar.gz
+			-> ${PF}.tar.gz
+	"
+	KEYWORDS="~amd64 ~arm ~x86"
+
+	DEPEND=">=dev-libs/skalibs-2.11.0.0_pre"
+
+	S="${WORKDIR}/${PN}-${COMMIT}"
+	;;
+esac
 
 LICENSE="ISC"
 SLOT="0"
 
-DEPEND="~dev-libs/skalibs-9999"
 RDEPEND="${DEPEND}"
 
 src_configure() {

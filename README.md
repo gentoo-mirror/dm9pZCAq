@@ -152,17 +152,17 @@ you need version `0.1.5.0` of `sys-fs/mdevd` that currently not released (needed
 
 also this version depend on version of `dev-libs/skalibs` that also currently not released
 
-so both `sys-fs/mdevd` and `dev-libs/skalibs` are temporary `9999`
+so both `sys-fs/mdevd` and `dev-libs/skalibs` are packed with `_pre` version
 
 ---
 
 and to use all of this you need:
-* for now add to `package.accept_keywords`:
+* add to `package.accept_keywords`:
 
 ```
-~dev-libs/skalibs-9999::dm9pZCAq	**
-~sys-fs/mdevd-9999::dm9pZCAq		**
-virtual/udev::dm9pZCAq			**
+dev-libs/skalibs::dm9pZCAq
+sys-fs/mdevd::dm9pZCAq
+virtual/udev::dm9pZCAq
 ```
 * reemerge some packages:
 

@@ -3,11 +3,25 @@
 
 EAPI=7
 
-inherit git-r3
-
 DESCRIPTION="General-purpose libraries from skarnet.org"
 HOMEPAGE="https://www.skarnet.org/software/skalibs/"
-EGIT_REPO_URI="https://github.com/skarnet/${PN}.git"
+
+case "${PVR}" in
+*9999*)
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/skarnet/${PN}.git"
+	;;
+*_pre*)
+	COMMIT=754da814c32de5fbbd8b065e9f106cbb7bfc8ae6
+	SRC_URI="
+		https://github.com/skarnet/${PN}/archive/${COMMIT}.tar.gz
+			-> ${PF}.tar.gz
+	"
+	KEYWORDS="~amd64 ~arm ~x86"
+
+	S="${WORKDIR}/${PN}-${COMMIT}"
+	;;
+esac
 
 LICENSE="ISC"
 SLOT="0/$(ver_cut 1-2)"
