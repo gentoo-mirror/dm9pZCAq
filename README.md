@@ -31,6 +31,7 @@
   * [zsh-you-should-use](app-shells/zsh-you-should-use) - **[uniq]** ZSH plugin that reminds you to use existing aliases for commands you just typed
 
 * [app-text/](app-text/)
+  * [epy](app-text/epy) - **[uniq]** CLI Ebook Reader
   * [pandoc-bin](app-text/pandoc-bin) - **[better ebuild]** Universal markup converter
   * [smu](app-text/smu) - **[uniq]** Simple markup - markdown like syntax
 
