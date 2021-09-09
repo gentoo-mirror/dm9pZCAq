@@ -22,7 +22,7 @@ app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
 dev-lang/metalang99 1.8.0: Full-blown preprocessor metaprogramming
 dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
-dev-libs/skalibs 9999: General-purpose libraries from skarnet.org
+dev-libs/skalibs 2.11.0.0_pre 9999: General-purpose libraries from skarnet.org
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/fennel 0.5.0: Lua Lisp Language
 dev-lua/moonscript 0.5.0: A programmer friendly language that compiles into Lua
@@ -53,12 +53,12 @@ sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/just 0.10.1: Just a command runner (with syntax inspired by 'make')
 sys-fs/duf 0.6.2: Disk Usage/Free Utility - a better 'df' alternative
-sys-fs/mdevd 9999: A kernel event manager compatible with mdev.conf
+sys-fs/mdevd 0.1.5.0_pre 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.0: Daemonless replacement for libudev
 sys-process/bottom 0.6.3: TUI process/system monitor with multitude of features
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
 virtual/libudev 232-r5: Virtual for libudev providers
-virtual/udev 217-r3: Virtual to select between different udev daemon providers
+virtual/udev 217_p0-r3: Virtual to select between different udev daemon providers
 www-client/firefox-musl-bin 87.0-r1 89.0.2-r1: Firefox binary from KISS linux (for musl libc)
 www-plugins/LegacyFox 2.3 9999: Monkeypatching Firefox Quantum to run VimFx
 x11-misc/herbe 1.0.0: Daemon-less notifications without D-Bus

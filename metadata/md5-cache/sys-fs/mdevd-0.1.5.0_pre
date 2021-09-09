@@ -1,0 +1,11 @@
+DEFINED_PHASES=configure install
+DEPEND=>=dev-libs/skalibs-2.11.0.0_pre
+DESCRIPTION=A kernel event manager compatible with mdev.conf
+EAPI=8
+HOMEPAGE=https://skarnet.org/software/mdevd/ https://github.com/skarnet/mdevd
+KEYWORDS=~amd64 ~arm ~x86
+LICENSE=ISC
+RDEPEND=>=dev-libs/skalibs-2.11.0.0_pre
+SLOT=0
+SRC_URI=https://github.com/skarnet/mdevd/archive/8797fba30db6f2587753346bee4d1f11c9d5b8ed.tar.gz -> mdevd-0.1.5.0_pre.tar.gz
+_md5_=e31f550d7e985d50b2c68e712e110147
