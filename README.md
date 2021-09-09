@@ -59,6 +59,9 @@
 * [games-misc/](games-misc/)
   * [fortune-mod](games-misc/fortune-mod) - **[with musl support]** The notorious fortune program
 
+* [media-video/](media-video/)
+  * [gifski](media-video/gifski) - **[uniq]** Highest-quality GIF encoder based on pngquant
+
 * [net-dns/](net-dns/)
   * [alfis](net-dns/alfis) - **[uniq]** Alternative Free Identity System
   * [meshname](net-dns/meshname) - **[uniq]** A universal naming system for all IPv6-based mesh networks
