@@ -8,6 +8,7 @@ app-crypt/veracrypt:asm - Enable assembly for optimization
 app-eselect/eselect-repository:curl - Use curl instead of wget
 dev-python/Telethon:tgcrypto - Enable faster AES IGE implementation using dev-python/TgCrypto
 dev-vcs/gitui:nerd - Use nerd fonts icons
+media-video/gifski:video - add supports for decoding video directly
 net-libs/webkit-gtk:egl - Enable EGL support
 net-libs/webkit-gtk:examples - Install the MiniBrowser example application
 net-libs/webkit-gtk:gamepad - Enable gamepad input support via dev-libs/libmanette

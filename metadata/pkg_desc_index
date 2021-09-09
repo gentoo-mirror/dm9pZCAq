@@ -31,6 +31,7 @@ dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
 dev-vcs/gitui 0.16.2: Blazing fast terminal-ui for git
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
+media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.6.5: Alternative Free Identity System
 net-dns/meshname 0.1.2: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
