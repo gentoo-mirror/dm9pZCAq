@@ -31,6 +31,7 @@
   * [zsh-you-should-use](app-shells/zsh-you-should-use) - **[uniq]** ZSH plugin that reminds you to use existing aliases for commands you just typed
 
 * [app-text/](app-text/)
+  * [epy](app-text/epy) - **[uniq]** CLI Ebook Reader
   * [pandoc-bin](app-text/pandoc-bin) - **[better ebuild]** Universal markup converter
   * [smu](app-text/smu) - **[uniq]** Simple markup - markdown like syntax
 
@@ -50,6 +51,7 @@
 
 * [dev-python/](dev-python/)
   * [fake-useragent](dev-python/fake-useragent) - **[uniq]** Dependency for instalooter
+  * [mobi](dev-python/mobi) - **[uniq]** Library for unpacking unencrypted mobi files
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
   * [TgCrypto](dev-python/TgCrypto) - **[uniq]** Fast and Portable Telegram Crypto Library for Python
 
