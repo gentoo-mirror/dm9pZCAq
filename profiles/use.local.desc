@@ -8,6 +8,7 @@ app-crypt/veracrypt:asm - Enable assembly for optimization
 app-eselect/eselect-repository:curl - Use curl instead of wget
 dev-python/Telethon:tgcrypto - Enable faster AES IGE implementation using dev-python/TgCrypto
 dev-vcs/gitui:nerd - Use nerd fonts icons
+dev-vcs/gitui:trace-libgit - Enable libgit tracing
 media-video/gifski:video - add supports for decoding video directly
 net-libs/webkit-gtk:egl - Enable EGL support
 net-libs/webkit-gtk:examples - Install the MiniBrowser example application
