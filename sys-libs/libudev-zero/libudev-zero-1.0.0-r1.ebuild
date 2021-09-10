@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit toolchain-funcs
+inherit multilib-minimal toolchain-funcs
 
 DESCRIPTION="Daemonless replacement for libudev"
 HOMEPAGE="https://github.com/illiliti/libudev-zero"
@@ -12,7 +12,7 @@ SRC_URI="
 "
 
 LICENSE="ISC"
-SLOT="0"
+SLOT="0/$(ver_cut 1)"
 KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 
 IUSE="+hotplug static static-libs"
@@ -39,23 +39,33 @@ src_prepare() {
 			-e '/^install:/,/^uninstall:/{/libudev.a/d}' \
 		|| die
 	}
+
+	multilib_copy_sources
 }
 
-src_compile() {
+multilib_src_compile() {
 	emake
 
-	use hotplug \
-		&& cc_info $(usex static -static '') contrib/helper.c -o "${PN}-helper"
+	if use hotplug && multilib_is_native_abi; then
+		cc_info $(usex static -static '') contrib/helper.c -o "${PN}-helper"
+	fi
 }
 
-src_install() {
-	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
+multilib_src_install() {
+	emake install \
+		DESTDIR="${D}" \
+		PREFIX="${EPREFIX}/usr" \
+		LIBDIR="${EPREFIX}/usr/$(get_libdir)"
 
-	use hotplug && {
+	if use hotplug && multilib_is_native_abi; then
 		dobin "${PN}-helper"
+	fi
+}
 
+multilib_src_install_all() {
+	if use hotplug && multilib_is_native_abi; then
 		insinto "/usr/share/doc/${P}/examples"
 		sed "s;/path/to/helper;${PN}-helper;g" contrib/mdev.conf \
 			| newins - mdev.conf
-	}
+	fi
 }
