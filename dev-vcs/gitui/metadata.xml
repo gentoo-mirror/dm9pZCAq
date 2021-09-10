@@ -6,6 +6,9 @@
 		<name>dm9pZCAq</name>
 	</maintainer>
 	<use>
+		<flag name="trace-libgit">
+			Enable libgit tracing
+		</flag>
 		<flag name="nerd">
 			Use nerd fonts icons
 		</flag>
