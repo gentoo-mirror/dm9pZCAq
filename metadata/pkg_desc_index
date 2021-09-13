@@ -34,7 +34,7 @@ dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
 dev-vcs/gitui 0.16.2 0.17.1: Blazing fast terminal-ui for git
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
-net-dns/alfis 0.6.5: Alternative Free Identity System
+net-dns/alfis 0.6.6: Alternative Free Identity System
 net-dns/meshname 0.1.2: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.30.5: Open source web browser engine
