@@ -6,7 +6,7 @@ EAPI=7
 CRATES="
 	aho-corasick-0.7.18
 	ansi_term-0.11.0
-	anyhow-1.0.42
+	anyhow-1.0.43
 	atty-0.2.14
 	autocfg-1.0.1
 	bitflags-1.2.1
@@ -14,9 +14,8 @@ CRATES="
 	cfg-if-1.0.0
 	chrono-0.4.19
 	clap-2.33.3
-	crossterm-0.19.0
 	crossterm-0.20.0
-	crossterm_winapi-0.7.0
+	crossterm-0.21.0
 	crossterm_winapi-0.8.0
 	dns-lookup-1.0.8
 	either-1.6.1
@@ -28,16 +27,16 @@ CRATES="
 	libc-0.2.88
 	lock_api-0.4.2
 	log-0.4.14
-	memchr-2.4.0
+	memchr-2.4.1
 	mio-0.7.9
 	miow-0.3.6
 	ntapi-0.3.6
 	num-integer-0.1.44
 	num-traits-0.2.14
-	os_info-3.0.6
+	os_info-3.0.7
 	parking_lot-0.11.1
 	parking_lot_core-0.8.3
-	pinger-0.3.4
+	pinger-0.3.6
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
 	proc-macro2-1.0.24
@@ -46,7 +45,6 @@ CRATES="
 	regex-1.5.4
 	regex-syntax-0.6.25
 	scopeguard-1.1.0
-	signal-hook-0.1.17
 	signal-hook-0.3.9
 	signal-hook-mio-0.2.1
 	signal-hook-registry-1.4.0
@@ -55,14 +53,14 @@ CRATES="
 	socket2-0.4.0
 	static_assertions-1.1.0
 	strsim-0.8.0
-	structopt-0.3.22
-	structopt-derive-0.4.15
+	structopt-0.3.23
+	structopt-derive-0.4.16
 	syn-1.0.62
 	textwrap-0.11.0
-	thiserror-1.0.26
-	thiserror-impl-1.0.26
+	thiserror-1.0.29
+	thiserror-impl-1.0.29
 	time-0.1.44
-	tui-0.15.0
+	tui-0.16.0
 	unicode-segmentation-1.7.1
 	unicode-width-0.1.8
 	unicode-xid-0.2.1
