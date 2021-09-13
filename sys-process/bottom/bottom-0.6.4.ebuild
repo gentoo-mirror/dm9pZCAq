@@ -124,7 +124,7 @@ CRATES="
 	proc-macro-hack-0.5.19
 	proc-macro-nested-0.1.6
 	proc-macro2-1.0.27
-	procfs-0.9.1
+	procfs-0.10.1
 	quote-1.0.7
 	rayon-1.5.0
 	rayon-core-1.9.0
@@ -173,7 +173,7 @@ CRATES="
 	${P}
 "
 
-inherit cargo
+inherit bash-completion-r1 cargo
 
 DESCRIPTION="TUI process/system monitor with multitude of features"
 HOMEPAGE="
@@ -191,7 +191,6 @@ KEYWORDS="amd64 ~arm64 ~ppc64"
 
 src_install() {
 	local _PN=btm
-	local DOCS=( README.md )
 
 	dobin "target/release/${_PN}"
 
@@ -200,13 +199,13 @@ src_install() {
 	cd "target/release/build/${PN}-"*/out || die 'failed to cd'
 
 	# bash
-	dobashcomp "./${_PN}.bash"
+	dobashcomp "${_PN}.bash"
 
 	# zsh
 	insinto /usr/share/zsh/site-functions
-	doins "./_${_PN}"
+	doins "_${_PN}"
 
 	# fish
 	insinto /usr/share/fish/vendor_completions.d
-	doins "./${_PN}.fish"
+	doins "${_PN}.fish"
 }
