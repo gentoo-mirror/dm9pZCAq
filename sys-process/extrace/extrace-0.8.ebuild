@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit fcaps
+inherit fcaps linux-info
 
 DESCRIPTION="trace exec() calls system-wide"
 HOMEPAGE="https://github.com/leahneukirchen/extrace"
@@ -13,6 +13,8 @@ LICENSE="GPL-2 MIT"
 SLOT="0"
 KEYWORDS="amd64 ~x86"
 IUSE="-pwait"
+
+CONFIG_CHECK="~CONNECTOR ~PROC_EVENTS"
 
 get_all() {
 	echo "${PN}" $(usev pwait)
