@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst
+DESCRIPTION=trace exec() calls system-wide
+EAPI=8
+HOMEPAGE=https://github.com/leahneukirchen/extrace
+IDEPEND=filecaps? ( sys-libs/libcap )
+INHERIT=fcaps
+IUSE=-pwait +filecaps
+KEYWORDS=amd64 ~x86
+LICENSE=GPL-2 MIT
+SLOT=0
+SRC_URI=https://github.com/leahneukirchen/extrace/archive/v0.8.tar.gz -> extrace-0.8.tar.gz
+_eclasses_=fcaps	ac252c3cc67b265cd7ea456f8d58e150
+_md5_=92c5118e094a167e751a27a4a785c25c

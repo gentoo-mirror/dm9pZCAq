@@ -56,6 +56,7 @@ sys-fs/duf 0.6.2: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.0_pre 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.0-r1: Daemonless replacement for libudev
 sys-process/bottom 0.6.4: TUI process/system monitor with multitude of features
+sys-process/extrace 0.8: trace exec() calls system-wide
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
 virtual/libudev 232-r5: Virtual for libudev providers
 virtual/udev 217_p0-r3: Virtual to select between different udev daemon providers
