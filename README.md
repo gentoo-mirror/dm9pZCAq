@@ -107,6 +107,7 @@
 
 * [sys-process/](sys-process/)
   * [bottom](sys-process/bottom) - **[uniq]** TUI process/system monitor with multitude of features
+  * [extrace](sys-process/extrace) - **[uniq]** Trace exec() calls system-wide
   * [ytop](sys-process/ytop) - **[uniq]** [gotop](https://github.com/xxxserxxx/gotop) RIIR (Rewrite It in Rust)
 
 * [virtual/](virtual/)
