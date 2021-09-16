@@ -11,75 +11,40 @@ CRATES="
 	aes-soft-0.6.4
 	aesni-0.10.0
 	ahash-0.7.4
-	anyhow-1.0.43
-	async-channel-1.6.1
-	async-executor-1.4.1
-	async-global-executor-2.0.2
-	async-io-1.6.0
-	async-lock-2.4.0
-	async-mutex-1.4.0
-	async-process-1.2.0
-	async-std-1.10.0
-	async-task-4.0.3
 	atk-sys-0.10.0
-	atomic-waker-1.0.0
 	autocfg-1.0.1
-	backtrace-0.1.8
-	backtrace-sys-0.1.37
 	base64-0.13.0
 	bincode-1.3.3
-	bitflags-0.7.0
 	bitflags-1.2.1
 	blake2-0.9.1
 	blakeout-0.3.0
 	block-buffer-0.9.0
-	blocking-1.0.2
 	boxfnonce-0.1.1
 	bumpalo-3.7.0
 	byteorder-1.4.3
-	cache-padded-1.1.1
 	cairo-sys-rs-0.10.0
 	cc-1.0.67
-	cfg-if-0.1.10
 	cfg-if-1.0.0
 	chacha20-0.8.0
 	chacha20poly1305-0.9.0
-	chomp-0.3.1
 	chrono-0.4.19
 	chunked_transfer-1.4.0
 	cipher-0.2.5
 	cipher-0.3.0
-	concurrent-queue-1.2.2
-	conv-0.3.3
 	convert_case-0.4.0
 	cpufeatures-0.1.4
 	cpufeatures-0.2.1
 	cpuid-bool-0.2.0
-	crossbeam-utils-0.8.5
 	crypto-mac-0.8.0
 	crypto-mac-0.10.0
-	ctor-0.1.20
 	ctr-0.6.0
 	curve25519-dalek-3.1.0
-	custom_derive-0.1.7
-	dbghelp-sys-0.2.0
-	debug-builders-0.1.0
-	debugtrace-0.1.0
 	derive_more-0.99.16
 	digest-0.9.0
-	dnsclient-0.1.15
-	dnssector-0.2.11
 	ecies-ed25519-0.5.1
 	ed25519-1.0.3
 	ed25519-dalek-1.0.1
-	either-0.1.7
-	event-listener-2.5.1
-	fastrand-1.5.0
 	form_urlencoded-1.0.1
-	futures-channel-0.3.17
-	futures-core-0.3.17
-	futures-io-0.3.17
-	futures-lite-1.12.0
 	gdk-pixbuf-sys-0.10.0
 	gdk-sys-0.10.0
 	generic-array-0.14.4
@@ -89,7 +54,6 @@ CRATES="
 	ghash-0.3.1
 	gio-sys-0.10.1
 	glib-sys-0.10.1
-	gloo-timers-0.2.1
 	gobject-sys-0.10.0
 	gtk-sys-0.10.0
 	half-1.7.1
@@ -100,22 +64,18 @@ CRATES="
 	hkdf-0.10.0
 	hmac-0.10.1
 	idna-0.2.3
-	instant-0.1.10
 	itoa-0.4.7
 	javascriptcore-rs-sys-0.2.0
 	js-sys-0.3.53
-	kernel32-sys-0.2.2
-	kv-log-macro-1.0.7
 	lazy_static-1.4.0
 	libc-0.2.101
 	log-0.4.14
 	lru-0.6.6
 	matches-0.1.9
-	memchr-2.4.1
 	mio-0.7.13
 	miow-0.3.7
 	ntapi-0.3.6
-	num-bigint-0.4.1
+	num-bigint-0.4.2
 	num-integer-0.1.44
 	num-traits-0.2.14
 	num_cpus-1.13.0
@@ -123,14 +83,10 @@ CRATES="
 	opaque-debug-0.3.0
 	open-2.0.1
 	pango-sys-0.10.0
-	parking-2.0.0
 	pathdiff-0.2.0
 	percent-encoding-2.1.0
 	pest-2.1.3
-	pin-project-lite-0.2.7
-	pin-utils-0.1.0
 	pkg-config-0.3.19
-	polling-2.1.0
 	poly1305-0.7.0
 	polyval-0.4.5
 	ppv-lite86-0.2.10
@@ -156,13 +112,9 @@ CRATES="
 	serde_cbor-0.11.2
 	serde_derive-1.0.130
 	serde_json-1.0.67
-	sha2-0.9.6
-	signal-hook-0.3.10
-	signal-hook-registry-1.4.0
+	sha2-0.9.8
 	signature-1.3.1
 	simplelog-0.10.0
-	slab-0.4.4
-	socket2-0.4.1
 	soup-sys-0.10.0
 	spin-0.5.2
 	sqlite-0.26.0
@@ -196,15 +148,12 @@ CRATES="
 	url-2.2.2
 	urlencoding-1.1.1
 	uuid-0.8.2
-	value-bag-1.0.0-alpha.7
 	version-compare-0.0.10
 	version_check-0.9.3
-	waker-fn-1.1.0
 	wasi-0.9.0+wasi-snapshot-preview1
 	wasi-0.10.2+wasi-snapshot-preview1
 	wasm-bindgen-0.2.76
 	wasm-bindgen-backend-0.2.76
-	wasm-bindgen-futures-0.4.26
 	wasm-bindgen-macro-0.2.76
 	wasm-bindgen-macro-support-0.2.76
 	wasm-bindgen-shared-0.2.76
@@ -214,10 +163,7 @@ CRATES="
 	webpki-0.21.4
 	webpki-roots-0.21.1
 	webview-sys-0.6.2
-	wepoll-ffi-0.1.2
-	winapi-0.2.8
 	winapi-0.3.9
-	winapi-build-0.1.1
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
@@ -262,19 +208,6 @@ S="${WORKDIR}/Alfis-${PV}"
 FILECAPS=(
 	cap_net_bind_service+ep "usr/bin/${PN}"
 )
-
-src_prepare() {
-	ebegin 'patching `chomp`: `conv` features'
-	(
-		source="$(sed -n '/^replace-with/{s/.*"\(.*\)"$/\1/p;q}' \
-				<"${CARGO_HOME}/config")" \
-		&& cd "${CARGO_HOME}/${source}"/chomp-*/ \
-		&& sed -i Cargo.toml -e '/^conv/s/,[^}]\+//'
-	)
-	eend "${?}" 'failed to `sed` chomp' || die "${_}"
-
-	default
-}
 
 src_configure() {
 	local myfeatures=( $(usex X webgui '') )
