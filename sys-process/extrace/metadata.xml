@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<use>
+		<flag name="pwait">Build the pwait program</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">leahneukirchen/extrace</remote-id>
+		<bugs-to>https://github.com/leahneukirchen/extrace/issues</bugs-to>
+	</upstream>
+</pkgmetadata>
