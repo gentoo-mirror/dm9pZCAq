@@ -44,7 +44,7 @@ net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various site
 net-news/newsboat 2.24: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.11.2a_pre0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.0: An experiment in scalable routing as an encrypted IPv6 overlay network
-net-wireless/eiwd 1.17-r1: iwd without dbus
+net-wireless/eiwd 1.18-r1: iwd without dbus
 sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
 sys-apps/hexyl 0.9.0: A command-line hex viewer
 sys-apps/huxdemp 0.1.0: A better hexdump
