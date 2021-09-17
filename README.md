@@ -125,6 +125,7 @@
   * [herbe](x11-misc/herbe) - **[uniq]** Daemon-less notifications without D-Bus
   * [lemonbar](x11-misc/lemonbar) - **[better ebuild]** A featherweight, lemon-scented, bar based on xcb
   * [screenkey](x11-misc/screenkey) - **[better ebuild]** Screencast your keys
+  * [xcolor](x11-misc/xcolor) - **[uniq]** Lightweight color picker for X11
   * [xinput-gui](x11-misc/xinput-gui) - **[maintained]** Simple GUI for `xinput`
 
 ### misc

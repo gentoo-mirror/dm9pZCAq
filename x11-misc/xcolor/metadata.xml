@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<use>
+		<flag name="X">Install desktop files</flag>
+	</use>
+	<longdescription lang="en">
+		Lightweight color picker for X11.
+		Use mouse to select colors visible anywhere on the screen
+		to get their RGB representation.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">Soft/xcolor</remote-id>
+		<bugs-to>https://github.com/Soft/xcolor/issues</bugs-to>
+	</upstream>
+</pkgmetadata>
