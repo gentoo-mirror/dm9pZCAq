@@ -1,5 +1,8 @@
 # dm9pZCAq overlay
 
+packages in overlay: `66`
+<!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
+
 ### detailed information about packages
 
 * [app-admin/](app-admin/)
