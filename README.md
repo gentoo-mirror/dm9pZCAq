@@ -175,10 +175,19 @@ virtual/udev::dm9pZCAq
 ```sh
 emerge -C "${yours_udev}" "${yours_libudev}"  # it may be the same package
 emerge -1 \
+  sys-fs/mdevd::dm9pZCAq \
   virtual/udev::dm9pZCAq  \
   virtual/libudev::dm9pZCAq \
-  sys-fs/mdevd::dm9pZCAq \
   sys-libs/libudev-zero::dm9pZCAq
+
+# or if you already using busybox, you can use mdev from there
+# add `sys-apps/busybox mdev` to `package.use`
+#   and maybe change some busybox configs
+emerge -1 \
+  sys-apps/busybox \
+  virtual/udev::dm9pZCAq  \
+  virtual/libudev::dm9pZCAq \
+  sys-libs/libudev-zero::dm9pZCAq \
 ```
 * change yours init scripts
   * [runit](https://notabug.org/dm9pZCAq/etcfiles/src/master/sv/mdevd)
