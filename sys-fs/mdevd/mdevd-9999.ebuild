@@ -9,33 +9,34 @@ HOMEPAGE="
 	https://github.com/skarnet/mdevd
 "
 
-case "${PVR}" in
-*9999*)
+if [ "${PV}" = 9999 ]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/skarnet/${PN}.git"
 	DEPEND="~dev-libs/skalibs-9999"
-	;;
-*_pre*)
-	COMMIT=8797fba30db6f2587753346bee4d1f11c9d5b8ed
+else
 	SRC_URI="
-		https://github.com/skarnet/${PN}/archive/${COMMIT}.tar.gz
+		https://github.com/skarnet/${PN}/archive/v${PV}.tar.gz
 			-> ${PF}.tar.gz
 	"
-	KEYWORDS="~amd64 ~arm ~x86"
+	KEYWORDS="amd64 arm x86"
 
-	DEPEND=">=dev-libs/skalibs-2.11.0.0_pre"
-
-	S="${WORKDIR}/${PN}-${COMMIT}"
-	;;
-esac
+	DEPEND=">=dev-libs/skalibs-2.11.0.0"
+fi
 
 LICENSE="ISC"
 SLOT="0"
+IUSE="static"
 
+DEPEND="
+	${DEPEND}
+	static? ( dev-libs/skalibs[static-libs] )
+"
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	econf --with-sysdeps="${EPREFIX}/usr/$(get_libdir)/skalibs"
+	econf \
+		$(usex static --enable-static-libc '') \
+		--with-sysdeps="${EPREFIX}/usr/$(get_libdir)/skalibs"
 }
 
 src_install() {

@@ -153,23 +153,15 @@ ACCEPT_KEYWORDS='**' emerge -1 dev-lang/ghc::dm9pZCAq \
 here is instruction on how to manage devices totally without systemd
 (with `sys-fs/mdevd` and `sys-libs/libudev-zero`)
 
-you need version `0.1.5.0` of `sys-fs/mdevd` that currently not released (needed for `-O` flag)
+you need version `>= 0.1.5.0` of `sys-fs/mdevd` (for `-O` flag)
 (see: [NEWS](https://github.com/skarnet/mdevd/raw/master/NEWS) and [NOTE](https://github.com/illiliti/libudev-zero/blob/8044ed8fd6568a31cece25673b0cb00a54468be0/contrib/mdev.conf#L3-L7))
 
-also this version depend on version of `dev-libs/skalibs` that also currently not released
-
-so both `sys-fs/mdevd` and `dev-libs/skalibs` are packed with `_pre` version
+also this version depend on `>=dev-libs/skalibs-2.11.0.0`
+that is currently not in `::gentoo`
 
 ---
 
 and to use all of this you need:
-* add to `package.accept_keywords`:
-
-```
-dev-libs/skalibs::dm9pZCAq
-sys-fs/mdevd::dm9pZCAq
-virtual/udev::dm9pZCAq
-```
 * reemerge some packages:
 
 ```sh

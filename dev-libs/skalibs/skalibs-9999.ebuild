@@ -6,22 +6,16 @@ EAPI=7
 DESCRIPTION="General-purpose libraries from skarnet.org"
 HOMEPAGE="https://www.skarnet.org/software/skalibs/"
 
-case "${PVR}" in
-*9999*)
+if [ "${PV}" = 9999 ]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/skarnet/${PN}.git"
-	;;
-*_pre*)
-	COMMIT=754da814c32de5fbbd8b065e9f106cbb7bfc8ae6
+else
 	SRC_URI="
-		https://github.com/skarnet/${PN}/archive/${COMMIT}.tar.gz
-			-> ${PF}.tar.gz
+		https://github.com/skarnet/${PN}/archive/v${PV}.tar.gz
+			-> ${P}.tar.gz
 	"
-	KEYWORDS="~amd64 ~arm ~x86"
-
-	S="${WORKDIR}/${PN}-${COMMIT}"
-	;;
-esac
+	KEYWORDS="amd64 arm x86"
+fi
 
 LICENSE="ISC"
 SLOT="0/$(ver_cut 1-2)"
