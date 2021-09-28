@@ -5,4 +5,9 @@
 		<email>v@0x0c.xyz</email>
 		<name>dm9pZCAq</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">skarnet/skalibs</remote-id>
+		<bugs-to>https://github.com/skarnet/skalibs/issues</bugs-to>
+		<changelog>https://github.com/skarnet/skalibs/raw/master/NEWS</changelog>
+	</upstream>
 </pkgmetadata>
