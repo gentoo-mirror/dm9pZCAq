@@ -25,11 +25,18 @@ fi
 
 LICENSE="ISC"
 SLOT="0"
+IUSE="static"
 
+DEPEND="
+	${DEPEND}
+	static? ( dev-libs/skalibs[static-libs] )
+"
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	econf --with-sysdeps="${EPREFIX}/usr/$(get_libdir)/skalibs"
+	econf \
+		$(usex static --enable-static-libc '') \
+		--with-sysdeps="${EPREFIX}/usr/$(get_libdir)/skalibs"
 }
 
 src_install() {
