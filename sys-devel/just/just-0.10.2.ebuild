@@ -11,11 +11,11 @@ CRATES="
 	autocfg-1.0.1
 	bitflags-1.3.2
 	camino-1.0.5
-	cc-1.0.69
+	cc-1.0.70
 	cfg-if-1.0.0
 	clap-2.33.3
-	cradle-0.0.22
-	ctor-0.1.20
+	cradle-0.2.0
+	ctor-0.1.21
 	ctrlc-3.2.0
 	derivative-2.2.0
 	diff-0.1.12
@@ -31,7 +31,7 @@ CRATES="
 	humantime-2.1.0
 	lazy_static-1.4.0
 	lexiclean-0.0.1
-	libc-0.2.101
+	libc-0.2.103
 	linked-hash-map-0.5.4
 	log-0.4.14
 	memchr-2.4.1
@@ -39,8 +39,8 @@ CRATES="
 	nix-0.22.0
 	output_vt100-0.1.2
 	ppv-lite86-0.2.10
-	pretty_assertions-0.7.2
-	proc-macro2-1.0.28
+	pretty_assertions-1.0.0
+	proc-macro2-1.0.29
 	quote-1.0.9
 	rand-0.8.4
 	rand_chacha-0.3.1
@@ -56,7 +56,7 @@ CRATES="
 	strsim-0.8.0
 	strum-0.21.0
 	strum_macros-0.21.1
-	syn-1.0.75
+	syn-1.0.77
 	target-2.0.0
 	tempfile-3.2.0
 	temptree-0.2.0
@@ -65,7 +65,7 @@ CRATES="
 	textwrap-0.11.0
 	typed-arena-2.0.1
 	unicode-segmentation-1.8.0
-	unicode-width-0.1.8
+	unicode-width-0.1.9
 	unicode-xid-0.2.2
 	vec_map-0.8.2
 	wasi-0.10.2+wasi-snapshot-preview1
