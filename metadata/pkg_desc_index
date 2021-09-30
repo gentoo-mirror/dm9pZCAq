@@ -52,7 +52,7 @@ sys-apps/huxdemp 0.1.0: A better hexdump
 sys-apps/tealdeer 1.4.1: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
-sys-devel/just 0.10.1: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 0.10.2: Just a command runner (with syntax inspired by 'make')
 sys-fs/duf 0.6.2: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.0 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.0-r1: Daemonless replacement for libudev
