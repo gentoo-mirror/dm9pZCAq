@@ -2,3 +2,12 @@
 # has many incompatibilities with GNU cereutils
 # still may be used, so unmask on your own risc
 sys-apps/uutils-coreutils
+
+# dm9pZCAq <v@0x0c.xyz> (2021-10-7)
+# after firefox 89, upstream builds binaries only for wayland
+# so i recommend using firefox from nix: `nix-env -i firefox`,
+# with custom user.js
+# - https://github.com/kiss-community/bin/issues/1#issuecomment-892096428
+# - https://nixos.org/manual/nix/stable/
+# - https://github.com/arkenfox/user.js
+www-client/firefox-musl-bin
