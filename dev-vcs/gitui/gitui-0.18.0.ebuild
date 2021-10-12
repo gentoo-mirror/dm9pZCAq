@@ -11,7 +11,7 @@ CRATES="
 	ahash-0.7.4
 	aho-corasick-0.7.18
 	ansi_term-0.12.1
-	anyhow-1.0.43
+	anyhow-1.0.44
 	arrayvec-0.4.12
 	atty-0.2.14
 	autocfg-1.0.1
@@ -25,7 +25,7 @@ CRATES="
 	bytemuck-1.7.2
 	bytesize-1.1.0
 	cassowary-0.3.0
-	cc-1.0.70
+	cc-1.0.71
 	cfg-if-1.0.0
 	chrono-0.4.19
 	clap-2.33.3
@@ -45,8 +45,8 @@ CRATES="
 	easy-cast-0.4.4
 	either-1.6.1
 	fancy-regex-0.7.1
-	filetreelist-0.3.0
-	flate2-1.0.21
+	filetreelist-0.4.0
+	flate2-1.0.22
 	fnv-1.0.7
 	form_urlencoded-1.0.1
 	fuzzy-matcher-0.3.7
@@ -55,21 +55,21 @@ CRATES="
 	gimli-0.25.0
 	git-version-0.3.5
 	git-version-macro-0.3.5
-	git2-0.13.22
+	git2-0.13.23
 	hashbrown-0.11.2
 	hermit-abi-0.1.19
 	idna-0.2.3
 	indexmap-1.7.0
 	inferno-0.10.7
-	instant-0.1.10
+	instant-0.1.11
 	itertools-0.10.1
 	itoa-0.4.8
 	jobserver-0.1.24
 	lazy_static-1.4.0
 	lazycell-1.3.0
-	libc-0.2.101
-	libgit2-sys-0.12.23+1.2.0
-	libssh2-sys-0.2.21
+	libc-0.2.103
+	libgit2-sys-0.12.24+1.3.0
+	libssh2-sys-0.2.23
 	libz-sys-1.1.3
 	line-wrap-0.1.1
 	linked-hash-map-0.5.4
@@ -82,7 +82,7 @@ CRATES="
 	miniz_oxide-0.4.4
 	mio-0.7.13
 	miow-0.3.7
-	nix-0.20.1
+	nix-0.20.2
 	nodrop-0.1.14
 	ntapi-0.3.6
 	num-format-0.4.0
@@ -93,22 +93,22 @@ CRATES="
 	once_cell-1.8.0
 	openssl-probe-0.1.4
 	openssl-src-111.16.0+1.1.1l
-	openssl-sys-0.9.66
+	openssl-sys-0.9.67
 	output_vt100-0.1.2
 	parking_lot-0.11.2
 	parking_lot_core-0.8.5
 	percent-encoding-2.1.0
 	phf-0.10.0
 	phf_shared-0.10.0
-	pkg-config-0.3.19
+	pkg-config-0.3.20
 	plist-1.2.1
 	pprof-0.5.0
 	ppv-lite86-0.2.10
-	pretty_assertions-0.7.2
+	pretty_assertions-1.0.0
 	proc-macro-hack-0.5.19
 	proc-macro2-1.0.29
 	quick-xml-0.22.0
-	quote-1.0.9
+	quote-1.0.10
 	rand-0.8.4
 	rand_chacha-0.3.1
 	rand_core-0.6.3
@@ -120,7 +120,7 @@ CRATES="
 	regex-syntax-0.6.25
 	remove_dir_all-0.5.3
 	rgb-0.8.27
-	ron-0.6.4
+	ron-0.6.5
 	rustc-demangle-0.1.21
 	ryu-1.0.5
 	safemem-0.3.3
@@ -129,38 +129,38 @@ CRATES="
 	scopetime-0.1.1
 	serde-1.0.130
 	serde_derive-1.0.130
-	serde_json-1.0.67
+	serde_json-1.0.68
 	shell-escape-0.1.5
 	signal-hook-0.3.10
 	signal-hook-mio-0.2.1
 	signal-hook-registry-1.4.0
-	simplelog-0.10.0
+	simplelog-0.10.2
 	siphasher-0.3.7
-	smallvec-1.6.1
+	smallvec-1.7.0
 	smawk-0.3.1
 	stable_deref_trait-1.2.0
 	str_stack-0.1.0
-	symbolic-common-8.3.0
-	symbolic-demangle-8.3.0
-	syn-1.0.76
+	symbolic-common-8.3.1
+	symbolic-demangle-8.3.1
+	syn-1.0.80
 	syntect-4.6.0
 	sys-info-0.9.0
 	tempfile-3.2.0
 	textwrap-0.11.0
 	textwrap-0.14.2
-	thiserror-1.0.29
-	thiserror-impl-1.0.29
+	thiserror-1.0.30
+	thiserror-impl-1.0.30
 	thread_local-1.1.3
 	time-0.1.43
-	tinyvec-1.3.1
+	tinyvec-1.5.0
 	tinyvec_macros-0.1.0
 	tui-0.16.0
-	unicode-bidi-0.3.6
+	unicode-bidi-0.3.7
 	unicode-linebreak-0.1.2
 	unicode-normalization-0.1.19
 	unicode-segmentation-1.8.0
 	unicode-truncate-0.2.0
-	unicode-width-0.1.8
+	unicode-width-0.1.9
 	unicode-xid-0.2.2
 	url-2.2.2
 	uuid-0.8.2
