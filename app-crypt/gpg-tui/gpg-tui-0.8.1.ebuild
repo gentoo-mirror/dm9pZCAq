@@ -6,7 +6,7 @@ EAPI=7
 CRATES="
 	ansi_term-0.11.0
 	ansi_term-0.12.1
-	anyhow-1.0.43
+	anyhow-1.0.44
 	atty-0.2.14
 	autocfg-1.0.1
 	bitflags-1.3.2
@@ -15,7 +15,7 @@ CRATES="
 	bytemuck-1.7.2
 	byteorder-1.4.3
 	cassowary-0.3.0
-	cc-1.0.70
+	cc-1.0.71
 	cfg-if-0.1.10
 	cfg-if-1.0.0
 	chrono-0.4.19
@@ -49,19 +49,19 @@ CRATES="
 	hermit-abi-0.1.19
 	hex-literal-0.3.3
 	image-0.23.14
-	instant-0.1.10
+	instant-0.1.11
 	jpeg-decoder-0.1.22
 	lazy-bytes-cast-5.0.1
 	lazy_static-1.4.0
-	libc-0.2.101
+	libc-0.2.103
 	libgpg-error-sys-0.5.2
-	libloading-0.7.0
+	libloading-0.7.1
 	lock_api-0.4.5
 	log-0.4.14
 	malloc_buf-0.0.6
 	memchr-2.4.1
 	memmap2-0.2.3
-	minimal-lexical-0.1.2
+	minimal-lexical-0.1.4
 	mio-0.7.13
 	miow-0.3.7
 	nix-0.20.0
@@ -79,12 +79,12 @@ CRATES="
 	output_vt100-0.1.2
 	parking_lot-0.11.2
 	parking_lot_core-0.8.5
-	pkg-config-0.3.19
-	pretty_assertions-0.7.2
+	pkg-config-0.3.20
+	pretty_assertions-1.0.0
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
 	proc-macro2-1.0.29
-	quote-1.0.9
+	quote-1.0.10
 	redox_syscall-0.2.10
 	redox_users-0.4.0
 	rust-embed-6.2.0
@@ -95,27 +95,27 @@ CRATES="
 	scopeguard-1.1.0
 	serde-1.0.130
 	serde_derive-1.0.130
-	sha2-0.9.6
+	sha2-0.9.8
 	shellexpand-2.1.0
 	signal-hook-0.3.10
 	signal-hook-mio-0.2.1
 	signal-hook-registry-1.4.0
-	smallvec-1.6.1
+	smallvec-1.7.0
 	smithay-client-toolkit-0.14.0
 	smithay-clipboard-0.6.4
 	static_assertions-1.1.0
 	strsim-0.8.0
 	structopt-0.3.23
 	structopt-derive-0.4.16
-	syn-1.0.75
+	syn-1.0.80
 	term_size-0.3.2
 	textwrap-0.11.0
 	time-0.1.44
 	toml-0.5.8
 	tui-0.16.0
-	typenum-1.13.0
+	typenum-1.14.0
 	unicode-segmentation-1.8.0
-	unicode-width-0.1.8
+	unicode-width-0.1.9
 	unicode-xid-0.2.2
 	version_check-0.9.3
 	walkdir-2.3.2
@@ -150,6 +150,8 @@ HOMEPAGE="
 SRC_URI="
 	$(cargo_crate_uris ${CRATES})
 	https://github.com/orhun/${PN}/raw/v${PV}/man/${PN}.1 -> ${P}.man.1
+	https://github.com/orhun/${PN}/raw/v${PV}/man/${PN}.toml.5
+		-> ${P}.toml.man.5
 "
 
 LICENSE="Apache-2.0 BSD Boost-1.0 ISC LGPL-2.1 MIT Unlicense"
@@ -168,7 +170,10 @@ BDEPEND="x11-libs/libxkbcommon"
 src_unpack() {
 	cargo_src_unpack
 
-	cp -v -- "${DISTDIR}/${P}.man.1" "${S}/${PN}.1" || die
+	local man="${T}/man"
+	mkdir -- "${man}" || die
+	cp -v -- "${DISTDIR}/${P}.man.1" "${man}/${PN}.1" || die
+	cp -v -- "${DISTDIR}/${P}.toml.man.5" "${man}/${PN}.toml.5" || die
 }
 
 src_compile() {
@@ -185,9 +190,9 @@ src_compile() {
 }
 
 src_install() {
-	doman "${PN}.1"
-
 	dobin "target/release/${PN}"
+
+	doman "${T}/man"/*
 
 	# bash-completion
 	newbashcomp "completions/${PN}.bash" "${PN}"
