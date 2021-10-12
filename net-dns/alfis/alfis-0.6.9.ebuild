@@ -111,10 +111,10 @@ CRATES="
 	serde_bytes-0.11.5
 	serde_cbor-0.11.2
 	serde_derive-1.0.130
-	serde_json-1.0.67
+	serde_json-1.0.68
 	sha2-0.9.8
 	signature-1.3.1
-	simplelog-0.10.0
+	simplelog-0.10.2
 	soup-sys-0.10.0
 	spin-0.5.2
 	sqlite-0.26.0
@@ -167,7 +167,7 @@ CRATES="
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
-	winres-0.1.11
+	winres-0.1.12
 	x25519-dalek-1.1.1
 	zeroize-1.3.0
 	zeroize_derive-1.0.1
