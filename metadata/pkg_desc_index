@@ -38,7 +38,7 @@ net-dns/alfis 0.6.9: Alternative Free Identity System
 net-dns/meshname 0.1.2: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.30.5: Open source web browser engine
-net-misc/gping 1.2.5: Ping, but with a graph
+net-misc/gping 1.2.6: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
 net-news/newsboat 2.25: An RSS/Atom feed reader for text terminals
