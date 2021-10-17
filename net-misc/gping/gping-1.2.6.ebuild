@@ -6,7 +6,7 @@ EAPI=7
 CRATES="
 	aho-corasick-0.7.18
 	ansi_term-0.11.0
-	anyhow-1.0.43
+	anyhow-1.0.44
 	atty-0.2.14
 	autocfg-1.0.1
 	bitflags-1.2.1
@@ -57,8 +57,8 @@ CRATES="
 	structopt-derive-0.4.16
 	syn-1.0.62
 	textwrap-0.11.0
-	thiserror-1.0.29
-	thiserror-impl-1.0.29
+	thiserror-1.0.30
+	thiserror-impl-1.0.30
 	time-0.1.44
 	tui-0.16.0
 	unicode-segmentation-1.7.1
