@@ -1,15 +1,12 @@
 # dm9pZCAq overlay
 
-packages in overlay: `66`
+packages in overlay: `67`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
 
 * [app-admin/](app-admin/)
   * [aslstatus](app-admin/aslstatus) - **[my, uniq]** Async suckless status monitor
-
-* [app-benchmarks/](app-benchmarks/)
-  * [hyperfine](app-benchmarks/hyperfine) - **[more USE flags]** A command-line benchmarking tool
 
 * [app-crypt/](app-crypt/)
   * [gpg-tui](app-crypt/gpg-tui) - **[uniq]** Terminal User Interface for GnuPG
