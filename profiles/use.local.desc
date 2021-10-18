@@ -3,7 +3,6 @@
 # * generated automatically using pmaint *
 
 app-admin/aslstatus:xkb - Add support for keymap indicator
-app-benchmarks/hyperfine:fish-completion - Enable fish completion support
 app-crypt/veracrypt:asm - Enable assembly for optimization
 app-eselect/eselect-repository:curl - Use curl instead of wget
 dev-python/Telethon:tgcrypto - Enable faster AES IGE implementation using dev-python/TgCrypto
