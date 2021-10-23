@@ -18,9 +18,10 @@ CRATES="
 	bitvec-0.19.5
 	bstr-0.2.17
 	cfg-if-1.0.0
-	clap-3.0.0-beta.4
-	clap_derive-3.0.0-beta.4
-	clap_generate-3.0.0-beta.4
+	clap-3.0.0-beta.5
+	clap_derive-3.0.0-beta.5
+	clap_generate-3.0.0-beta.5
+	clap_generate_fig-3.0.0-beta.5
 	difflib-0.4.0
 	dirs-next-2.0.0
 	dirs-sys-next-0.1.2
@@ -37,13 +38,13 @@ CRATES="
 	itertools-0.10.1
 	lazy_static-1.4.0
 	lexical-core-0.7.6
-	libc-0.2.103
+	libc-0.2.104
 	memchr-2.4.1
 	nom-6.1.2
 	num-traits-0.2.14
 	ordered-float-2.8.0
-	os_str_bytes-3.1.0
-	ppv-lite86-0.2.10
+	os_str_bytes-4.2.0
+	ppv-lite86-0.2.14
 	predicates-2.0.3
 	predicates-core-1.0.2
 	predicates-tree-1.0.4
@@ -74,10 +75,10 @@ CRATES="
 	termcolor-1.1.2
 	termtree-0.2.1
 	textwrap-0.14.2
+	unicase-2.6.0
 	unicode-segmentation-1.8.0
 	unicode-width-0.1.9
 	unicode-xid-0.2.2
-	vec_map-0.8.2
 	version_check-0.9.3
 	wait-timeout-0.2.0
 	wasi-0.10.2+wasi-snapshot-preview1
