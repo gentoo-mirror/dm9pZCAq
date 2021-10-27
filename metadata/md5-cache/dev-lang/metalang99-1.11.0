@@ -5,5 +5,5 @@ HOMEPAGE=https://metalang99.readthedocs.io/en/latest/ https://github.com/Hirrolo
 KEYWORDS=amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~sparc ~x86 ~amd64-linux ~x64-macos
 LICENSE=MIT
 SLOT=0
-SRC_URI=https://github.com/Hirrolot/metalang99/archive/refs/tags/v1.8.0.tar.gz -> metalang99-1.8.0.tar.gz
-_md5_=c3a03a84e1266b82d9cb15a57f88fa68
+SRC_URI=https://github.com/Hirrolot/metalang99/archive/refs/tags/v1.11.0.tar.gz -> metalang99-1.11.0.tar.gz
+_md5_=57cb44a0079334c9d3359a8586c45ea0
