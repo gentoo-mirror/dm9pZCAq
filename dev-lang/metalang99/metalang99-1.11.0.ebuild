@@ -9,7 +9,7 @@ HOMEPAGE="
 	https://github.com/Hirrolot/metalang99
 "
 SRC_URI="
-	https://github.com/Hirrolot/${PN}/archive/refs/tags/v${PV}.tar.gz
+	https://github.com/Hirrolot/${PN}/archive/v${PV}.tar.gz
 		-> ${P}.tar.gz
 "
 
