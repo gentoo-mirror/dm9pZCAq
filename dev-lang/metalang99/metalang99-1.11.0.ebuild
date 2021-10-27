@@ -22,8 +22,6 @@ src_compile() {
 }
 
 src_install() {
-	local DOCS=( README.md )
-
 	doheader -r include/*
 
 	einstalldocs
