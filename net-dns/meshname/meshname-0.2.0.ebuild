@@ -31,8 +31,7 @@ EGO_SUM=(
 
 go-module_set_globals
 SRC_URI="
-	https://github.com/zhoreeq/${PN}/archive/refs/tags/v${PV}.tar.gz
-		-> ${P}.tar.gz
+	https://github.com/zhoreeq/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}
 "
 
