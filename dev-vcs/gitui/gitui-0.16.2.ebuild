@@ -190,7 +190,7 @@ KEYWORDS="amd64 ~x86"
 IUSE="nerd"
 
 RDEPEND="
-	dev-libs/libgit2
+	dev-libs/libgit2:=
 	dev-libs/openssl
 "
 DEPEND="${RDEPEND}"

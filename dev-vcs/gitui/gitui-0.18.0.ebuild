@@ -194,7 +194,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="nerd trace-libgit"
 
 RDEPEND="
-	>=dev-libs/libgit2-1.2.0
+	>=dev-libs/libgit2-1.2.0:=
 	trace-libgit? ( dev-libs/libgit2[trace(+)] )
 
 	dev-libs/openssl
