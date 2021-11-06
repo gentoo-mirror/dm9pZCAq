@@ -17,7 +17,7 @@ app-shells/zsh-powerlevel10k 1.15.0: Theme for Zsh that emphasizes speed, flexib
 app-shells/zsh-vi-mode 0.8.4: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/epy 2021.8.14 9999: CLI Ebook Reader
-app-text/pandoc-bin 2.16: Universal markup converter
+app-text/pandoc-bin 2.16.1: Universal markup converter
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
 dev-lang/metalang99 1.11.0: Full-blown preprocessor metaprogramming
@@ -44,7 +44,7 @@ net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various site
 net-news/newsboat 2.25: An RSS/Atom feed reader for text terminals
 net-p2p/XD 0.4.1: Anonymous file sharing client
 net-p2p/stig 0.12.2a_pre0: TUI and CLI for the BitTorrent client Transmission
-net-p2p/yggdrasil-go 0.4.0: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.4.2: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-wireless/eiwd 1.18-r1: iwd without dbus
 sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
 sys-apps/hexyl 0.9.0: A command-line hex viewer
