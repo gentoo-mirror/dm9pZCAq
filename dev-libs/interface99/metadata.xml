@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">Hirrolot/interface99</remote-id>
+		<bugs-to>https://github.com/Hirrolot/interface99/issues</bugs-to>
+		<changelog>https://github.com/Hirrolot/interface99/raw/master/CHANGELOG.md</changelog>
+	</upstream>
+</pkgmetadata>
