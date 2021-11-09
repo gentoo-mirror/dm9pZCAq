@@ -116,7 +116,7 @@ CRATES="
 inherit cargo
 
 MY_PN="${PN::1}${PN: -1}"
-GIT_HASH=18020b10b933cfe2fc7f2256b71e646889f9b1d2
+GIT_HASH=b797fe995876b6e0b83aa415aefbb062f8b2ed65
 
 DESCRIPTION="ZetZ a zymbolic verifier and tranzpiler to bare metal C"
 HOMEPAGE="
@@ -137,10 +137,6 @@ DEPEND="sci-mathematics/z3"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${MY_PN}-${GIT_HASH}"
-
-PATCHES=(
-	"${FILESDIR}/rsmt2-from-crates-io.patch"
-)
 
 remove_gitignore() {
 	local dir="${1:?}"
