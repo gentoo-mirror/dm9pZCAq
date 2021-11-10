@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `70`
+packages in overlay: `71`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -100,6 +100,7 @@ packages in overlay: `70`
   * [uutils-coreutils](sys-apps/uutils-coreutils) - **[uniq]** Cross-platform Rust rewrite of the GNU coreutils
 
 * [sys-devel/](sys-devel/)
+  * [cproc](sys-devel/cproc) - **[uniq]** Small C11 compiler based on QBE
   * [just](sys-devel/just) - **[uniq]** Just a command runner (with syntax inspired by `make`)
   * [qbe](sys-devel/qbe) - **[uniq]** Compiler Backend
 
