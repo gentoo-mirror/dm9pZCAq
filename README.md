@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `71`
+packages in overlay: `70`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -78,7 +78,6 @@ packages in overlay: `71`
 * [net-misc/](net-misc/)
   * [gping](net-misc/gping) - **[uniq]** Ping, but with a graph
   * [instalooter](net-misc/instalooter) - **[uniq]** Instagram pictures and videos downloader
-  * [youtube-dlc](net-misc/youtube-dlc) - **[uniq]** ?better? [youtube-dl](https://notabug.org/dm9pZCAq/youtube-dl)
 
 * [net-news/](net-news/)
   * [newsboat](net-news/newsboat) - **[asciidoctor is optional]** RSS/Atom feed reader for terminals
