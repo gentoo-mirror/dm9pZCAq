@@ -15,10 +15,10 @@ EGIT_REPO_URI="https://git.sr.ht/~mcf/${PN}"
 LICENSE="ISC"
 SLOT="0"
 KEYWORDS=""
-IUSE="+bootstrap clang-cpp default-lld llvm-mc"
+IUSE="+bootstrap +mcf-qbe clang-cpp default-lld llvm-mc"
 
 DEPEND="
-	sys-devel/qbe
+	!mcf-qbe? ( sys-devel/qbe )
 	clang-cpp? ( sys-devel/clang:* )
 	default-lld? ( sys-devel/lld )
 	llvm-mc? ( sys-devel/llvm:* )
@@ -55,6 +55,7 @@ src_configure() {
 		$(my_use clang-cpp cpp)
 		$(my_use llvm-mc as)
 		$(my_use default-lld ld ld.lld)
+		$(my_use mcf-qbe qbe)
 	)
 
 	use bootstrap && {
@@ -73,6 +74,12 @@ src_configure() {
 }
 
 src_compile() {
+	use mcf-qbe && {
+		emake -C qbe V=
+		install -vDm755 -- ./qbe/obj/qbe ./qbe-bin/mcf-qbe
+		export PATH="${PATH}:${PWD:-$(pwd)}/qbe-bin"
+	}
+
 	if use bootstrap; then
 		QA_PRESTRIPPED="usr/bin/${PN} usr/bin/${PN}-qbe"
 
@@ -89,4 +96,12 @@ src_install() {
 	dobin "${PN}"{,-qbe}
 
 	einstalldocs
+
+	use mcf-qbe && {
+		dobin qbe-bin/mcf-qbe
+
+		docinto mcf-qbe
+		dodoc qbe/doc/*
+	}
+
 }

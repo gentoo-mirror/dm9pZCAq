@@ -14,6 +14,7 @@
 		<flag name="clang-cpp">Use clang-cpp as the default preprocessor</flag>
 		<flag name="default-lld">Use lld as the default linker</flag>
 		<flag name="llvm-mc">Use llvm-mc as the default assembler</flag>
+		<flag name="mcf-qbe">Use mcf's (author of cproc) branch of qbe</flag>
 	</use>
 	<upstream>
 		<bugs-to>https://todo.sr.ht/~mcf/cproc</bugs-to>
