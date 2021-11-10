@@ -42,7 +42,6 @@ net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.30.5: Open source web browser engine
 net-misc/gping 1.2.6: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
-net-misc/youtube-dlc 2020.11.11-r3: media downloader and libray for various sites
 net-news/newsboat 2.25: An RSS/Atom feed reader for text terminals
 net-p2p/XD 0.4.1: Anonymous file sharing client
 net-p2p/stig 0.12.2a_pre0: TUI and CLI for the BitTorrent client Transmission

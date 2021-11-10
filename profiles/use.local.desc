@@ -14,8 +14,6 @@ net-libs/webkit-gtk:examples - Install the MiniBrowser example application
 net-libs/webkit-gtk:gamepad - Enable gamepad input support via dev-libs/libmanette
 net-libs/webkit-gtk:geolocation - Enable geolocation support through app-misc/geoclue
 net-libs/webkit-gtk:jumbo-build - Combine source files to speed up build process
-net-misc/youtube-dlc:doc - Compile man page
-net-misc/youtube-dlc:fish-completion - Enable fish completion support
 net-p2p/XD:lokinet - Use lokinet by default
 net-p2p/XD:webui - Build with embedded webui
 net-p2p/stig:proctitle - Prettifies the process name
