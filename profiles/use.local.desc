@@ -123,6 +123,7 @@ sys-devel/cproc:bootstrap - Build compiler with itself
 sys-devel/cproc:clang-cpp - Use clang-cpp as the default preprocessor
 sys-devel/cproc:default-lld - Use lld as the default linker
 sys-devel/cproc:llvm-mc - Use llvm-mc as the default assembler
+sys-devel/cproc:mcf-qbe - Use mcf's (author of cproc) branch of qbe
 sys-libs/libudev-zero:hotplug - Build and install hotplug helper
 sys-process/extrace:pwait - Build the pwait program
 x11-misc/xcolor:X - Install desktop files

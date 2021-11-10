@@ -1,14 +1,14 @@
-BDEPEND=bootstrap? ( sys-devel/qbe clang-cpp? ( sys-devel/clang:* ) default-lld? ( sys-devel/lld ) llvm-mc? ( sys-devel/llvm:* ) ) >=dev-vcs/git-1.8.2.1[curl]
+BDEPEND=bootstrap? ( !mcf-qbe? ( sys-devel/qbe ) clang-cpp? ( sys-devel/clang:* ) default-lld? ( sys-devel/lld ) llvm-mc? ( sys-devel/llvm:* ) ) >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install prepare unpack
-DEPEND=sys-devel/qbe clang-cpp? ( sys-devel/clang:* ) default-lld? ( sys-devel/lld ) llvm-mc? ( sys-devel/llvm:* )
+DEPEND=!mcf-qbe? ( sys-devel/qbe ) clang-cpp? ( sys-devel/clang:* ) default-lld? ( sys-devel/lld ) llvm-mc? ( sys-devel/llvm:* )
 DESCRIPTION=Small C11 compiler based on QBE
 EAPI=8
 HOMEPAGE=https://sr.ht/~mcf/cproc https://github.com/michaelforney/cproc
 INHERIT=flag-o-matic git-r3
-IUSE=+bootstrap clang-cpp default-lld llvm-mc
+IUSE=+bootstrap +mcf-qbe clang-cpp default-lld llvm-mc
 LICENSE=ISC
 PROPERTIES=live
-RDEPEND=sys-devel/qbe clang-cpp? ( sys-devel/clang:* ) default-lld? ( sys-devel/lld ) llvm-mc? ( sys-devel/llvm:* )
+RDEPEND=!mcf-qbe? ( sys-devel/qbe ) clang-cpp? ( sys-devel/clang:* ) default-lld? ( sys-devel/lld ) llvm-mc? ( sys-devel/llvm:* )
 SLOT=0
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	flag-o-matic	4134b5c0fb719b9161d10bdaba9e09e5	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=2bea11ff01ae9e6a72b644a8e33fca94
+_md5_=00380b630d10b493fbd7b6274f5711e7
