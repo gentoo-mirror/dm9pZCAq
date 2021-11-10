@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `69`
+packages in overlay: `70`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -101,6 +101,7 @@ packages in overlay: `69`
 
 * [sys-devel/](sys-devel/)
   * [just](sys-devel/just) - **[uniq]** Just a command runner (with syntax inspired by `make`)
+  * [qbe](sys-devel/qbe) - **[uniq]** Compiler Backend
 
 * [sys-fs/](sys-fs/)
   * [duf](sys-fs/duf) - **[uniq]** Disk Usage/Free Utility - a better 'df' alternative
