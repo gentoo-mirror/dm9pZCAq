@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<longdescription lang="en">
+		cproc is a C11 compiler using QBE as a backend.
+		Some C23 features and GNU C extensions are also implemented.
+	</longdescription>
+	<use>
+		<flag name="bootstrap">Build compiler with itself</flag>
+		<flag name="clang-cpp">Use clang-cpp as the default preprocessor</flag>
+		<flag name="default-lld">Use lld as the default linker</flag>
+		<flag name="llvm-mc">Use llvm-mc as the default assembler</flag>
+	</use>
+	<upstream>
+		<bugs-to>https://todo.sr.ht/~mcf/cproc</bugs-to>
+	</upstream>
+</pkgmetadata>
