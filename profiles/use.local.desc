@@ -14,8 +14,6 @@ net-libs/webkit-gtk:examples - Install the MiniBrowser example application
 net-libs/webkit-gtk:gamepad - Enable gamepad input support via dev-libs/libmanette
 net-libs/webkit-gtk:geolocation - Enable geolocation support through app-misc/geoclue
 net-libs/webkit-gtk:jumbo-build - Combine source files to speed up build process
-net-p2p/XD:lokinet - Use lokinet by default
-net-p2p/XD:webui - Build with embedded webui
 net-p2p/stig:proctitle - Prettifies the process name
 net-wireless/eiwd:builtin-dns - Enable built-in DNS resolver
 net-wireless/eiwd:crda - Use net-wireless/crda for regulatory domain loading instead of in-kernel (4.15+) support
