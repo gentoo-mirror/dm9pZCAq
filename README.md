@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `70`
+packages in overlay: `71`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -59,6 +59,7 @@ packages in overlay: `70`
   * [TgCrypto](dev-python/TgCrypto) - **[uniq]** Fast and Portable Telegram Crypto Library for Python
 
 * [dev-ruby/](dev-ruby/)
+  * [reverse_markdown](dev-ruby/reverse_markdown) - **[slightly changed from ::graaff]** Ruby gem to convert html into markdown
   * [rugged](dev-ruby/rugged) - **[uniq]** Ruby bindings to libgit2
 
 * [dev-vcs/](dev-vcs/)
