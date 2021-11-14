@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<upstream>
+		<changelog>https://github.com/xijo/reverse_markdown/raw/master/CHANGELOG.md</changelog>
+		<bugs-to>https://github.com/xijo/reverse_markdown/issues</bugs-to>
+		<remote-id type="github">xijo/reverse_markdown</remote-id>
+	</upstream>
+</pkgmetadata>
