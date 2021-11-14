@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `69`
+packages in overlay: `72`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -57,6 +57,11 @@ packages in overlay: `69`
   * [mobi](dev-python/mobi) - **[uniq]** Library for unpacking unencrypted mobi files
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
   * [TgCrypto](dev-python/TgCrypto) - **[uniq]** Fast and Portable Telegram Crypto Library for Python
+
+* [dev-ruby/](dev-ruby/)
+  * [licensee](dev-ruby/licensee) - **[uniq]** A Ruby Gem to detect under what license a project is distributed
+  * [reverse_markdown](dev-ruby/reverse_markdown) - **[slightly changed from ::graaff]** Ruby gem to convert html into markdown
+  * [rugged](dev-ruby/rugged) - **[uniq]** Ruby bindings to libgit2
 
 * [dev-vcs/](dev-vcs/)
   * [gitui](dev-vcs/gitui) - **[uniq]** Blazing fast terminal-ui for git
