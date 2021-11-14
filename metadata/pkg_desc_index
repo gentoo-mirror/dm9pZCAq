@@ -33,6 +33,9 @@ dev-python/Telethon 1.23.0: Pure Python 3 MTProto API Telegram client library, f
 dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
 dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
+dev-ruby/licensee 9.15.1: A Ruby Gem to detect under what license a project is distributed
+dev-ruby/reverse_markdown 2.1.1: Ruby gem to convert html into markdown
+dev-ruby/rugged 1.2.0: Ruby bindings to libgit2
 dev-vcs/gitui 0.16.2 0.18.0: Blazing fast terminal-ui for git
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
