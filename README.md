@@ -48,7 +48,7 @@ packages in overlay: `72`
 
 * [dev-lua/](dev-lua/)
   * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
-  * [fennel](dev-lua/fennel) - **[uniq]** Lua Lisp Language
+  * [fennel](dev-lua/fennel) - **[better ebuild]** Lua Lisp Language
   * [moonscript](dev-lua/moonscript) - **[uniq]** A programmer friendly language that compiles into Lua
   * [readline](dev-lua/readline) - **[uniq]** Interface to the readline library
 
