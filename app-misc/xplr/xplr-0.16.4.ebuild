@@ -50,7 +50,7 @@ CRATES="
 	itoa-0.4.8
 	js-sys-0.3.55
 	lazy_static-1.4.0
-	libc-0.2.106
+	libc-0.2.107
 	linked-hash-map-0.5.4
 	lock_api-0.4.5
 	log-0.4.14
