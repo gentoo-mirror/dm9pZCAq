@@ -77,7 +77,7 @@ CRATES="
 	remove_dir_all-0.5.2
 	rmp-0.8.9
 	rmp-serde-0.14.3
-	rsmt2-0.14.0
+	rsmt2-0.14.1
 	rustc-demangle-0.1.16
 	ryu-1.0.4
 	scopeguard-1.1.0
@@ -116,7 +116,7 @@ CRATES="
 inherit cargo
 
 MY_PN="${PN::1}${PN: -1}"
-GIT_HASH=b797fe995876b6e0b83aa415aefbb062f8b2ed65
+GIT_HASH=5a86bbd0a5676cc4644942174bb5b29cae58a2c8
 
 DESCRIPTION="ZetZ a zymbolic verifier and tranzpiler to bare metal C"
 HOMEPAGE="
