@@ -10,8 +10,9 @@ CRATES="
 	atty-0.2.14
 	autocfg-1.0.1
 	bitflags-1.3.2
+	bstr-0.2.17
 	camino-1.0.5
-	cc-1.0.71
+	cc-1.0.72
 	cfg-if-1.0.0
 	clap-2.33.3
 	cradle-0.2.0
@@ -29,9 +30,10 @@ CRATES="
 	heck-0.3.3
 	hermit-abi-0.1.19
 	humantime-2.1.0
+	itoa-0.4.8
 	lazy_static-1.4.0
 	lexiclean-0.0.1
-	libc-0.2.106
+	libc-0.2.108
 	linked-hash-map-0.5.4
 	log-0.4.14
 	memchr-2.4.1
@@ -48,14 +50,20 @@ CRATES="
 	rand_hc-0.3.1
 	redox_syscall-0.2.10
 	regex-1.5.4
+	regex-automata-0.1.10
 	regex-syntax-0.6.25
 	remove_dir_all-0.5.3
 	rustversion-1.0.5
+	ryu-1.0.5
+	serde-1.0.130
+	serde_derive-1.0.130
+	serde_json-1.0.71
+	similar-2.1.0
 	snafu-0.6.10
 	snafu-derive-0.6.10
 	strsim-0.8.0
-	strum-0.22.0
-	strum_macros-0.22.0
+	strum-0.23.0
+	strum_macros-0.23.1
 	syn-1.0.81
 	target-2.0.0
 	tempfile-3.2.0
