@@ -17,7 +17,7 @@ app-shells/zsh-powerlevel10k 1.15.0: Theme for Zsh that emphasizes speed, flexib
 app-shells/zsh-vi-mode 0.8.4: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/epy 2021.8.14 9999: CLI Ebook Reader
-app-text/pandoc-bin 2.16.1: Universal markup converter
+app-text/pandoc-bin 2.16.2: Universal markup converter
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
 dev-lang/metalang99 1.12.0: Full-blown preprocessor metaprogramming
@@ -56,7 +56,7 @@ sys-apps/tealdeer 1.4.1: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
-sys-devel/just 0.10.3: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 0.10.4: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.6.2: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.0 9999: A kernel event manager compatible with mdev.conf
