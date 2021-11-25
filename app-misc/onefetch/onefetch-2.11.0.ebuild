@@ -1,34 +1,32 @@
 # Copyright 2017-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 CRATES="
-	addr2line-0.15.2
 	adler-1.0.2
 	adler32-1.2.0
 	aho-corasick-0.7.18
 	ansi_term-0.11.0
 	ansi_term-0.12.1
+	anyhow-1.0.48
 	arrayvec-0.4.12
-	askalono-0.4.3
+	askalono-0.4.4
 	atty-0.2.14
 	autocfg-1.0.1
-	backtrace-0.3.60
 	base64-0.13.0
 	bitflags-1.2.1
 	block-buffer-0.7.3
 	block-padding-0.1.5
 	bstr-0.2.16
 	byte-tools-0.3.1
-	byte-unit-4.0.12
+	byte-unit-4.0.13
 	bytecount-0.6.2
 	bytemuck-1.7.0
 	byteorder-1.4.3
 	cc-1.0.68
 	cfg-if-1.0.0
 	chrono-0.4.19
-	chrono-humanize-0.2.1
 	chrono-tz-0.5.3
 	clap-2.33.3
 	color_quant-1.1.0
@@ -49,9 +47,6 @@ CRATES="
 	encoding_rs-0.8.28
 	encoding_rs_io-0.1.7
 	env_logger-0.8.4
-	error-chain-0.12.4
-	failure-0.1.8
-	failure_derive-0.1.8
 	fake-simd-0.1.2
 	flate2-1.0.20
 	fnv-1.0.7
@@ -59,13 +54,12 @@ CRATES="
 	generic-array-0.12.4
 	getrandom-0.2.3
 	gif-0.11.2
-	gimli-0.24.0
-	git2-0.13.20
-	glob-0.3.0
+	git2-0.13.24
 	globset-0.4.8
 	globwalk-0.8.1
 	grep-matcher-0.1.5
 	grep-searcher-0.1.8
+	hashbrown-0.11.2
 	heck-0.3.3
 	hermit-abi-0.1.19
 	humansize-1.1.1
@@ -73,15 +67,14 @@ CRATES="
 	idna-0.2.3
 	ignore-0.4.18
 	image-0.23.14
+	indexmap-1.7.0
 	instant-0.1.9
-	itertools-0.9.0
 	itoa-0.4.7
 	jobserver-0.1.22
 	jpeg-decoder-0.1.22
-	json-0.12.4
 	lazy_static-1.4.0
-	libc-0.2.97
-	libgit2-sys-0.12.21+1.1.0
+	libc-0.2.108
+	libgit2-sys-0.12.25+1.3.0
 	libz-sys-1.1.3
 	linked-hash-map-0.5.4
 	lock_api-0.4.4
@@ -93,7 +86,7 @@ CRATES="
 	memoffset-0.6.4
 	miniz_oxide-0.3.7
 	miniz_oxide-0.4.4
-	more-asserts-0.2.1
+	more-asserts-0.2.2
 	nodrop-0.1.14
 	num-format-0.4.0
 	num-integer-0.1.44
@@ -101,13 +94,12 @@ CRATES="
 	num-rational-0.3.2
 	num-traits-0.2.14
 	num_cpus-1.13.0
-	object-0.25.3
 	once_cell-1.8.0
 	opaque-debug-0.2.3
 	parking_lot-0.11.1
 	parking_lot_core-0.8.3
 	parse-zoneinfo-0.3.0
-	paste-1.0.5
+	paste-1.0.6
 	percent-encoding-2.1.0
 	pest-2.1.3
 	pest_derive-2.1.0
@@ -130,23 +122,22 @@ CRATES="
 	regex-syntax-0.6.25
 	rmp-0.8.10
 	rmp-serde-0.14.4
-	rustc-demangle-0.1.20
+	rustversion-1.0.5
 	ryu-1.0.5
 	same-file-1.0.6
 	scoped_threadpool-0.1.9
 	scopeguard-1.1.0
-	serde-1.0.126
-	serde_derive-1.0.126
-	serde_json-1.0.64
-	serde_yaml-0.8.17
+	serde-1.0.130
+	serde_derive-1.0.130
+	serde_json-1.0.71
+	serde_yaml-0.8.21
 	sha-1-0.8.2
 	slug-0.1.4
 	smallvec-1.6.1
 	strsim-0.8.0
-	strum-0.21.0
-	strum_macros-0.21.1
+	strum-0.23.0
+	strum_macros-0.23.1
 	syn-1.0.73
-	synstructure-0.12.4
 	tera-1.12.0
 	term_size-0.3.2
 	termcolor-1.1.2
@@ -154,6 +145,8 @@ CRATES="
 	thread_local-1.1.3
 	tiff-0.6.1
 	time-0.1.43
+	time-0.3.5
+	time-humanize-0.1.3
 	tinyvec-1.2.0
 	tinyvec_macros-0.1.0
 	tokei-12.1.2
@@ -175,7 +168,6 @@ CRATES="
 	utf8-width-0.1.5
 	vcpkg-0.2.15
 	vec_map-0.8.2
-	version_check-0.9.3
 	walkdir-2.3.2
 	wasi-0.10.2+wasi-snapshot-preview1
 	weezl-0.1.5
@@ -184,9 +176,9 @@ CRATES="
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
 	yaml-rust-0.4.5
-	zstd-0.5.4+zstd.1.4.7
-	zstd-safe-2.0.6+zstd.1.4.7
-	zstd-sys-1.4.18+zstd.1.4.7
+	zstd-0.8.3+zstd.1.5.0
+	zstd-safe-4.1.0+zstd.1.5.0
+	zstd-sys-1.6.0+zstd.1.5.0
 	${P}
 "
 
