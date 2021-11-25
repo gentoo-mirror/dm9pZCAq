@@ -1,14 +1,12 @@
 # Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit toolchain-funcs
 
-MY_PN=hxd
-
 DESCRIPTION="A better hexdump"
-HOMEPAGE="https://github.com/lptstr/hxd"
+HOMEPAGE="https://github.com/kiedtl/huxdemp"
 SRC_URI="
 	${HOMEPAGE}/archive/${PV}.tar.gz
 		-> ${P}.tar.gz
@@ -22,8 +20,6 @@ IUSE="+doc"
 
 DEPEND="!dev-util/hxd"
 BDEPEND="doc? ( app-text/scdoc )"
-
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 src_prepare() {
 	local doc=()
@@ -52,7 +48,7 @@ src_prepare() {
 
 src_compile() {
 	local doc=()
-	use doc && doc=( "${MY_PN}.1" )
+	use doc && doc=( 'huxd.1' )
 
 	emake release "${doc[@]}"
 }
