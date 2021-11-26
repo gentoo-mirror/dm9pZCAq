@@ -1,7 +1,7 @@
 # Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit linux-info
 
@@ -20,7 +20,7 @@ IUSE="
 	cpu_flags_x86_aes cpu_flags_x86_ssse3
 "
 
-DEPEND=">=dev-libs/ell-0.45"
+DEPEND=">=dev-libs/ell-0.46"
 RDEPEND="
 	${DEPEND}
 	!net-wireless/iwd
@@ -31,11 +31,6 @@ RDEPEND="
 BDEPEND="virtual/pkgconfig"
 
 S="${WORKDIR}/${P#e}"
-PATCHES=(
-	"${FILESDIR}/${PN}-1.12-clang.patch"
-	"${FILESDIR}/${PN}-1.15-clang.patch"
-	"${FILESDIR}/${PN}-1.16-clang.patch"
-)
 
 pkg_setup() {
 	CONFIG_CHECK="
