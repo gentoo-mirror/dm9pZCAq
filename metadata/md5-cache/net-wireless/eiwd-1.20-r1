@@ -1,15 +1,15 @@
 BDEPEND=virtual/pkgconfig
 DEFINED_PHASES=configure install setup
-DEPEND=>=dev-libs/ell-0.45
+DEPEND=>=dev-libs/ell-0.46
 DESCRIPTION=iwd without dbus
-EAPI=7
+EAPI=8
 HOMEPAGE=https://github.com/illiliti/eiwd
 INHERIT=linux-info
 IUSE=+builtin-dns crda monitor ofono wired cpu_flags_x86_aes cpu_flags_x86_ssse3 kernel_linux
 KEYWORDS=~alpha ~amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=LGPL-2.1
-RDEPEND=>=dev-libs/ell-0.45 !net-wireless/iwd net-wireless/wireless-regdb crda? ( net-wireless/crda ) builtin-dns? ( net-dns/openresolv )
+RDEPEND=>=dev-libs/ell-0.46 !net-wireless/iwd net-wireless/wireless-regdb crda? ( net-wireless/crda ) builtin-dns? ( net-dns/openresolv )
 SLOT=0
-SRC_URI=https://github.com/illiliti/eiwd/releases/download/1.19-1/iwd-1.19.tar.xz -> eiwd-1.19-r1.tar.xz
+SRC_URI=https://github.com/illiliti/eiwd/releases/download/1.20-1/iwd-1.20.tar.xz -> eiwd-1.20-r1.tar.xz
 _eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	linux-info	6b67971d8a0a029d13181f2cfb9f5fa9
-_md5_=5b428db3b88654c50eec6e027962d855
+_md5_=5d36883f2d614b200d6667e22fc6387c
