@@ -1,11 +1,10 @@
 # Copyright 2017-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 CRATES="
 	aho-corasick-0.7.18
-	ansi_term-0.11.0
 	ansi_term-0.12.1
 	atty-0.2.14
 	autocfg-1.0.1
@@ -14,7 +13,7 @@ CRATES="
 	camino-1.0.5
 	cc-1.0.72
 	cfg-if-1.0.0
-	clap-2.33.3
+	clap-2.34.0
 	cradle-0.2.0
 	ctor-0.1.21
 	ctrlc-3.2.1
@@ -33,11 +32,11 @@ CRATES="
 	itoa-0.4.8
 	lazy_static-1.4.0
 	lexiclean-0.0.1
-	libc-0.2.108
+	libc-0.2.109
 	linked-hash-map-0.5.4
 	log-0.4.14
 	memchr-2.4.1
-	memoffset-0.6.4
+	memoffset-0.6.5
 	nix-0.23.0
 	output_vt100-0.1.2
 	ppv-lite86-0.2.15
@@ -54,17 +53,17 @@ CRATES="
 	regex-syntax-0.6.25
 	remove_dir_all-0.5.3
 	rustversion-1.0.5
-	ryu-1.0.5
+	ryu-1.0.6
 	serde-1.0.130
 	serde_derive-1.0.130
-	serde_json-1.0.71
+	serde_json-1.0.72
 	similar-2.1.0
 	snafu-0.6.10
 	snafu-derive-0.6.10
 	strsim-0.8.0
 	strum-0.23.0
 	strum_macros-0.23.1
-	syn-1.0.81
+	syn-1.0.82
 	target-2.0.0
 	tempfile-3.2.0
 	temptree-0.2.0
