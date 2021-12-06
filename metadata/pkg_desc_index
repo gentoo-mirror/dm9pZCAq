@@ -20,16 +20,16 @@ app-text/epy 2021.8.14 9999: CLI Ebook Reader
 app-text/pandoc-bin 2.16.2: Universal markup converter
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
-dev-lang/metalang99 1.12.1: Full-blown preprocessor metaprogramming
+dev-lang/metalang99 1.13.0: Full-blown preprocessor metaprogramming
 dev-lang/zetz 0.1.1_p20211118: ZetZ a zymbolic verifier and tranzpiler to bare metal C
-dev-libs/interface99 0.8.1: Zero-boilerplate interfaces for C99
+dev-libs/interface99 0.8.2: Zero-boilerplate interfaces for C99
 dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-libs/skalibs 2.11.0.0 9999: General-purpose libraries from skarnet.org
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/fennel 1.0.0: Lua Lisp Language
 dev-lua/moonscript 0.5.0: A programmer friendly language that compiles into Lua
 dev-lua/readline 3.0: Interface to the readline library
-dev-python/Telethon 1.23.0: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/Telethon 1.24.0: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/fake-useragent 0.1.11: up to date simple useragent faker with real world database
 dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
@@ -56,7 +56,7 @@ sys-apps/tealdeer 1.4.1: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
-sys-devel/just 0.10.4: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 0.10.5: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.6.2: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.0 9999: A kernel event manager compatible with mdev.conf
