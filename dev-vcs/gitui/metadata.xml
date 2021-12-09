@@ -6,11 +6,11 @@
 		<name>dm9pZCAq</name>
 	</maintainer>
 	<use>
+		<flag name="ghemoji">
+			Replace markdown emojis with Unicode equivalent
+		</flag>
 		<flag name="trace-libgit">
 			Enable libgit tracing
-		</flag>
-		<flag name="nerd">
-			Use nerd fonts icons
 		</flag>
 	</use>
 	<upstream>
