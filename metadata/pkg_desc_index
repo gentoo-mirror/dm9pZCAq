@@ -20,9 +20,9 @@ app-text/epy 2021.8.14 9999: CLI Ebook Reader
 app-text/pandoc-bin 2.16.2: Universal markup converter
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
-dev-lang/metalang99 1.13.0: Full-blown preprocessor metaprogramming
+dev-lang/metalang99 1.13.1: Full-blown preprocessor metaprogramming
 dev-lang/zetz 0.1.1_p20211118: ZetZ a zymbolic verifier and tranzpiler to bare metal C
-dev-libs/interface99 0.8.2: Zero-boilerplate interfaces for C99
+dev-libs/interface99 0.8.3: Zero-boilerplate interfaces for C99
 dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-libs/skalibs 2.11.0.0 9999: General-purpose libraries from skarnet.org
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
@@ -36,7 +36,7 @@ dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
 dev-ruby/licensee 9.15.1: A Ruby Gem to detect under what license a project is distributed
 dev-ruby/reverse_markdown 2.1.1: Ruby gem to convert html into markdown
 dev-ruby/rugged 1.2.0: Ruby bindings to libgit2
-dev-vcs/gitui 0.16.2 0.18.0: Blazing fast terminal-ui for git
+dev-vcs/gitui 0.19.0: Blazing fast terminal-ui for git
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.6.9: Alternative Free Identity System

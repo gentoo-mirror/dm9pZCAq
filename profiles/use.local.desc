@@ -6,7 +6,7 @@ app-admin/aslstatus:xkb - Add support for keymap indicator
 app-crypt/veracrypt:asm - Enable assembly for optimization
 app-eselect/eselect-repository:curl - Use curl instead of wget
 dev-python/Telethon:tgcrypto - Enable faster AES IGE implementation using dev-python/TgCrypto
-dev-vcs/gitui:nerd - Use nerd fonts icons
+dev-vcs/gitui:ghemoji - Replace markdown emojis with Unicode equivalent
 dev-vcs/gitui:trace-libgit - Enable libgit tracing
 media-video/gifski:video - add supports for decoding video directly
 net-libs/webkit-gtk:egl - Enable EGL support
