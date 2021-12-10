@@ -5,6 +5,9 @@
 		<email>v@0x0c.xyz</email>
 		<name>dm9pZCAq</name>
 	</maintainer>
+	<use>
+		<flag name="dbus">Enable lockscreen detection</flag>
+	</use>
 	<upstream>
 		<changelog>https://gitlab.com/screenkey/screenkey/-/raw/master/NEWS.rst</changelog>
 		<bugs-to>https://gitlab.com/screenkey/screenkey/-/issues</bugs-to>

@@ -1,0 +1,49 @@
+diff --git a/Screenkey/screenkey.py b/Screenkey/screenkey.py
+index 7a2040d..b9e2f64 100644
+--- a/Screenkey/screenkey.py
++++ b/Screenkey/screenkey.py
+@@ -1034,44 +1034,8 @@ class Screenkey(Gtk.Window):
+     def start_lockscreen_detection(self):
+         from re import match
+         from threading import Thread
+-        from dbus import SessionBus
+-        from dbus.mainloop.glib import DBusGMainLoop
+-
+-        def filter_bus_message(bus, message):
+-            message_member = message.get_member()
+-
+-            if not self.enabled or message_member != "ActiveChanged":
+-                return
+-
+-            args_list = message.get_args_list()
+-            if args_list[0]:
+-                self.labelmngr.stop()
+-                self.logger.debug("Lock Screen; Screenkey disabled.")
+-            else:
+-                self.restart_labelmanager()
+-                self.logger.debug("Unlock Screen; Screenkey enabled.")
+ 
+         def lockscreen_detection_loop():
+-            DBusGMainLoop(set_as_default=True)
+-            session_bus = SessionBus()
+-
+-            signal_interface = None
+-
+-            for dbus_string in session_bus.list_names():
+-                bus_name = str(dbus_string)
+-                if match(r"org\.(\w+)\.ScreenSaver", bus_name):
+-                    signal_interface = bus_name
+-                    self.logger.debug(f"DBUS signal interface found: \"{signal_interface}\" ; password should not show when unlocking the screen.")
+-                    break
+-
+-            if not signal_interface:
+-                self.logger.debug("ScreenSaver DBUS signal interface not found; beware: password may show when unlocking the screen!")
+-                del(session_bus)
+-                DBusGMainLoop(set_as_default=False)
+-                return
+-
+-            session_bus.add_match_string(f"type='signal',interface='{signal_interface}'")
+-            session_bus.add_message_filter(filter_bus_message)
+             mainloop = GLib.MainLoop()
+             mainloop.run()
+ 
