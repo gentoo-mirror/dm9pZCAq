@@ -3,23 +3,30 @@
 
 EAPI=8
 
-inherit toolchain-funcs
+LUA_COMPAT=( lua5-{2..4} )
+
+inherit lua-single toolchain-funcs
 
 DESCRIPTION="A better hexdump"
 HOMEPAGE="https://github.com/kiedtl/huxdemp"
 SRC_URI="
-	${HOMEPAGE}/archive/${PV}.tar.gz
-		-> ${P}.tar.gz
+	${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz
 "
 
 LICENSE="GPL-3 MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+REQUIRED_USE="${LUA_REQUIRED_USE}"
+
 
 IUSE="+doc"
 
-DEPEND="!dev-util/hxd"
-BDEPEND="doc? ( app-text/scdoc )"
+RDEPEND="${LUA_DEPS}"
+DEPEND="${RDEPEND}"
+BDEPEND="
+	virtual/pkgconfig
+	doc? ( app-text/scdoc )
+"
 
 src_prepare() {
 	local doc=()
@@ -32,9 +39,9 @@ src_prepare() {
 		"${doc[@]}" \
 		-e '/^CC/d' \
 		-e '/^CMD/d' \
+		-e '/^LDFLAGS/d' \
 		-e '/^PKGNAME/d' \
 		-e '/^\(C\|LD\)FLAGS/s/=/+&/' \
-		-e '/^LDFLAGS/s/-fuse-ld=[^ ]\+//' \
 		-e '/^release:/{
 			/O_CFLAGS/s/-O[0-9]\+//;
 			/O_LDFLAGS/s/=.*/= $(LDFLAGS)/;
@@ -43,6 +50,7 @@ src_prepare() {
 
 	default
 
+	export LDFLAGS="${LDFLAGS} $(lua_get_LIBS)"
 	tc-export CC
 }
 
@@ -50,7 +58,7 @@ src_compile() {
 	local doc=()
 	use doc && doc=( 'huxd.1' )
 
-	emake release "${doc[@]}"
+	emake release "${doc[@]}" INCL="-I$(lua_get_include_dir)"
 }
 
 src_install() {
