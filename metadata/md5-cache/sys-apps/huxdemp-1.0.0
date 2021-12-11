@@ -1,0 +1,16 @@
+BDEPEND=virtual/pkgconfig doc? ( app-text/scdoc )
+DEFINED_PHASES=compile install prepare setup
+DEPEND=lua_single_target_lua5-3? ( dev-lang/lua:5.3 ) lua_single_target_lua5-4? ( dev-lang/lua:5.4 )
+DESCRIPTION=A better hexdump
+EAPI=8
+HOMEPAGE=https://github.com/kiedtl/huxdemp
+INHERIT=lua-single toolchain-funcs
+IUSE=+doc lua_single_target_lua5-3 lua_single_target_lua5-4
+KEYWORDS=~amd64 ~arm ~arm64 ~x86
+LICENSE=GPL-3 MIT
+RDEPEND=lua_single_target_lua5-3? ( dev-lang/lua:5.3 ) lua_single_target_lua5-4? ( dev-lang/lua:5.4 )
+REQUIRED_USE=^^ ( lua_single_target_lua5-3 lua_single_target_lua5-4 )
+SLOT=0
+SRC_URI=https://github.com/kiedtl/huxdemp/archive/1.0.0.tar.gz -> huxdemp-1.0.0.tar.gz
+_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	lua-utils	7b7cd623ac8b9dd4a7a6ee27219cada6	lua-single	ba92a0c9d413e015c6625cdb0b9aaf99
+_md5_=15b4aae5ec663523884bcdb7309e480e
