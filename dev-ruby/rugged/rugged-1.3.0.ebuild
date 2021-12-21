@@ -18,16 +18,16 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86 ~ppc-macos"
 
-LIBGIT_DEPEND=">=dev-libs/libgit2-${PV}:="
+LIBGIT_DEPEND="dev-libs/libgit2:0/$(ver_cut 1-2)"
 DEPEND+=" ${LIBGIT_DEPEND} "
 RDEPEND+=" ${LIBGIT_DEPEND} "
 
 each_ruby_configure() {
 	export RUGGED_USE_SYSTEM_LIBRARIES=true
 
-	sed -i "${RUBY_FAKEGEM_EXTENSIONS}" \
-		-e '/^if.*--use-system-libraries/,/^else/{/^if/!d;s/^\(if\s\)/\1!/}' \
-		|| die # remove libgit version check
+	# sed -i "${RUBY_FAKEGEM_EXTENSIONS}" \
+	# 	-e '/^if.*--use-system-libraries/,/^else/{/^if/!d;s/^\(if\s\)/\1!/}' \
+	# 	|| die # remove libgit version check
 
 	each_fakegem_configure
 }
