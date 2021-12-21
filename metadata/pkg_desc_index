@@ -71,6 +71,7 @@ www-client/firefox-musl-bin 87.0-r1 89.0.2-r1: Firefox binary from KISS linux (f
 www-plugins/LegacyFox 2.3 9999: Monkeypatching Firefox Quantum to run VimFx
 x11-misc/herbe 1.0.0: Daemon-less notifications without D-Bus
 x11-misc/lemonbar 1.4: A featherweight, lemon-scented, bar based on xcb
+x11-misc/qt5ct 1.5: Qt5 configuration tool, similar to qtconfig for Qt4
 x11-misc/screenkey 1.5: A screencast tool to display your keys inspired by Screenflick
 x11-misc/xcolor 0.5.1: Lightweight color picker for X11
 x11-misc/xinput-gui 0.3.1 9999: A simple GUI for Xorg's Xinput tool
