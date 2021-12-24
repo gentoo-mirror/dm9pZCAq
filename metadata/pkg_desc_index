@@ -61,7 +61,7 @@ sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.6.2: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.1 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.0-r1: Daemonless replacement for libudev
-sys-process/bottom 0.6.5: TUI process/system monitor with multitude of features
+sys-process/bottom 0.6.6: TUI process/system monitor with multitude of features
 sys-process/extrace 0.8: trace exec() calls system-wide
 sys-process/snooze 0.5: run a command at a particular time
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
