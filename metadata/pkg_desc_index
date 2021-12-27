@@ -45,7 +45,7 @@ net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.30.5: Open source web browser engine
 net-misc/gping 1.2.6: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
-net-news/newsboat 2.25: An RSS/Atom feed reader for text terminals
+net-news/newsboat 2.26: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.2a_pre0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.2: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-wireless/eiwd 1.20-r1: iwd without dbus
