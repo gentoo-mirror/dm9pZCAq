@@ -52,7 +52,7 @@ net-wireless/eiwd 1.20-r1: iwd without dbus
 sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
 sys-apps/hexyl 0.9.0: A command-line hex viewer
 sys-apps/huxdemp 1.0.0: A better hexdump
-sys-apps/tealdeer 1.4.1: Very fast implementation of tldr in Rust
+sys-apps/tealdeer 1.5.0: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
