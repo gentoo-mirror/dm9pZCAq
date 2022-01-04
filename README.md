@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `73`
+packages in overlay: `74`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -38,6 +38,7 @@ packages in overlay: `73`
 
 * [dev-lang/](dev-lang/)
   * [ghc](dev-lang/ghc) - **[[ghc](#ghc)]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
+  * [hissp](dev-lang/hissp) - **[uniq]** It's Python with a Lissp
   * [metalang99](dev-lang/metalang99) - **[uniq]** Full-blown preprocessor metaprogramming
   * [zetz](dev-lang/zetz) - **[uniq]** ZetZ a zymbolic verifier and tranzpiler to bare metal C
 
