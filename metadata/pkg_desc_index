@@ -20,6 +20,7 @@ app-text/epy 2022.1.2 9999: CLI Ebook Reader
 app-text/pandoc-bin 2.16.2: Universal markup converter
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
+dev-lang/hissp 0.2.0: It's Python with a Lissp
 dev-lang/metalang99 1.13.1: Full-blown preprocessor metaprogramming
 dev-lang/zetz 0.1.1_p20211118: ZetZ a zymbolic verifier and tranzpiler to bare metal C
 dev-libs/interface99 0.8.3: Zero-boilerplate interfaces for C99
