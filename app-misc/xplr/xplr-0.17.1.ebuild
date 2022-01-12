@@ -7,13 +7,13 @@ LUA_COMPAT=( luajit )
 
 CRATES="
 	ansi-to-tui-0.4.1
-	anyhow-1.0.51
+	anyhow-1.0.52
 	assert_cmd-2.0.2
 	atty-0.2.14
 	autocfg-1.0.1
 	bitflags-1.3.2
 	bstr-0.2.17
-	bumpalo-3.8.0
+	bumpalo-3.9.1
 	cassowary-0.3.0
 	cast-0.2.7
 	cc-1.0.72
@@ -22,10 +22,10 @@ CRATES="
 	clap-2.34.0
 	criterion-0.3.5
 	criterion-plot-0.4.4
-	crossbeam-channel-0.5.1
+	crossbeam-channel-0.5.2
 	crossbeam-deque-0.8.1
-	crossbeam-epoch-0.9.5
-	crossbeam-utils-0.8.5
+	crossbeam-epoch-0.9.6
+	crossbeam-utils-0.8.6
 	crossterm-0.20.0
 	crossterm-0.22.1
 	crossterm_winapi-0.8.0
@@ -36,21 +36,21 @@ CRATES="
 	dirs-4.0.0
 	dirs-sys-0.3.6
 	doc-comment-0.3.3
-	dtoa-0.4.8
 	either-1.6.1
-	erased-serde-0.3.16
+	erased-serde-0.3.17
 	getrandom-0.2.3
 	half-1.8.2
 	hashbrown-0.11.2
 	hermit-abi-0.1.19
 	humansize-1.1.1
-	indexmap-1.7.0
+	indexmap-1.8.0
 	instant-0.1.12
 	itertools-0.10.3
 	itoa-0.4.8
+	itoa-1.0.1
 	js-sys-0.3.55
 	lazy_static-1.4.0
-	libc-0.2.109
+	libc-0.2.112
 	linked-hash-map-0.5.4
 	lock_api-0.4.5
 	log-0.4.14
@@ -62,13 +62,13 @@ CRATES="
 	mime_guess-2.0.3
 	mio-0.7.14
 	miow-0.3.7
-	mlua-0.7.0
+	mlua-0.7.1
 	natord-1.0.9
 	ntapi-0.3.6
 	num-integer-0.1.44
 	num-traits-0.2.14
-	num_cpus-1.13.0
-	once_cell-1.8.0
+	num_cpus-1.13.1
+	once_cell-1.9.0
 	oorandom-11.1.3
 	parking_lot-0.11.2
 	parking_lot_core-0.8.5
@@ -79,8 +79,8 @@ CRATES="
 	predicates-2.1.0
 	predicates-core-1.0.2
 	predicates-tree-1.0.4
-	proc-macro2-1.0.33
-	quote-1.0.10
+	proc-macro2-1.0.36
+	quote-1.0.14
 	rayon-1.5.1
 	rayon-core-1.9.1
 	redox_syscall-0.2.10
@@ -90,21 +90,21 @@ CRATES="
 	regex-syntax-0.6.25
 	rustc-hash-1.1.0
 	rustc_version-0.4.0
-	ryu-1.0.7
+	ryu-1.0.9
 	same-file-1.0.6
 	scopeguard-1.1.0
 	semver-1.0.4
-	serde-1.0.131
+	serde-1.0.133
 	serde_cbor-0.11.2
-	serde_derive-1.0.131
-	serde_json-1.0.72
-	serde_yaml-0.8.21
-	signal-hook-0.3.12
+	serde_derive-1.0.133
+	serde_json-1.0.74
+	serde_yaml-0.8.23
+	signal-hook-0.3.13
 	signal-hook-mio-0.2.1
 	signal-hook-registry-1.4.0
 	smallvec-1.7.0
-	syn-1.0.82
-	termtree-0.2.3
+	syn-1.0.85
+	termtree-0.2.4
 	textwrap-0.11.0
 	time-0.1.44
 	tinytemplate-1.2.1
@@ -114,7 +114,7 @@ CRATES="
 	unicode-segmentation-1.8.0
 	unicode-width-0.1.9
 	unicode-xid-0.2.2
-	version_check-0.9.3
+	version_check-0.9.4
 	wait-timeout-0.2.0
 	walkdir-2.3.2
 	wasi-0.10.0+wasi-snapshot-preview1
@@ -154,4 +154,12 @@ src_prepare() {
 	# for dynamic linking with lua
 
 	default
+}
+
+src_install() {
+	local DOCS=( docs/* )
+
+	dobin "target/release/${PN}"
+
+	einstalldocs
 }
