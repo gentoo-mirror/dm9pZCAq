@@ -41,6 +41,7 @@ packages in overlay: `75`
   * [ghc](dev-lang/ghc) - **[[ghc](#ghc)]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
   * [hissp](dev-lang/hissp) - **[uniq]** It's Python with a Lissp
   * [metalang99](dev-lang/metalang99) - **[uniq]** Full-blown preprocessor metaprogramming
+  * [moonscript](dev-lang/moonscript) - **[uniq]** A programmer friendly language that compiles into Lua
   * [zetz](dev-lang/zetz) - **[uniq]** ZetZ a zymbolic verifier and tranzpiler to bare metal C
 
 * [dev-libs/](dev-libs/)
@@ -51,7 +52,6 @@ packages in overlay: `75`
 * [dev-lua/](dev-lua/)
   * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
 	* [fnlfmt](dev-lua/fnlfmt) - **[uniq]** A formatter for Fennel code
-  * [moonscript](dev-lua/moonscript) - **[uniq]** A programmer friendly language that compiles into Lua
   * [readline](dev-lua/readline) - **[uniq]** Interface to the readline library
 
 * [dev-python/](dev-python/)

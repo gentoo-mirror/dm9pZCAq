@@ -1,1 +1,2 @@
 move dev-lua/fennel dev-lang/fennel
+move dev-lua/moonscript dev-lang/moonscript
