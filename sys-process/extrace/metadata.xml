@@ -9,6 +9,7 @@
 		<flag name="pwait">Build the pwait program</flag>
 	</use>
 	<upstream>
+		<changelog>https://github.com/leahneukirchen/extrace/raw/master/NEWS.md</changelog>
 		<remote-id type="github">leahneukirchen/extrace</remote-id>
 		<bugs-to>https://github.com/leahneukirchen/extrace/issues</bugs-to>
 	</upstream>
