@@ -44,7 +44,7 @@ media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.6.10: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
-net-libs/webkit-gtk 2.30.5: Open source web browser engine
+net-libs/webkit-gtk 2.34.3: Open source web browser engine
 net-misc/gping 1.2.7: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-news/newsboat 2.26: An RSS/Atom feed reader for text terminals
