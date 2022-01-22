@@ -80,7 +80,7 @@ packages in overlay: `75`
 
 * [net-libs/](net-libs/)
   * [telebot](net-libs/telebot) - **[uniq]** Telegram Bot API in C
-  * [webkit-gtk](net-libs/webkit-gtk) - **[dbus is optional, musl support]** Open source web browser engine
+  * [webkit-gtk](net-libs/webkit-gtk) - **[dbus is optional]** Open source web browser engine
 
 * [net-misc/](net-misc/)
   * [gping](net-misc/gping) - **[uniq]** Ping, but with a graph
