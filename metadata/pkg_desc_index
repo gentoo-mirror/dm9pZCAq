@@ -16,7 +16,7 @@ app-shells/zoxide 0.8.0: A smarter cd command
 app-shells/zsh-powerlevel10k 1.16.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-vi-mode 0.8.4: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
-app-text/epy 2022.1.16 9999: CLI Ebook Reader
+app-text/epy 2022.1.25 9999: CLI Ebook Reader
 app-text/pandoc-bin 2.17.0.1: Universal markup converter
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/fennel 1.0.0: Lua Lisp Language
