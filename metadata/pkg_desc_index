@@ -17,7 +17,7 @@ app-shells/zsh-powerlevel10k 1.16.0: Theme for Zsh that emphasizes speed, flexib
 app-shells/zsh-vi-mode 0.8.4: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/epy 2022.1.25 9999: CLI Ebook Reader
-app-text/pandoc-bin 2.17.0.1: Universal markup converter
+app-text/pandoc-bin 2.17.1.1: Universal markup converter
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/fennel 1.0.0: Lua Lisp Language
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
@@ -49,7 +49,7 @@ net-misc/gping 1.2.7: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-news/newsboat 2.26: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.2a_pre0: TUI and CLI for the BitTorrent client Transmission
-net-p2p/yggdrasil-go 0.4.2: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.4.3: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-wireless/eiwd 1.22-r1: iwd without dbus
 sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
 sys-apps/hexyl 0.9.0: A command-line hex viewer
@@ -58,9 +58,9 @@ sys-apps/tealdeer 1.5.0: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
-sys-devel/just 0.10.5: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 0.11.0: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
-sys-fs/duf 0.7.0: Disk Usage/Free Utility - a better 'df' alternative
+sys-fs/duf 0.8.0: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.1 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.0-r1: Daemonless replacement for libudev
 sys-process/bottom 0.6.6: TUI process/system monitor with multitude of features
