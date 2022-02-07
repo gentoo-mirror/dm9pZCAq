@@ -143,6 +143,8 @@ packages in overlay: `75`
 ### misc
 in **[ square brackets ]** info about difference with other overlays
 
+[some sed script for generating dependencies](profiles/bin)
+
 ### veracrypt
 `app-crypt/veracrypt` difference:
  * `app-admin/sudo` needed only if `X` used
