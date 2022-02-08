@@ -1,7 +1,7 @@
-# Copyright 2017-2021 Gentoo Authors
+# Copyright 2017-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 CRATES="
 	addr2line-0.16.0
@@ -89,7 +89,7 @@ CRATES="
 	itoa-0.4.8
 	lazy_static-1.4.0
 	lazycell-1.3.0
-	libc-0.2.104
+	libc-0.2.112
 	lock_api-0.4.5
 	log-0.4.14
 	macaddr-1.0.1
@@ -144,12 +144,12 @@ CRATES="
 	socket2-0.4.2
 	strsim-0.8.0
 	syn-1.0.80
-	sysinfo-0.18.2
+	sysinfo-0.23.0
 	termtree-0.2.1
 	textwrap-0.11.0
 	thiserror-1.0.30
 	thiserror-impl-1.0.30
-	time-0.3.3
+	time-0.3.5
 	time-macros-0.2.3
 	toml-0.5.8
 	tui-0.14.0
