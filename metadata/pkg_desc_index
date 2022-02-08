@@ -10,10 +10,10 @@ app-eselect/eselect-repository 8: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/lf 26: Terminal file manager
 app-misc/onefetch 2.11.0: Git repository summary on your terminal
-app-misc/xplr 0.17.1: A hackable, minimal, fast TUI file explorer
+app-misc/xplr 0.17.2: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.8.0: A smarter cd command
-app-shells/zsh-powerlevel10k 1.16.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
+app-shells/zsh-powerlevel10k 1.16.1: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-vi-mode 0.8.4: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/epy 2022.1.25 9999: CLI Ebook Reader
@@ -63,7 +63,7 @@ sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.8.0: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.1 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.0-r1: Daemonless replacement for libudev
-sys-process/bottom 0.6.6: TUI process/system monitor with multitude of features
+sys-process/bottom 0.6.8: TUI process/system monitor with multitude of features
 sys-process/extrace 0.9: trace exec() calls system-wide
 sys-process/snooze 0.5: run a command at a particular time
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
