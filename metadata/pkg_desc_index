@@ -60,7 +60,7 @@ sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutil
 sys-devel/cproc 9999: Small C11 compiler based on QBE
 sys-devel/just 0.11.0: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
-sys-fs/duf 0.8.0: Disk Usage/Free Utility - a better 'df' alternative
+sys-fs/duf 0.8.1: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.1 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.0-r1: Daemonless replacement for libudev
 sys-process/bottom 0.6.8: TUI process/system monitor with multitude of features
