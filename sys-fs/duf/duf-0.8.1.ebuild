@@ -6,8 +6,8 @@ EAPI=7
 inherit go-module
 
 EGO_SUM=(
-	"github.com/IGLOU-EU/go-wildcard v1.0.2-0.20220113174608-cd79808a5083"
-	"github.com/IGLOU-EU/go-wildcard v1.0.2-0.20220113174608-cd79808a5083/go.mod"
+	"github.com/IGLOU-EU/go-wildcard v1.0.3"
+	"github.com/IGLOU-EU/go-wildcard v1.0.3/go.mod"
 	"github.com/davecgh/go-spew v1.1.0/go.mod"
 	"github.com/davecgh/go-spew v1.1.1"
 	"github.com/davecgh/go-spew v1.1.1/go.mod"
@@ -24,8 +24,8 @@ EGO_SUM=(
 	"github.com/mattn/go-isatty v0.0.14/go.mod"
 	"github.com/mattn/go-runewidth v0.0.13"
 	"github.com/mattn/go-runewidth v0.0.13/go.mod"
-	"github.com/muesli/mango v0.0.0-20220201014152-f7df5a1c5b4b"
-	"github.com/muesli/mango v0.0.0-20220201014152-f7df5a1c5b4b/go.mod"
+	"github.com/muesli/mango v0.1.0"
+	"github.com/muesli/mango v0.1.0/go.mod"
 	"github.com/muesli/roff v0.1.0"
 	"github.com/muesli/roff v0.1.0/go.mod"
 	"github.com/muesli/termenv v0.11.0"
