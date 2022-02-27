@@ -1,4 +1,4 @@
-# Copyright 2017-2021 Gentoo Authors
+# Copyright 2017-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -7,11 +7,11 @@ CRATES="
 	aho-corasick-0.7.18
 	ansi_term-0.12.1
 	atty-0.2.14
-	autocfg-1.0.1
+	autocfg-1.1.0
 	bitflags-1.3.2
 	bstr-0.2.17
 	camino-1.0.7
-	cc-1.0.72
+	cc-1.0.73
 	cfg-if-1.0.0
 	clap-2.34.0
 	cradle-0.2.1
@@ -27,19 +27,20 @@ CRATES="
 	executable-path-1.0.0
 	fastrand-1.7.0
 	heck-0.3.3
+	heck-0.4.0
 	hermit-abi-0.1.19
 	humantime-2.1.0
 	instant-0.1.12
 	itoa-1.0.1
 	lazy_static-1.4.0
 	lexiclean-0.0.1
-	libc-0.2.117
+	libc-0.2.119
 	linked-hash-map-0.5.4
 	log-0.4.14
 	memchr-2.4.1
 	memoffset-0.6.5
 	nix-0.23.1
-	output_vt100-0.1.2
+	output_vt100-0.1.3
 	pretty_assertions-1.1.0
 	proc-macro2-1.0.36
 	quote-1.0.15
@@ -52,13 +53,13 @@ CRATES="
 	ryu-1.0.9
 	serde-1.0.136
 	serde_derive-1.0.136
-	serde_json-1.0.78
+	serde_json-1.0.79
 	similar-2.1.0
 	snafu-0.7.0
 	snafu-derive-0.7.0
 	strsim-0.8.0
-	strum-0.23.0
-	strum_macros-0.23.1
+	strum-0.24.0
+	strum_macros-0.24.0
 	syn-1.0.86
 	target-2.0.0
 	tempfile-3.3.0
@@ -67,7 +68,7 @@ CRATES="
 	termcolor-1.1.2
 	textwrap-0.11.0
 	typed-arena-2.0.1
-	unicode-segmentation-1.8.0
+	unicode-segmentation-1.9.0
 	unicode-width-0.1.9
 	unicode-xid-0.2.2
 	vec_map-0.8.2
@@ -96,7 +97,7 @@ KEYWORDS="amd64 ~arm64 ~x86"
 RESTRICT="mirror"
 
 src_install() {
-	local DOCS=( README.adoc )
+	local DOCS=( README.md )
 
 	dobin "target/release/${PN}"
 
