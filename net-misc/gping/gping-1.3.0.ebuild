@@ -1,25 +1,25 @@
-# Copyright 2017-2021 Gentoo Authors
+# Copyright 2017-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 CRATES="
 	aho-corasick-0.7.18
 	ansi_term-0.11.0
-	anyhow-1.0.52
+	anyhow-1.0.55
 	atty-0.2.14
 	autocfg-1.0.1
-	bitflags-1.2.1
+	bitflags-1.3.2
 	cassowary-0.3.0
-	cc-1.0.72
+	cc-1.0.73
 	cfg-if-1.0.0
 	chrono-0.4.19
 	clap-2.33.3
 	const_format-0.2.22
 	const_format_proc_macros-0.2.22
-	crossterm-0.20.0
-	crossterm-0.21.0
-	crossterm_winapi-0.8.0
+	crossterm-0.22.1
+	crossterm-0.23.0
+	crossterm_winapi-0.9.0
 	dns-lookup-1.0.8
 	either-1.6.1
 	form_urlencoded-1.0.1
@@ -29,13 +29,13 @@ CRATES="
 	idna-0.2.3
 	instant-0.1.9
 	is_debug-1.0.1
-	itertools-0.10.1
+	itertools-0.10.3
 	jobserver-0.1.24
 	lazy_static-1.4.0
-	libc-0.2.88
+	libc-0.2.119
 	libgit2-sys-0.12.26+1.3.0
 	libz-sys-1.1.3
-	lock_api-0.4.2
+	lock_api-0.4.6
 	log-0.4.14
 	matches-0.1.9
 	memchr-2.4.1
@@ -44,22 +44,25 @@ CRATES="
 	ntapi-0.3.6
 	num-integer-0.1.44
 	num-traits-0.2.14
-	os_info-3.1.0
+	os_info-3.2.0
 	parking_lot-0.11.1
+	parking_lot-0.12.0
 	parking_lot_core-0.8.3
+	parking_lot_core-0.9.1
 	percent-encoding-2.1.0
-	pinger-0.3.6
+	pinger-0.4.0
 	pkg-config-0.3.24
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
 	proc-macro2-1.0.24
 	quote-1.0.9
-	redox_syscall-0.2.5
+	read_color-1.0.0
+	redox_syscall-0.2.10
 	regex-1.5.4
 	regex-syntax-0.6.25
 	scopeguard-1.1.0
-	shadow-rs-0.8.1
-	signal-hook-0.3.9
+	shadow-rs-0.9.0
+	signal-hook-0.3.13
 	signal-hook-mio-0.2.1
 	signal-hook-registry-1.4.0
 	smallvec-1.6.1
@@ -67,7 +70,7 @@ CRATES="
 	socket2-0.4.0
 	static_assertions-1.1.0
 	strsim-0.8.0
-	structopt-0.3.25
+	structopt-0.3.26
 	structopt-derive-0.4.18
 	syn-1.0.62
 	textwrap-0.11.0
@@ -76,7 +79,7 @@ CRATES="
 	time-0.1.44
 	tinyvec-1.5.1
 	tinyvec_macros-0.1.0
-	tui-0.16.0
+	tui-0.17.0
 	unicode-bidi-0.3.7
 	unicode-normalization-0.1.19
 	unicode-segmentation-1.7.1
@@ -91,6 +94,12 @@ CRATES="
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-x86_64-pc-windows-gnu-0.4.0
 	winapi_forked_icmpapi-0.3.7
+	windows-sys-0.32.0
+	windows_aarch64_msvc-0.32.0
+	windows_i686_gnu-0.32.0
+	windows_i686_msvc-0.32.0
+	windows_x86_64_gnu-0.32.0
+	windows_x86_64_msvc-0.32.0
 	winping-0.10.1
 	${P}
 "
