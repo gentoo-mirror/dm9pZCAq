@@ -20,7 +20,7 @@ IUSE="
 	cpu_flags_x86_aes cpu_flags_x86_ssse3
 "
 
-DEPEND=">=dev-libs/ell-0.48"
+DEPEND=">=dev-libs/ell-0.49"
 RDEPEND="
 	${DEPEND}
 	!net-wireless/iwd
