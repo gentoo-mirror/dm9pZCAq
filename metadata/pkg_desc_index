@@ -58,7 +58,7 @@ sys-apps/tealdeer 1.5.0: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
-sys-devel/just 1.0.0: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 1.0.1: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.8.1: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.1 9999: A kernel event manager compatible with mdev.conf
