@@ -44,8 +44,8 @@ CRATES="
 	pretty_assertions-1.1.0
 	proc-macro2-1.0.36
 	quote-1.0.15
-	redox_syscall-0.2.10
-	regex-1.5.4
+	redox_syscall-0.2.11
+	regex-1.5.5
 	regex-automata-0.1.10
 	regex-syntax-0.6.25
 	remove_dir_all-0.5.3
@@ -65,7 +65,7 @@ CRATES="
 	tempfile-3.3.0
 	temptree-0.2.0
 	term_size-0.3.2
-	termcolor-1.1.2
+	termcolor-1.1.3
 	textwrap-0.11.0
 	typed-arena-2.0.1
 	unicode-segmentation-1.9.0
