@@ -11,4 +11,4 @@ PROPERTIES=live
 RDEPEND=~dev-libs/skalibs-9999 static? ( dev-libs/skalibs[static-libs] )
 SLOT=0
 _eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=685b96c0e7763deafb7b4ef42e2bc623
+_md5_=2ea2c4d7a35bdc61cc182d551f182e90
