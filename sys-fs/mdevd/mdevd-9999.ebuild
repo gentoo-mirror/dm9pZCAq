@@ -18,7 +18,7 @@ else
 		https://github.com/skarnet/${PN}/archive/v${PV}.tar.gz
 			-> ${PF}.tar.gz
 	"
-	KEYWORDS="amd64 arm x86"
+	KEYWORDS="~amd64 ~arm ~x86"
 
 	DEPEND=">=dev-libs/skalibs-2.11.0.0"
 fi
