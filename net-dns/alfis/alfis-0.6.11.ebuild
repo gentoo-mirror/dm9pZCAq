@@ -1,9 +1,10 @@
-# Copyright 2017-2021 Gentoo Authors
+# Copyright 2017-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 CRATES="
+	adler-1.0.2
 	aead-0.3.2
 	aead-0.4.3
 	aes-0.6.0
@@ -35,17 +36,19 @@ CRATES="
 	convert_case-0.4.0
 	cpufeatures-0.2.1
 	cpuid-bool-0.2.0
-	crypto-common-0.1.1
+	crc32fast-1.3.0
+	crypto-common-0.1.3
 	crypto-mac-0.8.0
 	crypto-mac-0.10.1
 	ctr-0.6.0
 	curve25519-dalek-3.2.0
 	derive_more-0.99.17
 	digest-0.9.0
-	digest-0.10.1
+	digest-0.10.3
 	ecies-ed25519-0.5.1
 	ed25519-1.2.0
 	ed25519-dalek-1.0.1
+	flate2-1.0.22
 	form_urlencoded-1.0.1
 	gdk-pixbuf-sys-0.10.0
 	gdk-sys-0.10.0
@@ -72,18 +75,19 @@ CRATES="
 	lazy_static-1.4.0
 	libc-0.2.104
 	log-0.4.14
-	lru-0.7.1
+	lru-0.7.3
 	matches-0.1.9
+	miniz_oxide-0.4.4
 	mio-0.8.0
 	miow-0.3.7
 	ntapi-0.3.6
 	num-bigint-0.4.3
 	num-integer-0.1.44
 	num-traits-0.2.14
-	num_cpus-1.13.0
+	num_cpus-1.13.1
 	once_cell-1.8.0
 	opaque-debug-0.3.0
-	open-2.0.2
+	open-2.1.1
 	pango-sys-0.10.0
 	pathdiff-0.2.1
 	percent-encoding-2.1.0
@@ -94,28 +98,27 @@ CRATES="
 	proc-macro2-1.0.30
 	quote-1.0.10
 	rand-0.7.3
-	rand-0.8.4
+	rand-0.8.5
 	rand_chacha-0.2.2
 	rand_chacha-0.3.1
 	rand_core-0.5.1
 	rand_core-0.6.3
 	rand_hc-0.2.0
-	rand_hc-0.3.1
 	ring-0.16.20
 	rustc_version-0.4.0
-	rustls-0.20.0
+	rustls-0.20.2
 	ryu-1.0.5
 	sct-0.7.0
 	semver-1.0.4
-	serde-1.0.132
+	serde-1.0.136
 	serde_bytes-0.11.5
 	serde_cbor-0.11.2
-	serde_derive-1.0.132
-	serde_json-1.0.73
+	serde_derive-1.0.136
+	serde_json-1.0.79
 	sha2-0.9.8
-	sha2-0.10.0
-	signature-1.4.0
-	simplelog-0.11.1
+	sha2-0.10.2
+	signature-1.5.0
+	simplelog-0.11.2
 	soup-sys-0.10.0
 	spin-0.5.2
 	sqlite-0.26.0
@@ -130,9 +133,9 @@ CRATES="
 	termcolor-1.1.2
 	thiserror-1.0.30
 	thiserror-impl-1.0.30
-	thread-priority-0.4.1
+	thread-priority-0.8.0
 	time-0.1.44
-	tinyfiledialogs-3.8.3
+	tinyfiledialogs-3.9.0
 	tinyvec-1.5.0
 	tinyvec_macros-0.1.0
 	toml-0.5.8
@@ -144,7 +147,7 @@ CRATES="
 	unicode-xid-0.2.2
 	universal-hash-0.4.1
 	untrusted-0.7.1
-	ureq-2.3.1
+	ureq-2.4.0
 	url-2.2.2
 	urlencoding-1.3.3
 	uuid-0.8.2
@@ -216,6 +219,9 @@ src_configure() {
 
 src_install() {
 	cargo_src_install
+
+	insinto /etc
+	newins "${PN}.toml" "${PN}.conf"
 
 	newtmpfiles "contrib/systemd/${PN}.tmpfiles" "${PN}.conf"
 	systemd_dounit "contrib/systemd/${PN}"{,-default-config}.service
