@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `75`
+packages in overlay: `74`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -47,7 +47,6 @@ packages in overlay: `75`
 * [dev-libs/](dev-libs/)
   * [interface99](dev-libs/interface99) - **[uniq]** Zero-boilerplate interfaces for C99
   * [libexecinfo](dev-libs/libexecinfo) - **[uniq]** BSD licensed clone of the GNU libc backtrace facility (for musl libc)
-  * [skalibs](dev-libs/skalibs) - **[temporary, [udev](#udev)]** General-purpose libraries from skarnet.org
 
 * [dev-lua/](dev-lua/)
   * [alt-getopt](dev-lua/alt-getopt) - **[other ebuild]** Lua bindings to getopt_long
