@@ -4,7 +4,7 @@ acct-user/alfis 0: User for alfis
 acct-user/yggdrasil 0: User for yggdrasil
 app-admin/aslstatus 0.1.3 9999: async suckless status monitor
 app-crypt/gpg-tui 0.8.3: Terminal User Interface for GnuPG
-app-crypt/veracrypt 1.24_p8: Disk encryption with strong security based on TrueCrypt
+app-crypt/veracrypt 1.24_p8 1.25.7: Disk encryption with strong security based on TrueCrypt
 app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 12: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
@@ -43,7 +43,7 @@ media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.6.11: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
-net-libs/webkit-gtk 2.34.3: Open source web browser engine
+net-libs/webkit-gtk 2.34.6: Open source web browser engine
 net-misc/gping 1.3.0: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-news/newsboat 2.26: An RSS/Atom feed reader for text terminals

@@ -9,6 +9,7 @@ dev-python/Telethon:tgcrypto - Enable faster AES IGE implementation using dev-py
 dev-vcs/gitui:ghemoji - Replace markdown emojis with Unicode equivalent
 dev-vcs/gitui:trace-libgit - Enable libgit tracing
 media-video/gifski:video - add supports for decoding video directly
+net-libs/webkit-gtk:avif - Enable support for AVIF images via media-libs/libavif
 net-libs/webkit-gtk:egl - Enable EGL support
 net-libs/webkit-gtk:examples - Install the MiniBrowser example application
 net-libs/webkit-gtk:gamepad - Enable gamepad input support via dev-libs/libmanette
