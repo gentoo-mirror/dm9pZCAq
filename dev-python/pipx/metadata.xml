@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<upstream>
+		<changelog>https://github.com/pypa/pipx/raw/main/CHANGELOG.md</changelog>
+		<bugs-to>https://github.com/pypa/pipx/issues</bugs-to>
+		<doc>https://pypa.github.io/pipx/</doc>
+		<remote-id type="pypi">pipx</remote-id>
+	</upstream>
+</pkgmetadata>
