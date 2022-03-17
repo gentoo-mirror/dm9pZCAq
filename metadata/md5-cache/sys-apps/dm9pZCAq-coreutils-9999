@@ -1,0 +1,12 @@
+BDEPEND=>=dev-lang/metalang99-1.8 elibc_musl? ( sys-libs/queue-standalone ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=GNU compatible suckless coreutils
+EAPI=8
+HOMEPAGE=https://notabug.org/dm9pZCAq/dm9pZCAq-coreutils
+INHERIT=git-r3
+IUSE=-path
+LICENSE=GPL-3
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=f1c0c1a1512c899b86d7534ae89e1722

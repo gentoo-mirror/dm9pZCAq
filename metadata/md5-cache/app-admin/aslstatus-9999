@@ -12,4 +12,4 @@ RDEPEND=X? ( x11-libs/libxcb[xkb?] ) alsa? ( media-libs/alsa-lib[thread-safety] 
 REQUIRED_USE=xkb? ( X ) ^^ ( alsa pulseaudio )
 SLOT=0
 _eclasses_=portability	d1186f1e621de7b27ddcae82e6253259	savedconfig	7cb1bf66b4acedc4f06802a012d3b08d	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=9af0653f00a8487f99f5bfcfc68a3281
+_md5_=3d29d6d79b0e333a3d488dd1e574a1bc
