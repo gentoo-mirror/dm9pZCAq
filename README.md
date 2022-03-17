@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `76`
+packages in overlay: `77`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -98,6 +98,7 @@ packages in overlay: `76`
   * [eiwd](net-wireless/eiwd) - **[maintained, better ebuild, clang patches]** iwd without dbus
 
 * [sys-apps/](sys-apps/)
+  * [dm9pZCAq-coreutils](sys-apps/dm9pZCAq-coreutils) - **[my, uniq]** GNU compatible suckless coreutils
   * [exa](sys-apps/exa) - **[man pages without pandoc]** A modern replacement for 'ls' written in Rust
   * [hexyl](sys-apps/hexyl) - **[uniq]** A command-line hex viewer
   * [huxdemp](sys-apps/huxdemp) - **[uniq]** A better hexdump
