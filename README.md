@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `74`
+packages in overlay: `75`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -56,6 +56,7 @@ packages in overlay: `74`
 * [dev-python/](dev-python/)
   * [fake-useragent](dev-python/fake-useragent) - **[uniq]** Dependency for instalooter
   * [mobi](dev-python/mobi) - **[uniq]** Library for unpacking unencrypted mobi files
+  * [pipx](dev-python/pipx) - **[maintained]** Install and Run Python Applications in Isolated Environments
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
   * [TgCrypto](dev-python/TgCrypto) - **[uniq]** Fast and Portable Telegram Crypto Library for Python
 
