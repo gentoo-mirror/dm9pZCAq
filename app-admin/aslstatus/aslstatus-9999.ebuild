@@ -1,4 +1,4 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -59,7 +59,7 @@ src_install() {
 	local DOCS=( *.md )
 
 	dobin "${PN}"
-	doman "${PN}.1"
+	doman "$([ "${PV}" = 9999 ] && printf %s 'man/')${PN}.1"
 
 	save_config {components_,}config.h
 
