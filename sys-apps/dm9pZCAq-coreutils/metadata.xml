@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.xyz</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<use>
+		<flag name="path">
+			Insert dm9pZCAq coreutils PATH before baselayout PATH
+			to use dm9pZCAq coreutils instead of GNU coreutils
+		</flag>
+	</use>
+	<upstream>
+		<bugs-to>https://notabug.org/dm9pZCAq/dm9pZCAq-coreutils</bugs-to>
+	</upstream>
+</pkgmetadata>
