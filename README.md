@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `77`
+packages in overlay: `78`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -135,6 +135,7 @@ packages in overlay: `77`
   * [LegacyFox](www-plugins/LegacyFox) - **[uniq]** Firefox legacy plugins support (for example [VimFx](https://git.gir.st/VimFx.git))
 
 * [x11-misc/](x11-misc/)
+  * [clayout](x11-misc/clayout) - **[my, uniq]** Save own keyboard layout for each window
   * [herbe](x11-misc/herbe) - **[uniq]** Daemon-less notifications without D-Bus
   * [lemonbar](x11-misc/lemonbar) - **[better ebuild]** A featherweight, lemon-scented, bar based on xcb
   * [qt5ct](x11-misc/qt5ct) - **[dbus is optional]** Qt5 configuration tool, similar to qtconfig for Qt4
