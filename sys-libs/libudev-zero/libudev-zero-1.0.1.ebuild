@@ -35,8 +35,8 @@ src_prepare() {
 
 	use static-libs || {
 		sed -i Makefile \
-			-e '/^\(inst\)\?all:/s/libudev.a//' \
-			-e '/^install:/,/^uninstall:/{/libudev.a/d}' \
+			-e '/^all:/s/libudev.a//' \
+			-e '/^install:/s/\w\+-static//' \
 		|| die
 	}
 
