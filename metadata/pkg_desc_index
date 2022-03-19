@@ -64,7 +64,7 @@ sys-devel/just 1.1.0: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.8.1: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.1 9999: A kernel event manager compatible with mdev.conf
-sys-libs/libudev-zero 1.0.0-r1: Daemonless replacement for libudev
+sys-libs/libudev-zero 1.0.1: Daemonless replacement for libudev
 sys-process/bottom 0.6.8: TUI process/system monitor with multitude of features
 sys-process/extrace 0.9: trace exec() calls system-wide
 sys-process/snooze 0.5: run a command at a particular time
@@ -73,6 +73,7 @@ virtual/libudev 232-r5: Virtual for libudev providers
 virtual/udev 217_p0-r3: Virtual to select between different udev daemon providers
 www-client/firefox-musl-bin 87.0-r1 89.0.2-r1: Firefox binary from KISS linux (for musl libc)
 www-plugins/LegacyFox 2.3 9999: Monkeypatching Firefox Quantum to run VimFx
+x11-misc/clayout 0.0.3 9999: Save own keyboard layout for each window
 x11-misc/herbe 1.0.0: Daemon-less notifications without D-Bus
 x11-misc/lemonbar 1.4: A featherweight, lemon-scented, bar based on xcb
 x11-misc/qt5ct 1.5: Qt5 configuration tool, similar to qtconfig for Qt4

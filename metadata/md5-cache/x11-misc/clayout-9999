@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DEPEND=x11-libs/libxcb[xkb]
+DESCRIPTION=Save own keyboard layout for each window
+EAPI=8
+HOMEPAGE=https://notabug.org/dm9pZCAq/clayout
+INHERIT=git-r3
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=x11-libs/libxcb[xkb]
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=37f4fa1b4b5a0a83f1d1fd6c06203649
