@@ -13,10 +13,7 @@ LICENSE="GPL-3"
 SLOT="0"
 IUSE="-path"
 
-BDEPEND="
-	>=dev-lang/metalang99-1.8
-	elibc_musl? ( sys-libs/queue-standalone )
-" # sys-libs/queue-standalone temporary for tee
+BDEPEND=">=dev-lang/metalang99-1.8"
 
 BASEDIR="/opt/${PN}"
 
