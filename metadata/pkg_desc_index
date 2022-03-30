@@ -9,7 +9,7 @@ app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 12: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/lf 26: Terminal file manager
-app-misc/onefetch 2.11.0: Git repository summary on your terminal
+app-misc/onefetch 2.12.0: Git repository summary on your terminal
 app-misc/xplr 0.17.3: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.8.0: A smarter cd command
@@ -46,7 +46,7 @@ net-dns/alfis 0.6.11: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.34.6: Open source web browser engine
-net-misc/gping 1.3.0: Ping, but with a graph
+net-misc/gping 1.3.1: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-news/newsboat 2.26: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.2a_pre0: TUI and CLI for the BitTorrent client Transmission
@@ -60,7 +60,7 @@ sys-apps/tealdeer 1.5.0: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
-sys-devel/just 1.1.0: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 1.1.1: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.8.1: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.1 9999: A kernel event manager compatible with mdev.conf
