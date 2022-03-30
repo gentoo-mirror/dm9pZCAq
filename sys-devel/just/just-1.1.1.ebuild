@@ -15,7 +15,7 @@ CRATES="
 	cfg-if-1.0.0
 	clap-2.34.0
 	cradle-0.2.1
-	ctor-0.1.21
+	ctor-0.1.22
 	ctrlc-3.2.1
 	derivative-2.2.0
 	diff-0.1.12
@@ -34,16 +34,16 @@ CRATES="
 	itoa-1.0.1
 	lazy_static-1.4.0
 	lexiclean-0.0.1
-	libc-0.2.119
+	libc-0.2.121
 	linked-hash-map-0.5.4
-	log-0.4.14
+	log-0.4.16
 	memchr-2.4.1
 	memoffset-0.6.5
 	nix-0.23.1
 	output_vt100-0.1.3
-	pretty_assertions-1.1.0
+	pretty_assertions-1.2.0
 	proc-macro2-1.0.36
-	quote-1.0.15
+	quote-1.0.16
 	redox_syscall-0.2.11
 	regex-1.5.5
 	regex-automata-0.1.10
@@ -60,7 +60,7 @@ CRATES="
 	strsim-0.8.0
 	strum-0.24.0
 	strum_macros-0.24.0
-	syn-1.0.86
+	syn-1.0.89
 	target-2.0.0
 	tempfile-3.3.0
 	temptree-0.2.0
@@ -72,7 +72,7 @@ CRATES="
 	unicode-width-0.1.9
 	unicode-xid-0.2.2
 	vec_map-0.8.2
-	which-4.2.4
+	which-4.2.5
 	winapi-0.3.9
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-util-0.1.5
