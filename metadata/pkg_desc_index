@@ -8,7 +8,7 @@ app-crypt/veracrypt 1.24_p8 1.25.7: Disk encryption with strong security based o
 app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 12: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
-app-misc/lf 26: Terminal file manager
+app-misc/lf 27: Terminal file manager
 app-misc/onefetch 2.12.0: Git repository summary on your terminal
 app-misc/xplr 0.17.3: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
