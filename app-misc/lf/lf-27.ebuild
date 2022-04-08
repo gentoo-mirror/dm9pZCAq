@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit go-module bash-completion-r1
 
@@ -16,8 +16,9 @@ EGO_SUM=(
 	"github.com/mattn/go-runewidth v0.0.10/go.mod"
 	"github.com/rivo/uniseg v0.1.0"
 	"github.com/rivo/uniseg v0.1.0/go.mod"
-	"golang.org/x/sys v0.0.0-20201119102817-f84b799fce68"
 	"golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod"
+	"golang.org/x/sys v0.0.0-20220209214540-3681064d5158"
+	"golang.org/x/sys v0.0.0-20220209214540-3681064d5158/go.mod"
 	"golang.org/x/term v0.0.0-20201210144234-2321bbc49cbf/go.mod"
 	"golang.org/x/term v0.0.0-20210220032956-6a3ed077a48d"
 	"golang.org/x/term v0.0.0-20210220032956-6a3ed077a48d/go.mod"
@@ -48,11 +49,11 @@ src_compile() {
 		ldflags+=' -extldflags "-static"'
 	}
 
-	go build -ldflags="${ldflags}" || die 'go build failed'
+	ego build -ldflags="${ldflags}" || die 'go build failed'
 }
 
 src_install() {
-	local DOCS=( README.md etc/lfrc.example )
+	local DOCS=( README.md etc/{{color,icon}s,lfrc}.example )
 
 	dobin "${PN}"
 
