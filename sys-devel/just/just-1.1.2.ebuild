@@ -43,8 +43,8 @@ CRATES="
 	output_vt100-0.1.3
 	pretty_assertions-1.2.0
 	proc-macro2-1.0.36
-	quote-1.0.16
-	redox_syscall-0.2.11
+	quote-1.0.17
+	redox_syscall-0.2.13
 	regex-1.5.5
 	regex-automata-0.1.10
 	regex-syntax-0.6.25
@@ -60,7 +60,7 @@ CRATES="
 	strsim-0.8.0
 	strum-0.24.0
 	strum_macros-0.24.0
-	syn-1.0.89
+	syn-1.0.90
 	target-2.0.0
 	tempfile-3.3.0
 	temptree-0.2.0
