@@ -42,14 +42,14 @@ dev-ruby/rugged 1.3.1: Ruby bindings to libgit2
 dev-vcs/gitui 0.20.1: Blazing fast terminal-ui for git
 games-misc/fortune-mod 1.99.1-r3: The notorious fortune program
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
-net-dns/alfis 0.6.11: Alternative Free Identity System
+net-dns/alfis 0.6.11 0.7.0: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.34.6: Open source web browser engine
 net-misc/gping 1.3.1: Ping, but with a graph
 net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downloader
 net-news/newsboat 2.27: An RSS/Atom feed reader for text terminals
-net-p2p/stig 0.12.2a_pre0: TUI and CLI for the BitTorrent client Transmission
+net-p2p/stig 0.12.3a_pre0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.3: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-wireless/eiwd 1.25-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
