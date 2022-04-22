@@ -35,7 +35,7 @@ CRATES="
 	${P}
 "
 
-inherit cargo desktop
+inherit cargo desktop xdg-utils
 
 DESCRIPTION="Lightweight color picker for X11"
 HOMEPAGE="
@@ -72,4 +72,12 @@ src_install() {
 
 		domenu "extra/${PN}.desktop"
 	}
+}
+
+pkg_postinst() {
+	use X && xdg_icon_cache_update
+}
+
+pkg_postrm() {
+	use X && xdg_icon_cache_update
 }
