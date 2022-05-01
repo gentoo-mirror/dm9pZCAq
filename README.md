@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `78`
+packages in overlay: `79`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -20,6 +20,7 @@ packages in overlay: `78`
 
 * [app-misc/](app-misc/)
   * [cpufetch](app-misc/cpufetch) - **[uniq]** Simplistic yet fancy CPU architecture fetching tool
+  * [draw](app-misc/draw) - **[uniq]** Draw in your terminal
   * [lf](app-misc/lf) - **[more USE flags]** Terminal file manager
   * [onefetch](app-misc/onefetch) - **[better ebuild]** Git repository summary on your terminal
   * [xplr](app-misc/xplr) - **[uniq]** A hackable, minimal, fast TUI file explorer
