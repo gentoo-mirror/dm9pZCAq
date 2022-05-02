@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `78`
+packages in overlay: `77`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -128,9 +128,6 @@ packages in overlay: `78`
 
 * [www-client/](www-client/)
   * [firefox-musl-bin](www-client/firefox-musl-bin) - **[uniq]** `firefox-bin` for musl libc
-
-* [www-plugins/](www-plugins/)
-  * [LegacyFox](www-plugins/LegacyFox) - **[uniq]** Firefox legacy plugins support (for example [VimFx](https://git.gir.st/VimFx.git))
 
 * [x11-misc/](x11-misc/)
   * [clayout](x11-misc/clayout) - **[my, uniq]** Save own keyboard layout for each window
