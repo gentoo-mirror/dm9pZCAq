@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `79`
+packages in overlay: `78`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -69,9 +69,6 @@ packages in overlay: `79`
 
 * [dev-vcs/](dev-vcs/)
   * [gitui](dev-vcs/gitui) - **[uniq]** Blazing fast terminal-ui for git
-
-* [games-misc/](games-misc/)
-  * [fortune-mod](games-misc/fortune-mod) - **[with musl support]** The notorious fortune program
 
 * [media-video/](media-video/)
   * [gifski](media-video/gifski) - **[uniq]** Highest-quality GIF encoder based on pngquant
