@@ -6,8 +6,8 @@ EAPI=8
 LUA_COMPAT=( luajit )
 
 CRATES="
-	ansi-to-tui-0.5.0
-	anyhow-1.0.56
+	ansi-to-tui-forked-0.5.2-fix.offset
+	anyhow-1.0.57
 	assert_cmd-2.0.4
 	atty-0.2.14
 	autocfg-1.1.0
@@ -49,13 +49,13 @@ CRATES="
 	itoa-1.0.1
 	js-sys-0.3.57
 	lazy_static-1.4.0
-	libc-0.2.123
+	libc-0.2.125
 	linked-hash-map-0.5.4
 	lock_api-0.4.7
-	log-0.4.16
-	lua-src-544.0.0
+	log-0.4.17
+	lua-src-544.0.1
 	luajit-src-210.3.4+resty073ac54
-	memchr-2.4.1
+	memchr-2.5.0
 	memoffset-0.6.5
 	mime-0.3.16
 	mime_guess-2.0.4
@@ -65,15 +65,15 @@ CRATES="
 	mlua-0.7.4
 	natord-1.0.9
 	ntapi-0.3.7
-	num-integer-0.1.44
-	num-traits-0.2.14
+	num-integer-0.1.45
+	num-traits-0.2.15
 	num_cpus-1.13.1
 	once_cell-1.10.0
 	oorandom-11.1.3
 	parking_lot-0.11.2
 	parking_lot-0.12.0
 	parking_lot_core-0.8.5
-	parking_lot_core-0.9.2
+	parking_lot_core-0.9.3
 	pkg-config-0.3.25
 	plotters-0.3.1
 	plotters-backend-0.3.2
@@ -95,29 +95,29 @@ CRATES="
 	ryu-1.0.9
 	same-file-1.0.6
 	scopeguard-1.1.0
-	semver-1.0.7
-	serde-1.0.136
+	semver-1.0.9
+	serde-1.0.137
 	serde_cbor-0.11.2
-	serde_derive-1.0.136
-	serde_json-1.0.79
-	serde_yaml-0.8.23
+	serde_derive-1.0.137
+	serde_json-1.0.81
+	serde_yaml-0.8.24
 	signal-hook-0.3.13
 	signal-hook-mio-0.2.3
 	signal-hook-registry-1.4.0
 	smallvec-1.8.0
-	syn-1.0.91
+	syn-1.0.92
 	termtree-0.2.4
 	textwrap-0.11.0
-	thiserror-1.0.30
-	thiserror-impl-1.0.30
+	thiserror-1.0.31
+	thiserror-impl-1.0.31
 	time-0.1.44
 	tinytemplate-1.2.1
-	tui-0.17.0
+	tui-0.18.0
 	tui-input-0.1.2
 	unicase-2.6.0
 	unicode-segmentation-1.9.0
 	unicode-width-0.1.9
-	unicode-xid-0.2.2
+	unicode-xid-0.2.3
 	version_check-0.9.4
 	wait-timeout-0.2.0
 	walkdir-2.3.2
@@ -133,12 +133,12 @@ CRATES="
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
-	windows-sys-0.34.0
-	windows_aarch64_msvc-0.34.0
-	windows_i686_gnu-0.34.0
-	windows_i686_msvc-0.34.0
-	windows_x86_64_gnu-0.34.0
-	windows_x86_64_msvc-0.34.0
+	windows-sys-0.36.1
+	windows_aarch64_msvc-0.36.1
+	windows_i686_gnu-0.36.1
+	windows_i686_msvc-0.36.1
+	windows_x86_64_gnu-0.36.1
+	windows_x86_64_msvc-0.36.1
 	yaml-rust-0.4.5
 	${P}
 "
