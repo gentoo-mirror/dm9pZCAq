@@ -11,7 +11,7 @@ app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/draw 0.1.1: Draw in your terminal
 app-misc/lf 27: Terminal file manager
 app-misc/onefetch 2.12.0: Git repository summary on your terminal
-app-misc/xplr 0.17.4: A hackable, minimal, fast TUI file explorer
+app-misc/xplr 0.17.6: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.8.1: A smarter cd command
 app-shells/zsh-powerlevel10k 1.16.1: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
@@ -60,7 +60,7 @@ sys-apps/tealdeer 1.5.0: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
-sys-devel/just 1.1.2: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 1.1.3: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.8.1: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.5.1 9999: A kernel event manager compatible with mdev.conf
