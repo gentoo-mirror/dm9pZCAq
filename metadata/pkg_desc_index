@@ -23,10 +23,10 @@ app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/fennel 1.1.0: Lua Lisp Language
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
 dev-lang/hissp 0.2.0: It's Python with a Lissp
-dev-lang/metalang99 1.13.1: Full-blown preprocessor metaprogramming
+dev-lang/metalang99 1.13.2: Full-blown preprocessor metaprogramming
 dev-lang/moonscript 0.5.0: A programmer friendly language that compiles into Lua
 dev-lang/zetz 0.1.1_p20211118: ZetZ a zymbolic verifier and tranzpiler to bare metal C
-dev-libs/interface99 0.8.4: Zero-boilerplate interfaces for C99
+dev-libs/interface99 1.0.0: Zero-boilerplate interfaces for C99
 dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/fnlfmt 0.2.3: A formatter for Fennel code
