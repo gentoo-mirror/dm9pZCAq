@@ -6,6 +6,7 @@ EAPI=8
 LUA_COMPAT=( luajit )
 
 CRATES="
+	aho-corasick-0.7.18
 	ansi-to-tui-forked-0.5.2-fix.offset
 	anyhow-1.0.57
 	assert_cmd-2.0.4
@@ -26,7 +27,6 @@ CRATES="
 	crossbeam-deque-0.8.1
 	crossbeam-epoch-0.9.8
 	crossbeam-utils-0.8.8
-	crossterm-0.22.1
 	crossterm-0.23.2
 	crossterm_winapi-0.9.0
 	csv-1.1.6
@@ -43,13 +43,12 @@ CRATES="
 	hermit-abi-0.1.19
 	humansize-1.1.1
 	indexmap-1.8.1
-	instant-0.1.12
 	itertools-0.10.3
 	itoa-0.4.8
-	itoa-1.0.1
+	itoa-1.0.2
 	js-sys-0.3.57
 	lazy_static-1.4.0
-	libc-0.2.125
+	libc-0.2.126
 	linked-hash-map-0.5.4
 	lock_api-0.4.7
 	log-0.4.17
@@ -59,20 +58,15 @@ CRATES="
 	memoffset-0.6.5
 	mime-0.3.16
 	mime_guess-2.0.4
-	mio-0.7.14
-	mio-0.8.2
-	miow-0.3.7
+	mio-0.8.3
 	mlua-0.7.4
 	natord-1.0.9
-	ntapi-0.3.7
 	num-integer-0.1.45
 	num-traits-0.2.15
 	num_cpus-1.13.1
-	once_cell-1.10.0
+	once_cell-1.11.0
 	oorandom-11.1.3
-	parking_lot-0.11.2
 	parking_lot-0.12.0
-	parking_lot_core-0.8.5
 	parking_lot_core-0.9.3
 	pkg-config-0.3.25
 	plotters-0.3.1
@@ -81,18 +75,18 @@ CRATES="
 	predicates-2.1.1
 	predicates-core-1.0.3
 	predicates-tree-1.0.5
-	proc-macro2-1.0.37
+	proc-macro2-1.0.39
 	quote-1.0.18
-	rayon-1.5.2
-	rayon-core-1.9.2
+	rayon-1.5.3
+	rayon-core-1.9.3
 	redox_syscall-0.2.13
 	redox_users-0.4.3
-	regex-1.5.5
+	regex-1.5.6
 	regex-automata-0.1.10
-	regex-syntax-0.6.25
+	regex-syntax-0.6.26
 	rustc-hash-1.1.0
 	rustc_version-0.4.0
-	ryu-1.0.9
+	ryu-1.0.10
 	same-file-1.0.6
 	scopeguard-1.1.0
 	semver-1.0.9
@@ -101,11 +95,11 @@ CRATES="
 	serde_derive-1.0.137
 	serde_json-1.0.81
 	serde_yaml-0.8.24
-	signal-hook-0.3.13
+	signal-hook-0.3.14
 	signal-hook-mio-0.2.3
 	signal-hook-registry-1.4.0
 	smallvec-1.8.0
-	syn-1.0.92
+	syn-1.0.95
 	termtree-0.2.4
 	textwrap-0.11.0
 	thiserror-1.0.31
@@ -113,11 +107,11 @@ CRATES="
 	time-0.1.44
 	tinytemplate-1.2.1
 	tui-0.18.0
-	tui-input-0.1.2
+	tui-input-0.4.0
 	unicase-2.6.0
+	unicode-ident-1.0.0
 	unicode-segmentation-1.9.0
 	unicode-width-0.1.9
-	unicode-xid-0.2.3
 	version_check-0.9.4
 	wait-timeout-0.2.0
 	walkdir-2.3.2
