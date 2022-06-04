@@ -36,12 +36,13 @@ BDEPEND="
 
 CONFIG_CHECK="~BLK_DEV_DM ~CRYPTO ~CRYPTO_XTS ~DM_CRYPT ~FUSE_FS"
 
-PATCHES=(
-	"${FILESDIR}/include-types.patch"
-)
-
 src_configure() {
 	setup-wxwidgets
+
+	sed -i Crypto/jitterentropy.h \
+		-e \
+		'/^#include\s\+"jitterentropy-base-user.h"$/i#include <sys/types.h>' \
+	|| die
 }
 
 src_compile() {
