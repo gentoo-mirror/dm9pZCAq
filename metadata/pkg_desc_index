@@ -11,14 +11,13 @@ app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/draw 0.1.1: Draw in your terminal
 app-misc/lf 27: Terminal file manager
 app-misc/onefetch 2.12.0: Git repository summary on your terminal
-app-misc/xplr 0.18.0: A hackable, minimal, fast TUI file explorer
+app-misc/xplr 0.19.0: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.8.1: A smarter cd command
 app-shells/zsh-powerlevel10k 1.16.1: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-vi-mode 0.8.4: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/epy 2022.4.18 9999: CLI Ebook Reader
-app-text/pandoc-bin 2.18: Universal markup converter
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/fennel 1.1.0: Lua Lisp Language
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
@@ -51,7 +50,7 @@ net-misc/instalooter 2.4.4: Another API-less Instagram pictures and videos downl
 net-news/newsboat 2.27: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.3a_pre0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.3: An experiment in scalable routing as an encrypted IPv6 overlay network
-net-wireless/eiwd 1.27-r1: iwd without dbus
+net-wireless/eiwd 1.28-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
 sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
 sys-apps/hexyl 0.10.0: A command-line hex viewer
@@ -63,7 +62,7 @@ sys-devel/cproc 9999: Small C11 compiler based on QBE
 sys-devel/just 1.2.0: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.8.1: Disk Usage/Free Utility - a better 'df' alternative
-sys-fs/mdevd 0.1.5.1 9999: A kernel event manager compatible with mdev.conf
+sys-fs/mdevd 0.1.5.2 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.1: Daemonless replacement for libudev
 sys-process/bottom 0.6.8: TUI process/system monitor with multitude of features
 sys-process/extrace 0.9: trace exec() calls system-wide
