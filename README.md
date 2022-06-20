@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `77`
+packages in overlay: `76`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -34,7 +34,6 @@ packages in overlay: `77`
 
 * [app-text/](app-text/)
   * [epy](app-text/epy) - **[uniq]** CLI Ebook Reader
-  * [pandoc-bin](app-text/pandoc-bin) - **[better ebuild]** Universal markup converter
   * [smu](app-text/smu) - **[uniq]** Simple markup - markdown like syntax
 
 * [dev-lang/](dev-lang/)

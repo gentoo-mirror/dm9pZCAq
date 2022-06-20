@@ -14,7 +14,7 @@ CRATES="
 	autocfg-1.1.0
 	bitflags-1.3.2
 	bstr-0.2.17
-	bumpalo-3.9.1
+	bumpalo-3.10.0
 	cassowary-0.3.0
 	cast-0.2.7
 	cc-1.0.73
@@ -37,12 +37,13 @@ CRATES="
 	doc-comment-0.3.3
 	either-1.6.1
 	erased-serde-0.3.20
+	gethostname-0.2.3
 	getrandom-0.2.6
 	half-1.8.2
 	hashbrown-0.11.2
 	hermit-abi-0.1.19
 	humansize-1.1.1
-	indexmap-1.8.1
+	indexmap-1.8.2
 	itertools-0.10.3
 	itoa-0.4.8
 	itoa-1.0.2
@@ -53,7 +54,7 @@ CRATES="
 	lock_api-0.4.7
 	log-0.4.17
 	lua-src-544.0.1
-	luajit-src-210.3.4+resty073ac54
+	luajit-src-210.4.0+resty124ff8d
 	memchr-2.5.0
 	memoffset-0.6.5
 	mime-0.3.16
@@ -64,9 +65,9 @@ CRATES="
 	num-integer-0.1.45
 	num-traits-0.2.15
 	num_cpus-1.13.1
-	once_cell-1.11.0
+	once_cell-1.12.0
 	oorandom-11.1.3
-	parking_lot-0.12.0
+	parking_lot-0.12.1
 	parking_lot_core-0.9.3
 	pkg-config-0.3.25
 	plotters-0.3.1
@@ -99,7 +100,7 @@ CRATES="
 	signal-hook-mio-0.2.3
 	signal-hook-registry-1.4.0
 	smallvec-1.8.0
-	syn-1.0.95
+	syn-1.0.96
 	termtree-0.2.4
 	textwrap-0.11.0
 	thiserror-1.0.31
@@ -107,7 +108,7 @@ CRATES="
 	time-0.1.44
 	tinytemplate-1.2.1
 	tui-0.18.0
-	tui-input-0.4.0
+	tui-input-0.4.2
 	unicase-2.6.0
 	unicode-ident-1.0.0
 	unicode-segmentation-1.9.0
