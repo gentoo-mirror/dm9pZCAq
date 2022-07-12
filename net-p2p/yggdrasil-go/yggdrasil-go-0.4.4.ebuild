@@ -6,8 +6,8 @@ EAPI=7
 inherit go-module linux-info systemd fcaps
 
 EGO_SUM=(
-	"github.com/Arceliar/ironwood v0.0.0-20211125050254-8951369625d0"
-	"github.com/Arceliar/ironwood v0.0.0-20211125050254-8951369625d0/go.mod"
+	"github.com/Arceliar/ironwood v0.0.0-20220409035209-b7f71f05435a"
+	"github.com/Arceliar/ironwood v0.0.0-20220409035209-b7f71f05435a/go.mod"
 	"github.com/Arceliar/phony v0.0.0-20210209235338-dde1a8dca979"
 	"github.com/Arceliar/phony v0.0.0-20210209235338-dde1a8dca979/go.mod"
 	"github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod"
@@ -135,6 +135,7 @@ RDEPEND="
 	acct-user/${PN%-*}
 	acct-group/${PN%-*}
 "
+BDEPEND=">=dev-lang/go-1.17"
 
 FILECAPS=(
 	cap_net_admin,cap_net_raw+eip "usr/bin/${PN%-*}"
