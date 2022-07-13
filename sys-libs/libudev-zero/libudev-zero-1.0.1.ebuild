@@ -15,6 +15,9 @@ LICENSE="ISC"
 SLOT="0/$(ver_cut 1)"
 KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
 
+DEPEND="!sys-apps/systemd-utils[udev]"
+RDEPEND="${DEPEND}"
+
 IUSE="+hotplug static static-libs"
 
 cc_info() {
