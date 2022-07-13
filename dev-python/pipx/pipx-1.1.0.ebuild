@@ -3,7 +3,8 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{7..9} )
+DISTUTILS_USE_PEP517=hatchling
+PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Install and Run Python Applications in Isolated Environments"
