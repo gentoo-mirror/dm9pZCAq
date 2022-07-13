@@ -28,7 +28,7 @@ CRATES="
 	cc-1.0.71
 	cfg-if-1.0.0
 	chacha20-0.8.1
-	chacha20poly1305-0.9.0
+	chacha20poly1305-0.9.1
 	chrono-0.4.19
 	chunked_transfer-1.4.0
 	cipher-0.2.5
@@ -148,7 +148,7 @@ CRATES="
 	unicode-xid-0.2.2
 	universal-hash-0.4.1
 	untrusted-0.7.1
-	ureq-2.4.0
+	ureq-2.5.0
 	url-2.2.2
 	urlencoding-1.3.3
 	uuid-1.1.2
