@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 inherit distutils-r1
 
 DESCRIPTION="Pure Python 3 MTProto API Telegram client library, for bots too!"
