@@ -58,7 +58,7 @@ packages in overlay: `74`
   * [pipx](dev-python/pipx) - **[maintained]** Install and Run Python Applications in Isolated Environments
   * [Telethon](dev-python/Telethon) - **[uniq]** Pure Python 3 MTProto API Telegram client library, for bots too!
   * [TgCrypto](dev-python/TgCrypto) - **[uniq]** Fast and Portable Telegram Crypto Library for Python
-  * [userpath](dev-python/userpath) - **[maintained (after 1.7 shitty updates)]** Cross-platform tool for adding locations to the user PATH
+  * [userpath](dev-python/userpath) - **[maintained]** Cross-platform tool for adding locations to the user PATH
 
 * [dev-ruby/](dev-ruby/)
   * [licensee](dev-ruby/licensee) - **[uniq]** A Ruby Gem to detect under what license a project is distributed
