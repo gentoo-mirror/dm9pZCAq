@@ -62,7 +62,7 @@ CRATES="
 	gobject-sys-0.10.0
 	gtk-sys-0.10.0
 	half-1.8.1
-	hashbrown-0.11.2
+	hashbrown-0.12.3
 	heck-0.3.3
 	hermit-abi-0.1.19
 	hex-0.4.3
@@ -75,7 +75,7 @@ CRATES="
 	lazy_static-1.4.0
 	libc-0.2.123
 	log-0.4.17
-	lru-0.7.7
+	lru-0.7.8
 	matches-0.1.9
 	miniz_oxide-0.4.4
 	mio-0.8.4
@@ -86,7 +86,7 @@ CRATES="
 	num_threads-0.1.6
 	once_cell-1.8.0
 	opaque-debug-0.3.0
-	open-3.0.1
+	open-3.0.2
 	pango-sys-0.10.0
 	pathdiff-0.2.1
 	percent-encoding-2.1.0
@@ -109,10 +109,10 @@ CRATES="
 	ryu-1.0.5
 	sct-0.7.0
 	semver-1.0.4
-	serde-1.0.138
+	serde-1.0.140
 	serde_bytes-0.11.6
 	serde_cbor-0.11.2
-	serde_derive-1.0.138
+	serde_derive-1.0.140
 	serde_json-1.0.82
 	sha2-0.9.8
 	sha2-0.10.2
