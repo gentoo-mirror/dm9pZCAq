@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		Wren is a small, fast, class-based concurrent scripting language
+		Think Smalltalk in a Lua-sized package with a dash of Erlang
+		and wrapped up in a familiar, modern syntax.
+	</longdescription>
+	<maintainer type="person">
+		<email>v@0x0c.link</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">wren-lang/wren</remote-id>
+		<bugs-to>https://github.com/wren-lang/wren/issues</bugs-to>
+		<changelog>https://github.com/wren-lang/wren/raw/main/CHANGELOG.md</changelog>
+	</upstream>
+</pkgmetadata>

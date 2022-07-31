@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `74`
+packages in overlay: `75`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -42,6 +42,7 @@ packages in overlay: `74`
   * [hissp](dev-lang/hissp) - **[uniq]** It's Python with a Lissp
   * [metalang99](dev-lang/metalang99) - **[uniq]** Full-blown preprocessor metaprogramming
   * [moonscript](dev-lang/moonscript) - **[uniq]** A programmer friendly language that compiles into Lua
+  * [wren](dev-lang/wren) - **[maintained]** Wren is a small, fast, class-based concurrent scripting language
   * [zetz](dev-lang/zetz) - **[uniq]** ZetZ a zymbolic verifier and tranzpiler to bare metal C
 
 * [dev-libs/](dev-libs/)
