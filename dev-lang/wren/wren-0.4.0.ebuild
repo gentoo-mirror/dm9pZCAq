@@ -14,6 +14,8 @@ SRC_URI="
 		-> ${P}.tar.gz
 	https://github.com/wren-lang/${PN}-cli/archive/${PV}.tar.gz
 		-> ${PN}-cli-${PV}.tar.gz
+	https://patch-diff.githubusercontent.com/raw/wren-lang/wren-cli/pull/136.patch
+		-> ${P}-glibc-build.patch
 "
 
 LICENSE="MIT"
@@ -48,6 +50,11 @@ src_prepare() {
 		Libs: "-L\${libdir}" -l${PN}
 		Cflags: "-I\${includedir}"
 	EOF
+
+	(
+		cd "${WORKDIR}/wren-cli-${PV}"
+		eapply "${DISTDIR}/${P}-glibc-build.patch"
+	)
 }
 
 src_compile() {
