@@ -24,6 +24,7 @@ dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcboots
 dev-lang/hissp 0.2.0: It's Python with a Lissp
 dev-lang/metalang99 1.13.2: Full-blown preprocessor metaprogramming
 dev-lang/moonscript 0.5.0: A programmer friendly language that compiles into Lua
+dev-lang/wren 0.4.0: Wren is a small, fast, class-based concurrent scripting language
 dev-lang/zetz 0.1.1_p20211118: ZetZ a zymbolic verifier and tranzpiler to bare metal C
 dev-libs/interface99 1.0.0: Zero-boilerplate interfaces for C99
 dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
