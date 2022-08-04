@@ -3,10 +3,10 @@
 
 EAPI=7
 PYTHON_REQ_USE="xml(+)"
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 USE_RUBY="ruby27 ruby30 ruby31"
 
-inherit check-reqs flag-o-matic gnome2 python-any-r1 ruby-single toolchain-funcs cmake
+inherit check-reqs flag-o-matic gnome2 optfeature python-any-r1 ruby-single toolchain-funcs cmake
 
 MY_P="webkitgtk-${PV}"
 DESCRIPTION="Open source web browser engine"
@@ -15,9 +15,9 @@ SRC_URI="https://www.webkitgtk.org/releases/${MY_P}.tar.xz"
 
 LICENSE="LGPL-2+ BSD"
 SLOT="4/37" # soname version of libwebkit2gtk-4.0
-KEYWORDS="amd64 arm arm64 ppc ppc64 ~riscv ~sparc x86"
+KEYWORDS="amd64 arm arm64 ~ppc ~ppc64 ~riscv ~sparc x86"
 
-IUSE="aqua dbus avif +egl examples gamepad +geolocation gles2-only gnome-keyring +gstreamer gtk-doc +introspection +jpeg2k +jumbo-build lcms libnotify seccomp spell systemd test wayland X"
+IUSE="aqua dbus avif +egl examples gamepad gles2-only gnome-keyring +gstreamer gtk-doc +introspection +jpeg2k +jumbo-build lcms libnotify seccomp spell systemd test wayland X"
 
 # gstreamer with opengl/gles2 needs egl
 REQUIRED_USE="
@@ -44,7 +44,7 @@ RDEPEND="
 	>=x11-libs/gtk+-3.22.0:3[aqua?,introspection?,wayland?,X?]
 	>=media-libs/harfbuzz-1.4.2:=[icu(+)]
 	>=dev-libs/icu-61.2:=
-	virtual/jpeg:0=
+	media-libs/libjpeg-turbo:0=
 	>=net-libs/libsoup-2.54:2.4[introspection?]
 	>=dev-libs/libxml2-2.8.0:2
 	>=media-libs/libpng-1.4:0=
@@ -61,12 +61,12 @@ RDEPEND="
 	dev-libs/libtasn1:=
 	spell? ( >=app-text/enchant-0.22:2 )
 	gstreamer? (
-		>=media-libs/gstreamer-1.14:1.0
-		>=media-libs/gst-plugins-base-1.14:1.0[egl?,X?]
+		>=media-libs/gstreamer-1.20:1.0
+		>=media-libs/gst-plugins-base-1.20:1.0[egl?,X?]
 		gles2-only? ( media-libs/gst-plugins-base:1.0[gles2] )
 		!gles2-only? ( media-libs/gst-plugins-base:1.0[opengl] )
-		>=media-plugins/gst-plugins-opus-1.14.4-r1:1.0
-		>=media-libs/gst-plugins-bad-1.14:1.0
+		>=media-plugins/gst-plugins-opus-1.20:1.0
+		>=media-libs/gst-plugins-bad-1.20:1.0
 	)
 
 	X? (
@@ -108,6 +108,7 @@ BDEPEND="
 	${PYTHON_DEPS}
 	${RUBY_DEPS}
 	dbus? ( >=app-accessibility/at-spi2-core-2.5.3 )
+	dev-util/gdbus-codegen
 	dev-util/glib-utils
 	>=dev-util/gperf-3.0.1
 	>=sys-devel/bison-2.4.3
@@ -121,16 +122,11 @@ BDEPEND="
 	virtual/perl-JSON-PP
 
 	gtk-doc? ( >=dev-util/gtk-doc-1.32 )
-	geolocation? ( dev-util/gdbus-codegen )
-	>=dev-util/cmake-3.10
 "
 #	test? (
 #		dev-python/pygobject:3[python_targets_python2_7]
 #		x11-themes/hicolor-icon-theme
 #	)
-RDEPEND="${RDEPEND}
-	geolocation? ( >=app-misc/geoclue-2.1.5:2.0 )
-"
 
 S="${WORKDIR}/${MY_P}"
 
@@ -212,7 +208,7 @@ src_configure() {
 		-DENABLE_API_TESTS=$(usex test)
 		-DENABLE_BUBBLEWRAP_SANDBOX=$(usex seccomp)
 		-DENABLE_GAMEPAD=$(usex gamepad)
-		-DENABLE_GEOLOCATION=$(usex geolocation) # Runtime optional (talks over dbus service)
+		-DENABLE_GEOLOCATION=ON # Runtime optional (talks over dbus service)
 		-DENABLE_MINIBROWSER=$(usex examples)
 		-DENABLE_SPELLCHECK=$(usex spell)
 		-DENABLE_UNIFIED_BUILDS=$(usex jumbo-build)
@@ -248,4 +244,8 @@ src_configure() {
 	append-cppflags -DNDEBUG
 
 	WK_USE_CCACHE=NO cmake_src_configure
+}
+
+pkg_postinst() {
+	optfeature "geolocation service (used at runtime if available)" "app-misc/geoclue"
 }
