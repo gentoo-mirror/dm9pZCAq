@@ -21,7 +21,6 @@ IUSE="aqua dbus avif +egl examples gamepad gles2-only gnome-keyring +gstreamer g
 
 # gstreamer with opengl/gles2 needs egl
 REQUIRED_USE="
-	geolocation? ( dbus )
 	gles2-only? ( egl )
 	gstreamer? ( egl )
 	wayland? ( egl )

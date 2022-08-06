@@ -5,6 +5,7 @@ set -ue
 #
 # deps: sed
 # usage: ./patch.sh *.ebuild
+# TODO: rewrite in pure sed
 
 for ebuild; do
 	if [ "$(sed -n '/^IUSE=".*dbus.*"$/p' "${ebuild}")" ]; then
@@ -16,6 +17,5 @@ for ebuild; do
 
 	sed -i "${ebuild}" \
 		-e 's/^\(IUSE="aqua\s\)\(.*\)$/\1dbus \2/' \
-		-e '/^REQUIRED_USE/a\	geolocation? ( dbus )' \
 		-e 's/^\(\s\+\)\(.*at-spi2-core.*\)$/\1dbus? ( \2 )/'
 done
