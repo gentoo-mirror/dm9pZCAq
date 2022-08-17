@@ -16,7 +16,7 @@ CRATES="
 	cpufeatures-0.2.2
 	cradle-0.2.2
 	crypto-common-0.1.6
-	ctor-0.1.22
+	ctor-0.1.23
 	ctrlc-3.2.2
 	derivative-2.2.0
 	diff-0.1.13
@@ -28,42 +28,42 @@ CRATES="
 	env_logger-0.9.0
 	executable-path-1.0.0
 	fastrand-1.8.0
-	generic-array-0.14.5
+	generic-array-0.14.6
 	getrandom-0.2.7
 	heck-0.4.0
 	hermit-abi-0.1.19
 	humantime-2.1.0
 	instant-0.1.12
-	itoa-1.0.2
+	itoa-1.0.3
 	lazy_static-1.4.0
 	lexiclean-0.0.1
-	libc-0.2.126
+	libc-0.2.127
 	linked-hash-map-0.5.6
 	log-0.4.17
 	memchr-2.5.0
 	nix-0.24.2
 	output_vt100-0.1.3
 	pretty_assertions-1.2.1
-	proc-macro2-1.0.41
-	quote-1.0.20
-	redox_syscall-0.2.15
+	proc-macro2-1.0.43
+	quote-1.0.21
+	redox_syscall-0.2.16
 	regex-1.6.0
 	regex-automata-0.1.10
 	regex-syntax-0.6.27
 	remove_dir_all-0.5.3
-	rustversion-1.0.8
-	ryu-1.0.10
-	serde-1.0.140
-	serde_derive-1.0.140
-	serde_json-1.0.82
+	rustversion-1.0.9
+	ryu-1.0.11
+	serde-1.0.143
+	serde_derive-1.0.143
+	serde_json-1.0.83
 	sha2-0.10.2
-	similar-2.1.0
+	similar-2.2.0
 	snafu-0.7.1
 	snafu-derive-0.7.1
 	strsim-0.8.0
 	strum-0.24.1
-	strum_macros-0.24.2
-	syn-1.0.98
+	strum_macros-0.24.3
+	syn-1.0.99
 	target-2.0.0
 	tempfile-3.3.0
 	temptree-0.2.0
@@ -72,7 +72,7 @@ CRATES="
 	textwrap-0.11.0
 	typed-arena-2.0.1
 	typenum-1.15.0
-	unicode-ident-1.0.2
+	unicode-ident-1.0.3
 	unicode-segmentation-1.9.0
 	unicode-width-0.1.9
 	uuid-1.1.2
