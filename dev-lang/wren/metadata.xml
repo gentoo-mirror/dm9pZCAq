@@ -10,6 +10,9 @@
 		<email>v@0x0c.link</email>
 		<name>dm9pZCAq</name>
 	</maintainer>
+	<use>
+		<flag name="cli">Build wren cli</flag>
+	</use>
 	<upstream>
 		<remote-id type="github">wren-lang/wren</remote-id>
 		<bugs-to>https://github.com/wren-lang/wren/issues</bugs-to>

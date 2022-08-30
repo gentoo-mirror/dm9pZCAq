@@ -15,15 +15,24 @@ SRC_URI="
 	https://github.com/wren-lang/${PN}-cli/archive/${PV}.tar.gz
 		-> ${PN}-cli-${PV}.tar.gz
 	https://patch-diff.githubusercontent.com/raw/wren-lang/wren-cli/pull/136.patch
-		-> ${P}-glibc-build.patch
+		-> ${P}-cli-glibc-build.patch
 "
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 ~arm ~arm64 ~x86"
+IUSE="+cli"
 
-RDEPEND="dev-libs/libuv"
+RDEPEND="cli? ( dev-libs/libuv )"
 DEPEND="${RDEPEND}"
+
+get_config() {
+	case "${ARCH}" in
+	amd64 | arm64) echo 'release_64bit' ;;
+	arm | x86) echo 'release_32bit' ;;
+	*) die "unsupported ARCH: ${ARCH}" ;;
+	esac
+}
 
 src_prepare() {
 	default
@@ -53,7 +62,7 @@ src_prepare() {
 
 	(
 		cd "${WORKDIR}/wren-cli-${PV}"
-		eapply "${DISTDIR}/${P}-glibc-build.patch"
+		eapply "${DISTDIR}/${P}-cli-glibc-build.patch"
 	)
 }
 
@@ -61,12 +70,31 @@ src_compile() {
 	tc-export CC
 	(
 		cd projects/make
-		emake verbose=1
+		emake verbose=1 config="$(get_config)"
 	)
-	(
-		cd "${WORKDIR}/${PN}-cli-${PV}/projects/make"
-		emake verbose=1
-	)
+	use cli && {
+		tc-export_build_env
+
+		local cli="${WORKDIR}/${PN}-cli-${PV}/src"
+		local flags=(
+			${BUILD_CFLAGS}
+			${BUILD_LDFLAGS}
+			${BUILD_CPPFLAGS}
+		)
+
+		set -- \
+			"${CC}" \
+			"${flags[@]}" \
+			-luv -L./lib -lwren \
+			-I"${cli}/cli" -I"${cli}/module" -I./src/include \
+			"${cli}"/*/*.c -o "${PN}"
+
+		einfo "${*}"
+		ebegin 'building wren cli'
+		"${@}"
+		eend "${?}" 'failed to build wren cli'
+
+	}
 }
 
 python_test() {
@@ -74,7 +102,7 @@ python_test() {
 }
 
 src_install() {
-	newbin "${WORKDIR}/wren-cli-${PV}/bin/wren_cli" wren
+	use cli && dobin "${PN}"
 
 	dolib.a lib/libwren.a
 	dolib.so lib/libwren.so
