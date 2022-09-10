@@ -12,6 +12,7 @@ CRATES="
 	aes-soft-0.6.4
 	aesni-0.10.0
 	ahash-0.7.6
+	android_system_properties-0.1.5
 	atk-sys-0.10.0
 	autocfg-1.0.1
 	base64-0.13.0
@@ -29,11 +30,12 @@ CRATES="
 	cfg-if-1.0.0
 	chacha20-0.8.1
 	chacha20poly1305-0.9.1
-	chrono-0.4.19
+	chrono-0.4.22
 	chunked_transfer-1.4.0
 	cipher-0.2.5
 	cipher-0.3.0
 	convert_case-0.4.0
+	core-foundation-sys-0.8.3
 	cpufeatures-0.2.1
 	cpuid-bool-0.2.0
 	crc32fast-1.3.0
@@ -68,12 +70,13 @@ CRATES="
 	hex-0.4.3
 	hkdf-0.10.0
 	hmac-0.10.1
+	iana-time-zone-0.1.47
 	idna-0.2.3
 	itoa-1.0.1
 	javascriptcore-rs-sys-0.2.0
-	js-sys-0.3.55
+	js-sys-0.3.59
 	lazy_static-1.4.0
-	libc-0.2.123
+	libc-0.2.132
 	log-0.4.17
 	lru-0.7.8
 	matches-0.1.9
@@ -84,7 +87,7 @@ CRATES="
 	num-traits-0.2.15
 	num_cpus-1.13.1
 	num_threads-0.1.6
-	once_cell-1.8.0
+	once_cell-1.14.0
 	opaque-debug-0.3.0
 	open-3.0.2
 	pango-sys-0.10.0
@@ -109,14 +112,14 @@ CRATES="
 	ryu-1.0.5
 	sct-0.7.0
 	semver-1.0.4
-	serde-1.0.140
-	serde_bytes-0.11.6
+	serde-1.0.144
+	serde_bytes-0.11.7
 	serde_cbor-0.11.2
-	serde_derive-1.0.140
-	serde_json-1.0.82
+	serde_derive-1.0.144
+	serde_json-1.0.85
 	sha2-0.9.8
-	sha2-0.10.2
-	signature-1.5.0
+	sha2-0.10.5
+	signature-1.6.0
 	simplelog-0.12.0
 	soup-sys-0.10.0
 	spin-0.5.2
@@ -132,9 +135,9 @@ CRATES="
 	termcolor-1.1.2
 	thiserror-1.0.30
 	thiserror-impl-1.0.30
-	thread-priority-0.8.2
+	thread-priority-0.9.2
 	time-0.1.44
-	time-0.3.11
+	time-0.3.14
 	time-macros-0.2.4
 	tinyfiledialogs-3.9.1
 	tinyvec-1.5.0
@@ -157,11 +160,11 @@ CRATES="
 	wasi-0.9.0+wasi-snapshot-preview1
 	wasi-0.10.0+wasi-snapshot-preview1
 	wasi-0.11.0+wasi-snapshot-preview1
-	wasm-bindgen-0.2.78
-	wasm-bindgen-backend-0.2.78
-	wasm-bindgen-macro-0.2.78
-	wasm-bindgen-macro-support-0.2.78
-	wasm-bindgen-shared-0.2.78
+	wasm-bindgen-0.2.82
+	wasm-bindgen-backend-0.2.82
+	wasm-bindgen-macro-0.2.82
+	wasm-bindgen-macro-support-0.2.82
+	wasm-bindgen-shared-0.2.82
 	web-sys-0.3.55
 	web-view-0.7.3
 	webkit2gtk-sys-0.12.0
