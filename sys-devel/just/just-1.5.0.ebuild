@@ -4,27 +4,28 @@
 EAPI=8
 
 CRATES="
-	aho-corasick-0.7.18
+	aho-corasick-0.7.19
 	ansi_term-0.12.1
 	atty-0.2.14
+	autocfg-1.1.0
 	bitflags-1.3.2
-	block-buffer-0.10.2
+	block-buffer-0.10.3
 	bstr-0.2.17
-	camino-1.0.9
+	camino-1.1.1
 	cfg-if-1.0.0
 	clap-2.34.0
-	cpufeatures-0.2.2
+	cpufeatures-0.2.5
 	cradle-0.2.2
 	crypto-common-0.1.6
 	ctor-0.1.23
-	ctrlc-3.2.2
+	ctrlc-3.2.3
 	derivative-2.2.0
 	diff-0.1.13
 	digest-0.10.3
 	doc-comment-0.3.3
 	dotenv-0.15.0
 	edit-distance-2.1.0
-	either-1.7.0
+	either-1.8.0
 	env_logger-0.9.0
 	executable-path-1.0.0
 	fastrand-1.8.0
@@ -37,13 +38,14 @@ CRATES="
 	itoa-1.0.3
 	lazy_static-1.4.0
 	lexiclean-0.0.1
-	libc-0.2.127
+	libc-0.2.132
 	linked-hash-map-0.5.6
 	log-0.4.17
 	memchr-2.5.0
-	nix-0.24.2
+	nix-0.25.0
+	once_cell-1.14.0
 	output_vt100-0.1.3
-	pretty_assertions-1.2.1
+	pretty_assertions-1.3.0
 	proc-macro2-1.0.43
 	quote-1.0.21
 	redox_syscall-0.2.16
@@ -53,10 +55,10 @@ CRATES="
 	remove_dir_all-0.5.3
 	rustversion-1.0.9
 	ryu-1.0.11
-	serde-1.0.143
-	serde_derive-1.0.143
-	serde_json-1.0.83
-	sha2-0.10.2
+	serde-1.0.144
+	serde_derive-1.0.144
+	serde_json-1.0.85
+	sha2-0.10.5
 	similar-2.2.0
 	snafu-0.7.1
 	snafu-derive-0.7.1
@@ -79,12 +81,13 @@ CRATES="
 	vec_map-0.8.2
 	version_check-0.9.4
 	wasi-0.11.0+wasi-snapshot-preview1
-	which-4.2.5
+	which-4.3.0
 	winapi-0.3.9
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
 	yaml-rust-0.4.5
+	yansi-0.5.1
 	${P}
 "
 
