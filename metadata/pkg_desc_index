@@ -11,7 +11,7 @@ app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/draw 0.1.1: Draw in your terminal
 app-misc/lf 27: Terminal file manager
 app-misc/onefetch 2.12.0: Git repository summary on your terminal
-app-misc/xplr 0.19.0: A hackable, minimal, fast TUI file explorer
+app-misc/xplr 0.19.3: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.8.3: A smarter cd command
 app-shells/zsh-powerlevel10k 1.16.1: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
@@ -31,14 +31,14 @@ dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/fnlfmt 0.2.3: A formatter for Fennel code
 dev-lua/readline 3.0: Interface to the readline library
-dev-python/Telethon 1.25.0: Pure Python 3 MTProto API Telegram client library, for bots too!
+dev-python/Telethon 1.25.2: Pure Python 3 MTProto API Telegram client library, for bots too!
 dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
 dev-python/pipx 1.1.0: Install and Run Python Applications in Isolated Environments
 dev-python/userpath 1.8.0: Cross-platform tool for adding locations to the user PATH
 dev-ruby/licensee 9.15.2: A Ruby Gem to detect under what license a project is distributed
 dev-ruby/reverse_markdown 2.1.1: Ruby gem to convert html into markdown
-dev-ruby/rugged 1.3.1: Ruby bindings to libgit2
+dev-ruby/rugged 1.3.2.3 1.5.0.1: Ruby bindings to libgit2
 dev-vcs/gitui 0.21.0: Blazing fast terminal-ui for git
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.6.11 0.8.2: Alternative Free Identity System
