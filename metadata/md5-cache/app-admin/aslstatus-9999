@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=X? ( x11-libs/libxcb[xkb?] ) alsa? ( media-libs/alsa-lib[thread-safety] ) pulseaudio? ( media-sound/pulseaudio )
 REQUIRED_USE=xkb? ( X ) ^^ ( alsa pulseaudio )
 SLOT=0
-_eclasses_=portability	58227860123d3e8da23290064ce3373e	savedconfig	4011d8d7370446e970e2c92b20a31341	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_eclasses_=portability	58227860123d3e8da23290064ce3373e	savedconfig	4011d8d7370446e970e2c92b20a31341	git-r3	2347f8fe2d392b2a091191f94be37e6f
 _md5_=3d29d6d79b0e333a3d488dd1e574a1bc
