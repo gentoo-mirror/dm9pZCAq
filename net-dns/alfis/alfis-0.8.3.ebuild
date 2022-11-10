@@ -46,7 +46,7 @@ CRATES="
 	curve25519-dalek-3.2.0
 	derive_more-0.99.17
 	digest-0.9.0
-	digest-0.10.3
+	digest-0.10.5
 	ecies-ed25519-0.5.1
 	ed25519-1.2.0
 	ed25519-dalek-1.0.1
@@ -78,7 +78,7 @@ CRATES="
 	lazy_static-1.4.0
 	libc-0.2.132
 	log-0.4.17
-	lru-0.7.8
+	lru-0.8.1
 	matches-0.1.9
 	miniz_oxide-0.4.4
 	mio-0.8.4
@@ -89,7 +89,7 @@ CRATES="
 	num_threads-0.1.6
 	once_cell-1.14.0
 	opaque-debug-0.3.0
-	open-3.0.2
+	open-3.0.3
 	pango-sys-0.10.0
 	pathdiff-0.2.1
 	percent-encoding-2.1.0
@@ -118,11 +118,12 @@ CRATES="
 	serde_derive-1.0.144
 	serde_json-1.0.85
 	sha2-0.9.8
-	sha2-0.10.5
+	sha2-0.10.6
 	signature-1.6.0
 	simplelog-0.12.0
 	soup-sys-0.10.0
 	spin-0.5.2
+	spmc-0.3.0
 	sqlite-0.26.0
 	sqlite3-src-0.3.0
 	sqlite3-sys-0.13.0
