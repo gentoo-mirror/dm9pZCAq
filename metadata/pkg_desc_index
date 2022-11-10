@@ -19,7 +19,7 @@ app-shells/zsh-vi-mode 0.8.4: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/epy 2022.4.18 9999: CLI Ebook Reader
 app-text/smu 1.5: Simple markup - markdown like syntax
-dev-lang/fennel 1.2.0: Lua Lisp Language
+dev-lang/fennel 1.2.1: Lua Lisp Language
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
 dev-lang/hissp 0.2.0: It's Python with a Lissp
 dev-lang/metalang99 1.13.2: Full-blown preprocessor metaprogramming
