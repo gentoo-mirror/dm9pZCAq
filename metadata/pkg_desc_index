@@ -11,7 +11,7 @@ app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/draw 0.1.1: Draw in your terminal
 app-misc/lf 27: Terminal file manager
 app-misc/onefetch 2.13.2: Git repository summary on your terminal
-app-misc/xplr 0.19.3: A hackable, minimal, fast TUI file explorer
+app-misc/xplr 0.20.0: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.8.3: A smarter cd command
 app-shells/zsh-powerlevel10k 1.16.1: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
@@ -31,8 +31,6 @@ dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/fnlfmt 0.2.3: A formatter for Fennel code
 dev-lua/readline 3.0: Interface to the readline library
-dev-python/Telethon 1.25.2: Pure Python 3 MTProto API Telegram client library, for bots too!
-dev-python/TgCrypto 1.2.2: Fast and Portable Telegram Crypto Library for Python
 dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
 dev-python/pipx 1.1.0: Install and Run Python Applications in Isolated Environments
 dev-python/userpath 1.8.0: Cross-platform tool for adding locations to the user PATH
@@ -48,7 +46,7 @@ net-libs/webkit-gtk 2.36.3 2.36.4 2.36.5-r1 2.36.6 2.36.7: Open source web brows
 net-misc/gping 1.4.0: Ping, but with a graph
 net-news/newsboat 2.28: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.3a_pre0: TUI and CLI for the BitTorrent client Transmission
-net-p2p/yggdrasil-go 0.4.4: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.4.6: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-wireless/eiwd 1.30-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
 sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
@@ -58,7 +56,7 @@ sys-apps/tealdeer 1.6.1: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
-sys-devel/just 1.5.0: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 1.8.0: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.8.1: Disk Usage/Free Utility - a better 'df' alternative
 sys-fs/mdevd 0.1.6.0 9999: A kernel event manager compatible with mdev.conf
