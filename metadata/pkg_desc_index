@@ -10,7 +10,7 @@ app-eselect/eselect-repository 12: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/draw 0.1.1: Draw in your terminal
 app-misc/lf 27: Terminal file manager
-app-misc/onefetch 2.12.0: Git repository summary on your terminal
+app-misc/onefetch 2.13.2: Git repository summary on your terminal
 app-misc/xplr 0.19.3: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.8.3: A smarter cd command
@@ -54,7 +54,7 @@ sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
 sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
 sys-apps/hexyl 0.10.0: A command-line hex viewer
 sys-apps/huxdemp 1.0.0: A better hexdump
-sys-apps/tealdeer 1.5.0: Very fast implementation of tldr in Rust
+sys-apps/tealdeer 1.6.1: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
