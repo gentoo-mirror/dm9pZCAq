@@ -239,7 +239,7 @@ src_install() {
 	systemd_dounit "contrib/systemd/${PN}"{,-default-config}.service
 
 	use X && {
-		make_desktop_entry contrib/*.desktop
+		domenu contrib/
 
 		local icon='' size=''
 		for icon in img/logo/*.png; do
