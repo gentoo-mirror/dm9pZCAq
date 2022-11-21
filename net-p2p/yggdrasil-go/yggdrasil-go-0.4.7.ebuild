@@ -6,8 +6,8 @@ EAPI=7
 inherit go-module linux-info systemd fcaps
 
 EGO_SUM=(
-	"github.com/Arceliar/ironwood v0.0.0-20221025225125-45b4281814c2"
-	"github.com/Arceliar/ironwood v0.0.0-20221025225125-45b4281814c2/go.mod"
+	"github.com/Arceliar/ironwood v0.0.0-20221115123222-ec61cea2f439"
+	"github.com/Arceliar/ironwood v0.0.0-20221115123222-ec61cea2f439/go.mod"
 	"github.com/Arceliar/phony v0.0.0-20210209235338-dde1a8dca979"
 	"github.com/Arceliar/phony v0.0.0-20210209235338-dde1a8dca979/go.mod"
 	"github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod"
@@ -63,8 +63,8 @@ EGO_SUM=(
 	"golang.org/x/image v0.0.0-20190227222117-0694c2d4d067/go.mod"
 	"golang.org/x/image v0.0.0-20190802002840-cff245a6509b/go.mod"
 	"golang.org/x/mobile v0.0.0-20190312151609-d3739f865fa6/go.mod"
-	"golang.org/x/mobile v0.0.0-20221012134814-c746ac228303"
-	"golang.org/x/mobile v0.0.0-20221012134814-c746ac228303/go.mod"
+	"golang.org/x/mobile v0.0.0-20221110043201-43a038452099"
+	"golang.org/x/mobile v0.0.0-20221110043201-43a038452099/go.mod"
 	"golang.org/x/mod v0.1.0/go.mod"
 	"golang.org/x/mod v0.4.2/go.mod"
 	"golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4"
@@ -116,7 +116,6 @@ EGO_SUM=(
 	"golang.org/x/tools v0.0.0-20190312151545-0bb0c0a6e846/go.mod"
 	"golang.org/x/tools v0.0.0-20191119224855-298f0cb1881e/go.mod"
 	"golang.org/x/tools v0.1.7/go.mod"
-	"golang.org/x/tools v0.1.8-0.20211022200916-316ba0b74098/go.mod"
 	"golang.org/x/tools v0.1.12"
 	"golang.org/x/tools v0.1.12/go.mod"
 	"golang.org/x/xerrors v0.0.0-20190717185122-a985d3407aa7/go.mod"
