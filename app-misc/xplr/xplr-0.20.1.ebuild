@@ -6,22 +6,23 @@ EAPI=8
 LUA_COMPAT=( luajit )
 
 CRATES="
-	aho-corasick-0.7.19
+	aho-corasick-0.7.20
 	android_system_properties-0.1.5
 	anes-0.1.6
 	ansi-to-tui-2.0.0
 	anyhow-1.0.66
-	assert_cmd-2.0.5
+	assert_cmd-2.0.7
 	atty-0.2.14
 	autocfg-1.1.0
 	bitflags-1.3.2
 	bstr-0.2.17
+	bstr-1.0.1
 	bumpalo-3.11.1
 	cassowary-0.3.0
 	cast-0.3.0
-	cc-1.0.73
+	cc-1.0.77
 	cfg-if-1.0.0
-	chrono-0.4.22
+	chrono-0.4.23
 	ciborium-0.2.0
 	ciborium-io-0.2.0
 	ciborium-ll-0.2.0
@@ -33,14 +34,14 @@ CRATES="
 	criterion-plot-0.5.0
 	crossbeam-channel-0.5.6
 	crossbeam-deque-0.8.2
-	crossbeam-epoch-0.9.11
-	crossbeam-utils-0.8.12
+	crossbeam-epoch-0.9.13
+	crossbeam-utils-0.8.14
 	crossterm-0.25.0
 	crossterm_winapi-0.9.0
-	cxx-1.0.80
-	cxx-build-1.0.80
-	cxxbridge-flags-1.0.80
-	cxxbridge-macro-1.0.80
+	cxx-1.0.83
+	cxx-build-1.0.83
+	cxxbridge-flags-1.0.83
+	cxxbridge-macro-1.0.83
 	difflib-0.4.0
 	dirs-4.0.0
 	dirs-sys-0.3.7
@@ -48,85 +49,85 @@ CRATES="
 	either-1.8.0
 	erased-serde-0.3.23
 	fuzzy-matcher-0.3.7
-	gethostname-0.3.0
+	gethostname-0.4.1
 	getrandom-0.2.8
 	half-1.8.2
 	hashbrown-0.12.3
 	hermit-abi-0.1.19
-	humansize-2.1.0
-	iana-time-zone-0.1.51
+	humansize-2.1.2
+	iana-time-zone-0.1.53
 	iana-time-zone-haiku-0.1.1
-	indexmap-1.9.1
+	indexmap-1.9.2
 	itertools-0.10.5
 	itoa-1.0.4
 	js-sys-0.3.60
 	lazy_static-1.4.0
-	libc-0.2.136
-	libm-0.2.5
+	libc-0.2.138
+	libm-0.2.6
 	link-cplusplus-1.0.7
 	lock_api-0.4.9
 	log-0.4.17
 	lua-src-544.0.1
 	luajit-src-210.4.3+resty8384278
 	memchr-2.5.0
-	memoffset-0.6.5
+	memoffset-0.7.1
 	mime-0.3.16
 	mime_guess-2.0.4
 	minimal-lexical-0.2.1
 	mio-0.8.5
-	mlua-0.8.4
+	mlua-0.8.6
 	natord-1.0.9
 	nom-7.1.1
 	num-integer-0.1.45
 	num-traits-0.2.15
-	num_cpus-1.13.1
-	once_cell-1.15.0
+	num_cpus-1.14.0
+	once_cell-1.16.0
 	oorandom-11.1.3
-	os_str_bytes-6.3.0
+	os_str_bytes-6.4.1
 	parking_lot-0.12.1
-	parking_lot_core-0.9.4
+	parking_lot_core-0.9.5
 	path-absolutize-3.0.14
 	path-dedot-3.0.18
-	pkg-config-0.3.25
+	pkg-config-0.3.26
 	plotters-0.3.4
 	plotters-backend-0.3.4
 	plotters-svg-0.3.3
-	predicates-2.1.1
-	predicates-core-1.0.3
-	predicates-tree-1.0.5
+	predicates-2.1.4
+	predicates-core-1.0.5
+	predicates-tree-1.0.7
 	proc-macro2-1.0.47
 	quote-1.0.21
-	rayon-1.5.3
-	rayon-core-1.9.3
+	rayon-1.6.0
+	rayon-core-1.10.1
 	redox_syscall-0.2.16
 	redox_users-0.4.3
-	regex-1.6.0
+	regex-1.7.0
 	regex-automata-0.1.10
-	regex-syntax-0.6.27
+	regex-syntax-0.6.28
 	rustc-hash-1.1.0
 	ryu-1.0.11
 	same-file-1.0.6
 	scopeguard-1.1.0
 	scratch-1.0.2
-	serde-1.0.147
-	serde_derive-1.0.147
-	serde_json-1.0.87
+	serde-1.0.148
+	serde_derive-1.0.148
+	serde_json-1.0.89
 	serde_yaml-0.9.14
 	signal-hook-0.3.14
 	signal-hook-mio-0.2.3
 	signal-hook-registry-1.4.0
 	smallvec-1.10.0
-	syn-1.0.103
+	syn-1.0.105
 	termcolor-1.1.3
-	termtree-0.2.4
+	termtree-0.4.0
 	textwrap-0.16.0
 	thiserror-1.0.37
 	thiserror-impl-1.0.37
 	thread_local-1.1.4
-	time-0.1.44
+	time-0.1.45
 	tinytemplate-1.2.1
 	tui-0.19.0
-	tui-input-0.6.0
+	tui-input-0.6.1
 	unicase-2.6.0
 	unicode-ident-1.0.5
 	unicode-segmentation-1.10.0
@@ -148,6 +149,7 @@ CRATES="
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
+	windows-0.43.0
 	windows-sys-0.42.0
 	windows_aarch64_gnullvm-0.42.0
 	windows_aarch64_msvc-0.42.0
