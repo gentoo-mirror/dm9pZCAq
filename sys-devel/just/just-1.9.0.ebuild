@@ -4,7 +4,7 @@
 EAPI=8
 
 CRATES="
-	aho-corasick-0.7.19
+	aho-corasick-0.7.20
 	ansi_term-0.12.1
 	atty-0.2.14
 	autocfg-1.1.0
@@ -21,12 +21,12 @@ CRATES="
 	ctrlc-3.2.3
 	derivative-2.2.0
 	diff-0.1.13
-	digest-0.10.5
+	digest-0.10.6
 	doc-comment-0.3.3
 	dotenv-0.15.0
 	edit-distance-2.1.0
 	either-1.8.0
-	env_logger-0.9.1
+	env_logger-0.9.3
 	executable-path-1.0.0
 	fastrand-1.8.0
 	generic-array-0.14.6
@@ -49,17 +49,17 @@ CRATES="
 	proc-macro2-1.0.47
 	quote-1.0.21
 	redox_syscall-0.2.16
-	regex-1.6.0
+	regex-1.7.0
 	regex-automata-0.1.10
-	regex-syntax-0.6.27
+	regex-syntax-0.6.28
 	remove_dir_all-0.5.3
 	rustversion-1.0.9
 	ryu-1.0.11
 	serde-1.0.147
 	serde_derive-1.0.147
-	serde_json-1.0.87
+	serde_json-1.0.89
 	sha2-0.10.6
-	similar-2.2.0
+	similar-2.2.1
 	snafu-0.7.3
 	snafu-derive-0.7.3
 	strsim-0.8.0
@@ -77,7 +77,7 @@ CRATES="
 	unicode-ident-1.0.5
 	unicode-segmentation-1.10.0
 	unicode-width-0.1.10
-	uuid-1.2.1
+	uuid-1.2.2
 	vec_map-0.8.2
 	version_check-0.9.4
 	wasi-0.11.0+wasi-snapshot-preview1
