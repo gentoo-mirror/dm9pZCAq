@@ -10,8 +10,8 @@ app-eselect/eselect-repository 12: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/draw 0.1.1: Draw in your terminal
 app-misc/lf 27: Terminal file manager
-app-misc/onefetch 2.13.2: Git repository summary on your terminal
-app-misc/xplr 0.20.0: A hackable, minimal, fast TUI file explorer
+app-misc/onefetch 2.14.2: Git repository summary on your terminal
+app-misc/xplr 0.20.1: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.8.3: A smarter cd command
 app-shells/zsh-powerlevel10k 1.16.1: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
