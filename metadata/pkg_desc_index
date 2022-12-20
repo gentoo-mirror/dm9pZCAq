@@ -43,7 +43,7 @@ net-dns/alfis 0.8.3: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.36.3 2.36.4 2.36.5-r1 2.36.6 2.36.7: Open source web browser engine
-net-misc/gping 1.4.0: Ping, but with a graph
+net-misc/gping 1.6.2: Ping, but with a graph
 net-news/newsboat 2.28: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.3a_pre0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7: An experiment in scalable routing as an encrypted IPv6 overlay network
