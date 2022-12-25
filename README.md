@@ -130,7 +130,7 @@ packages in overlay: `73`
   * [herbe](x11-misc/herbe) - **[uniq]** Daemon-less notifications without D-Bus
   * [lemonbar](x11-misc/lemonbar) - **[better ebuild]** A featherweight, lemon-scented, bar based on xcb
   * [qt5ct](x11-misc/qt5ct) - **[dbus is optional]** Qt5 configuration tool, similar to qtconfig for Qt4
-  * [screenkey](x11-misc/screenkey) - **[better ebuild]** Screencast your keys
+  * [screenkey](x11-misc/screenkey) - **[dbus is optional]** Screencast your keys
   * [xcolor](x11-misc/xcolor) - **[uniq]** Lightweight color picker for X11
   * [xinput-gui](x11-misc/xinput-gui) - **[maintained]** Simple GUI for `xinput`
 
