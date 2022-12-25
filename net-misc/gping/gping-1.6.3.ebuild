@@ -40,7 +40,7 @@ CRATES="
 	iana-time-zone-haiku-0.1.1
 	idna-0.3.0
 	io-lifetimes-1.0.3
-	is-terminal-0.4.1
+	is-terminal-0.4.2
 	is_debug-1.0.1
 	itertools-0.10.5
 	itoa-1.0.5
