@@ -9,7 +9,7 @@ app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 12: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/draw 0.1.1: Draw in your terminal
-app-misc/lf 27: Terminal file manager
+app-misc/lf 28: Terminal file manager
 app-misc/onefetch 2.14.2: Git repository summary on your terminal
 app-misc/xplr 0.20.1: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
@@ -43,11 +43,11 @@ net-dns/alfis 0.8.3: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.36.3 2.36.4 2.36.5-r1 2.36.6 2.36.7: Open source web browser engine
-net-misc/gping 1.6.2: Ping, but with a graph
+net-misc/gping 1.6.3: Ping, but with a graph
 net-news/newsboat 2.28: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.3a_pre0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7: An experiment in scalable routing as an encrypted IPv6 overlay network
-net-wireless/eiwd 2.0-r1: iwd without dbus
+net-wireless/eiwd 2.1-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
 sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
 sys-apps/hexyl 0.12.0: A command-line hex viewer
