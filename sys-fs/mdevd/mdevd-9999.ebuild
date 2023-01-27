@@ -20,23 +20,16 @@ else
 	"
 	KEYWORDS="~amd64 ~arm ~x86"
 
-	DEPEND=">=dev-libs/skalibs-2.11.0.0"
+	DEPEND=">=dev-libs/skalibs-2.13.0.0"
 fi
 
 LICENSE="ISC"
 SLOT="0"
-IUSE="static"
 
-DEPEND="
-	${DEPEND}
-	static? ( dev-libs/skalibs[static-libs] )
-"
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	econf \
-		$(usex static --enable-static-libc '') \
-		--with-sysdeps="${EPREFIX}/usr/$(get_libdir)/skalibs"
+	econf --with-sysdeps="${EPREFIX}/usr/$(get_libdir)/skalibs"
 }
 
 src_install() {
