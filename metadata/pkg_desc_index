@@ -10,11 +10,11 @@ app-eselect/eselect-repository 12: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/draw 0.1.1: Draw in your terminal
 app-misc/lf 28: Terminal file manager
-app-misc/onefetch 2.14.2: Git repository summary on your terminal
-app-misc/xplr 0.20.1: A hackable, minimal, fast TUI file explorer
+app-misc/onefetch 2.15.1: Git repository summary on your terminal
+app-misc/xplr 0.20.2: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
-app-shells/zoxide 0.8.3: A smarter cd command
-app-shells/zsh-powerlevel10k 1.16.1: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
+app-shells/zoxide 0.9.0: A smarter cd command
+app-shells/zsh-powerlevel10k 1.17.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-vi-mode 0.9.0: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/epy 2022.12.11 9999: CLI Ebook Reader
@@ -43,7 +43,7 @@ net-dns/alfis 0.8.3: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
 net-libs/webkit-gtk 2.36.3 2.36.4 2.36.5-r1 2.36.6 2.36.7: Open source web browser engine
-net-misc/gping 1.6.3: Ping, but with a graph
+net-misc/gping 1.7.0: Ping, but with a graph
 net-news/newsboat 2.30.1: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.3a_pre0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7: An experiment in scalable routing as an encrypted IPv6 overlay network
@@ -56,12 +56,12 @@ sys-apps/tealdeer 1.6.1: Very fast implementation of tldr in Rust
 sys-apps/tldr 1.0.0_alpha: fast and interactive tldr client written with go
 sys-apps/uutils-coreutils 0.0.6: Cross-platform Rust rewrite of the GNU coreutils
 sys-devel/cproc 9999: Small C11 compiler based on QBE
-sys-devel/just 1.9.0: Just a command runner (with syntax inspired by 'make')
+sys-devel/just 1.13.0: Just a command runner (with syntax inspired by 'make')
 sys-devel/qbe 9999: Compiler Backend
 sys-fs/duf 0.8.1: Disk Usage/Free Utility - a better 'df' alternative
-sys-fs/mdevd 0.1.6.0 9999: A kernel event manager compatible with mdev.conf
+sys-fs/mdevd 0.1.6.1 9999: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.1: Daemonless replacement for libudev
-sys-process/bottom 0.7.0: TUI process/system monitor with multitude of features
+sys-process/bottom 0.8.0: TUI process/system monitor with multitude of features
 sys-process/extrace 0.9: trace exec() calls system-wide
 sys-process/snooze 0.5: run a command at a particular time
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
