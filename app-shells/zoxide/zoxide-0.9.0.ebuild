@@ -4,84 +4,98 @@
 EAPI=8
 
 CRATES="
-	anyhow-1.0.61
+	Inflector-0.11.4
+	aliasable-0.1.3
+	anyhow-1.0.68
 	askama-0.11.1
 	askama_derive-0.11.2
 	askama_escape-0.10.3
 	askama_shared-0.12.2
-	assert_cmd-2.0.4
-	atty-0.2.14
-	autocfg-1.1.0
+	assert_cmd-2.0.7
 	bincode-1.3.3
 	bitflags-1.3.2
-	bstr-0.2.17
+	bstr-1.1.0
+	cc-1.0.78
 	cfg-if-1.0.0
-	clap-3.2.16
-	clap_complete-3.2.3
-	clap_complete_fig-3.2.4
-	clap_derive-3.2.15
-	clap_lex-0.2.4
+	clap-4.0.32
+	clap_complete-4.0.7
+	clap_complete_fig-4.0.2
+	clap_derive-4.0.21
+	clap_lex-0.3.0
 	difflib-0.4.0
 	dirs-4.0.0
 	dirs-sys-0.3.7
 	doc-comment-0.3.3
-	dunce-1.0.2
-	either-1.7.0
+	dunce-1.0.3
+	either-1.8.0
+	errno-0.2.8
+	errno-dragonfly-0.1.2
 	fastrand-1.8.0
-	getrandom-0.2.7
-	glob-0.3.0
-	hashbrown-0.12.3
+	getrandom-0.2.8
+	glob-0.3.1
 	heck-0.4.0
-	hermit-abi-0.1.19
-	indexmap-1.9.1
+	hermit-abi-0.2.6
 	instant-0.1.12
-	itertools-0.10.3
-	lazy_static-1.4.0
-	libc-0.2.131
+	io-lifetimes-1.0.3
+	is-terminal-0.4.2
+	itertools-0.10.5
+	libc-0.2.139
+	linux-raw-sys-0.1.4
 	memchr-2.5.0
 	mime-0.3.16
 	mime_guess-2.0.4
 	minimal-lexical-0.2.1
-	nix-0.24.2
-	nom-7.1.1
-	once_cell-1.13.0
-	os_str_bytes-6.2.0
-	predicates-2.1.1
-	predicates-core-1.0.3
-	predicates-tree-1.0.5
+	nix-0.26.1
+	nom-7.1.2
+	once_cell-1.17.0
+	os_str_bytes-6.4.1
+	ouroboros-0.15.5
+	ouroboros_macro-0.15.5
+	predicates-2.1.5
+	predicates-core-1.0.5
+	predicates-tree-1.0.7
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
-	proc-macro2-1.0.43
-	quote-1.0.21
+	proc-macro2-1.0.49
+	quote-1.0.23
 	redox_syscall-0.2.16
 	redox_users-0.4.3
 	regex-automata-0.1.10
 	remove_dir_all-0.5.3
-	rstest-0.15.0
-	rstest_macros-0.14.0
+	rstest-0.16.0
+	rstest_macros-0.16.0
 	rstest_reuse-0.4.0
 	rustc_version-0.4.0
-	semver-1.0.13
-	serde-1.0.143
-	serde_derive-1.0.143
+	rustix-0.36.6
+	semver-1.0.16
+	serde-1.0.152
+	serde_derive-1.0.152
+	static_assertions-1.1.0
 	strsim-0.10.0
-	syn-1.0.99
+	syn-1.0.107
 	tempfile-3.3.0
 	termcolor-1.1.3
-	termtree-0.2.4
-	textwrap-0.15.0
-	thiserror-1.0.32
-	thiserror-impl-1.0.32
+	termtree-0.4.0
+	thiserror-1.0.38
+	thiserror-impl-1.0.38
 	unicase-2.6.0
-	unicode-ident-1.0.3
+	unicode-ident-1.0.6
 	version_check-0.9.4
 	wait-timeout-0.2.0
 	wasi-0.11.0+wasi-snapshot-preview1
-	which-4.2.5
+	which-4.3.0
 	winapi-0.3.9
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
+	windows-sys-0.42.0
+	windows_aarch64_gnullvm-0.42.0
+	windows_aarch64_msvc-0.42.0
+	windows_i686_gnu-0.42.0
+	windows_i686_msvc-0.42.0
+	windows_x86_64_gnu-0.42.0
+	windows_x86_64_gnullvm-0.42.0
+	windows_x86_64_msvc-0.42.0
 	${P}
 "
 

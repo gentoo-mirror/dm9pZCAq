@@ -14,7 +14,7 @@ CRATES="
 	cc-1.0.78
 	cfg-if-1.0.0
 	chrono-0.4.23
-	clap-4.0.29
+	clap-4.0.32
 	clap_derive-4.0.21
 	clap_lex-0.3.0
 	codespan-reporting-0.11.1
@@ -24,10 +24,10 @@ CRATES="
 	core-foundation-sys-0.8.3
 	crossterm-0.25.0
 	crossterm_winapi-0.9.0
-	cxx-1.0.85
-	cxx-build-1.0.85
-	cxxbridge-flags-1.0.85
-	cxxbridge-macro-1.0.85
+	cxx-1.0.86
+	cxx-build-1.0.86
+	cxxbridge-flags-1.0.86
+	cxxbridge-macro-1.0.86
 	dns-lookup-1.0.8
 	either-1.8.0
 	errno-0.2.8
@@ -47,8 +47,8 @@ CRATES="
 	jobserver-0.1.25
 	js-sys-0.3.60
 	lazy_static-1.4.0
-	libc-0.2.138
-	libgit2-sys-0.14.0+1.5.0
+	libc-0.2.139
+	libgit2-sys-0.14.1+1.5.0
 	libz-sys-1.1.8
 	link-cplusplus-1.0.8
 	linux-raw-sys-0.1.4
@@ -59,12 +59,12 @@ CRATES="
 	num-integer-0.1.45
 	num-traits-0.2.15
 	num_threads-0.1.6
-	once_cell-1.16.0
+	once_cell-1.17.0
 	os_str_bytes-6.4.1
 	parking_lot-0.12.1
-	parking_lot_core-0.9.5
+	parking_lot_core-0.9.6
 	percent-encoding-2.2.0
-	pinger-0.7.2
+	pinger-0.8.0
 	pkg-config-0.3.26
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
@@ -72,13 +72,13 @@ CRATES="
 	quote-1.0.23
 	read_color-1.0.0
 	redox_syscall-0.2.16
-	regex-1.7.0
+	regex-1.7.1
 	regex-syntax-0.6.28
-	rustix-0.36.5
+	rustix-0.36.6
 	scopeguard-1.1.0
 	scratch-1.0.3
-	serde-1.0.151
-	shadow-rs-0.19.0
+	serde-1.0.152
+	shadow-rs-0.20.0
 	signal-hook-0.3.14
 	signal-hook-mio-0.2.3
 	signal-hook-registry-1.4.0
@@ -98,7 +98,7 @@ CRATES="
 	tinyvec_macros-0.1.0
 	tui-0.19.0
 	tz-rs-0.6.14
-	tzdb-0.5.1
+	tzdb-0.5.3
 	unicode-bidi-0.3.8
 	unicode-ident-1.0.6
 	unicode-normalization-0.1.22
