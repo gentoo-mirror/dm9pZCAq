@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 PYTHON_REQ_USE="xml(+)"
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 USE_RUBY="ruby27 ruby30 ruby31"
 
 inherit check-reqs flag-o-matic gnome2 optfeature python-any-r1 ruby-single toolchain-funcs cmake
@@ -14,10 +14,10 @@ HOMEPAGE="https://www.webkitgtk.org"
 SRC_URI="https://www.webkitgtk.org/releases/${MY_P}.tar.xz"
 
 LICENSE="LGPL-2+ BSD"
-SLOT="4/37" # soname version of libwebkit2gtk-4.0
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~sparc ~x86"
+SLOT="4.1/0" # soname version of libwebkit2gtk-4.1
+KEYWORDS="amd64 arm arm64 ~ppc ~ppc64 ~riscv ~sparc x86"
 
-IUSE="aqua dbus avif +egl examples gamepad gles2-only gnome-keyring +gstreamer gtk-doc +introspection +jpeg2k +jumbo-build lcms libnotify seccomp spell systemd test wayland X"
+IUSE="aqua dbus avif +egl examples gamepad gles2-only gnome-keyring +gstreamer +introspection pdf +jpeg2k +jumbo-build lcms seccomp spell systemd test wayland X"
 
 # gstreamer with opengl/gles2 needs egl
 REQUIRED_USE="
@@ -35,8 +35,9 @@ RESTRICT="test"
 # Missing WebRTC support, but ENABLE_MEDIA_STREAM/ENABLE_WEB_RTC is experimental upstream (PRIVATE OFF) and shouldn't be used yet in 2.30
 # >=gst-plugins-opus-1.14.4-r1 for opusparse (required by MSE)
 # TODO: gst-plugins-base[X] is only needed when build configuration ends up with GLX set, but that's a bit automagic too to fix
+# Softblocking webkit-gtk-2.38:4 as we going to use webkit-2.38:4.1's WebKitDriver binary
 RDEPEND="
-	>=x11-libs/cairo-1.16.0:=[X?]
+	>=x11-libs/cairo-1.16.0[X?]
 	>=media-libs/fontconfig-2.13.0:1.0
 	>=media-libs/freetype-2.9.0:2
 	>=dev-libs/libgcrypt-1.7.0:0=
@@ -44,12 +45,12 @@ RDEPEND="
 	>=media-libs/harfbuzz-1.4.2:=[icu(+)]
 	>=dev-libs/icu-61.2:=
 	media-libs/libjpeg-turbo:0=
-	>=net-libs/libsoup-2.54:2.4[introspection?]
+	>=net-libs/libsoup-3.0.8:3.0[introspection?]
 	>=dev-libs/libxml2-2.8.0:2
 	>=media-libs/libpng-1.4:0=
-	dev-db/sqlite:3=
+	dev-db/sqlite:3
 	sys-libs/zlib:0
-	>=dev-libs/atk-2.16.0
+	dbus? ( >=app-accessibility/at-spi2-core-2.46.0:2 )
 	media-libs/libwebp:=
 
 	>=dev-libs/glib-2.67.1:2
@@ -76,7 +77,6 @@ RDEPEND="
 		x11-libs/libXt
 	)
 
-	libnotify? ( x11-libs/libnotify )
 	dev-libs/hyphen
 	jpeg2k? ( >=media-libs/openjpeg-2.2.0:2= )
 	avif? ( >=media-libs/libavif-0.9.0:= )
@@ -100,6 +100,7 @@ RDEPEND="
 
 	systemd? ( sys-apps/systemd:= )
 	gamepad? ( >=dev-libs/libmanette-0.2.4 )
+	!<net-libs/webkit-gtk-2.38:4
 "
 DEPEND="${RDEPEND}"
 # Need real bison, not yacc
@@ -119,8 +120,6 @@ BDEPEND="
 	virtual/perl-Data-Dumper
 	virtual/perl-Carp
 	virtual/perl-JSON-PP
-
-	gtk-doc? ( >=dev-util/gtk-doc-1.32 )
 "
 #	test? (
 #		dev-python/pygobject:3[python_targets_python2_7]
@@ -196,6 +195,7 @@ src_configure() {
 	# should somehow let user select between them?
 
 	local mycmakeargs=(
+		-DPython_EXECUTABLE="${PYTHON}"
 		${ruby_interpreter}
 		$(cmake_use_find_package gles2-only OpenGLES2)
 		$(cmake_use_find_package egl EGL)
@@ -207,34 +207,36 @@ src_configure() {
 		-DENABLE_API_TESTS=$(usex test)
 		-DENABLE_BUBBLEWRAP_SANDBOX=$(usex seccomp)
 		-DENABLE_GAMEPAD=$(usex gamepad)
-		-DENABLE_GEOLOCATION=ON # Runtime optional (talks over dbus service)
 		-DENABLE_MINIBROWSER=$(usex examples)
+		-DENABLE_PDFJS=$(usex pdf)
+		-DENABLE_GEOLOCATION=ON # Runtime optional (talks over dbus service)
 		-DENABLE_SPELLCHECK=$(usex spell)
 		-DENABLE_UNIFIED_BUILDS=$(usex jumbo-build)
 		-DENABLE_VIDEO=$(usex gstreamer)
+		-DUSE_GSTREAMER_WEBRTC=$(usex gstreamer)
+		-DUSE_GSTREAMER_TRANSCODER=$(usex gstreamer)
 		-DENABLE_WEBGL=ON
 		# Supported only under ANGLE
 		-DENABLE_WEBGL2=OFF
 		-DENABLE_WEB_AUDIO=$(usex gstreamer)
 		# Source/cmake/OptionsGTK.cmake
 		-DENABLE_GLES2=$(usex gles2-only)
-		-DENABLE_GTKDOC=$(usex gtk-doc)
+		-DENABLE_DOCUMENTATION=OFF
 		-DENABLE_INTROSPECTION=$(usex introspection)
 		-DENABLE_JOURNALD_LOG=$(usex systemd)
 		-DENABLE_QUARTZ_TARGET=$(usex aqua)
 		-DENABLE_WAYLAND_TARGET=$(usex wayland)
 		-DENABLE_X11_TARGET=$(usex X)
-		-DUSE_ANGLE_WEBGL=OFF
 		-DUSE_AVIF=$(usex avif)
 		-DUSE_GTK4=OFF
+		-DENABLE_WEBDRIVER=ON
 		-DUSE_JPEGXL=OFF
 		-DUSE_LCMS=$(usex lcms)
 		-DUSE_LIBHYPHEN=ON
-		-DUSE_LIBNOTIFY=$(usex libnotify)
 		-DUSE_LIBSECRET=$(usex gnome-keyring)
 		-DUSE_OPENGL_OR_ES=ON
 		-DUSE_OPENJPEG=$(usex jpeg2k)
-		-DUSE_SOUP2=ON
+		-DUSE_SOUP2=OFF
 		-DUSE_WOFF2=ON
 		-DUSE_WPE_RENDERER=$(usex wayland) # WPE renderer is used to implement accelerated compositing under wayland
 	)
@@ -243,6 +245,14 @@ src_configure() {
 	append-cppflags -DNDEBUG
 
 	WK_USE_CCACHE=NO cmake_src_configure
+}
+
+src_install() {
+	cmake_src_install
+
+	insinto /usr/share/gtk-doc/html
+	# This will install API docs specific to webkit2gtk-4.1
+	doins -r "${S}"/Documentation/{jsc-glib,webkit2gtk,webkit2gtk-web-extension}-${SLOT%/*}
 }
 
 pkg_postinst() {
