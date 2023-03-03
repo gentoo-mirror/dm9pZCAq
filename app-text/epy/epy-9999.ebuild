@@ -13,7 +13,7 @@ if [ "${PV}" = 9999 ]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/wustho/epy.git"
 else
-	MY_PN="${PN}_reader"
+	MY_PN="${PN}-reader"
 	MY_P="${MY_PN}-${PV}"
 	S="${WORKDIR}/${MY_P}"
 
