@@ -25,15 +25,15 @@ CRATES="
 	bitflags-1.3.2
 	block-buffer-0.10.3
 	bstr-0.2.17
-	bstr-1.0.1
+	bstr-1.3.0
 	btoi-0.4.2
-	bumpalo-3.9.1
+	bumpalo-3.12.0
 	byte-unit-4.0.18
 	bytecount-0.6.3
 	bytemuck-1.9.1
 	byteorder-1.4.3
 	bytesize-1.1.0
-	cargo_toml-0.13.0
+	cargo_toml-0.14.1
 	cast-0.3.0
 	castaway-0.2.2
 	cc-1.0.73
@@ -46,7 +46,7 @@ CRATES="
 	ciborium-ll-0.2.0
 	clap-2.34.0
 	clap-3.2.23
-	clap-4.1.1
+	clap-4.1.6
 	clap_complete-4.1.0
 	clap_derive-4.1.0
 	clap_lex-0.2.4
@@ -81,6 +81,7 @@ CRATES="
 	dirs-3.0.2
 	dirs-4.0.0
 	dirs-sys-0.3.7
+	dunce-1.0.3
 	either-1.6.1
 	enable-ansi-support-0.2.1
 	encode_unicode-0.3.6
@@ -105,44 +106,44 @@ CRATES="
 	ghost-0.1.7
 	gif-0.11.3
 	gimli-0.26.2
-	git-actor-0.15.0
-	git-attributes-0.7.0
-	git-bitmap-0.2.0
-	git-chunk-0.4.0
-	git-command-0.2.0
-	git-config-0.13.0
-	git-config-value-0.10.0
-	git-credentials-0.8.0
-	git-date-0.3.1
-	git-diff-0.24.0
-	git-discover-0.10.0
 	git-features-0.23.1
-	git-features-0.25.1
-	git-glob-0.5.1
 	git-hash-0.9.11
-	git-hash-0.10.1
-	git-hashtable-0.1.0
-	git-index-0.10.0
-	git-lock-3.0.0
-	git-mailmap-0.7.0
-	git-object-0.24.0
-	git-odb-0.38.1
-	git-pack-0.28.0
-	git-path-0.7.0
-	git-prompt-0.3.0
-	git-quote-0.4.0
-	git-ref-0.21.0
-	git-refspec-0.5.0
-	git-repository-0.30.2
-	git-revision-0.8.0
-	git-sec-0.6.0
-	git-tempfile-3.0.0
-	git-testtools-0.10.0
-	git-traverse-0.20.0
-	git-url-0.12.2
-	git-validate-0.7.1
-	git-worktree-0.10.0
-	git2-0.15.0
+	git2-0.16.1
+	gix-0.36.1
+	gix-actor-0.17.2
+	gix-attributes-0.8.3
+	gix-bitmap-0.2.1
+	gix-chunk-0.4.1
+	gix-command-0.2.4
+	gix-config-0.16.2
+	gix-config-value-0.10.1
+	gix-credentials-0.9.2
+	gix-date-0.4.3
+	gix-diff-0.26.1
+	gix-discover-0.13.1
+	gix-features-0.26.5
+	gix-glob-0.5.5
+	gix-hash-0.10.3
+	gix-hashtable-0.1.1
+	gix-index-0.12.4
+	gix-lock-3.0.2
+	gix-mailmap-0.9.3
+	gix-object-0.26.2
+	gix-odb-0.40.2
+	gix-pack-0.30.3
+	gix-path-0.7.2
+	gix-prompt-0.3.2
+	gix-quote-0.4.2
+	gix-ref-0.24.1
+	gix-refspec-0.7.3
+	gix-revision-0.10.4
+	gix-sec-0.6.2
+	gix-tempfile-3.0.2
+	gix-testtools-0.11.0
+	gix-traverse-0.22.1
+	gix-url-0.13.3
+	gix-validate-0.7.3
+	gix-worktree-0.12.3
 	globset-0.4.8
 	globwalk-0.8.1
 	grep-matcher-0.1.5
@@ -182,7 +183,7 @@ CRATES="
 	lazy_static-1.4.0
 	lebe-0.5.2
 	libc-0.2.137
-	libgit2-sys-0.14.0+1.5.0
+	libgit2-sys-0.14.2+1.5.1
 	libz-sys-1.1.6
 	linked-hash-map-0.5.6
 	linux-raw-sys-0.1.3
@@ -241,7 +242,7 @@ CRATES="
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
 	proc-macro2-1.0.46
-	prodash-22.1.0
+	prodash-23.0.0
 	quick-error-2.0.1
 	quote-1.0.18
 	rand-0.8.5
@@ -267,7 +268,7 @@ CRATES="
 	serde-1.0.147
 	serde_derive-1.0.147
 	serde_json-1.0.89
-	serde_yaml-0.9.14
+	serde_yaml-0.9.17
 	sha1-0.10.5
 	sha1_smol-1.0.0
 	signal-hook-0.3.14
@@ -343,27 +344,20 @@ CRATES="
 	winapi-i686-pc-windows-gnu-0.4.0
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
-	windows-0.40.0
+	windows-0.43.0
 	windows-sys-0.36.1
 	windows-sys-0.42.0
-	windows_aarch64_gnullvm-0.40.0
 	windows_aarch64_gnullvm-0.42.0
 	windows_aarch64_msvc-0.36.1
-	windows_aarch64_msvc-0.40.0
 	windows_aarch64_msvc-0.42.0
 	windows_i686_gnu-0.36.1
-	windows_i686_gnu-0.40.0
 	windows_i686_gnu-0.42.0
 	windows_i686_msvc-0.36.1
-	windows_i686_msvc-0.40.0
 	windows_i686_msvc-0.42.0
 	windows_x86_64_gnu-0.36.1
-	windows_x86_64_gnu-0.40.0
 	windows_x86_64_gnu-0.42.0
-	windows_x86_64_gnullvm-0.40.0
 	windows_x86_64_gnullvm-0.42.0
 	windows_x86_64_msvc-0.36.1
-	windows_x86_64_msvc-0.40.0
 	windows_x86_64_msvc-0.42.0
 	winres-0.1.12
 	xz2-0.1.7
