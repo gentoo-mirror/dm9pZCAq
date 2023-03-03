@@ -3,7 +3,7 @@
 
 EAPI=8
 
-LUA_COMPAT=( lua5-{1..4} luajit )
+LUA_COMPAT=(lua5-{1..4} luajit)
 
 inherit lua-single
 
@@ -22,10 +22,13 @@ RDEPEND="${DEPEND}"
 BDEPEND="dev-lang/fennel"
 
 src_compile() {
-	{
-		printf '%s\n\n' "#!${LUA}" \
-		&& fennel --require-as-include --compile cli.fnl
-	} > "./${PN}" || die
+	(
+		set -x
+		{
+			printf '%s\n\n' "#!${LUA}" &&
+				fennel --require-as-include --compile cli.fnl
+		} >"./${PN}" || die
+	)
 }
 
 src_install() {
