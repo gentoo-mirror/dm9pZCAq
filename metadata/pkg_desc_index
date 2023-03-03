@@ -19,7 +19,7 @@ app-shells/zsh-vi-mode 0.9.0: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/epy 2022.12.11 9999: CLI Ebook Reader
 app-text/smu 1.5: Simple markup - markdown like syntax
-dev-lang/fennel 1.2.1: Lua Lisp Language
+dev-lang/fennel 1.3.0: Lua Lisp Language
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
 dev-lang/hissp 0.2.0: It's Python with a Lissp
 dev-lang/metalang99 1.13.2: Full-blown preprocessor metaprogramming
@@ -29,7 +29,7 @@ dev-lang/zetz 0.1.1_p20211118: ZetZ a zymbolic verifier and tranzpiler to bare m
 dev-libs/interface99 1.0.0: Zero-boilerplate interfaces for C99
 dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
-dev-lua/fnlfmt 0.2.3: A formatter for Fennel code
+dev-lua/fnlfmt 0.3.0: A formatter for Fennel code
 dev-lua/readline 3.0: Interface to the readline library
 dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
 dev-python/pipx 1.1.0: Install and Run Python Applications in Isolated Environments
