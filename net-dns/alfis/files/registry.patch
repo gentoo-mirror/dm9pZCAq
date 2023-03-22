@@ -1,0 +1,42 @@
+---
+ Cargo.lock | 4 ++--
+ Cargo.toml | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Cargo.lock b/Cargo.lock
+index 997f441..b615d9f 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -1672,7 +1672,7 @@ dependencies = [
+ [[package]]
+ name = "web-view"
+ version = "0.7.3"
+-source = "git+https://github.com/Boscop/web-view#e87e08cab3a2d500d54068ec9c7aaa055a711465"
++source = "registry+https://github.com/rust-lang/crates.io-index"
+ dependencies = [
+  "boxfnonce",
+  "tinyfiledialogs",
+@@ -1724,7 +1724,7 @@ dependencies = [
+ [[package]]
+ name = "webview-sys"
+ version = "0.6.2"
+-source = "git+https://github.com/Boscop/web-view#e87e08cab3a2d500d54068ec9c7aaa055a711465"
++source = "registry+https://github.com/rust-lang/crates.io-index"
+ dependencies = [
+  "cc",
+  "gdk-sys",
+diff --git a/Cargo.toml b/Cargo.toml
+index e1a04d6..92b27f5 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -46,7 +46,7 @@ lazy_static = "1.4.0"
+ spmc = "0.3.0"
+ 
+ # Optional dependencies regulated by features
+-web-view = { git = "https://github.com/Boscop/web-view", features = [], optional = true }
++web-view = { version = "0.7.3", features = [], optional = true }
+ tinyfiledialogs = { version = "3.9.1", optional = true }
+ open = { version = "3.0.3", optional = true }
+ 
+-- 
+2.39.1
