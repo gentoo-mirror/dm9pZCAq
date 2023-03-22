@@ -10,5 +10,5 @@ LICENSE=ISC
 PROPERTIES=live
 RDEPEND=!mcf-qbe? ( sys-devel/qbe ) clang-cpp? ( sys-devel/clang:* ) default-lld? ( sys-devel/lld ) llvm-mc? ( sys-devel/llvm:* )
 SLOT=0
-_eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	69394e25812406faa1f90edaf4969395	git-r3	c57c50c922e121043788de0b40ada60a
+_eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157	flag-o-matic	514815b1cc0dd4aeac177c2e812b3b1a	git-r3	c57c50c922e121043788de0b40ada60a
 _md5_=00380b630d10b493fbd7b6274f5711e7
