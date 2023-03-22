@@ -11,11 +11,12 @@ CRATES="
 	aes-gcm-0.8.0
 	aes-soft-0.6.4
 	aesni-0.10.0
-	ahash-0.7.6
+	ahash-0.8.3
 	android_system_properties-0.1.5
 	atk-sys-0.10.0
 	autocfg-1.0.1
-	base64-0.13.0
+	base64-0.13.1
+	base64-0.21.0
 	bincode-1.3.3
 	bitflags-1.3.2
 	blake2-0.9.2
@@ -65,6 +66,7 @@ CRATES="
 	gtk-sys-0.10.0
 	half-1.8.1
 	hashbrown-0.12.3
+	hashbrown-0.13.2
 	heck-0.3.3
 	hermit-abi-0.1.19
 	hex-0.4.3
@@ -72,16 +74,18 @@ CRATES="
 	hmac-0.10.1
 	iana-time-zone-0.1.47
 	idna-0.2.3
+	indexmap-1.9.2
 	itoa-1.0.1
 	javascriptcore-rs-sys-0.2.0
 	js-sys-0.3.59
 	lazy_static-1.4.0
 	libc-0.2.132
 	log-0.4.17
-	lru-0.8.1
+	lru-0.9.0
 	matches-0.1.9
+	memchr-2.5.0
 	miniz_oxide-0.4.4
-	mio-0.8.4
+	mio-0.8.5
 	num-bigint-0.4.3
 	num-integer-0.1.44
 	num-traits-0.2.15
@@ -97,7 +101,7 @@ CRATES="
 	poly1305-0.7.2
 	polyval-0.4.5
 	ppv-lite86-0.2.14
-	proc-macro2-1.0.38
+	proc-macro2-1.0.51
 	quote-1.0.10
 	rand-0.7.3
 	rand-0.8.5
@@ -112,31 +116,33 @@ CRATES="
 	ryu-1.0.5
 	sct-0.7.0
 	semver-1.0.4
-	serde-1.0.144
+	serde-1.0.152
 	serde_bytes-0.11.7
 	serde_cbor-0.11.2
-	serde_derive-1.0.144
+	serde_derive-1.0.152
 	serde_json-1.0.85
+	serde_spanned-0.6.1
 	sha2-0.9.8
 	sha2-0.10.6
 	signature-1.6.0
+	signature-2.0.0
 	simplelog-0.12.0
 	soup-sys-0.10.0
 	spin-0.5.2
 	spmc-0.3.0
-	sqlite-0.26.0
-	sqlite3-src-0.3.0
-	sqlite3-sys-0.13.0
+	sqlite-0.30.4
+	sqlite3-src-0.4.0
+	sqlite3-sys-0.14.0
 	strum-0.18.0
 	strum_macros-0.18.0
 	subtle-2.4.1
-	syn-1.0.93
+	syn-1.0.109
 	synstructure-0.12.6
 	system-deps-1.3.2
 	termcolor-1.1.2
 	thiserror-1.0.30
 	thiserror-impl-1.0.30
-	thread-priority-0.9.2
+	thread-priority-0.10.0
 	time-0.1.44
 	time-0.3.14
 	time-macros-0.2.4
@@ -144,8 +150,12 @@ CRATES="
 	tinyvec-1.5.0
 	tinyvec_macros-0.1.0
 	toml-0.5.9
+	toml-0.7.2
+	toml_datetime-0.6.1
+	toml_edit-0.19.4
 	typenum-1.14.0
 	unicode-bidi-0.3.7
+	unicode-ident-1.0.6
 	unicode-normalization-0.1.19
 	unicode-segmentation-1.8.0
 	unicode-width-0.1.9
@@ -155,9 +165,9 @@ CRATES="
 	ureq-2.5.0
 	url-2.2.2
 	urlencoding-1.3.3
-	uuid-1.1.2
+	uuid-1.3.0
 	version-compare-0.0.10
-	version_check-0.9.3
+	version_check-0.9.4
 	wasi-0.9.0+wasi-snapshot-preview1
 	wasi-0.10.0+wasi-snapshot-preview1
 	wasi-0.11.0+wasi-snapshot-preview1
@@ -177,16 +187,29 @@ CRATES="
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
 	windows-sys-0.36.1
+	windows-sys-0.42.0
+	windows_aarch64_gnullvm-0.42.0
 	windows_aarch64_msvc-0.36.1
+	windows_aarch64_msvc-0.42.0
 	windows_i686_gnu-0.36.1
+	windows_i686_gnu-0.42.0
 	windows_i686_msvc-0.36.1
+	windows_i686_msvc-0.42.0
 	windows_x86_64_gnu-0.36.1
+	windows_x86_64_gnu-0.42.0
+	windows_x86_64_gnullvm-0.42.0
 	windows_x86_64_msvc-0.36.1
+	windows_x86_64_msvc-0.42.0
+	winnow-0.3.3
 	winres-0.1.12
 	x25519-dalek-1.2.0
 	zeroize-1.3.0
 	zeroize_derive-1.2.0
 "
+
+PATCHES=(
+	"${FILESDIR}/registry.patch"
+)
 
 inherit cargo desktop fcaps systemd tmpfiles
 
