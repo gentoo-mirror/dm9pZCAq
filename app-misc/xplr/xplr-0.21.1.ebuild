@@ -10,7 +10,7 @@ CRATES="
 	aho-corasick-0.7.20
 	android_system_properties-0.1.5
 	anes-0.1.6
-	ansi-to-tui-forked-3.0.0-ratatui
+	ansi-to-tui-3.0.0
 	anstyle-0.3.5
 	anyhow-1.0.70
 	arrayvec-0.7.2
@@ -42,7 +42,6 @@ CRATES="
 	crossbeam-epoch-0.9.14
 	crossbeam-queue-0.3.8
 	crossbeam-utils-0.8.15
-	crossterm-0.25.0
 	crossterm-0.26.1
 	crossterm_winapi-0.9.0
 	cxx-1.0.93
@@ -75,10 +74,10 @@ CRATES="
 	hermit-abi-0.2.6
 	humansize-2.1.3
 	humantime-2.1.0
-	iana-time-zone-0.1.53
+	iana-time-zone-0.1.54
 	iana-time-zone-haiku-0.1.1
 	ident_case-1.0.1
-	indexmap-1.9.2
+	indexmap-1.9.3
 	itertools-0.10.5
 	itoa-1.0.6
 	js-sys-0.3.61
@@ -94,7 +93,7 @@ CRATES="
 	memchr-2.5.0
 	memoffset-0.6.5
 	memoffset-0.8.0
-	mime-0.3.16
+	mime-0.3.17
 	mime_guess-2.0.4
 	minimal-lexical-0.2.1
 	mio-0.8.6
@@ -122,27 +121,27 @@ CRATES="
 	plotters-0.3.4
 	plotters-backend-0.3.4
 	plotters-svg-0.3.3
-	predicates-3.0.1
+	predicates-3.0.2
 	predicates-core-1.0.6
 	predicates-tree-1.0.9
-	proc-macro2-1.0.52
+	proc-macro2-1.0.53
 	quote-1.0.26
-	ratatui-0.20.0
+	ratatui-0.20.1
 	rayon-1.7.0
 	rayon-core-1.11.0
 	redox_syscall-0.2.16
 	redox_users-0.4.3
-	regex-1.7.1
+	regex-1.7.3
 	regex-automata-0.1.10
-	regex-syntax-0.6.28
+	regex-syntax-0.6.29
 	rustc-hash-1.1.0
 	rustversion-1.0.12
 	ryu-1.0.13
 	same-file-1.0.6
 	scopeguard-1.1.0
 	scratch-1.0.5
-	serde-1.0.157
-	serde_derive-1.0.157
+	serde-1.0.158
+	serde_derive-1.0.158
 	serde_json-1.0.94
 	serde_yaml-0.9.19
 	shlex-1.1.0
@@ -155,7 +154,7 @@ CRATES="
 	snailquote-0.3.1
 	strsim-0.10.0
 	syn-1.0.109
-	syn-2.0.2
+	syn-2.0.10
 	term-0.7.0
 	termcolor-1.2.0
 	termtree-0.4.1
@@ -169,7 +168,7 @@ CRATES="
 	time-macros-0.2.8
 	timer-0.2.0
 	tinytemplate-1.2.1
-	tui-input-0.6.1
+	tui-input-0.7.0
 	tuikit-0.5.0
 	unicase-2.6.0
 	unicode-ident-1.0.8
@@ -198,6 +197,7 @@ CRATES="
 	winapi-util-0.1.5
 	winapi-x86_64-pc-windows-gnu-0.4.0
 	windows-0.43.0
+	windows-0.46.0
 	windows-sys-0.45.0
 	windows-targets-0.42.2
 	windows_aarch64_gnullvm-0.42.2
