@@ -6,7 +6,6 @@ EAPI=8
 CRATES="
 	addr2line-0.17.0
 	adler-1.0.2
-	adler32-1.2.0
 	ahash-0.8.1
 	aho-corasick-0.7.18
 	android_system_properties-0.1.4
@@ -28,12 +27,12 @@ CRATES="
 	bstr-1.3.0
 	btoi-0.4.2
 	bumpalo-3.12.0
-	byte-unit-4.0.18
+	byte-unit-4.0.19
 	bytecount-0.6.3
-	bytemuck-1.9.1
+	bytemuck-1.13.1
 	byteorder-1.4.3
 	bytesize-1.1.0
-	cargo_toml-0.14.1
+	cargo_toml-0.15.2
 	cast-0.3.0
 	castaway-0.2.2
 	cc-1.0.73
@@ -47,7 +46,7 @@ CRATES="
 	clap-2.34.0
 	clap-3.2.23
 	clap-4.1.6
-	clap_complete-4.1.0
+	clap_complete-4.1.4
 	clap_derive-4.1.0
 	clap_lex-0.2.4
 	clap_lex-0.3.0
@@ -55,7 +54,9 @@ CRATES="
 	cmake-0.1.48
 	color_quant-1.1.0
 	compact_str-0.6.1
-	console-0.15.2
+	concolor-0.0.11
+	concolor-query-0.1.0
+	console-0.15.5
 	core-foundation-sys-0.8.3
 	cpufeatures-0.2.5
 	crc-3.0.0
@@ -74,7 +75,6 @@ CRATES="
 	ctor-0.1.22
 	dashmap-4.0.2
 	dashmap-5.3.3
-	deflate-1.0.0
 	deunicode-0.4.3
 	diff-0.1.13
 	digest-0.10.5
@@ -104,7 +104,7 @@ CRATES="
 	generic-array-0.14.6
 	getrandom-0.2.8
 	ghost-0.1.7
-	gif-0.11.3
+	gif-0.12.0
 	gimli-0.26.2
 	git-features-0.23.1
 	git-hash-0.9.11
@@ -157,17 +157,17 @@ CRATES="
 	hermit-abi-0.2.6
 	hex-0.4.3
 	home-0.5.3
-	human-panic-1.0.3
+	human-panic-1.1.0
 	human_format-1.0.3
 	humansize-1.1.1
 	humantime-2.1.0
 	iana-time-zone-0.1.46
 	idna-0.2.3
 	ignore-0.4.18
-	image-0.24.4
+	image-0.24.6
 	imara-diff-0.1.5
 	indexmap-1.9.1
-	insta-1.23.0
+	insta-1.28.0
 	instant-0.1.12
 	inventory-0.3.3
 	io-close-0.3.7
@@ -177,7 +177,7 @@ CRATES="
 	itertools-0.10.5
 	itoa-1.0.4
 	jobserver-0.1.24
-	jpeg-decoder-0.2.6
+	jpeg-decoder-0.3.0
 	js-sys-0.3.60
 	jwalk-0.8.1
 	lazy_static-1.4.0
@@ -211,8 +211,8 @@ CRATES="
 	object-0.29.0
 	once_cell-1.15.0
 	oorandom-11.1.3
+	os_info-2.0.8
 	os_str_bytes-6.0.1
-	os_type-2.6.0
 	output_vt100-0.1.3
 	owo-colors-3.5.0
 	parking_lot-0.11.2
@@ -236,15 +236,16 @@ CRATES="
 	plotters-0.3.4
 	plotters-backend-0.3.4
 	plotters-svg-0.3.3
-	png-0.17.5
+	png-0.17.7
 	ppv-lite86-0.2.16
 	pretty_assertions-1.3.0
 	proc-macro-error-1.0.4
 	proc-macro-error-attr-1.0.4
-	proc-macro2-1.0.46
+	proc-macro2-1.0.56
 	prodash-23.0.0
+	qoi-0.4.1
 	quick-error-2.0.1
-	quote-1.0.18
+	quote-1.0.26
 	rand-0.8.5
 	rand_chacha-0.3.1
 	rand_core-0.6.3
@@ -263,12 +264,12 @@ CRATES="
 	rustversion-1.0.6
 	ryu-1.0.10
 	same-file-1.0.6
-	scoped_threadpool-0.1.9
 	scopeguard-1.1.0
-	serde-1.0.147
-	serde_derive-1.0.147
+	serde-1.0.159
+	serde_derive-1.0.159
 	serde_json-1.0.89
-	serde_yaml-0.9.17
+	serde_spanned-0.6.1
+	serde_yaml-0.9.19
 	sha1-0.10.5
 	sha1_smol-1.0.0
 	signal-hook-0.3.14
@@ -277,39 +278,41 @@ CRATES="
 	siphasher-0.3.10
 	slug-0.1.4
 	smallvec-1.9.0
-	spin-0.9.3
+	spin-0.9.8
 	static_assertions-1.1.0
 	strsim-0.8.0
 	strsim-0.10.0
 	strum-0.24.1
 	strum_macros-0.24.0
-	syn-1.0.95
+	syn-1.0.109
+	syn-2.0.13
 	tar-0.4.38
 	tempfile-3.3.0
 	tera-1.17.1
 	term_size-0.3.2
 	termcolor-1.1.3
-	terminal_size-0.1.17
-	terminal_size-0.2.3
 	textwrap-0.11.0
 	textwrap-0.16.0
 	thiserror-1.0.35
 	thiserror-impl-1.0.35
 	thread_local-1.1.4
 	threadpool-1.8.1
-	tiff-0.7.2
-	time-0.3.17
+	tiff-0.8.1
+	time-0.3.20
 	time-core-0.1.0
 	time-humanize-0.1.3
-	time-macros-0.2.6
+	time-macros-0.2.8
 	tinytemplate-1.2.1
 	tinyvec-1.6.0
 	tinyvec_macros-0.1.0
 	tokei-12.1.2
 	toml-0.5.9
+	toml-0.7.3
+	toml_datetime-0.6.1
+	toml_edit-0.19.6
 	typenum-1.15.0
-	typetag-0.2.4
-	typetag-impl-0.2.4
+	typetag-0.2.7
+	typetag-impl-0.2.7
 	ucd-trie-0.1.3
 	uluru-3.0.0
 	uncased-0.9.7
@@ -324,7 +327,7 @@ CRATES="
 	unicode-ident-1.0.0
 	unicode-normalization-0.1.19
 	unicode-width-0.1.9
-	unsafe-libyaml-0.2.4
+	unsafe-libyaml-0.2.7
 	url-2.2.2
 	utf8-width-0.1.6
 	uuid-0.8.2
@@ -359,6 +362,7 @@ CRATES="
 	windows_x86_64_gnullvm-0.42.0
 	windows_x86_64_msvc-0.36.1
 	windows_x86_64_msvc-0.42.0
+	winnow-0.3.5
 	winres-0.1.12
 	xz2-0.1.7
 	yaml-rust-0.4.5
