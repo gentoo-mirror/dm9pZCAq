@@ -9,11 +9,11 @@ app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 12: Manage repos.conf via eselect
 app-misc/cpufetch 0.7: Simplistic yet fancy CPU architecture fetching tool
 app-misc/draw 0.1.1: Draw in your terminal
-app-misc/lf 28: Terminal file manager
+app-misc/lf 30: Terminal file manager
 app-misc/onefetch 2.17.0: Git repository summary on your terminal
 app-misc/xplr 0.21.1: A hackable, minimal, fast TUI file explorer
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
-app-shells/zoxide 0.9.0: A smarter cd command
+app-shells/zoxide 0.9.1: A smarter cd command
 app-shells/zsh-powerlevel10k 1.17.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-vi-mode 0.9.0: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
