@@ -1,7 +1,7 @@
 # dm9pZCAq overlay
 
-packages in overlay: `71`
-<!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
+packages in overlay: `70`
+<!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
 
@@ -58,9 +58,6 @@ packages in overlay: `71`
   * [mobi](dev-python/mobi) - **[uniq]** Library for unpacking unencrypted mobi files
   * [pipx](dev-python/pipx) - **[maintained]** Install and Run Python Applications in Isolated Environments
   * [userpath](dev-python/userpath) - **[maintained]** Cross-platform tool for adding locations to the user PATH
-
-* [dev-ruby/](dev-ruby/)
-  * [rugged](dev-ruby/rugged) - **[uniq]** Ruby bindings to libgit2
 
 * [dev-vcs/](dev-vcs/)
   * [gitui](dev-vcs/gitui) - **[uniq]** Blazing fast terminal-ui for git
