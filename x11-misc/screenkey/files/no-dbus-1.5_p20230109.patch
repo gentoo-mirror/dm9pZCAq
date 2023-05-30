@@ -1,8 +1,8 @@
 diff --git a/Screenkey/screenkey.py b/Screenkey/screenkey.py
-index 7a2040d..b9e2f64 100644
+index 20dc372..5a161c8 100644
 --- a/Screenkey/screenkey.py
 +++ b/Screenkey/screenkey.py
-@@ -1034,44 +1034,8 @@ class Screenkey(Gtk.Window):
+@@ -1036,44 +1036,8 @@ class Screenkey(Gtk.Window):
      def start_lockscreen_detection(self):
          from re import match
          from threading import Thread
@@ -33,7 +33,7 @@ index 7a2040d..b9e2f64 100644
 -                bus_name = str(dbus_string)
 -                if match(r"org\.(\w+)\.ScreenSaver", bus_name):
 -                    signal_interface = bus_name
--                    self.logger.debug(f"DBUS signal interface found: \"{signal_interface}\" ; password should not show when unlocking the screen.")
+-                    self.logger.debug("DBUS signal interface found: \""+signal_interface+"\" ; password should not show when unlocking the screen.")
 -                    break
 -
 -            if not signal_interface:
@@ -42,7 +42,7 @@ index 7a2040d..b9e2f64 100644
 -                DBusGMainLoop(set_as_default=False)
 -                return
 -
--            session_bus.add_match_string(f"type='signal',interface='{signal_interface}'")
+-            session_bus.add_match_string("type='signal',interface='"+signal_interface+"'")
 -            session_bus.add_message_filter(filter_bus_message)
              mainloop = GLib.MainLoop()
              mainloop.run()

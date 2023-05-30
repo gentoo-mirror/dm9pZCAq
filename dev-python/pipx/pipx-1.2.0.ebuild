@@ -25,7 +25,7 @@ DEPEND="
 
 	>=dev-python/packaging-20.0[${PYTHON_USEDEP}]
 
-	>=dev-python/importlib_metadata-3.3.0[${PYTHON_USEDEP}]
+	>=dev-python/importlib-metadata-3.3.0[${PYTHON_USEDEP}]
 "
 
 RDEPEND="${DEPEND}"
