@@ -34,15 +34,12 @@ dev-lua/readline 3.0: Interface to the readline library
 dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
 dev-python/pipx 1.2.0: Install and Run Python Applications in Isolated Environments
 dev-python/userpath 1.8.0: Cross-platform tool for adding locations to the user PATH
-dev-ruby/licensee 9.15.2: A Ruby Gem to detect under what license a project is distributed
-dev-ruby/reverse_markdown 2.1.1: Ruby gem to convert html into markdown
-dev-ruby/rugged 1.3.2.3 1.5.0.1: Ruby bindings to libgit2
 dev-vcs/gitui 0.22.1: Blazing fast terminal-ui for git
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
-net-libs/webkit-gtk 2.38.2 2.38.2-r410 2.38.2-r500 2.38.3 2.38.3-r410 2.38.3-r500: Open source web browser engine
+net-libs/webkit-gtk 2.40.1 2.40.1-r410 2.40.1-r600: Open source web browser engine
 net-misc/gping 1.12.0: Ping, but with a graph
 net-news/newsboat 2.31: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.3a_pre0: TUI and CLI for the BitTorrent client Transmission
