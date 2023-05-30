@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `73`
+packages in overlay: `72`
 <!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -60,7 +60,6 @@ packages in overlay: `73`
   * [userpath](dev-python/userpath) - **[maintained]** Cross-platform tool for adding locations to the user PATH
 
 * [dev-ruby/](dev-ruby/)
-  * [licensee](dev-ruby/licensee) - **[uniq]** A Ruby Gem to detect under what license a project is distributed
   * [reverse_markdown](dev-ruby/reverse_markdown) - **[slightly changed from ::graaff]** Ruby gem to convert html into markdown
   * [rugged](dev-ruby/rugged) - **[uniq]** Ruby bindings to libgit2
 
