@@ -4,7 +4,7 @@
 EAPI=8
 PYTHON_REQ_USE="xml(+)"
 PYTHON_COMPAT=( python3_{9..11} )
-USE_RUBY="ruby27 ruby30 ruby31"
+USE_RUBY="ruby30 ruby31 ruby32"
 
 inherit check-reqs flag-o-matic gnome2 optfeature python-any-r1 ruby-single toolchain-funcs cmake
 
@@ -17,18 +17,11 @@ LICENSE="LGPL-2+ BSD"
 SLOT="4.1/0" # soname version of libwebkit2gtk-4.1
 KEYWORDS="amd64 arm arm64 ppc ppc64 ~riscv ~sparc x86"
 
-IUSE="aqua dbus avif +egl examples gamepad gles2-only gnome-keyring +gstreamer +introspection pdf +jpeg2k +jumbo-build lcms seccomp spell systemd test wayland X"
+IUSE="aqua dbus avif examples gamepad gles2-only keyring +gstreamer +introspection pdf +jpeg2k +jumbo-build lcms seccomp spell systemd wayland X"
+REQUIRED_USE="|| ( aqua wayland X )"
 
-# gstreamer with opengl/gles2 needs egl
-REQUIRED_USE="
-	gles2-only? ( egl )
-	gstreamer? ( egl )
-	wayland? ( egl )
-	|| ( aqua wayland X )
-"
-
-# Tests fail to link for inexplicable reasons
-# https://bugs.webkit.org/show_bug.cgi?id=148210
+# Tests do not run when built from tarballs
+# https://bugs.webkit.org/show_bug.cgi?id=215986
 RESTRICT="test"
 
 # Dependencies found at Source/cmake/OptionsGTK.cmake
@@ -45,6 +38,7 @@ RDEPEND="
 	>=media-libs/harfbuzz-1.4.2:=[icu(+)]
 	>=dev-libs/icu-61.2:=
 	media-libs/libjpeg-turbo:0=
+	>=media-libs/libepoxy-1.4.0
 	>=net-libs/libsoup-3.0.8:3.0[introspection?]
 	>=dev-libs/libxml2-2.8.0:2
 	>=media-libs/libpng-1.4:0=
@@ -53,16 +47,16 @@ RDEPEND="
 	dbus? ( >=app-accessibility/at-spi2-core-2.46.0:2 )
 	media-libs/libwebp:=
 
-	>=dev-libs/glib-2.67.1:2
+	>=dev-libs/glib-2.70.0:2
 	>=dev-libs/libxslt-1.1.7
 	media-libs/woff2
-	gnome-keyring? ( app-crypt/libsecret )
+	keyring? ( app-crypt/libsecret )
 	introspection? ( >=dev-libs/gobject-introspection-1.59.1:= )
 	dev-libs/libtasn1:=
 	spell? ( >=app-text/enchant-0.22:2 )
 	gstreamer? (
 		>=media-libs/gstreamer-1.20:1.0
-		>=media-libs/gst-plugins-base-1.20:1.0[egl?,X?]
+		>=media-libs/gst-plugins-base-1.20:1.0[egl,X?]
 		gles2-only? ( media-libs/gst-plugins-base:1.0[gles2] )
 		!gles2-only? ( media-libs/gst-plugins-base:1.0[opengl] )
 		>=media-plugins/gst-plugins-opus-1.20:1.0
@@ -82,9 +76,8 @@ RDEPEND="
 	avif? ( >=media-libs/libavif-0.9.0:= )
 	lcms? ( media-libs/lcms:2 )
 
-	egl? ( media-libs/mesa[egl(+)] )
-	gles2-only? ( media-libs/mesa[gles2] )
-	!gles2-only? ( virtual/opengl )
+	media-libs/mesa
+	media-libs/libglvnd
 	wayland? (
 		dev-libs/wayland
 		>=dev-libs/wayland-protocols-1.12
@@ -111,6 +104,7 @@ BDEPEND="
 	dev-util/gdbus-codegen
 	dev-util/glib-utils
 	>=dev-util/gperf-3.0.1
+	dev-util/unifdef
 	>=sys-devel/bison-2.4.3
 	|| ( >=sys-devel/gcc-7.3 >=sys-devel/clang-5 )
 	sys-devel/gettext
@@ -121,10 +115,6 @@ BDEPEND="
 	virtual/perl-Carp
 	virtual/perl-JSON-PP
 "
-#	test? (
-#		dev-python/pygobject:3[python_targets_python2_7]
-#		x11-themes/hicolor-icon-theme
-#	)
 
 S="${WORKDIR}/${MY_P}"
 
@@ -154,6 +144,9 @@ pkg_setup() {
 src_prepare() {
 	cmake_src_prepare
 	gnome2_src_prepare
+	eapply "${FILESDIR}/${PV}"-Cherry-pick-262461-main-b36decf27ea9-.-https-bugs.we.patch
+	eapply "${FILESDIR}/${PV}"-gcc-13.patch
+	eapply "${FILESDIR}"/2.40.0-respect-RUBY.patch
 }
 
 src_configure() {
@@ -182,14 +175,19 @@ src_configure() {
 	# Ruby situation is a bit complicated. See bug 513888
 	local rubyimpl
 	local ruby_interpreter=""
+	local RUBY
 	for rubyimpl in ${USE_RUBY}; do
-		if has_version -b "virtual/rubygems[ruby_targets_${rubyimpl}]"; then
-			ruby_interpreter="-DRUBY_EXECUTABLE=$(type -P ${rubyimpl})"
+		if has_version -b "virtual/rubygems[ruby_targets_${rubyimpl}(-)]"; then
+			RUBY="$(type -P ${rubyimpl})"
+			ruby_interpreter="-DRUBY_EXECUTABLE=${RUBY}"
 		fi
 	done
 	# This will rarely occur. Only a couple of corner cases could lead us to
 	# that failure. See bug 513888
-	[[ -z $ruby_interpreter ]] && die "No suitable ruby interpreter found"
+	[[ -z ${ruby_interpreter} ]] && die "No suitable ruby interpreter found"
+	# JavaScriptCore/Scripts/postprocess-asm invokes another Ruby script directly
+	# so it doesn't respect RUBY_EXECUTABLE, bug #771744.
+	sed -i -e "s:#!/usr/bin/env ruby:#!${RUBY}:" $(grep -rl "/usr/bin/env ruby" Source/JavaScriptCore || die) || die
 
 	# TODO: Check Web Audio support
 	# should somehow let user select between them?
@@ -198,13 +196,12 @@ src_configure() {
 		-DPython_EXECUTABLE="${PYTHON}"
 		${ruby_interpreter}
 		$(cmake_use_find_package gles2-only OpenGLES2)
-		$(cmake_use_find_package egl EGL)
 		$(cmake_use_find_package !gles2-only OpenGL)
 		-DBWRAP_EXECUTABLE:FILEPATH="${EPREFIX}"/usr/bin/bwrap # If bubblewrap[suid] then portage makes it go-r and cmake find_program fails with that
 		-DDBUS_PROXY_EXECUTABLE:FILEPATH="${EPREFIX}"/usr/bin/xdg-dbus-proxy
 		-DPORT=GTK
 		# Source/cmake/WebKitFeatures.cmake
-		-DENABLE_API_TESTS=$(usex test)
+		-DENABLE_API_TESTS=OFF
 		-DENABLE_BUBBLEWRAP_SANDBOX=$(usex seccomp)
 		-DENABLE_GAMEPAD=$(usex gamepad)
 		-DENABLE_MINIBROWSER=$(usex examples)
@@ -215,10 +212,10 @@ src_configure() {
 		-DENABLE_VIDEO=$(usex gstreamer)
 		-DUSE_GSTREAMER_WEBRTC=$(usex gstreamer)
 		-DUSE_GSTREAMER_TRANSCODER=$(usex gstreamer)
+		-DENABLE_WEBDRIVER=ON
 		-DENABLE_WEBGL=ON
-		# Supported only under ANGLE
-		-DENABLE_WEBGL2=OFF
 		-DENABLE_WEB_AUDIO=$(usex gstreamer)
+		-DUSE_AVIF=$(usex avif)
 		# Source/cmake/OptionsGTK.cmake
 		-DENABLE_GLES2=$(usex gles2-only)
 		-DENABLE_DOCUMENTATION=OFF
@@ -227,18 +224,16 @@ src_configure() {
 		-DENABLE_QUARTZ_TARGET=$(usex aqua)
 		-DENABLE_WAYLAND_TARGET=$(usex wayland)
 		-DENABLE_X11_TARGET=$(usex X)
-		-DUSE_AVIF=$(usex avif)
+		-DUSE_GBM=ON
 		-DUSE_GTK4=OFF
-		-DENABLE_WEBDRIVER=ON
 		-DUSE_JPEGXL=OFF
 		-DUSE_LCMS=$(usex lcms)
 		-DUSE_LIBHYPHEN=ON
-		-DUSE_LIBSECRET=$(usex gnome-keyring)
+		-DUSE_LIBSECRET=$(usex keyring)
 		-DUSE_OPENGL_OR_ES=ON
 		-DUSE_OPENJPEG=$(usex jpeg2k)
 		-DUSE_SOUP2=OFF
 		-DUSE_WOFF2=ON
-		-DUSE_WPE_RENDERER=$(usex wayland) # WPE renderer is used to implement accelerated compositing under wayland
 	)
 
 	# https://bugs.gentoo.org/761238
@@ -257,4 +252,7 @@ src_install() {
 
 pkg_postinst() {
 	optfeature "geolocation service (used at runtime if available)" "app-misc/geoclue"
+	optfeature "Common Multimedia codecs" "media-plugins/gst-plugins-meta"
+	optfeature "(MPEG-)DASH support" "media-plugins/gst-plugins-dash"
+	optfeature "HTTP-Live-Streaming support" "media-plugins/gst-plugins-hls"
 }
