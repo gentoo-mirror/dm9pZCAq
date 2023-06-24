@@ -1,7 +1,7 @@
 # dm9pZCAq overlay
 
-packages in overlay: `70`
-<!-- `dirname $(git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
+packages in overlay: `71`
+<!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
 
@@ -61,6 +61,9 @@ packages in overlay: `70`
 
 * [dev-vcs/](dev-vcs/)
   * [gitui](dev-vcs/gitui) - **[uniq]** Blazing fast terminal-ui for git
+
+* [media-fonts/](media-fonts/)
+    * [nerd-fonts](media-fonts/nerd-fonts) - **[better ebuild]** Collection of fonts that are patched to include a high number of glyphs (icons)
 
 * [media-video/](media-video/)
   * [gifski](media-video/gifski) - **[uniq]** Highest-quality GIF encoder based on pngquant
