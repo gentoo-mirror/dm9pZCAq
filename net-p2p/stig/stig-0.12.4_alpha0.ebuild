@@ -1,18 +1,17 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{9..11} )
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="TUI and CLI for the BitTorrent client Transmission"
 HOMEPAGE="
 	https://pypi.org/project/stig
 	https://github.com/rndusr/stig
 "
-SRC_URI="mirror://pypi/${PN::1}/${PN}/${PF/_pre/}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -33,5 +32,3 @@ RDEPEND="
 	proctitle? ( dev-python/setproctitle[${PYTHON_USEDEP}] )
 "
 DEPEND="${RDEPEND}"
-
-S="${WORKDIR}/${PF/_pre/}"
