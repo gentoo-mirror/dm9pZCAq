@@ -35,6 +35,7 @@ dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
 dev-python/pipx 1.2.0: Install and Run Python Applications in Isolated Environments
 dev-python/userpath 1.8.0: Cross-platform tool for adding locations to the user PATH
 dev-vcs/gitui 0.22.1: Blazing fast terminal-ui for git
+media-fonts/nerd-fonts 3.0.2: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
