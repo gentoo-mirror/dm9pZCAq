@@ -31,7 +31,7 @@ src_install() {
 	local DOCS=( [^C]*.md )  # skip CODE-OF-CONDUCT and CONTRIBUTING
 
 	dobin "${PN}"
-	doman "${PN}.1"
+	doman man/man*/*
 
 	insinto "$(lua_get_lmod_dir)"
 	doins *.lua
