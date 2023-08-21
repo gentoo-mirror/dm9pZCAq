@@ -42,7 +42,6 @@ packages in overlay: `67`
   * [metalang99](dev-lang/metalang99) - **[uniq]** Full-blown preprocessor metaprogramming
   * [moonscript](dev-lang/moonscript) - **[uniq]** A programmer friendly language that compiles into Lua
   * [wren](dev-lang/wren) - **[maintained]** Wren is a small, fast, class-based concurrent scripting language
-  * [zetz](dev-lang/zetz) - **[uniq]** ZetZ a zymbolic verifier and tranzpiler to bare metal C
 
 * [dev-libs/](dev-libs/)
   * [interface99](dev-libs/interface99) - **[uniq]** Zero-boilerplate interfaces for C99
