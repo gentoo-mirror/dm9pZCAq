@@ -28,11 +28,9 @@ dev-lang/zetz 0.1.1_p20211118: ZetZ a zymbolic verifier and tranzpiler to bare m
 dev-libs/interface99 1.0.1: Zero-boilerplate interfaces for C99
 dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
-dev-lua/fnlfmt 0.3.0: A formatter for Fennel code
+dev-lua/fnlfmt 0.3.1: A formatter for Fennel code
 dev-lua/readline 3.0: Interface to the readline library
 dev-python/mobi 0.3.1: Library for unpacking unencrypted mobi files
-dev-python/pipx 1.2.0: Install and Run Python Applications in Isolated Environments
-dev-python/userpath 1.8.0: Cross-platform tool for adding locations to the user PATH
 dev-vcs/gitui 0.23.0: Blazing fast terminal-ui for git
 media-fonts/nerd-fonts 3.0.2: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
@@ -44,7 +42,7 @@ net-misc/gping 1.14.0: Ping, but with a graph
 net-news/newsboat 2.31: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.5_alpha0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7: An experiment in scalable routing as an encrypted IPv6 overlay network
-net-wireless/eiwd 2.5-r1: iwd without dbus
+net-wireless/eiwd 2.6-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
 sys-apps/exa 0.10.1: A modern replacement for 'ls' written in Rust
 sys-apps/hexyl 0.13.1: A command-line hex viewer
