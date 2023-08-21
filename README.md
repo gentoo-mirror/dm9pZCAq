@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `68`
+packages in overlay: `67`
 <!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -55,7 +55,6 @@ packages in overlay: `68`
 
 * [dev-python/](dev-python/)
   * [mobi](dev-python/mobi) - **[uniq]** Library for unpacking unencrypted mobi files
-  * [userpath](dev-python/userpath) - **[maintained]** Cross-platform tool for adding locations to the user PATH
 
 * [dev-vcs/](dev-vcs/)
   * [gitui](dev-vcs/gitui) - **[uniq]** Blazing fast terminal-ui for git
