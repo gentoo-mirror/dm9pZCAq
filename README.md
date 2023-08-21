@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `70`
+packages in overlay: `69`
 <!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -110,7 +110,6 @@ packages in overlay: `70`
   * [libudev-zero](sys-libs/libudev-zero) - **[uniq, [udev](#udev)]** Daemonless replacement for libudev
 
 * [sys-process/](sys-process/)
-  * [bottom](sys-process/bottom) - **[uniq]** TUI process/system monitor with multitude of features
   * [extrace](sys-process/extrace) - **[uniq]** Trace exec() calls system-wide
   * [snooze](sys-process/snooze) - **[uniq]** Run a command at a particular time
   * [ytop](sys-process/ytop) - **[uniq]** [gotop](https://github.com/xxxserxxx/gotop) RIIR (Rewrite It in Rust)
