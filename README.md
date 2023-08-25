@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `65`
+packages in overlay: `64`
 <!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -112,9 +112,6 @@ packages in overlay: `65`
 * [virtual/](virtual/)
   * [libudev](virtual/libudev) - **[[udev](#udev)]** Virtual for libudev providers
   * [udev](virtual/udev) - **[[udev](#udev)]** Virtual to select between different udev daemon providers
-
-* [www-client/](www-client/)
-  * [firefox-musl-bin](www-client/firefox-musl-bin) - **[uniq]** `firefox-bin` for musl libc
 
 * [x11-misc/](x11-misc/)
   * [clayout](x11-misc/clayout) - **[my, uniq]** Save own keyboard layout for each window
