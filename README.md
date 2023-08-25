@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `63`
+packages in overlay: `62`
 <!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -19,7 +19,6 @@ packages in overlay: `63`
   * [eselect-repository](app-eselect/eselect-repository) - **[you can use curl instead of wget]** Manage repos.conf via eselect
 
 * [app-misc/](app-misc/)
-  * [cpufetch](app-misc/cpufetch) - **[uniq]** Simplistic yet fancy CPU architecture fetching tool
   * [draw](app-misc/draw) - **[uniq]** Draw in your terminal
   * [lf](app-misc/lf) - **[more USE flags]** Terminal file manager
   * [onefetch](app-misc/onefetch) - **[better ebuild]** Git repository summary on your terminal
