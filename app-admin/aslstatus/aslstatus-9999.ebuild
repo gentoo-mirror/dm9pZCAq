@@ -25,15 +25,12 @@ fi
 LICENSE="MIT"
 SLOT="0"
 IUSE="+X +xkb +alsa pulseaudio"
-REQUIRED_USE="
-	xkb? ( X )
-	^^ ( alsa pulseaudio )
-"
+REQUIRED_USE="xkb? ( X )"
 
 DEPEND="
 	X? ( x11-libs/libxcb[xkb?] )
 	alsa? ( media-libs/alsa-lib )
-	pulseaudio? ( media-sound/pulseaudio )
+	pulseaudio? ( media-libs/libpulse )
 "
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/pkgconfig"
@@ -46,8 +43,11 @@ src_prepare() {
 
 src_compile() {
 	local audio=''
-	use alsa && audio=ALSA
-	use pulseaudio && audio=PULSE
+	if use pulseaudio; then
+		audio=PULSE
+	elif use alsa; then
+		audio=ALSA
+	fi
 
 	emake VERSION="${VERSION}" \
 		AUDIO="${audio}" \
