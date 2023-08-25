@@ -143,7 +143,7 @@ DESCRIPTION="An RSS/Atom feed reader for text terminals"
 HOMEPAGE="https://newsboat.org/ https://github.com/newsboat/newsboat"
 SRC_URI="
 	https://newsboat.org/releases/${PV}/${P}.tar.xz
-	$(cargo_crate_uris ${CRATES})
+	${CARGO_CRATE_URIS}
 "
 
 LICENSE="Apache-2.0 Apache-2.0-with-LLVM-exceptions Boost-1.0 BSD MIT Unlicense ZLIB"
