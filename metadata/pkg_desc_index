@@ -36,9 +36,9 @@ media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
-net-libs/webkit-gtk 2.40.1 2.40.1-r410 2.40.1-r600: Open source web browser engine
+net-libs/webkit-gtk 2.40.4 2.40.4-r410 2.40.4-r600 2.40.5 2.40.5-r410 2.40.5-r600: Open source web browser engine
 net-misc/gping 1.14.0: Ping, but with a graph
-net-news/newsboat 2.31: An RSS/Atom feed reader for text terminals
+net-news/newsboat 2.32: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.5_alpha0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-wireless/eiwd 2.6-r1: iwd without dbus
@@ -58,8 +58,8 @@ sys-libs/libudev-zero 1.0.3: Daemonless replacement for libudev
 sys-process/extrace 0.9: trace exec() calls system-wide
 sys-process/snooze 0.5: run a command at a particular time
 sys-process/ytop 0.6.2: A TUI system monitor written in Rust
-virtual/libudev 232-r5 232-r7: Virtual for libudev providers
-virtual/udev 217-r3 217-r5: Virtual to select between different udev daemon providers
+virtual/libudev 9999: Virtual for libudev-zero provider
+virtual/udev 9999: Virtual to select between different udev (mdev) daemon providers
 www-client/firefox-musl-bin 87.0-r1 89.0.2-r1: Firefox binary from KISS linux (for musl libc)
 x11-misc/clayout 0.0.3 9999: Save own keyboard layout for each window
 x11-misc/herbe 1.0.0: Daemon-less notifications without D-Bus

@@ -64,10 +64,8 @@ media-fonts/nerd-fonts:ubuntumono - Install UbuntuMono font
 media-fonts/nerd-fonts:victormono - Install VictorMono font
 media-video/gifski:video - add supports for decoding video directly
 net-libs/webkit-gtk:avif - Enable support for AVIF images via media-libs/libavif
-net-libs/webkit-gtk:egl - Enable EGL support
 net-libs/webkit-gtk:examples - Install the MiniBrowser example application
 net-libs/webkit-gtk:gamepad - Enable gamepad input support via dev-libs/libmanette
-net-libs/webkit-gtk:geolocation - Enable geolocation support through app-misc/geoclue
 net-libs/webkit-gtk:jumbo-build - Combine source files to speed up build process
 net-p2p/stig:proctitle - Prettifies the process name
 net-wireless/eiwd:builtin-dns - Enable built-in DNS resolver

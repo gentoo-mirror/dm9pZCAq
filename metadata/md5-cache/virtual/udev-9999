@@ -1,0 +1,6 @@
+DEFINED_PHASES=-
+DESCRIPTION=Virtual to select between different udev (mdev) daemon providers
+EAPI=8
+RDEPEND=|| ( sys-fs/mdevd sys-apps/busybox[mdev] )
+SLOT=0
+_md5_=6bb028dc736cd505490b3c533da9e8d2
