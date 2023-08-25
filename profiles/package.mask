@@ -1,8 +1,3 @@
-# dm9pZCAq <v@0x0c.xyz> (2021-04-19)
-# has many incompatibilities with GNU cereutils
-# still may be used, so unmask on your own risc
-sys-apps/uutils-coreutils
-
 # dm9pZCAq <v@0x0c.xyz> (2021-10-7)
 # after firefox 89, upstream builds binaries only for wayland
 # so i recommend using firefox from nix: `nix-env -i firefox`,

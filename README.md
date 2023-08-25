@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `66`
+packages in overlay: `65`
 <!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -91,7 +91,6 @@ packages in overlay: `66`
   * [huxdemp](sys-apps/huxdemp) - **[uniq]** A better hexdump
   * [tealdeer](sys-apps/tealdeer) - **[more USE flags]** Very fast implementation of tldr in Rust
   * [tldr](sys-apps/tldr) - **[using go-module inherit, misc ebuild changes]** Fast and interactive tldr client written with go
-  * [uutils-coreutils](sys-apps/uutils-coreutils) - **[uniq]** Cross-platform Rust rewrite of the GNU coreutils
 
 * [sys-devel/](sys-devel/)
   * [cproc](sys-devel/cproc) - **[uniq]** Small C11 compiler based on QBE
