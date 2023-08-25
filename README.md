@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `64`
+packages in overlay: `63`
 <!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -36,7 +36,6 @@ packages in overlay: `64`
   * [smu](app-text/smu) - **[uniq]** Simple markup - markdown like syntax
 
 * [dev-lang/](dev-lang/)
-  * [fennel](dev-lang/fennel) - **[better ebuild]** Lua Lisp Language
   * [ghc](dev-lang/ghc) - **[[ghc](#ghc)]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
   * [hissp](dev-lang/hissp) - **[uniq]** It's Python with a Lissp
   * [metalang99](dev-lang/metalang99) - **[uniq]** Full-blown preprocessor metaprogramming
