@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `67`
+packages in overlay: `66`
 <!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -70,7 +70,6 @@ packages in overlay: `67`
 
 * [net-libs/](net-libs/)
   * [telebot](net-libs/telebot) - **[uniq]** Telegram Bot API in C
-  * [webkit-gtk](net-libs/webkit-gtk) - **[dbus is optional]** Open source web browser engine
 
 * [net-misc/](net-misc/)
   * [gping](net-misc/gping) - **[uniq]** Ping, but with a graph
