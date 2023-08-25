@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -32,7 +32,7 @@ REQUIRED_USE="
 
 DEPEND="
 	X? ( x11-libs/libxcb[xkb?] )
-	alsa? ( media-libs/alsa-lib[thread-safety] )
+	alsa? ( media-libs/alsa-lib )
 	pulseaudio? ( media-sound/pulseaudio )
 "
 RDEPEND="${DEPEND}"

@@ -154,12 +154,15 @@ here is instruction on how to manage devices totally without systemd
 you need version `>= 0.1.5.0` of `sys-fs/mdevd` (for `-O` flag)
 (see: [NEWS](https://github.com/skarnet/mdevd/raw/master/NEWS) and [NOTE](https://github.com/illiliti/libudev-zero/blob/8044ed8fd6568a31cece25673b0cb00a54468be0/contrib/mdev.conf#L3-L7))
 
-also this version depend on `>=dev-libs/skalibs-2.11.0.0`
-that is currently not in `::gentoo`
-
 ---
 
 and to use all of this you need:
+* add `virtual/udev::dm9pZCAq` and `virtual/libudev::dm9pZCAq` to **package.accept_keywords**:
+
+```
+~virtual/udev-9999::dm9pZCAq    **
+~virtual/libudev-9999::dm9pZCAq **
+```
 * reemerge some packages:
 
 ```sh

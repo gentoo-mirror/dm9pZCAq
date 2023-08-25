@@ -3,7 +3,7 @@
 
 EAPI=8
 PYTHON_REQ_USE="xml(+)"
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 USE_RUBY="ruby30 ruby31 ruby32"
 
 inherit check-reqs flag-o-matic gnome2 optfeature python-any-r1 ruby-single toolchain-funcs cmake
@@ -14,8 +14,8 @@ HOMEPAGE="https://www.webkitgtk.org"
 SRC_URI="https://www.webkitgtk.org/releases/${MY_P}.tar.xz"
 
 LICENSE="LGPL-2+ BSD"
-SLOT="4/37" # soname version of libwebkit2gtk-4.0
-KEYWORDS="amd64 arm arm64 ppc ppc64 ~riscv ~sparc x86"
+SLOT="6/0" # soname version of libwebkit2gtk-6.0
+KEYWORDS="amd64 arm arm64 ~loong ppc ppc64 ~riscv ~sparc x86"
 
 IUSE="aqua dbus avif examples gamepad gles2-only keyring +gstreamer +introspection pdf +jpeg2k +jumbo-build lcms seccomp spell systemd wayland X"
 REQUIRED_USE="|| ( aqua wayland X )"
@@ -25,20 +25,24 @@ REQUIRED_USE="|| ( aqua wayland X )"
 RESTRICT="test"
 
 # Dependencies found at Source/cmake/OptionsGTK.cmake
-# Missing WebRTC support, but ENABLE_MEDIA_STREAM/ENABLE_WEB_RTC is experimental upstream (PRIVATE OFF) and shouldn't be used yet in 2.30
+# Missing WebRTC support, but ENABLE_MEDIA_STREAM/ENABLE_WEB_RTC is
+# experimental upstream (PRIVATE OFF) and shouldn't be used yet in 2.30
 # >=gst-plugins-opus-1.14.4-r1 for opusparse (required by MSE)
-# TODO: gst-plugins-base[X] is only needed when build configuration ends up with GLX set, but that's a bit automagic too to fix
+# TODO: gst-plugins-base[X] is only needed when build configuration ends up
+# with GLX set, but that's a bit automagic too to fix
+# Softblocking webkit-gtk-2.38:4 as we going to use webkit-2.38:4.1's WebKitDriver binary
 RDEPEND="
 	>=x11-libs/cairo-1.16.0[X?]
 	>=media-libs/fontconfig-2.13.0:1.0
 	>=media-libs/freetype-2.9.0:2
 	>=dev-libs/libgcrypt-1.7.0:0=
 	>=x11-libs/gtk+-3.22.0:3[aqua?,introspection?,wayland?,X?]
+	gui-libs/gtk:4
 	>=media-libs/harfbuzz-1.4.2:=[icu(+)]
 	>=dev-libs/icu-61.2:=
 	media-libs/libjpeg-turbo:0=
 	>=media-libs/libepoxy-1.4.0
-	>=net-libs/libsoup-2.54:2.4[introspection?]
+	>=net-libs/libsoup-3.0.8:3.0[introspection?]
 	>=dev-libs/libxml2-2.8.0:2
 	>=media-libs/libpng-1.4:0=
 	dev-db/sqlite:3
@@ -92,6 +96,7 @@ RDEPEND="
 
 	systemd? ( sys-apps/systemd:= )
 	gamepad? ( >=dev-libs/libmanette-0.2.4 )
+	!<net-libs/webkit-gtk-2.38:4
 "
 DEPEND="${RDEPEND}"
 # Need real bison, not yacc
@@ -142,9 +147,6 @@ pkg_setup() {
 src_prepare() {
 	cmake_src_prepare
 	gnome2_src_prepare
-	eapply "${FILESDIR}/${PV}"-Cherry-pick-262461-main-b36decf27ea9-.-https-bugs.we.patch
-	eapply "${FILESDIR}/${PV}"-gcc-13.patch
-	eapply "${FILESDIR}"/2.40.0-respect-RUBY.patch
 }
 
 src_configure() {
@@ -195,7 +197,8 @@ src_configure() {
 		${ruby_interpreter}
 		$(cmake_use_find_package gles2-only OpenGLES2)
 		$(cmake_use_find_package !gles2-only OpenGL)
-		-DBWRAP_EXECUTABLE:FILEPATH="${EPREFIX}"/usr/bin/bwrap # If bubblewrap[suid] then portage makes it go-r and cmake find_program fails with that
+		# If bubblewrap[suid] then portage makes it go-r and cmake find_program fails with that
+		-DBWRAP_EXECUTABLE:FILEPATH="${EPREFIX}"/usr/bin/bwrap
 		-DDBUS_PROXY_EXECUTABLE:FILEPATH="${EPREFIX}"/usr/bin/xdg-dbus-proxy
 		-DPORT=GTK
 		# Source/cmake/WebKitFeatures.cmake
@@ -210,7 +213,7 @@ src_configure() {
 		-DENABLE_VIDEO=$(usex gstreamer)
 		-DUSE_GSTREAMER_WEBRTC=$(usex gstreamer)
 		-DUSE_GSTREAMER_TRANSCODER=$(usex gstreamer)
-		-DENABLE_WEBDRIVER=OFF # Disable WebDriver for webkit2gtk-4.0 and use the webkit2gtk-4.1
+		-DENABLE_WEBDRIVER=OFF # Disable WebDriver for webkit2gtk-5.0 and use the webkit2gtk-4.1
 		-DENABLE_WEBGL=ON
 		-DENABLE_WEB_AUDIO=$(usex gstreamer)
 		-DUSE_AVIF=$(usex avif)
@@ -223,14 +226,14 @@ src_configure() {
 		-DENABLE_WAYLAND_TARGET=$(usex wayland)
 		-DENABLE_X11_TARGET=$(usex X)
 		-DUSE_GBM=ON
-		-DUSE_GTK4=OFF
+		-DUSE_GTK4=ON # webkit2gtk-6.0
 		-DUSE_JPEGXL=OFF
 		-DUSE_LCMS=$(usex lcms)
 		-DUSE_LIBHYPHEN=ON
 		-DUSE_LIBSECRET=$(usex keyring)
 		-DUSE_OPENGL_OR_ES=ON
 		-DUSE_OPENJPEG=$(usex jpeg2k)
-		-DUSE_SOUP2=ON
+		-DUSE_SOUP2=OFF
 		-DUSE_WOFF2=ON
 	)
 
