@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `60`
+packages in overlay: `59`
 
 <!--
 ```bash
@@ -60,7 +60,6 @@ diff -du \
 - [dev-lang/](dev-lang/)
 
   - [ghc](dev-lang/ghc) - **\[[ghc](#ghc)\]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
-  - [hissp](dev-lang/hissp) - **\[uniq\]** It's Python with a Lissp
   - [metalang99](dev-lang/metalang99) - **\[uniq\]** Full-blown preprocessor metaprogramming
   - [moonscript](dev-lang/moonscript) - **\[uniq\]** A programmer friendly language that compiles into Lua
   - [wren](dev-lang/wren) - **\[maintained\]** Wren is a small, fast, class-based concurrent scripting language
