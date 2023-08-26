@@ -1,9 +1,10 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=(python3_{8..10})
+DISTUTILS_USE_PEP517=no
+PYTHON_COMPAT=(python3_{11..12})
 
 inherit distutils-r1 toolchain-funcs
 
@@ -14,14 +15,12 @@ SRC_URI="
 		-> ${P}.tar.gz
 	https://github.com/wren-lang/${PN}-cli/archive/${PV}.tar.gz
 		-> ${PN}-cli-${PV}.tar.gz
-	https://patch-diff.githubusercontent.com/raw/wren-lang/wren-cli/pull/136.patch
-		-> ${P}-cli-glibc-build.patch
 "
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64 ~arm ~arm64 ~x86"
-IUSE="+cli"
+IUSE="+cli static"
 
 RDEPEND="cli? ( dev-libs/libuv )"
 DEPEND="${RDEPEND}"
@@ -35,7 +34,7 @@ get_config() {
 }
 
 src_prepare() {
-	default
+	eapply_user
 
 	local f=''
 	local makes=(
@@ -62,17 +61,19 @@ src_prepare() {
 
 	(
 		cd "${WORKDIR}/wren-cli-${PV}"
-		eapply "${DISTDIR}/${P}-cli-glibc-build.patch"
+		eapply "${FILESDIR}/${P}-cli-glibc-build.patch"
 	)
 }
 
+# The test requires `wrem` static library, so build it anyway and then optionally install it or not
+# (to disable static build, remove `wren` from `PROJECTS` variable in `projects/make/Makefile`)
 src_compile() {
 	tc-export CC
 	(
 		cd projects/make
 		emake verbose=1 config="$(get_config)"
 	)
-	use cli && {
+	use cli && (
 		tc-export_build_env
 
 		local cli="${WORKDIR}/${PN}-cli-${PV}/src"
@@ -94,7 +95,7 @@ src_compile() {
 		"${@}"
 		eend "${?}" 'failed to build wren cli'
 
-	}
+	)
 }
 
 python_test() {
@@ -104,7 +105,7 @@ python_test() {
 src_install() {
 	use cli && dobin "${PN}"
 
-	dolib.a lib/libwren.a
+	use static && dolib.a lib/libwren.a
 	dolib.so lib/libwren.so
 	doheader src/include/wren.h
 	doheader src/include/wren.hpp

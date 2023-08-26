@@ -1,0 +1,63 @@
+From fcb09daf9abe0b4b7be71dd4dd966e2b0f6965da Mon Sep 17 00:00:00 2001
+From: Michel Hermier <michel.hermier@gmail.com>
+Date: Thu, 10 Mar 2022 10:56:45 +0100
+Subject: [PATCH 1/2] wren-cli: Fix build on glibc >= 2.34
+
+---
+ src/cli/vm.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/cli/vm.c b/src/cli/vm.c
+index 48d2b1ee..a11ba5a7 100644
+--- a/src/cli/vm.c
++++ b/src/cli/vm.c
+@@ -241,7 +241,7 @@ static WrenForeignClassMethods bindForeignClass(
+   return methods;
+ }
+ 
+-static void write(WrenVM* vm, const char* text)
++static void doWrite(WrenVM* vm, const char* text)
+ {
+   printf("%s", text);
+ }
+@@ -274,7 +274,7 @@ static void initVM()
+   config.bindForeignClassFn = bindForeignClass;
+   config.resolveModuleFn = resolveModule;
+   config.loadModuleFn = loadModule;
+-  config.writeFn = write;
++  config.writeFn = doWrite;
+   config.errorFn = reportError;
+ 
+   // Since we're running in a standalone process, be generous with memory.
+
+From 7373d483443c9da730b5383212d06bb5cf770d17 Mon Sep 17 00:00:00 2001
+From: ruby <ruby0x1@pm.me>
+Date: Fri, 8 Apr 2022 17:07:42 -0700
+Subject: [PATCH 2/2] use naming that matches
+
+---
+ src/cli/vm.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/cli/vm.c b/src/cli/vm.c
+index a11ba5a7..cad75be0 100644
+--- a/src/cli/vm.c
++++ b/src/cli/vm.c
+@@ -241,7 +241,7 @@ static WrenForeignClassMethods bindForeignClass(
+   return methods;
+ }
+ 
+-static void doWrite(WrenVM* vm, const char* text)
++static void writeFn(WrenVM* vm, const char* text)
+ {
+   printf("%s", text);
+ }
+@@ -274,7 +274,7 @@ static void initVM()
+   config.bindForeignClassFn = bindForeignClass;
+   config.resolveModuleFn = resolveModule;
+   config.loadModuleFn = loadModule;
+-  config.writeFn = doWrite;
++  config.writeFn = writeFn;
+   config.errorFn = reportError;
+ 
+   // Since we're running in a standalone process, be generous with memory.
