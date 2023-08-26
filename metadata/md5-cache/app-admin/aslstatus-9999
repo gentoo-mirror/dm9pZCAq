@@ -1,6 +1,6 @@
 BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile install postinst prepare unpack
-DEPEND=X? ( x11-libs/libxcb[xkb?] ) alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio )
+DEPEND=X? ( x11-libs/libxcb[xkb?] ) alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-libs/libpulse )
 DESCRIPTION=async suckless status monitor
 EAPI=7
 HOMEPAGE=https://notabug.org/dm9pZCAq/aslstatus
@@ -8,8 +8,8 @@ INHERIT=savedconfig git-r3
 IUSE=+X +xkb +alsa pulseaudio savedconfig
 LICENSE=MIT
 PROPERTIES=live
-RDEPEND=X? ( x11-libs/libxcb[xkb?] ) alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-sound/pulseaudio )
-REQUIRED_USE=xkb? ( X ) ^^ ( alsa pulseaudio )
+RDEPEND=X? ( x11-libs/libxcb[xkb?] ) alsa? ( media-libs/alsa-lib ) pulseaudio? ( media-libs/libpulse )
+REQUIRED_USE=xkb? ( X )
 SLOT=0
 _eclasses_=portability	a74d533f258f1f435be71312558c12f9	savedconfig	8b5f9d995a970e49cd427c55d5840285	git-r3	2358a7b20091609e24bd3a83b3ac5991
-_md5_=2c5542778c95372a385af7a2267d3978
+_md5_=972f8709c7e0a225b8a80486c68176d7
