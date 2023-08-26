@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `61`
+packages in overlay: `60`
 <!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -20,7 +20,6 @@ packages in overlay: `61`
 
 * [app-misc/](app-misc/)
   * [draw](app-misc/draw) - **[uniq]** Draw in your terminal
-  * [lf](app-misc/lf) - **[more USE flags]** Terminal file manager
 
 * [app-shells/](app-shells/)
   * [gitstatus](app-shells/gitstatus) - **[uniq]** Git status for Bash and Zsh prompt
