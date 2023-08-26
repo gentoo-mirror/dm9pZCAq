@@ -71,8 +71,9 @@ FONTS=(
 )
 
 IUSE_FLAGS=(${FONTS[*],,})
-IUSE="symbols-only ${IUSE_FLAGS[*]}"
-REQUIRED_USE="X || ( ${IUSE_FLAGS[*]} )"
+# FIXME: `+hack` is workaround for: https://pkgcore.github.io/pkgcheck/man/pkgcheck.html#requiredusedefaults
+IUSE="symbols-only +hack ${IUSE_FLAGS[*]}"
+REQUIRED_USE="X? ( || ( ${IUSE_FLAGS[*]} ) )"
 
 iuse_src_uri() {
 	local iuse="${1:?}"
@@ -94,7 +95,7 @@ nerd_src_uri() {
 }
 
 SRC_URI="
-	$(iuse_src_uri symbols-only  NerdFontsSymbolsOnly)
+	$(iuse_src_uri symbols-only NerdFontsSymbolsOnly)
 	symbols-only? (
 		https://github.com/ryanoasis/${PN}/raw/v${PV}/10-nerd-font-symbols.conf
 			-> 10-nerd-font-symbols-${PV}.conf
@@ -106,9 +107,6 @@ SRC_URI="
 RDEPEND="media-libs/fontconfig"
 
 S="${WORKDIR}"
-# FONT_CONF=(
-# 	"${FILESDIR}"/10-nerd-font-symbols.conf
-# )
 FONT_S="${S}"
 
 src_unpack() {
@@ -133,7 +131,6 @@ check_suffix() {
 
 	return 1
 }
-
 
 src_install() {
 	FONT_SUFFIX=''

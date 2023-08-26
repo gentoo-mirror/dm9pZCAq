@@ -1,10 +1,10 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-DESCRIPTION="Zero-boilerplate interfaces for C99"
-HOMEPAGE="https://github.com/Hirrolot/interface99"
+DESCRIPTION="Algebraic data types for C99"
+HOMEPAGE="https://github.com/Hirrolot/datatype99"
 SRC_URI="${HOMEPAGE}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
@@ -19,6 +19,6 @@ src_install() {
 
 	doheader "${PN}.h"
 
-	rm -- examples/.gitignore || die
+	rm examples/.gitignore || die
 	einstalldocs
 }

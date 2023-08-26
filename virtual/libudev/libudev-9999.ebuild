@@ -3,8 +3,6 @@
 
 EAPI=8
 
-inherit multilib-build
-
 DESCRIPTION="Virtual for libudev-zero provider"
 
 SLOT="0/1"

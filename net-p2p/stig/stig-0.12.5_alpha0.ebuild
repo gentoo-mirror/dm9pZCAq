@@ -3,9 +3,10 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_11 )
 
-inherit distutils-r1 pypi
+inherit distutils-r1 pypi optfeature
 
 DESCRIPTION="TUI and CLI for the BitTorrent client Transmission"
 HOMEPAGE="
@@ -17,9 +18,6 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-IUSE="+proctitle"
-DISTUTILS_USE_SETUPTOOLS=rdepend
-
 RDEPEND="
 	>=dev-python/urwid-2.0[${PYTHON_USEDEP}]
 	>=dev-python/urwidtrees-1.0.3[${PYTHON_USEDEP}]
@@ -29,6 +27,11 @@ RDEPEND="
 	dev-python/pyxdg[${PYTHON_USEDEP}]
 	dev-python/blinker[${PYTHON_USEDEP}]
 	dev-python/natsort[${PYTHON_USEDEP}]
-	proctitle? ( dev-python/setproctitle[${PYTHON_USEDEP}] )
 "
 DEPEND="${RDEPEND}"
+
+pkg_postinst() {
+	optfeature "Tunnel the connection to the Transmission daemon through a SOCKS5, SOCKS4 or HTTP proxy" \
+		dev-python/aiohttp-socks[${PYTHON_USEDEP}]
+	optfeature "Strip arguments from process title when running in tmux session" dev-python/setproctitle[${PYTHON_USEDEP}]
+}
