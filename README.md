@@ -1,6 +1,6 @@
 # dm9pZCAq overlay
 
-packages in overlay: `60`
+packages in overlay: `61`
 <!-- `dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^virtual\//d' | wc -l | xclip -sel c -r` -->
 
 ### detailed information about packages
@@ -40,6 +40,7 @@ packages in overlay: `60`
   * [wren](dev-lang/wren) - **[maintained]** Wren is a small, fast, class-based concurrent scripting language
 
 * [dev-libs/](dev-libs/)
+  * [datatype99](dev-libs/datatype99) - **[uniq]** Algebraic data types for C99
   * [interface99](dev-libs/interface99) - **[uniq]** Zero-boilerplate interfaces for C99
   * [libexecinfo](dev-libs/libexecinfo) - **[uniq]** BSD licensed clone of the GNU libc backtrace facility (for musl libc)
 
