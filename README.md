@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `52`
+packages in overlay: `51`
 
 <!--
 ```bash
@@ -74,10 +74,6 @@ diff -du \
   - [alt-getopt](dev-lua/alt-getopt) - **\[other ebuild\]** Lua bindings to getopt_long
   - [fnlfmt](dev-lua/fnlfmt) - **\[uniq\]** A formatter for Fennel code
   - [readline](dev-lua/readline) - **\[uniq\]** Interface to the readline library
-
-- [dev-python/](dev-python/)
-
-  - [mobi](dev-python/mobi) - **\[uniq\]** Library for unpacking unencrypted mobi files
 
 - [dev-vcs/](dev-vcs/)
 
