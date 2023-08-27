@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `58`
+packages in overlay: `57`
 
 <!--
 ```bash
@@ -145,7 +145,6 @@ diff -du \
 
   - [extrace](sys-process/extrace) - **\[uniq\]** Trace exec() calls system-wide
   - [snooze](sys-process/snooze) - **\[uniq\]** Run a command at a particular time
-  - [ytop](sys-process/ytop) - **\[uniq\]** [gotop](https://github.com/xxxserxxx/gotop) RIIR (Rewrite It in Rust)
 
 - [virtual/](virtual/)
 
