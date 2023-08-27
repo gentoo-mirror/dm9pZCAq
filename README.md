@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `50`
+packages in overlay: `49`
 
 <!--
 ```bash
@@ -124,7 +124,6 @@ diff -du \
 
 - [sys-fs/](sys-fs/)
 
-  - [duf](sys-fs/duf) - **\[uniq\]** Disk Usage/Free Utility - a better 'df' alternative
   - [mdevd](sys-fs/mdevd) - **\[uniq, [udev](#udev)\]** A kernel event manager compatible with mdev.conf
 
 - [sys-libs/](sys-libs/)
