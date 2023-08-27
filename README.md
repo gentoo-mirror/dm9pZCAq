@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `57`
+packages in overlay: `56`
 
 <!--
 ```bash
@@ -124,7 +124,6 @@ diff -du \
   - [hexyl](sys-apps/hexyl) - **\[uniq\]** A command-line hex viewer
   - [huxdemp](sys-apps/huxdemp) - **\[uniq\]** A better hexdump
   - [tealdeer](sys-apps/tealdeer) - **\[more USE flags\]** Very fast implementation of tldr in Rust
-  - [tldr](sys-apps/tldr) - **\[using go-module inherit, misc ebuild changes\]** Fast and interactive tldr client written with go
 
 - [sys-devel/](sys-devel/)
 
