@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `53`
+packages in overlay: `52`
 
 <!--
 ```bash
@@ -54,7 +54,6 @@ diff -du \
 
 - [app-text/](app-text/)
 
-  - [epy](app-text/epy) - **\[uniq\]** CLI Ebook Reader
   - [smu](app-text/smu) - **\[uniq\]** Simple markup - markdown like syntax
 
 - [dev-lang/](dev-lang/)
