@@ -3,8 +3,8 @@
 
 EAPI=8
 
-PYTHON_COMPAT=(python3_{9..11})
-DISTUTILS_USE_SETUPTOOLS=bdepend
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=(python3_{10..12})
 
 inherit distutils-r1 xdg
 
@@ -22,7 +22,7 @@ else
 	S="${WORKDIR}"/${PN}-v${PV}
 fi
 
-KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ppc ppc64 s390 sparc x86 ~x64-macos"
+KEYWORDS="amd64 ~x86"
 
 RESTRICT="test"
 LICENSE="GPL-3"
