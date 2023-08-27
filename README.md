@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `55`
+packages in overlay: `54`
 
 <!--
 ```bash
@@ -126,7 +126,6 @@ diff -du \
 
 - [sys-devel/](sys-devel/)
 
-  - [cproc](sys-devel/cproc) - **\[uniq\]** Small C11 compiler based on QBE
   - [just](sys-devel/just) - **\[uniq\]** Just a command runner (with syntax inspired by `make`)
   - [qbe](sys-devel/qbe) - **\[uniq\]** Compiler Backend
 
