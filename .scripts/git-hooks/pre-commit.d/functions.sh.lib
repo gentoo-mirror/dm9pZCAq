@@ -1,0 +1,14 @@
+# vim: ft=sh:
+# shellcheck shell=sh
+
+alias git_modified='git diff --cached --name-only --diff-filter=d'
+
+for_each_ebuild() {
+	for f in $(git_modified); do
+		case "${f}" in
+		*.ebuild)
+			EBUILD_FILE="${f}" "${@}"
+			;;
+		esac
+	done
+}

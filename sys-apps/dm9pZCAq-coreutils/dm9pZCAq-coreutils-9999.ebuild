@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2022-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://notabug.org/dm9pZCAq/${PN}.git"
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="-path"
+IUSE="path"
 
 BDEPEND=">=dev-lang/metalang99-1.8"
 

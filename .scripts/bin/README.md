@@ -11,6 +11,7 @@ cargo-lock.sed < path/to/Cargo.lock
 ```
 
 or call script from sed with `-nf` flags
+
 ```sh
 sed -nf path/to/go-sum.sed < path/to/go.sum
 ```
