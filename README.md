@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `58`
+packages in overlay: `49`
 
 <!--
 ```bash
@@ -54,7 +54,6 @@ diff -du \
 
 - [app-text/](app-text/)
 
-  - [epy](app-text/epy) - **\[uniq\]** CLI Ebook Reader
   - [smu](app-text/smu) - **\[uniq\]** Simple markup - markdown like syntax
 
 - [dev-lang/](dev-lang/)
@@ -74,11 +73,6 @@ diff -du \
 
   - [alt-getopt](dev-lua/alt-getopt) - **\[other ebuild\]** Lua bindings to getopt_long
   - [fnlfmt](dev-lua/fnlfmt) - **\[uniq\]** A formatter for Fennel code
-  - [readline](dev-lua/readline) - **\[uniq\]** Interface to the readline library
-
-- [dev-python/](dev-python/)
-
-  - [mobi](dev-python/mobi) - **\[uniq\]** Library for unpacking unencrypted mobi files
 
 - [dev-vcs/](dev-vcs/)
 
@@ -123,18 +117,13 @@ diff -du \
   - [dm9pZCAq-coreutils](sys-apps/dm9pZCAq-coreutils) - **\[my, uniq\]** GNU compatible suckless coreutils
   - [hexyl](sys-apps/hexyl) - **\[uniq\]** A command-line hex viewer
   - [huxdemp](sys-apps/huxdemp) - **\[uniq\]** A better hexdump
-  - [tealdeer](sys-apps/tealdeer) - **\[more USE flags\]** Very fast implementation of tldr in Rust
-  - [tldr](sys-apps/tldr) - **\[using go-module inherit, misc ebuild changes\]** Fast and interactive tldr client written with go
 
 - [sys-devel/](sys-devel/)
 
-  - [cproc](sys-devel/cproc) - **\[uniq\]** Small C11 compiler based on QBE
   - [just](sys-devel/just) - **\[uniq\]** Just a command runner (with syntax inspired by `make`)
-  - [qbe](sys-devel/qbe) - **\[uniq\]** Compiler Backend
 
 - [sys-fs/](sys-fs/)
 
-  - [duf](sys-fs/duf) - **\[uniq\]** Disk Usage/Free Utility - a better 'df' alternative
   - [mdevd](sys-fs/mdevd) - **\[uniq, [udev](#udev)\]** A kernel event manager compatible with mdev.conf
 
 - [sys-libs/](sys-libs/)
@@ -145,7 +134,6 @@ diff -du \
 
   - [extrace](sys-process/extrace) - **\[uniq\]** Trace exec() calls system-wide
   - [snooze](sys-process/snooze) - **\[uniq\]** Run a command at a particular time
-  - [ytop](sys-process/ytop) - **\[uniq\]** [gotop](https://github.com/xxxserxxx/gotop) RIIR (Rewrite It in Rust)
 
 - [virtual/](virtual/)
 

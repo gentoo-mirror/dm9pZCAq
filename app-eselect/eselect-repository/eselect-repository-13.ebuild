@@ -1,26 +1,27 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{10..12} )
 inherit python-single-r1
 
 DESCRIPTION="Manage repos.conf via eselect"
-HOMEPAGE="https://github.com/mgorny/eselect-repository"
+HOMEPAGE="https://github.com/projg2/eselect-repository/"
 SRC_URI="
-	https://github.com/mgorny/eselect-repository/archive/v${PV}.tar.gz
+	https://github.com/projg2/eselect-repository/archive/v${PV}.tar.gz
 		-> ${P}.tar.gz
 "
 
 LICENSE="BSD-2"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~x64-macos"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~arm64-macos ~x64-macos"
 IUSE="+curl test"
 RESTRICT="!test? ( test )"
 REQUIRED_USE=${PYTHON_REQUIRED_USE}
 
-RDEPEND="${PYTHON_DEPS}
+RDEPEND="
+	${PYTHON_DEPS}
 	app-admin/eselect
 	$(python_gen_cond_dep '
 		dev-python/lxml[${PYTHON_USEDEP}]
@@ -33,8 +34,8 @@ BDEPEND="
 		$(python_gen_cond_dep '
 			dev-python/pytest[${PYTHON_USEDEP}]
 		')
-	)"
-
+	)
+"
 
 src_prepare() {
 	if use curl; then

@@ -1,4 +1,4 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2021-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -12,7 +12,10 @@ SRC_URI="${HOMEPAGE}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="GPL-2 MIT"
 SLOT="0"
 KEYWORDS="amd64 ~x86"
-IUSE="-pwait"
+IUSE="pwait"
+
+DEPEND="pwait? ( !sys-process/procps )"
+RDEPEND="${DEPEND}"
 
 CONFIG_CHECK="~CONNECTOR ~PROC_EVENTS"
 

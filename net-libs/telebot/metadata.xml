@@ -8,5 +8,6 @@
 	<upstream>
 		<bugs-to>https://github.com/smartnode/telebot/issues</bugs-to>
 		<doc>https://elmurod.net/telebot</doc>
+		<remote-id type="github">smartnode/telebot</remote-id>
 	</upstream>
 </pkgmetadata>

@@ -5,22 +5,22 @@
 		<email>v@0x0c.link</email>
 		<name>dm9pZCAq</name>
 	</maintainer>
-    <longdescription>
-        A screencast tool to display your keys, inspired by Screenflick.
-        Featuring:
-        several keyboard translation methods,
-        key composition/input method support,
-        configurable font/size/position,
-        highlighting of recent keystrokes,
-        improved backspace processing,
-        normal/Emacs/Mac caps modes,
-        multi-monitor support,
-        dynamic recording control,
-        switch for visible shift and modifier sequences only,
-        repeats compression,
-        countless bug fixes,
-        mouse buttons support.
-    </longdescription>
+	<longdescription>
+		A screencast tool to display your keys, inspired by Screenflick.
+		Featuring:
+		several keyboard translation methods,
+		key composition/input method support,
+		configurable font/size/position,
+		highlighting of recent keystrokes,
+		improved backspace processing,
+		normal/Emacs/Mac caps modes,
+		multi-monitor support,
+		dynamic recording control,
+		switch for visible shift and modifier sequences only,
+		repeats compression,
+		countless bug fixes,
+		mouse buttons support.
+	</longdescription>
 	<use>
 		<flag name="dbus">Enable lockscreen detection</flag>
 	</use>
