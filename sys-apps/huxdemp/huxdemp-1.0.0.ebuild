@@ -1,9 +1,9 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2021-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-LUA_COMPAT=( lua5-{2..4} )
+LUA_COMPAT=( lua5-{3..4} )
 
 inherit lua-single toolchain-funcs
 
@@ -15,9 +15,8 @@ SRC_URI="
 
 LICENSE="GPL-3 MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+KEYWORDS="~amd64"
 REQUIRED_USE="${LUA_REQUIRED_USE}"
-
 
 IUSE="+doc"
 
