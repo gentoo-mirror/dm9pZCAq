@@ -1,13 +1,15 @@
 DEFINED_PHASES=compile install postinst setup
+DEPEND=pwait? ( !sys-process/procps )
 DESCRIPTION=trace exec() calls system-wide
 EAPI=8
 HOMEPAGE=https://github.com/leahneukirchen/extrace
 IDEPEND=filecaps? ( sys-libs/libcap )
 INHERIT=fcaps linux-info
-IUSE=-pwait +filecaps
+IUSE=pwait +filecaps
 KEYWORDS=amd64 ~x86
 LICENSE=GPL-2 MIT
+RDEPEND=pwait? ( !sys-process/procps )
 SLOT=0
 SRC_URI=https://github.com/leahneukirchen/extrace/archive/v0.9.tar.gz -> extrace-0.9.tar.gz
 _eclasses_=fcaps	c0a086b957a1b183a8d136eabf02f191	toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91
-_md5_=55222de2bd73935f73dfb951d45d9f35
+_md5_=0c5c379b1517e50bf1088c9ff6b66957
