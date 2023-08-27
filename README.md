@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `56`
+packages in overlay: `55`
 
 <!--
 ```bash
@@ -123,7 +123,6 @@ diff -du \
   - [dm9pZCAq-coreutils](sys-apps/dm9pZCAq-coreutils) - **\[my, uniq\]** GNU compatible suckless coreutils
   - [hexyl](sys-apps/hexyl) - **\[uniq\]** A command-line hex viewer
   - [huxdemp](sys-apps/huxdemp) - **\[uniq\]** A better hexdump
-  - [tealdeer](sys-apps/tealdeer) - **\[more USE flags\]** Very fast implementation of tldr in Rust
 
 - [sys-devel/](sys-devel/)
 
