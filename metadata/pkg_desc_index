@@ -23,7 +23,7 @@ dev-libs/interface99 1.0.1: Zero-boilerplate interfaces for C99
 dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/fnlfmt 0.3.1: A formatter for Fennel code
-dev-vcs/gitui 0.23.0: Blazing fast terminal-ui for git
+dev-vcs/gitui 0.24.0: Blazing fast terminal-ui for git
 media-fonts/nerd-fonts 3.0.2: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.8.4: Alternative Free Identity System
