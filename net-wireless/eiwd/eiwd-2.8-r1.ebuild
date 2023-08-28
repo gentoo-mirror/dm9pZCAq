@@ -2,28 +2,23 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-
-inherit linux-info
+inherit flag-o-matic linux-info
 
 DESCRIPTION="iwd without dbus"
 HOMEPAGE="https://github.com/illiliti/eiwd"
-SRC_URI="
-	${HOMEPAGE}/releases/download/${PVR/r/}/${P##e}.tar.xz
-		-> ${PF}.tar.xz
-"
+SRC_URI="${HOMEPAGE}/releases/download/${PVR/r/}/${P##e}.tar.xz -> ${PF}.tar.xz"
+
+KEYWORDS="~alpha amd64 ~arm ~arm64 ~ia64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ia64 ~ppc ~ppc64 ~sparc ~x86"
-IUSE="
-	+builtin-dns crda monitor ofono wired
-	cpu_flags_x86_aes cpu_flags_x86_ssse3
-"
+IUSE="+builtin-dns cpu_flags_x86_aes cpu_flags_x86_ssse3 crda monitor ofono wired"
 
-DEPEND=">=dev-libs/ell-0.57"
+DEPEND=">=dev-libs/ell-0.58"
 RDEPEND="
 	${DEPEND}
 	!net-wireless/iwd
+	acct-group/netdev
 	net-wireless/wireless-regdb
 	crda? ( net-wireless/crda )
 	builtin-dns? ( net-dns/openresolv )
@@ -31,6 +26,8 @@ RDEPEND="
 BDEPEND="virtual/pkgconfig"
 
 S="${WORKDIR}/${P#e}"
+
+MYRST2MAN="RST2MAN=:"
 
 pkg_setup() {
 	CONFIG_CHECK="
@@ -56,7 +53,7 @@ pkg_setup() {
 		~RFKILL
 		~X509_CERTIFICATE_PARSER
 	"
-	if use crda; then
+	if use crda;then
 		CONFIG_CHECK="${CONFIG_CHECK} ~CFG80211_CRDA_SUPPORT"
 		WARNING_CFG80211_CRDA_SUPPORT=\
 			"REGULATORY DOMAIN PROBLEM: please enable CFG80211_CRDA_SUPPORT for proper regulatory domain support"
@@ -104,6 +101,7 @@ pkg_setup() {
 }
 
 src_configure() {
+	append-cflags "-fsigned-char"
 	local myeconfargs=(
 		--localstatedir="${EPREFIX}/var"
 		--sysconfdir="${EPREFIX}/etc/iwd"
@@ -118,14 +116,23 @@ src_configure() {
 	econf "${myeconfargs[@]}"
 }
 
+src_compile() {
+	emake "${MYRST2MAN}"
+}
+
 src_install() {
-	default
+	emake DESTDIR="${D}" "${MYRST2MAN}" install
 
 	keepdir /var/lib/iwd
+
 	newinitd "${FILESDIR}/iwd.initd" iwd
+
+	if use wired;then
+		newinitd "${FILESDIR}/ead.initd" ead
+	fi
 
 	insinto /etc/iwd/
 	doins "${FILESDIR}/main.conf"
 
-	echo 'rc_provide="net"' > "${ED}/etc/conf.d/iwd"
+	echo 'rc_provide="net"' | install -Dm644 /proc/self/fd/0 "${ED}/etc/conf.d/iwd"
 }
