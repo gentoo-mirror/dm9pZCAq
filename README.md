@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `50`
+packages in overlay: `51`
 
 <!--
 ```bash
@@ -115,6 +115,7 @@ diff -du \
 - [sys-apps/](sys-apps/)
 
   - [dm9pZCAq-coreutils](sys-apps/dm9pZCAq-coreutils) - **\[my, uniq\]** GNU compatible suckless coreutils
+  - [eza](sys-apps/eza) - **\[uniq (for now)\]** A modern, maintained replacement for ls
   - [hexyl](sys-apps/hexyl) - **\[uniq\]** A command-line hex viewer
   - [huxdemp](sys-apps/huxdemp) - **\[uniq\]** A better hexdump
 

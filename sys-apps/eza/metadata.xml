@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.link</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<upstream>
+		<changelog>https://github.com/eza-community/eza/raw/main/CHANGELOG.md</changelog>
+		<bugs-to>https://github.com/eza-community/eza/issues</bugs-to>
+		<remote-id type="github">eza-community/eza</remote-id>
+	</upstream>
+</pkgmetadata>
