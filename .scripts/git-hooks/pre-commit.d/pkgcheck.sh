@@ -1,3 +1,4 @@
 #!/bin/sh --
 set -ue
-[ -z "$(pkgcheck scan --staged --color=true | tee /proc/self/fd/2)" ]
+[ -n "${GIT_HOOK_SKIP_PKGCHECK:-}" ] ||
+	[ -z "$(pkgcheck scan --staged --color=true | tee /proc/self/fd/2)" ]
