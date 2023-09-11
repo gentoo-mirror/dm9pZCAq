@@ -11,6 +11,11 @@ CRATES="
 	aho-corasick@1.0.2
 	android-tzdata@0.1.1
 	android_system_properties@0.1.5
+	anstream@0.5.0
+	anstyle@1.0.2
+	anstyle-parse@0.2.1
+	anstyle-query@1.0.0
+	anstyle-wincon@2.1.0
 	anyhow@1.0.75
 	autocfg@1.1.0
 	backtrace@0.3.67
@@ -26,11 +31,12 @@ CRATES="
 	cassowary@0.3.0
 	cc@1.0.79
 	cfg-if@1.0.0
-	chrono@0.4.26
-	clap@4.1.14
-	clap_builder@4.1.14
-	clap_lex@0.4.0
+	chrono@0.4.30
+	clap@4.4.2
+	clap_builder@4.4.2
+	clap_lex@0.5.1
 	codespan-reporting@0.11.1
+	colorchoice@1.0.0
 	core-foundation-sys@0.8.3
 	crc32fast@1.3.2
 	crossbeam-channel@0.5.8
@@ -43,11 +49,13 @@ CRATES="
 	cxx-build@1.0.90
 	cxxbridge-flags@1.0.90
 	cxxbridge-macro@1.0.90
+	dashmap@5.4.0
 	diff@0.1.13
 	dirs@5.0.1
 	dirs-sys@0.4.1
 	easy-cast@0.5.2
 	either@1.8.1
+	env_logger@0.10.0
 	errno@0.2.8
 	errno-dragonfly@0.1.2
 	fancy-regex@0.11.0
@@ -58,6 +66,14 @@ CRATES="
 	fnv@1.0.7
 	form_urlencoded@1.2.0
 	fsevent-sys@4.1.0
+	futures@0.3.26
+	futures-channel@0.3.26
+	futures-core@0.3.26
+	futures-executor@0.3.26
+	futures-io@0.3.26
+	futures-sink@0.3.26
+	futures-task@0.3.26
+	futures-util@0.3.26
 	fuzzy-matcher@0.3.7
 	getrandom@0.2.8
 	gh-emoji@1.0.7
@@ -67,6 +83,7 @@ CRATES="
 	git2@0.17.2
 	hashbrown@0.12.3
 	hermit-abi@0.3.2
+	humantime@2.1.0
 	iana-time-zone@0.1.53
 	iana-time-zone-haiku@0.1.1
 	idna@0.4.0
@@ -74,6 +91,7 @@ CRATES="
 	inotify@0.9.6
 	inotify-sys@0.1.5
 	instant@0.1.12
+	invalidstring@0.1.2
 	io-lifetimes@1.0.5
 	is-terminal@0.4.3
 	itertools@0.11.0
@@ -82,6 +100,7 @@ CRATES="
 	js-sys@0.3.61
 	kqueue@1.0.7
 	kqueue-sys@1.0.3
+	lazy_static@1.4.0
 	libc@0.2.139
 	libgit2-sys@0.15.2+1.6.4
 	libssh2-sys@0.3.0
@@ -103,14 +122,16 @@ CRATES="
 	onig@6.4.0
 	onig_sys@69.8.1
 	openssl-probe@0.1.5
-	openssl-src@111.25.0+1.1.1t
-	openssl-sys@0.9.92
+	openssl-src@300.1.3+3.1.2
+	openssl-sys@0.9.93
 	option-ext@0.2.0
 	parking_lot@0.12.1
 	parking_lot_core@0.9.7
 	percent-encoding@2.3.0
 	phf@0.11.1
 	phf_shared@0.11.1
+	pin-project-lite@0.2.9
+	pin-utils@0.1.0
 	pkg-config@0.3.26
 	pretty_assertions@1.4.0
 	proc-macro-error@1.0.4
@@ -119,6 +140,7 @@ CRATES="
 	proc-macro2@1.0.63
 	quote@1.0.29
 	ratatui@0.21.0
+	rayon@1.7.0
 	rayon-core@1.11.0
 	redox_syscall@0.2.16
 	redox_users@0.4.3
@@ -136,6 +158,8 @@ CRATES="
 	serde@1.0.156
 	serde_derive@1.0.156
 	serde_json@1.0.93
+	serial_test@1.0.0
+	serial_test_derive@1.0.0
 	shell-escape@0.1.5
 	shellexpand@3.1.0
 	signal-hook@0.3.15
@@ -143,6 +167,7 @@ CRATES="
 	signal-hook-registry@1.4.1
 	simplelog@0.12.1
 	siphasher@0.3.10
+	slab@0.4.8
 	smallvec@1.11.0
 	strsim@0.10.0
 	struct-patch@0.2.3
@@ -167,6 +192,7 @@ CRATES="
 	unicode-truncate@0.2.0
 	unicode-width@0.1.10
 	url@2.4.1
+	utf8parse@0.2.1
 	vcpkg@0.2.15
 	version_check@0.9.4
 	walkdir@2.3.3
@@ -202,7 +228,6 @@ CRATES="
 	windows_x86_64_msvc@0.48.0
 	yansi@0.5.1
 	asyncgit@${AG_PV}
-	${PN}@${PV}
 "
 
 inherit cargo
@@ -212,7 +237,10 @@ HOMEPAGE="
 	https://crates.io/crates/gitui
 	https://github.com/extrawurst/gitui
 "
-SRC_URI="${CARGO_CRATE_URIS}"
+SRC_URI="
+	${CARGO_CRATE_URIS}
+	https://github.com/extrawurst/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+"
 
 LICENSE="MIT"
 # Dependent crate licenses
