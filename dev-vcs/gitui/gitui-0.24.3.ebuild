@@ -275,7 +275,7 @@ src_configure() {
 src_install() {
 	local DOCS=({README,KEY_CONFIG,THEMES}.md)
 
-	dobin "target/$(usex debug debug release)/${PN}"
+	cargo_src_install
 
 	insinto "/usr/share/${P}/examples"
 	doins vim_style_key_config.ron
