@@ -236,23 +236,18 @@ src_unpack() {
 	cp -v -- "${DISTDIR}/${P}.toml.man.5" "${man}/${PN}.toml.5" || die
 }
 
-src_compile() {
-	local completions="${S}/completions"
-
-	cargo_src_compile
-
-	ebegin "generating completions"
-
-	mkdir -p -- "${completions}" || die
-	OUT_DIR="${completions}" "./target/release/${PN}-completions"
-
-	eend "${?}" 'failed to generate completions' || die "${_}"
-}
-
 src_install() {
-	dobin "target/release/${PN}"
+	cargo_src_install
 
 	doman "${T}/man"/*
+
+	local exe="${ED}/usr/bin/${PN}-completions"
+	local completions="${S}/completions"
+	mkdir -p "${completions}" || die
+	ebegin "generating completions"
+	OUT_DIR="${completions}" "${exe}"
+	eend "${?}" 'failed to generate completions' || die "${_}"
+	rm "${exe}" || die
 
 	# bash-completion
 	newbashcomp "completions/${PN}.bash" "${PN}"

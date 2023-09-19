@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `50`
+packages in overlay: `49`
 
 <!--
 ```bash
@@ -120,7 +120,6 @@ diff -du \
 
 - [sys-devel/](sys-devel/)
 
-  - [just](sys-devel/just) - **\[uniq\]** Just a command runner (with syntax inspired by `make`)
   - [gf2](sys-devel/gf2) - **\[uniq\]** GDB frontend for Linux
 
 - [sys-fs/](sys-fs/)

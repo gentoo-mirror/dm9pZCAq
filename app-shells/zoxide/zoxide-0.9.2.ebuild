@@ -127,12 +127,20 @@ KEYWORDS="amd64 x86"
 
 BDEPEND=">=virtual/rust-1.54.0" # for clap
 
+src_configure() {
+	cargo_src_configure
+
+	# will be striped by portage
+	RUSTFLAGS="${RUSTFLAGS} -Cstrip=none"
+	export RUSTFLAGS
+}
+
 src_install() {
 	doman man/man[0-9]/*
 
 	einstalldocs
 
-	dobin "target/release/${PN}"
+	cargo_src_install
 
 	# bash-completion
 	newbashcomp "contrib/completions/${PN}.bash" "${PN}"
