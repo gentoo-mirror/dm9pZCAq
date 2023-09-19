@@ -38,7 +38,6 @@ sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
 sys-apps/hexyl 0.13.1: A command-line hex viewer
 sys-apps/huxdemp 1.0.0: A better hexdump
 sys-devel/gf2 2023.09.02 9999: GDB frontend for Linux
-sys-devel/just 1.14.0: Just a command runner (with syntax inspired by 'make')
 sys-fs/mdevd 0.1.6.2: A kernel event manager compatible with mdev.conf
 sys-libs/libudev-zero 1.0.3: Daemonless replacement for libudev
 sys-process/extrace 0.9: trace exec() calls system-wide
