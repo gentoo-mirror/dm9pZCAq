@@ -25,7 +25,7 @@ dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/fnlfmt 0.3.1: A formatter for Fennel code
 dev-vcs/gitui 0.24.3: Blazing fast terminal-ui for git
 media-fonts/nerd-fonts 3.0.2: Collection of fonts that are patched to include a high number of glyphs (icons).
-media-video/gifski 1.5.0: Highest-quality GIF encoder based on pngquant
+media-video/gifski 1.12.2: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
@@ -44,6 +44,7 @@ sys-process/extrace 0.9: trace exec() calls system-wide
 sys-process/snooze 0.5: run a command at a particular time
 virtual/libudev 9999: Virtual for libudev-zero provider
 virtual/udev 9999: Virtual to select between different udev (mdev) daemon providers
+www-apps/zola 0.17.2: A fast static site generator with everything built-in
 x11-misc/clayout 0.0.3 9999: Save own keyboard layout for each window
 x11-misc/herbe 1.0.0: Daemon-less notifications without D-Bus
 x11-misc/lemonbar 1.4: A featherweight, lemon-scented, bar based on xcb
