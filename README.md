@@ -140,6 +140,10 @@ diff -du \
   - [libudev](virtual/libudev) - **\[[udev](#udev)\]** Virtual for libudev providers
   - [udev](virtual/udev) - **\[[udev](#udev)\]** Virtual to select between different udev daemon providers
 
+- [www-apps](www-apps/)
+
+  - [zola](www-apps/zola) - **\[maintained\]** A fast static site generator with everything built-in
+
 - [x11-misc/](x11-misc/)
 
   - [clayout](x11-misc/clayout) - **\[my, uniq\]** Save own keyboard layout for each window
