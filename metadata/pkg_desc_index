@@ -48,7 +48,7 @@ www-apps/zola 0.17.2: A fast static site generator with everything built-in
 x11-misc/clayout 0.0.3 9999: Save own keyboard layout for each window
 x11-misc/herbe 1.0.0: Daemon-less notifications without D-Bus
 x11-misc/lemonbar 1.4: A featherweight, lemon-scented, bar based on xcb
-x11-misc/qt5ct 1.7: Qt5 configuration tool, similar to qtconfig for Qt4
+x11-misc/qt5ct 1.8: Qt5 configuration tool, similar to qtconfig for Qt4
 x11-misc/screenkey 1.5_p20230109: A screencast tool to display your keys inspired by Screenflick
 x11-misc/xcolor 0.5.1: Lightweight color picker for X11
 x11-misc/xinput-gui 0.3.1 9999: A simple GUI for Xorg's Xinput tool
