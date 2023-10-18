@@ -18,7 +18,7 @@ SRC_URI="
 
 LICENSE="LGPL-3 MIT Apache-2.0 BSD ZLIB"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 ppc64 ~riscv ~s390 x86 ~amd64-linux ~x86-linux ~x64-macos ~x64-solaris"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv ~s390 ~x86 ~amd64-linux ~x86-linux ~x64-macos ~x64-solaris"
 
 RDEPEND="
 	acct-user/${PN%-*}
