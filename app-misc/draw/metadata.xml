@@ -5,4 +5,7 @@
 		<email>v@0x0c.link</email>
 		<name>dm9pZCAq</name>
 	</maintainer>
+	<upstream>
+		<remote-id type="github">maaslalani/draw</remote-id>
+	</upstream>
 </pkgmetadata>
