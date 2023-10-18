@@ -32,7 +32,7 @@ net-libs/telebot 9999: Telegram Bot API in C
 net-misc/gping 1.14.0: Ping, but with a graph
 net-news/newsboat 2.32: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.6_alpha0: TUI and CLI for the BitTorrent client Transmission
-net-p2p/yggdrasil-go 0.4.7: An experiment in scalable routing as an encrypted IPv6 overlay network
+net-p2p/yggdrasil-go 0.4.7 0.5.0_rc2: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-wireless/eiwd 2.8-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
 sys-apps/hexyl 0.13.1: A command-line hex viewer
