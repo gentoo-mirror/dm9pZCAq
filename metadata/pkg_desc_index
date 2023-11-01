@@ -25,7 +25,7 @@ dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/fnlfmt 0.3.1: A formatter for Fennel code
 dev-vcs/gitui 0.24.3: Blazing fast terminal-ui for git
 media-fonts/nerd-fonts 3.0.2: Collection of fonts that are patched to include a high number of glyphs (icons).
-media-video/gifski 1.12.2: Highest-quality GIF encoder based on pngquant
+media-video/gifski 1.12.2 1.13.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
