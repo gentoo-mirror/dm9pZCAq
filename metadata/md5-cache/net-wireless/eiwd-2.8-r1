@@ -11,5 +11,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/ell-0.58 !net-wireless/iwd acct-group/netdev net-wireless/wireless-regdb crda? ( net-wireless/crda ) builtin-dns? ( net-dns/openresolv )
 SLOT=0
 SRC_URI=https://github.com/illiliti/eiwd/releases/download/2.8-1/iwd-2.8.tar.xz -> eiwd-2.8-r1.tar.xz
-_eclasses_=toolchain-funcs	70ec42843fec87d20fd94c67e77cdbff	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	baa4d385108ac87993edac956a916a36	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91
+_eclasses_=toolchain-funcs	edeef89edaf21d30225d31702ab117ac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	baa4d385108ac87993edac956a916a36	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91
 _md5_=d06edbf1a0280734858bc28a7866c66d
