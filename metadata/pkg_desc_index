@@ -11,7 +11,7 @@ app-misc/draw 0.1.1: Draw in your terminal
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.9.2: A smarter cd command
 app-shells/zsh-powerlevel10k 1.19.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
-app-shells/zsh-vi-mode 0.10.0: A better and friendly vi(vim) mode plugin for ZSH.
+app-shells/zsh-vi-mode 0.11.0: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/ghc 8.8.4-r2: The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
@@ -31,7 +31,7 @@ net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networ
 net-libs/telebot 9999: Telegram Bot API in C
 net-misc/gping 1.14.0: Ping, but with a graph
 net-news/newsboat 2.32: An RSS/Atom feed reader for text terminals
-net-p2p/stig 0.12.6_alpha0: TUI and CLI for the BitTorrent client Transmission
+net-p2p/stig 0.12.7_alpha0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7 0.5.2: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-wireless/eiwd 2.8-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
