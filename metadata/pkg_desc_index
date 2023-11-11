@@ -29,7 +29,7 @@ media-video/gifski 1.12.2 1.13.0: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
-net-misc/gping 1.14.0: Ping, but with a graph
+net-misc/gping 1.15.1: Ping, but with a graph
 net-news/newsboat 2.32: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.7_alpha0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7 0.5.2: An experiment in scalable routing as an encrypted IPv6 overlay network
