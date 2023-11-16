@@ -5,7 +5,7 @@ EAPI=8
 
 CRATES="
 	adler@1.0.2
-	ahash@0.8.5
+	ahash@0.8.6
 	aho-corasick@1.1.2
 	anstream@0.6.4
 	anstyle@1.0.4
@@ -21,9 +21,9 @@ CRATES="
 	cexpr@0.6.0
 	cfg-if@1.0.0
 	clang-sys@1.6.1
-	clap@4.4.6
-	clap_builder@4.4.6
-	clap_lex@0.5.1
+	clap@4.4.8
+	clap_builder@4.4.8
+	clap_lex@0.6.0
 	colorchoice@1.0.0
 	crc32fast@1.3.2
 	crossbeam-channel@0.5.8
@@ -45,7 +45,7 @@ CRATES="
 	imgref@1.10.0
 	lazy_static@1.4.0
 	lazycell@1.3.0
-	libc@0.2.149
+	libc@0.2.150
 	libloading@0.7.4
 	lodepng@3.9.1
 	loop9@0.1.4
@@ -70,13 +70,13 @@ CRATES="
 	regex-automata@0.4.3
 	regex-syntax@0.8.2
 	resize@0.8.2
-	rgb@0.8.36
+	rgb@0.8.37
 	rustc-hash@1.1.0
 	scopeguard@1.2.0
 	shlex@1.2.0
 	strsim@0.10.0
 	syn@1.0.109
-	syn@2.0.38
+	syn@2.0.39
 	thread_local@1.1.7
 	unicode-ident@1.0.12
 	utf8parse@0.2.1
@@ -96,10 +96,10 @@ CRATES="
 	windows_x86_64_gnu@0.48.5
 	windows_x86_64_gnullvm@0.48.5
 	windows_x86_64_msvc@0.48.5
-	zerocopy@0.7.11
-	zerocopy-derive@0.7.11
+	zerocopy@0.7.25
+	zerocopy-derive@0.7.25
+	${PN}@${PV}
 "
-	# ${PN}@${PV}
 
 inherit cargo
 
@@ -108,16 +108,13 @@ HOMEPAGE="
 	https://gif.ski/
 	https://crates.io/crates/gifski
 "
-SRC_URI="
-	${CARGO_CRATE_URIS}
-	https://github.com/ImageOptim/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
-"
+SRC_URI="${CARGO_CRATE_URIS}"
 
 LICENSE="AGPL-3+"
 # Dependent crate licenses
 LICENSE+=" Apache-2.0 BSD GPL-3+ ISC MIT Unicode-DFS-2016 WTFPL-2 ZLIB"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="video"
 
 DEPEND="
@@ -128,14 +125,14 @@ BDEPEND="video? ( sys-devel/clang:* )"
 
 QA_PRESTRIPPED="usr/bin/${PN}"
 
-src_prepare() {
-	default
+# src_prepare() {
+# 	default
 
-	# patch for ffmpeg-sys-next is only needed for mac
-	# comment it out to not depend on git source
-	sed -i "${S}/Cargo.toml" \
-		-e 's/^ffmpeg-sys-next\s.*/# &/' || die
-}
+# 	# patch for ffmpeg-sys-next is only needed for mac
+# 	# comment it out to not depend on git source
+# 	sed -i "${S}/Cargo.toml" \
+# 		-e 's/^ffmpeg-sys-next\s.*/# &/' || die
+# }
 
 src_configure() {
 	local myfeatures=(
