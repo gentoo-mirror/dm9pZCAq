@@ -15,7 +15,7 @@ SRC_URI="
 "
 KEYWORDS="~amd64 ~arm ~x86"
 
-DEPEND=">=dev-libs/skalibs-2.13.0.0"
+DEPEND=">=dev-libs/skalibs-2.14.0.0"
 
 LICENSE="ISC"
 SLOT="0"
