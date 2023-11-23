@@ -15,6 +15,7 @@ KEYWORDS="amd64 x86"
 # curl -s https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest \
 #   | jq -r '.assets[].name | select(endswith(".tar.xz")) | split(".") | .[0] | select(test("(?i)symbolsonly") | not)'
 FONTS=(
+	0xProto
 	3270
 	Agave
 	AnonymousPro
@@ -23,15 +24,20 @@ FONTS=(
 	BigBlueTerminal
 	BitstreamVeraSansMono
 	CascadiaCode
+	CascadiaMono
 	CodeNewRoman
 	ComicShannsMono
+	CommitMono
 	Cousine
+	D2Coding
 	DaddyTimeMono
 	DejaVuSansMono
 	DroidSansMono
+	EnvyCodeR
 	FantasqueSansMono
 	FiraCode
 	FiraMono
+	GeistMono
 	Go-Mono
 	Gohu
 	Hack
@@ -43,13 +49,17 @@ FONTS=(
 	Inconsolata
 	InconsolataGo
 	InconsolataLGC
+	IntelOneMono
 	Iosevka
 	IosevkaTerm
+	IosevkaTermSlab
 	JetBrainsMono
 	Lekton
 	LiberationMono
 	Lilex
+	MartianMono
 	Meslo
+	Monaspace
 	Monofur
 	Monoid
 	Mononoki
@@ -134,11 +144,25 @@ check_suffix() {
 
 src_install() {
 	FONT_SUFFIX=''
-	local suffixes=( ttf otf ) suf=''
+	local suffixes=(ttf otf) suf=''
 
 	for suf in "${suffixes[@]}"; do
 		check_suffix "${S}" "${suf}" && FONT_SUFFIX+=" ${suf} "
 	done
 
 	font_src_install
+}
+
+pkg_preinst() {
+	BREAKING_UPDATE_3_1_0=0
+	has_version "<${CATEGORY}/${PN}-3.1.0" && BREAKING_UPDATE_3_1_0=1
+}
+
+pkg_postinst() {
+	font_pkg_postinst
+
+	[ "${BREAKING_UPDATE_3_1_0:-0}" -eq 1 ] && {
+		ewarn 'You will need to adapt your client setting after an update.'
+		ewarn 'see: https://github.com/ryanoasis/nerd-fonts/issues/1434#issuecomment-1822690655'
+	}
 }
