@@ -8,6 +8,7 @@ app-eselect/eselect-repository:curl - Use curl instead of wget
 dev-lang/wren:cli - Build wren cli
 dev-vcs/gitui:ghemoji - Replace markdown emojis with Unicode equivalent
 dev-vcs/gitui:trace-libgit - Enable libgit tracing
+media-fonts/nerd-fonts:0xproto - Install 0xProto font
 media-fonts/nerd-fonts:3270 - Install 3270 font
 media-fonts/nerd-fonts:agave - Install Agave font
 media-fonts/nerd-fonts:anonymouspro - Install AnonymousPro font
@@ -16,15 +17,20 @@ media-fonts/nerd-fonts:aurulentsansmono - Install AurulentSansMono font
 media-fonts/nerd-fonts:bigblueterminal - Install BigBlueTerminal font
 media-fonts/nerd-fonts:bitstreamverasansmono - Install BitstreamVeraSansMono font
 media-fonts/nerd-fonts:cascadiacode - Install CascadiaCode font
+media-fonts/nerd-fonts:cascadiamono - Install CascadiaMono font
 media-fonts/nerd-fonts:codenewroman - Install CodeNewRoman font
 media-fonts/nerd-fonts:comicshannsmono - Install ComicShannsMono font
+media-fonts/nerd-fonts:commitmono - Install CommitMono font
 media-fonts/nerd-fonts:cousine - Install Cousine font
+media-fonts/nerd-fonts:d2coding - Install D2Coding font
 media-fonts/nerd-fonts:daddytimemono - Install DaddyTimeMono font
 media-fonts/nerd-fonts:dejavusansmono - Install DejaVuSansMono font
 media-fonts/nerd-fonts:droidsansmono - Install DroidSansMono font
+media-fonts/nerd-fonts:envycoder - Install EnvyCodeR font
 media-fonts/nerd-fonts:fantasquesansmono - Install FantasqueSansMono font
 media-fonts/nerd-fonts:firacode - Install FiraCode font
 media-fonts/nerd-fonts:firamono - Install FiraMono font
+media-fonts/nerd-fonts:geistmono - Install GeistMono font
 media-fonts/nerd-fonts:go-mono - Install Go-Mono font
 media-fonts/nerd-fonts:gohu - Install Gohu font
 media-fonts/nerd-fonts:hack - Install Hack font
@@ -36,13 +42,17 @@ media-fonts/nerd-fonts:ibmplexmono - Install IBMPlexMono font
 media-fonts/nerd-fonts:inconsolata - Install Inconsolata font
 media-fonts/nerd-fonts:inconsolatago - Install InconsolataGo font
 media-fonts/nerd-fonts:inconsolatalgc - Install InconsolataLGC font
+media-fonts/nerd-fonts:intelonemono - Install IntelOneMono font
 media-fonts/nerd-fonts:iosevka - Install Iosevka font
 media-fonts/nerd-fonts:iosevkaterm - Install IosevkaTerm font
+media-fonts/nerd-fonts:iosevkatermslab - Install IosevkaTermSlab font
 media-fonts/nerd-fonts:jetbrainsmono - Install JetBrainsMono font
 media-fonts/nerd-fonts:lekton - Install Lekton font
 media-fonts/nerd-fonts:liberationmono - Install LiberationMono font
 media-fonts/nerd-fonts:lilex - Install Lilex font
+media-fonts/nerd-fonts:martianmono - Install MartianMono font
 media-fonts/nerd-fonts:meslo - Install Meslo font
+media-fonts/nerd-fonts:monaspace - Install Monaspace font
 media-fonts/nerd-fonts:monofur - Install Monofur font
 media-fonts/nerd-fonts:monoid - Install Monoid font
 media-fonts/nerd-fonts:mononoki - Install Mononoki font
