@@ -152,17 +152,3 @@ src_install() {
 
 	font_src_install
 }
-
-pkg_preinst() {
-	BREAKING_UPDATE_3_1_0=0
-	has_version "<${CATEGORY}/${PN}-3.1.0" && BREAKING_UPDATE_3_1_0=1
-}
-
-pkg_postinst() {
-	font_pkg_postinst
-
-	[ "${BREAKING_UPDATE_3_1_0:-0}" -eq 1 ] && {
-		ewarn 'You will need to adapt your client setting after an update.'
-		ewarn 'see: https://github.com/ryanoasis/nerd-fonts/issues/1434#issuecomment-1822690655'
-	}
-}
