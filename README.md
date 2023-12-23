@@ -89,6 +89,10 @@ diff -du \
 
   - [gifski](media-video/gifski) - **\[uniq\]** Highest-quality GIF encoder based on pngquant
 
+- [net-analyzer/](net-analyzer/)
+
+  - [bandwhich](net-analyzer/bandwhich) - **\[maintained\]** Terminal bandwidth utilization tool
+
 - [net-dns/](net-dns/)
 
   - [alfis](net-dns/alfis) - **\[uniq\]** Alternative Free Identity System
