@@ -30,13 +30,13 @@ media-video/gifski 1.13.1: Highest-quality GIF encoder based on pngquant
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
-net-misc/gping 1.15.1: Ping, but with a graph
+net-misc/gping 1.16.0: Ping, but with a graph
 net-news/newsboat 2.32: An RSS/Atom feed reader for text terminals
-net-p2p/stig 0.12.7_alpha0: TUI and CLI for the BitTorrent client Transmission
+net-p2p/stig 0.12.8_alpha0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7 0.5.4: An experiment in scalable routing as an encrypted IPv6 overlay network
-net-wireless/eiwd 2.8-r1: iwd without dbus
+net-wireless/eiwd 2.10-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
-sys-apps/hexyl 0.13.1: A command-line hex viewer
+sys-apps/hexyl 0.14.0: A command-line hex viewer
 sys-apps/huxdemp 1.0.0: A better hexdump
 sys-devel/gf2 2023.09.02 9999: GDB frontend for Linux
 sys-fs/mdevd 0.1.6.3: A kernel event manager compatible with mdev.conf
