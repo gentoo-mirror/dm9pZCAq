@@ -8,7 +8,7 @@ packages in overlay: `50`
 <!--
 ```bash
 list_pkgs() {
-    dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^profiles\//d'
+    dirname $(cd "$(git rev-parse --show-toplevel)" && git ls-files) | sort | uniq | sed '/\//!d;/^acct-/d;/\/files$/d;/^profiles\//d;/^\./d'
 }
 
 # copy number of packages
@@ -30,7 +30,6 @@ diff -du \
 - [app-crypt/](app-crypt/)
 
   - [gpg-tui](app-crypt/gpg-tui) - **\[uniq\]** Terminal User Interface for GnuPG
-  - [veracrypt](app-crypt/veracrypt) - **\[[difference](#veracrypt)\]** Disk encryption with strong security based on TrueCrypt
 
 - [app-editors/](app-editors/)
 
@@ -163,13 +162,6 @@ diff -du \
 in **\[ square brackets \]** info about difference with other overlays
 
 [some sed script for generating dependencies](profiles/bin)
-
-### veracrypt
-
-`app-crypt/veracrypt` difference:
-
-- `app-admin/sudo` needed only if `X` used
-- with musl support
 
 ### ghc
 
