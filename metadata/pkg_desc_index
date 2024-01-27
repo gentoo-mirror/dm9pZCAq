@@ -9,7 +9,7 @@ app-eselect/eselect-repository 13: Manage repos.conf via eselect
 app-misc/draw 0.1.1: Draw in your terminal
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
 app-shells/zoxide 0.9.2: A smarter cd command
-app-shells/zsh-powerlevel10k 1.19.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
+app-shells/zsh-powerlevel10k 1.20.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-vi-mode 0.11.0: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
 app-text/smu 1.5: Simple markup - markdown like syntax
@@ -25,7 +25,7 @@ dev-lua/fnlfmt 0.3.1: A formatter for Fennel code
 dev-util/shfmt 3.7.0: A shell parser, formatter, and interpreter with bash support
 dev-vcs/gitui 0.24.3: Blazing fast terminal-ui for git
 media-fonts/nerd-fonts 3.1.1: Collection of fonts that are patched to include a high number of glyphs (icons).
-media-video/gifski 1.13.1: Highest-quality GIF encoder based on pngquant
+media-video/gifski 1.14.1: Highest-quality GIF encoder based on pngquant
 net-analyzer/bandwhich 0.21.1: Terminal bandwidth utilization tool
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
