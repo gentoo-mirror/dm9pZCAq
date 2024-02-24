@@ -8,7 +8,6 @@ app-editors/vim 9999: Symlinks to use neovim as vim
 app-eselect/eselect-repository 13: Manage repos.conf via eselect
 app-misc/draw 0.1.1: Draw in your terminal
 app-shells/gitstatus 1.5.3: Git status for Bash and Zsh prompt
-app-shells/zoxide 0.9.2: A smarter cd command
 app-shells/zsh-powerlevel10k 1.20.0: Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
 app-shells/zsh-vi-mode 0.11.0: A better and friendly vi(vim) mode plugin for ZSH.
 app-shells/zsh-you-should-use 1.7.3: ZSH plugin that reminds you to use existing aliases for commands you just typed
@@ -23,18 +22,17 @@ dev-libs/libexecinfo 1.1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/fnlfmt 0.3.1: A formatter for Fennel code
 dev-util/shfmt 3.7.0: A shell parser, formatter, and interpreter with bash support
-dev-vcs/gitui 0.24.3: Blazing fast terminal-ui for git
+dev-vcs/gitui 0.25.1: Blazing fast terminal-ui for git
 media-fonts/nerd-fonts 3.1.1: Collection of fonts that are patched to include a high number of glyphs (icons).
-media-video/gifski 1.14.1: Highest-quality GIF encoder based on pngquant
+media-video/gifski 1.14.4: Highest-quality GIF encoder based on pngquant
 net-analyzer/bandwhich 0.22.2: Terminal bandwidth utilization tool
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
-net-misc/gping 1.16.0: Ping, but with a graph
 net-news/newsboat 2.32: An RSS/Atom feed reader for text terminals
 net-p2p/stig 0.12.8_alpha0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7 0.5.5: An experiment in scalable routing as an encrypted IPv6 overlay network
-net-wireless/eiwd 2.10-r1: iwd without dbus
+net-wireless/eiwd 2.14-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
 sys-apps/hexyl 0.14.0: A command-line hex viewer
 sys-apps/huxdemp 1.0.0: A better hexdump
