@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `50`
+packages in overlay: `49`
 
 <!--
 ```bash
@@ -101,10 +101,6 @@ diff -du \
 - [net-libs/](net-libs/)
 
   - [telebot](net-libs/telebot) - **\[uniq\]** Telegram Bot API in C
-
-- [net-misc/](net-misc/)
-
-  - [gping](net-misc/gping) - **\[uniq\]** Ping, but with a graph
 
 - [net-news/](net-news/)
 
