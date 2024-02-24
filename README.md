@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `49`
+packages in overlay: `48`
 
 <!--
 ```bash
@@ -46,7 +46,6 @@ diff -du \
 - [app-shells/](app-shells/)
 
   - [gitstatus](app-shells/gitstatus) - **\[uniq\]** Git status for Bash and Zsh prompt
-  - [zoxide](app-shells/zoxide) - **\[uniq\]** A smarter cd command
   - [zsh-powerlevel10k](app-shells/zsh-powerlevel10k) - **\[uniq\]** Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience
   - [zsh-vi-mode](app-shells/zsh-vi-mode) - **\[uniq\]** A better and friendly vi(vim) mode plugin for ZSH.
   - [zsh-you-should-use](app-shells/zsh-you-should-use) - **\[uniq\]** ZSH plugin that reminds you to use existing aliases for commands you just typed
