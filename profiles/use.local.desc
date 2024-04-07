@@ -61,6 +61,7 @@ media-fonts/nerd-fonts:opendyslexic - Install OpenDyslexic font
 media-fonts/nerd-fonts:overpass - Install Overpass font
 media-fonts/nerd-fonts:profont - Install ProFont font
 media-fonts/nerd-fonts:proggyclean - Install ProggyClean font
+media-fonts/nerd-fonts:recursive - Install Recursive font
 media-fonts/nerd-fonts:robotomono - Install RobotoMono font
 media-fonts/nerd-fonts:sharetechmono - Install ShareTechMono font
 media-fonts/nerd-fonts:sourcecodepro - Install SourceCodePro font
@@ -70,7 +71,9 @@ media-fonts/nerd-fonts:terminus - Install Terminus font
 media-fonts/nerd-fonts:tinos - Install Tinos font
 media-fonts/nerd-fonts:ubuntu - Install Ubuntu font
 media-fonts/nerd-fonts:ubuntumono - Install UbuntuMono font
+media-fonts/nerd-fonts:ubuntusans - Install UbuntuSans font
 media-fonts/nerd-fonts:victormono - Install VictorMono font
+media-fonts/nerd-fonts:zedmono - Install ZedMono font
 media-video/gifski:video - add supports for decoding video directly
 net-wireless/eiwd:builtin-dns - Enable built-in DNS resolver
 net-wireless/eiwd:crda - Use net-wireless/crda for regulatory domain loading instead of in-kernel (4.15+) support
