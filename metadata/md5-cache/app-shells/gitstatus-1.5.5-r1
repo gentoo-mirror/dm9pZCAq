@@ -1,12 +1,12 @@
 BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install prepare pretend test
 DESCRIPTION=Git status for Bash and Zsh prompt
-EAPI=7
+EAPI=8
 HOMEPAGE=https://github.com/romkatv/gitstatus https://github.com/romkatv/libgit2
 INHERIT=cmake flag-o-matic toolchain-funcs
 KEYWORDS=amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86
 LICENSE=GPL-3
 SLOT=0
-SRC_URI=https://github.com/romkatv/gitstatus/archive/v1.5.3.tar.gz -> gitstatus-1.5.3.tar.gz https://github.com/romkatv/libgit2/archive/tag-82cefe2b42300224ad3c148f8b1a569757cc617a.tar.gz -> libgit2-romkatv-tag-82cefe2b42300224ad3c148f8b1a569757cc617a.tar.gz
+SRC_URI=https://github.com/romkatv/gitstatus/archive/v1.5.5.tar.gz -> gitstatus-1.5.5.tar.gz https://github.com/romkatv/libgit2/archive/tag-2ecf33948a4df9ef45a66c68b8ef24a5e60eaac6.tar.gz -> libgit2-romkatv-tag-2ecf33948a4df9ef45a66c68b8ef24a5e60eaac6.tar.gz
 _eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	288c54efeb5e2aa70775e39032695ad4	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	c7c9a62d6232cac66d4ea32d575c3e7c
-_md5_=5293697577398ce2c839351f243d230d
+_md5_=762b71ee5a4042ab05e8e1bfb66b931a
