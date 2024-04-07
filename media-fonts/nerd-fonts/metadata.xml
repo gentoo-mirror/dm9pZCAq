@@ -67,6 +67,7 @@
 		<flag name="overpass">Install Overpass font</flag>
 		<flag name="profont">Install ProFont font</flag>
 		<flag name="proggyclean">Install ProggyClean font</flag>
+		<flag name="recursive">Install Recursive font</flag>
 		<flag name="robotomono">Install RobotoMono font</flag>
 		<flag name="sharetechmono">Install ShareTechMono font</flag>
 		<flag name="sourcecodepro">Install SourceCodePro font</flag>
@@ -75,7 +76,9 @@
 		<flag name="tinos">Install Tinos font</flag>
 		<flag name="ubuntu">Install Ubuntu font</flag>
 		<flag name="ubuntumono">Install UbuntuMono font</flag>
+		<flag name="ubuntusans">Install UbuntuSans font</flag>
 		<flag name="victormono">Install VictorMono font</flag>
+		<flag name="zedmono">Install ZedMono font</flag>
 	</use>
 	<upstream>
 		<changelog>https://github.com/ryanoasis/nerd-fonts/raw/master/changelog.md</changelog>
