@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake flag-o-matic toolchain-funcs
 
-LIBGIT_TAG=tag-82cefe2b42300224ad3c148f8b1a569757cc617a
+LIBGIT_TAG=tag-2ecf33948a4df9ef45a66c68b8ef24a5e60eaac6
 LIBGIT_P="libgit2-romkatv-${LIBGIT_TAG}"
 LIBGIT_DIR="${LIBGIT_P/-romkatv/}"
 
@@ -34,6 +34,22 @@ pkg_pretend() {
 	ewarn 'if you are using sys-libs/libcxx to compile this,'
 	ewarn 'please make sure to compile sys-libs/libcxx with static-libs'
 	ewarn 'echo "sys-libs/libcxx static-libs" >> /etc/portage/package.use/libcxx'
+}
+
+src_prepare() {
+	# there are few vulnerabilities from libgit2 that is present in romkatv fork,
+	# but it looks like vulnerable parts of code not used by gitstatus
+	#
+	# https://github.com/libgit2/libgit2/security
+	# https://github.com/romkatv/libgit2/issues/5
+	(
+		cd "${CMAKE_USE_DIR}"
+
+		# this patch replaces vulnerable parts with `assert(false)`
+		eapply "${FILESDIR}/${P}-abort-on-vulnerable-libgit2-funcions.patch"
+	)
+
+	cmake_src_prepare
 }
 
 src_configure() {
