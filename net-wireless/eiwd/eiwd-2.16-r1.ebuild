@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit flag-o-matic linux-info
+inherit flag-o-matic linux-info systemd
 
 DESCRIPTION="iwd without dbus"
 HOMEPAGE="https://github.com/illiliti/eiwd"
@@ -12,22 +12,23 @@ KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ia64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-IUSE="+builtin-dns cpu_flags_x86_aes cpu_flags_x86_ssse3 crda monitor ofono wired"
+IUSE="cpu_flags_x86_aes cpu_flags_x86_ssse3 monitor ofono selinux systemd wired"
 
-DEPEND=">=dev-libs/ell-0.62"
+DEPEND=">=dev-libs/ell-0.63"
+
 RDEPEND="
 	${DEPEND}
 	!net-wireless/iwd
 	acct-group/netdev
 	net-wireless/wireless-regdb
-	crda? ( net-wireless/crda )
-	builtin-dns? ( net-dns/openresolv )
+	selinux? ( sec-policy/selinux-networkmanager )
+	systemd? ( sys-apps/systemd )
+	!systemd? ( virtual/resolvconf )
 "
+
 BDEPEND="virtual/pkgconfig"
 
 S="${WORKDIR}/${P#e}"
-
-MYRST2MAN="RST2MAN=:"
 
 pkg_setup() {
 	CONFIG_CHECK="
@@ -53,18 +54,13 @@ pkg_setup() {
 		~RFKILL
 		~X509_CERTIFICATE_PARSER
 	"
-	if use crda;then
-		CONFIG_CHECK="${CONFIG_CHECK} ~CFG80211_CRDA_SUPPORT"
-		WARNING_CFG80211_CRDA_SUPPORT=\
-			"REGULATORY DOMAIN PROBLEM: please enable CFG80211_CRDA_SUPPORT for proper regulatory domain support"
-	fi
 
-	if use amd64; then
+	if use amd64;then
 		CONFIG_CHECK="${CONFIG_CHECK} ~CRYPTO_DES3_EDE_X86_64"
 		WARNING_CRYPTO_DES3_EDE_X86_64="CRYPTO_DES3_EDE_X86_64: enable for increased performance"
 	fi
 
-	if use cpu_flags_x86_aes; then
+	if use cpu_flags_x86_aes;then
 		CONFIG_CHECK="${CONFIG_CHECK} ~CRYPTO_AES_NI_INTEL"
 		WARNING_CRYPTO_AES_NI_INTEL="CRYPTO_AES_NI_INTEL: enable for increased performance"
 	fi
@@ -81,49 +77,42 @@ pkg_setup() {
 	fi
 
 	check_extra_config
+}
 
-	if ! use crda; then
-		if use kernel_linux && kernel_is -lt 4 15; then
-			ewarn "POSSIBLE REGULATORY DOMAIN PROBLEM:"
-			ewarn "Regulatory domain support for kernels older than 4.15 requires crda."
-		fi
-		if linux_config_exists && linux_chkconfig_builtin CFG80211 &&
-			[[ $(linux_chkconfig_string EXTRA_FIRMWARE) != *regulatory.db* ]]
-		then
-			ewarn ""
-			ewarn "REGULATORY DOMAIN PROBLEM:"
-			ewarn "With CONFIG_CFG80211=y (built-in), the driver won't be able to load regulatory.db from"
-			ewarn " /lib/firmware, resulting in broken regulatory domain support.  Please set CONFIG_CFG80211=m"
-			ewarn " or add regulatory.db and regulatory.db.p7s to CONFIG_EXTRA_FIRMWARE."
-			ewarn ""
-		fi
-	fi
+src_prepare() {
+	default
+
+	sed -e "s:Exec=/bin/false:Exec=${EPREFIX}/usr/libexec/iwd:g" -i src/net.connman.iwd.service || die
 }
 
 src_configure() {
 	append-cflags "-fsigned-char"
 	local myeconfargs=(
-		--localstatedir="${EPREFIX}/var"
-		--sysconfdir="${EPREFIX}/etc/iwd"
+		--sysconfdir="${EPREFIX}"/etc/iwd --localstatedir="${EPREFIX}"/var
 
+		--disable-client
 		--disable-dbus
 		--enable-external-ell
 
-		$(use_enable monitor)
-		$(use_enable ofono)
-		$(use_enable wired)
+		"$(use_enable monitor)"
+		"$(use_enable ofono)"
+		"$(use_enable wired)"
+		--enable-systemd-service
+		--with-systemd-unitdir="$(systemd_get_systemunitdir)"
+		--with-systemd-modloaddir="${EPREFIX}/usr/lib/modules-load.d"
+		--with-systemd-networkdir="$(systemd_get_utildir)/network"
 	)
+
 	econf "${myeconfargs[@]}"
 }
 
 src_compile() {
-	emake "${MYRST2MAN}"
+	emake RST2MAN=:
 }
 
 src_install() {
-	emake DESTDIR="${D}" "${MYRST2MAN}" install
-
-	keepdir /var/lib/iwd
+	emake RST2MAN=: DESTDIR="${D}" install
+	keepdir "/var/lib/${PN}"
 
 	newinitd "${FILESDIR}/iwd.initd" iwd
 
@@ -131,8 +120,15 @@ src_install() {
 		newinitd "${FILESDIR}/ead.initd" ead
 	fi
 
+	local iwdconf="${ED}/etc/iwd/main.conf"
 	insinto /etc/iwd/
-	doins "${FILESDIR}/main.conf"
+	cat << EOF > newins - main.conf
+[General]
+EnableNetworkConfiguration=true
 
-	echo 'rc_provide="net"' | install -Dm644 /proc/self/fd/0 "${ED}/etc/conf.d/iwd"
+[Network]
+NameResolvingService=$(usex systemd systemd resolvconf)
+EOF
+
+	echo 'rc_provide="net"' | newconfd - iwd
 }
