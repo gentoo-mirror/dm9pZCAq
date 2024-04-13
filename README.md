@@ -101,10 +101,6 @@ diff -du \
 
   - [telebot](net-libs/telebot) - **\[uniq\]** Telegram Bot API in C
 
-- [net-news/](net-news/)
-
-  - [newsboat](net-news/newsboat) - **\[asciidoctor is optional\]** RSS/Atom feed reader for terminals
-
 - [net-p2p/](net-p2p/)
 
   - [stig](net-p2p/stig) - **\[better ebuild\]** TUI and CLI for the BitTorrent client Transmission
