@@ -5,6 +5,9 @@
 		<email>v@0x0c.link</email>
 		<name>dm9pZCAq</name>
 	</maintainer>
+	<use>
+		<flag name="extensions">Enable extensions (Prof, Memory, View)</flag>
+	</use>
 	<upstream>
 		<bugs-to>https://github.com/nakst/gf/issues</bugs-to>
 		<remote-id type="github">nakst/gf</remote-id>

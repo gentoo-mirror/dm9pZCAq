@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,8 +10,8 @@ if [ "${PV}" = 9999 ]; then
 	EGIT_REPO_URI="https://github.com/nakst/gf.git"
 else
 	case "${PV}" in
-		2023.09.02) COMMIT="ef796fdfbd8c83b569140c3cc61a53af7188fd81";;
-		*) die "unknown commit for version: ${PV}";;
+	2023.12.06) COMMIT="82889c4de974db4508e669c8d909c33be20bf798" ;;
+	*) die "unknown commit for version: ${PV}" ;;
 	esac
 	SRC_URI="https://github.com/nakst/gf/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64"
@@ -24,7 +24,7 @@ HOMEPAGE="https://github.com/nakst/gf"
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="cpu_flags_x86_sse2"
+IUSE="+extensions cpu_flags_x86_sse2"
 
 DEPEND="
 	media-libs/freetype
@@ -57,9 +57,26 @@ src_compile() {
 		${BUILD_CPPFLAGS}
 	)
 
+	use extensions && ln -vs extensions_v5/extensions.cpp
+
 	edo "$(tc-getCXX)" "${defines[@]}" "${cflags[@]}" "${libs[@]}" "${PN}.cpp" -o "${PN}"
 }
 
 src_install() {
+	local DOCS=(README.md)
+	use extensions && DOCS+=(
+		extensions_v5/gf_profiling.c
+		extensions_v5/*.txt
+	)
+
 	dobin "${PN}"
+
+	einstalldocs
+}
+
+pkg_postinst() {
+	use extensions && {
+		local docs="${EROOT}/usr/share/doc/${PF}/"
+		einfo "see '${docs}' for more info about extensions"
+	}
 }
