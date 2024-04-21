@@ -79,6 +79,7 @@ net-wireless/eiwd:monitor - Enable iwmon monitor tool
 net-wireless/eiwd:ofono - Enable support for oFono SIM authentication
 net-wireless/eiwd:wired - Enable ethernet authentication daemon
 sys-apps/dm9pZCAq-coreutils:path - Insert dm9pZCAq coreutils PATH before baselayout PATH to use dm9pZCAq coreutils instead of GNU coreutils
+sys-devel/gf2:extensions - Enable extensions (Prof, Memory, View)
 sys-libs/libudev-zero:hotplug - Build and install hotplug helper
 sys-process/extrace:pwait - Build the pwait program
 x11-misc/screenkey:dbus - Enable lockscreen detection
