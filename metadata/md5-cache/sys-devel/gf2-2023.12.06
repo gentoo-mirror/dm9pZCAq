@@ -11,5 +11,5 @@ LICENSE=MIT
 RDEPEND=media-libs/freetype x11-libs/libX11
 SLOT=0
 SRC_URI=https://github.com/nakst/gf/archive/82889c4de974db4508e669c8d909c33be20bf798.tar.gz -> gf2-2023.12.06.tar.gz
-_eclasses_=edo	f75ee9179825c4cb6679eb3094d7a779	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0
+_eclasses_=edo	367e103a74bf77e6a8da7894d999fa3c	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0
 _md5_=34f2d42868f06880565a962045b545b4
