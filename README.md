@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `48`
+packages in overlay: `49`
 
 <!--
 ```bash
@@ -71,6 +71,10 @@ diff -du \
 
   - [alt-getopt](dev-lua/alt-getopt) - **\[other ebuild\]** Lua bindings to getopt_long
   - [fnlfmt](dev-lua/fnlfmt) - **\[uniq\]** A formatter for Fennel code
+
+- [dev-python/](dev-python/)
+
+  - [urwid](dev-python/urwid) - **\[older version for net-p2p/stig\]** Curses-based user interface library for Python
 
 - [dev-util/](dev-util/)
 
