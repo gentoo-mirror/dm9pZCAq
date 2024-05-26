@@ -221,5 +221,5 @@ emerge -1 \
 
 - https://github.com/illiliti/libudev-zero
   - [closed issues](https://github.com/illiliti/libudev-zero/issues?q=is%3Aissue+is%3Aclosed)
-- https://kisslinux.org/wiki/device-management
+- https://kisslinux.github.io/wiki/device-management
 - https://github.com/slashbeast/mdev-like-a-boss
