@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `49`
+packages in overlay: `50`
 
 <!--
 ```bash
@@ -42,6 +42,7 @@ diff -du \
 - [app-misc/](app-misc/)
 
   - [draw](app-misc/draw) - **\[uniq\]** Draw in your terminal
+  - [lf](app-misc/lf) - **\[maintained, more USE flags\]** Terminal file manager
 
 - [app-shells/](app-shells/)
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>v@0x0c.link</email>
+		<name>dm9pZCAq</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">gokcehan/lf</remote-id>
+		<bugs-to>https://github.com/gokcehan/lf/issues</bugs-to>
+	</upstream>
+</pkgmetadata>
