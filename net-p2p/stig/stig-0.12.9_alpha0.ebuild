@@ -19,7 +19,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
-	=dev-python/urwid-2.2*[${PYTHON_USEDEP}]
+	>=dev-python/urwid-2.6.12[${PYTHON_USEDEP}]
 	~dev-python/urwidtrees-1.0.3[${PYTHON_USEDEP}]
 	=dev-python/aiohttp-3*[${PYTHON_USEDEP}]
 	dev-python/async-timeout[${PYTHON_USEDEP}]
