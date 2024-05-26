@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `49`
+packages in overlay: `50`
 
 <!--
 ```bash
@@ -42,6 +42,7 @@ diff -du \
 - [app-misc/](app-misc/)
 
   - [draw](app-misc/draw) - **\[uniq\]** Draw in your terminal
+  - [lf](app-misc/lf) - **\[maintained, more USE flags\]** Terminal file manager
 
 - [app-shells/](app-shells/)
 
@@ -220,5 +221,5 @@ emerge -1 \
 
 - https://github.com/illiliti/libudev-zero
   - [closed issues](https://github.com/illiliti/libudev-zero/issues?q=is%3Aissue+is%3Aclosed)
-- https://kisslinux.org/wiki/device-management
+- https://kisslinux.github.io/wiki/device-management
 - https://github.com/slashbeast/mdev-like-a-boss
