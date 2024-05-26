@@ -30,7 +30,7 @@ net-analyzer/bandwhich 0.22.2: Terminal bandwidth utilization tool
 net-dns/alfis 0.8.4: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
-net-p2p/stig 0.12.8_alpha0-r1: TUI and CLI for the BitTorrent client Transmission
+net-p2p/stig 0.12.9_alpha0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/yggdrasil-go 0.4.7 0.5.5: An experiment in scalable routing as an encrypted IPv6 overlay network
 net-wireless/eiwd 2.16-r1: iwd without dbus
 sys-apps/dm9pZCAq-coreutils 9999: GNU compatible suckless coreutils
