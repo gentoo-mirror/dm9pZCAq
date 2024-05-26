@@ -1,0 +1,14 @@
+BDEPEND=>=dev-lang/go-1.20:= app-arch/unzip
+DEFINED_PHASES=compile install unpack
+DESCRIPTION=Terminal file manager
+EAPI=8
+HOMEPAGE=https://github.com/gokcehan/lf
+INHERIT=desktop go-module shell-completion
+IUSE=+static X
+KEYWORDS=amd64 ~arm arm64 ppc64 ~s390 x86
+LICENSE=MIT
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://github.com/gokcehan/lf/archive/r32.tar.gz -> lf-32.tar.gz https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/lf-32/lf-32-deps.tar.xz https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/lf-32/lf-32-vendor.tar.xz
+_eclasses_=desktop	021728fdc1b03b36357dbc89489e0f0d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	d309b9713dfc18e754cba88d3ba69653	go-env	dbefaac6fd7019213514bccd65949d9a	go-module	83fd3ed1657cfc316c93d6a37018290d	bash-completion-r1	f5e7a020fd9c741740756aac61bf75ff	shell-completion	bb7eb6bc232cd6c4bf8af739cdd2ee14
+_md5_=3a74a526b1574fda32ed13b601a93134
