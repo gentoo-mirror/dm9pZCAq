@@ -15,6 +15,7 @@ SRC_URI="
 	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-deps.tar.xz
 	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-vendor.tar.xz
 "
+S="${WORKDIR}/${P/_rc/rc}"
 
 LICENSE="LGPL-3 MIT Apache-2.0 BSD ZLIB"
 SLOT="0"
@@ -24,13 +25,11 @@ RDEPEND="
 	acct-user/${PN%-*}
 	acct-group/${PN%-*}
 "
-BDEPEND=">=dev-lang/go-1.17"
+BDEPEND=">=dev-lang/go-1.21"
 
 FILECAPS=(
 	cap_net_admin,cap_net_raw+eip "usr/bin/${PN%-*}"
 )
-
-S="${WORKDIR}/${P/_rc/rc}"
 
 pkg_setup() {
 	linux-info_pkg_setup
@@ -76,7 +75,7 @@ pkg_postinst() {
 	einfo
 
 	einfo 'also, related upstream issues:'
-	for issue in 8{0{2..3},16}; do
+	for issue in 927; do
 		einfo " > https://github.com/yggdrasil-network/yggdrasil-go/issues/${issue}"
 	done
 }
