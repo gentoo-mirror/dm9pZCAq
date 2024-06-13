@@ -7,9 +7,9 @@ MY_PN="${PN##zsh-}"
 
 DESCRIPTION="Theme for Zsh that emphasizes speed, flexibility and out-of-the-box experience"
 HOMEPAGE="https://github.com/romkatv/powerlevel10k"
-SRC_URI="
-	https://github.com/romkatv/${MY_PN}/archive/v${PV}.tar.gz
-		-> ${P}.tar.gz"
+SRC_URI="https://github.com/romkatv/${MY_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="MIT"
 SLOT="0"
@@ -20,8 +20,6 @@ DEPEND="
 	app-shells/gitstatus
 "
 RDEPEND="${DEPEND}"
-
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 src_prepare() {
 	sed -i Makefile -e '/gitstatus/d'
