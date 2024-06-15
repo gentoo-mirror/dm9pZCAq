@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `50`
+packages in overlay: `49`
 
 <!--
 ```bash
@@ -57,7 +57,6 @@ diff -du \
 
 - [dev-lang/](dev-lang/)
 
-  - [ghc](dev-lang/ghc) - **\[[ghc](#ghc)\]** The Glasgow Haskell Compiler from voidlinux (for ghcbootstrap on musl libc)
   - [metalang99](dev-lang/metalang99) - **\[uniq\]** Full-blown preprocessor metaprogramming
   - [moonscript](dev-lang/moonscript) - **\[uniq\]** A programmer friendly language that compiles into Lua
   - [wren](dev-lang/wren) - **\[maintained\]** Wren is a small, fast, class-based concurrent scripting language
@@ -162,17 +161,6 @@ diff -du \
 in **\[ square brackets \]** info about difference with other overlays
 
 [some sed script for generating dependencies](profiles/bin)
-
-### ghc
-
-`dev-lang/ghc::dm9pZCAq` package is here for `ghcbootstrap`
-to build `dev-lang/ghc::haskell` on musl libc
-
-```sh
-echo 'dev-lang/ghc ghcbootstrap' >> /etc/portage/package.use/ghc
-ACCEPT_KEYWORDS='**' emerge -1 dev-lang/ghc::dm9pZCAq \
-  && emerge dev-lang/ghc
-```
 
 ### udev
 
