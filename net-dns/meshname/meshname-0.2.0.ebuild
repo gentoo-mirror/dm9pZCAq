@@ -1,18 +1,17 @@
-# Copyright 2021-2023 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit go-module systemd
 
+DESCRIPTION="A universal naming system for all IPv6-based mesh networks"
+HOMEPAGE="https://github.com/zhoreeq/meshname"
 SRC_URI="
 	https://github.com/zhoreeq/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-deps.tar.xz
 	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-vendor.tar.xz
 "
-
-DESCRIPTION="A universal naming system for all IPv6-based mesh networks"
-HOMEPAGE="https://github.com/zhoreeq/meshname"
 
 LICENSE="MIT"
 SLOT="0"

@@ -6,11 +6,7 @@ EAPI=8
 inherit font
 
 DESCRIPTION="Collection of fonts that are patched to include a high number of glyphs (icons)."
-HOMEPAGE="https://nerdfonts.com"
-
-LICENSE="MIT"
-SLOT="0"
-KEYWORDS="amd64 x86"
+HOMEPAGE="https://www.nerdfonts.com/"
 
 # curl -s https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest \
 #   | jq -r '.assets[].name | select(endswith(".tar.xz")) | split(".") | .[0] | select(test("(?i)symbolsonly") | not)'
@@ -83,11 +79,6 @@ FONTS=(
 	ZedMono
 )
 
-IUSE_FLAGS=(${FONTS[*],,})
-# FIXME: `+hack` is workaround for: https://pkgcore.github.io/pkgcheck/man/pkgcheck.html#requiredusedefaults
-IUSE="symbols-only +hack ${IUSE_FLAGS[*]}"
-REQUIRED_USE="X? ( || ( ${IUSE_FLAGS[*]} ) )"
-
 iuse_src_uri() {
 	local iuse="${1:?}"
 	local name="${2:?}"
@@ -117,10 +108,19 @@ SRC_URI="
 	$(nerd_src_uri "${FONTS[@]}")
 "
 
-RDEPEND="media-libs/fontconfig"
-
 S="${WORKDIR}"
 FONT_S="${S}"
+
+LICENSE="MIT"
+SLOT="0"
+KEYWORDS="amd64 x86"
+
+IUSE_FLAGS=(${FONTS[*],,})
+# FIXME: `+hack` is workaround for: https://pkgcore.github.io/pkgcheck/man/pkgcheck.html#requiredusedefaults
+IUSE="symbols-only +hack ${IUSE_FLAGS[*]}"
+REQUIRED_USE="X? ( || ( ${IUSE_FLAGS[*]} ) )"
+
+RDEPEND="media-libs/fontconfig"
 
 src_unpack() {
 	default

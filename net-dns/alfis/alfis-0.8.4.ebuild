@@ -1,4 +1,4 @@
-# Copyright 2017-2023 Gentoo Authors
+# Copyright 2017-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -236,15 +236,19 @@ SRC_URI="
 	${CARGO_CRATE_URIS}
 "
 
+S="${WORKDIR}/Alfis-${PV}"
+
 LICENSE="AGPL-3"
 # Dependent crate licenses
 LICENSE+="
 	Apache-2.0 BSD GPL-3 MIT ISC ZLIB Unicode-DFS-2016 MPL-2.0
 "
+
 SLOT="0"
 KEYWORDS="amd64 ~arm64 ~x86"
-RESTRICT="mirror"
 IUSE="X"
+
+RESTRICT="mirror"
 
 DEPEND="
 	dev-db/sqlite:3
@@ -259,8 +263,6 @@ RDEPEND="
 	acct-user/${PN}
 	acct-group/${PN}
 "
-
-S="${WORKDIR}/Alfis-${PV}"
 
 FILECAPS=(
 	cap_net_bind_service+ep "usr/bin/${PN}"
