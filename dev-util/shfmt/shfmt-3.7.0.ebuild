@@ -1,4 +1,4 @@
-# Copyright 2023 Gentoo Authors
+# Copyright 2023-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -15,6 +15,7 @@ SRC_URI="
 	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-deps.tar.xz
 	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-vendor.tar.xz
 "
+S="${WORKDIR}/sh-${PV}"
 
 LICENSE="BSD"
 SLOT="0"
@@ -24,9 +25,6 @@ IUSE="+man"
 BDEPEND="
 	man? ( app-text/scdoc )
 "
-
-S="${WORKDIR}/sh-${PV}"
-
 src_compile() {
 	CGO_ENABLED=0 ego build -ldflags="
 		-X main.version=${PV}
