@@ -1,13 +1,13 @@
-# Copyright 2021 Gentoo Authors
+# Copyright 2021-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit toolchain-funcs
 
 DESCRIPTION="BSD licensed clone of the GNU libc backtrace facility"
-HOMEPAGE="http://www.freshports.org/devel/libexecinfo"
-SRC_URI="http://distcache.freebsd.org/local-distfiles/itetcu/libexecinfo-${PV}.tar.bz2"
+HOMEPAGE="https://www.freshports.org/devel/libexecinfo"
+SRC_URI="http://distcache.freebsd.org/local-distfiles/itetcu/${P}.tar.bz2"
 
 LICENSE="BSD-2"
 SLOT="0"
