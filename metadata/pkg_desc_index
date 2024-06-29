@@ -43,7 +43,7 @@ sys-process/extrace 0.9: trace exec() calls system-wide
 sys-process/snooze 0.5: run a command at a particular time
 virtual/libudev 9999: Virtual for libudev-zero provider
 virtual/udev 9999: Virtual to select between different udev (mdev) daemon providers
-www-apps/zola 0.18.0: A fast static site generator with everything built-in
+www-apps/zola 0.19.1: A fast static site generator with everything built-in
 x11-misc/clayout 0.0.3 9999: Save own keyboard layout for each window
 x11-misc/herbe 1.0.0: Daemon-less notifications without D-Bus
 x11-misc/lemonbar 1.5: A featherweight, lemon-scented, bar based on xcb
