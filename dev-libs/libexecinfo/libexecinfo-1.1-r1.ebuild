@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit toolchain-funcs
+inherit flag-o-matic toolchain-funcs
 
 DESCRIPTION="BSD licensed clone of the GNU libc backtrace facility"
 HOMEPAGE="https://www.freshports.org/devel/libexecinfo"
@@ -24,6 +24,8 @@ src_prepare() {
 }
 
 src_compile() {
+	append-flags '-fno-omit-frame-pointer'
+
 	emake CC="$(tc-getCC)" AR="$(tc-getAR)" dynamic $(usev static)
 }
 
