@@ -10,5 +10,5 @@ LICENSE=MIT
 RDEPEND=x11-libs/libX11 x11-libs/libXft
 SLOT=0
 SRC_URI=https://github.com/dudik/herbe/archive/refs/tags/1.0.0.tar.gz -> herbe-1.0.0.tar.gz
-_eclasses_=portability	225656ad6c6594fe3b0187bdd50707fb	savedconfig	8b5f9d995a970e49cd427c55d5840285
+_eclasses_=portability	225656ad6c6594fe3b0187bdd50707fb	savedconfig	b9131abe556ad2ea96c01b06d658d363
 _md5_=07848a57a88f85803d78b440587ef280
