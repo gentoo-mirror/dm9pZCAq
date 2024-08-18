@@ -26,7 +26,7 @@ dev-util/shfmt 3.7.0: A shell parser, formatter, and interpreter with bash suppo
 dev-vcs/gitui 0.26.3: Blazing fast terminal-ui for git
 media-fonts/nerd-fonts 3.2.1: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-video/gifski 1.32.0: Highest-quality GIF encoder based on pngquant
-net-analyzer/bandwhich 0.22.2: Terminal bandwidth utilization tool
+net-analyzer/bandwhich 0.23.0: Terminal bandwidth utilization tool
 net-dns/alfis 0.8.5: Alternative Free Identity System
 net-dns/meshname 0.2.0: A universal naming system for all IPv6-based mesh networks
 net-libs/telebot 9999: Telegram Bot API in C
