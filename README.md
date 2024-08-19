@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `49`
+packages in overlay: `50`
 
 <!--
 ```bash
@@ -71,6 +71,7 @@ diff -du \
 
   - [alt-getopt](dev-lua/alt-getopt) - **\[other ebuild\]** Lua bindings to getopt_long
   - [fnlfmt](dev-lua/fnlfmt) - **\[uniq\]** A formatter for Fennel code
+  - [lpeg](dev-lua/lpeg) - **\[[newer version](https://github.com/nvim-neorg/neorg/issues/1516#issuecomment-2234165001), [#936599](https://bugs.gentoo.org/936599)\]** Parsing Expression Grammars for Lua
 
 - [dev-python/](dev-python/)
 
