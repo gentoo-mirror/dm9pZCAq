@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `51`
+packages in overlay: `52`
 
 <!--
 ```bash
@@ -80,6 +80,7 @@ diff -du \
 - [dev-util/](dev-util/)
 
   - [shfmt](dev-util/shfmt) - **\[maintained\]** A shell parser, formatter, and interpreter with bash support
+  - [tokei](dev-util/tokei) - **\[maintained\]** Count your code, quickly
 
 - [dev-vcs/](dev-vcs/)
 
