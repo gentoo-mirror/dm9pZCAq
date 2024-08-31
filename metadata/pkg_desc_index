@@ -24,6 +24,7 @@ dev-lua/fnlfmt 0.3.1: A formatter for Fennel code
 dev-lua/lpeg 1.1.0: Parsing Expression Grammars for Lua
 dev-python/urwid 2.2.3: Curses-based user interface library for Python
 dev-util/shfmt 3.7.0: A shell parser, formatter, and interpreter with bash support
+dev-util/tokei 13.0.0_alpha5: Count your code, quickly
 dev-vcs/gitui 0.26.3: Blazing fast terminal-ui for git
 media-fonts/nerd-fonts 3.2.1: Collection of fonts that are patched to include a high number of glyphs (icons).
 media-video/gifski 1.32.0: Highest-quality GIF encoder based on pngquant
