@@ -1,0 +1,24 @@
+From 7e357c6694a2e41cdb9395da551145f0069f828f Mon Sep 17 00:00:00 2001
+From: dm9pZCAq <46228973+dm9pZCAq@users.noreply.github.com>
+Date: Sat, 31 Aug 2024 20:06:06 +0300
+Subject: [PATCH] make bar always below other windows
+Url: https://github.com/LemonBoy/bar/pull/250
+
+---
+ lemonbar.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/lemonbar.c b/lemonbar.c
+index 83d9677..029c675 100644
+--- a/lemonbar.c
++++ b/lemonbar.c
+@@ -1318,7 +1318,7 @@ init (char *wm_name)
+ 
+         // Make sure that the window really gets in the place it's supposed to be
+         // Some WM such as Openbox need this
+-        xcb_configure_window(c, mon->window, XCB_CONFIG_WINDOW_X | XCB_CONFIG_WINDOW_Y, (const uint32_t []){ mon->x, mon->y });
++        xcb_configure_window(c, mon->window, XCB_CONFIG_WINDOW_X | XCB_CONFIG_WINDOW_Y | XCB_CONFIG_WINDOW_STACK_MODE, (const uint32_t []){ mon->x, mon->y, XCB_STACK_MODE_BELOW });
+ 
+         // Set the WM_NAME atom to the user specified value
+         if (wm_name)
+

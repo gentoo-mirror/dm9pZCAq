@@ -17,6 +17,10 @@ DEPEND="x11-libs/libxcb"
 RDEPEND="${DEPEND}"
 BDEPEND="doc? ( dev-lang/perl )"
 
+PATCHES=(
+	"${FILESDIR}/make-bar-always-below-other-windows.patch"
+)
+
 src_compile() {
 	emake all $(usev doc)
 }
