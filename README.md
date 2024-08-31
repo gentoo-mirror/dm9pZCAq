@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `50`
+packages in overlay: `51`
 
 <!--
 ```bash
@@ -120,6 +120,10 @@ diff -du \
   - [dm9pZCAq-coreutils](sys-apps/dm9pZCAq-coreutils) - **\[my, uniq\]** GNU compatible suckless coreutils
   - [hexyl](sys-apps/hexyl) - **\[uniq\]** A command-line hex viewer
   - [huxdemp](sys-apps/huxdemp) - **\[uniq\]** A better hexdump
+
+- [sys-auth/](sys-auth/)
+
+  - [pam_dumb_runtime_dir](sys-auth/pam_dumb_runtime_dir) - **\[better ebuild\]** Creates an XDG_RUNTIME_DIR on login and never removes it
 
 - [sys-devel/](sys-devel/)
 
