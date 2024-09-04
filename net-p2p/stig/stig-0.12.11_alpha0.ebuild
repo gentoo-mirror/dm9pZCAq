@@ -10,7 +10,7 @@ inherit distutils-r1 pypi optfeature
 
 DESCRIPTION="TUI and CLI for the BitTorrent client Transmission"
 HOMEPAGE="
-	https://pypi.org/project/stig
+	https://pypi.org/project/stig/
 	https://github.com/rndusr/stig
 "
 
