@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile install prepare setup
+DEPEND=lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) lua_single_target_lua5-3? ( dev-lang/lua:5.3 ) lua_single_target_lua5-4? ( dev-lang/lua:5.4 ) lua_single_target_luajit? ( >=dev-lua/compat53-0.11[lua_targets_luajit(-)] dev-lua/lua-argparse[lua_targets_luajit(-)] dev-lua/luafilesystem[lua_targets_luajit(-)] ) lua_single_target_lua5-1? ( >=dev-lua/compat53-0.11[lua_targets_lua5-1(-)] dev-lua/lua-argparse[lua_targets_lua5-1(-)] dev-lua/luafilesystem[lua_targets_lua5-1(-)] ) lua_single_target_lua5-3? ( >=dev-lua/compat53-0.11[lua_targets_lua5-3(-)] dev-lua/lua-argparse[lua_targets_lua5-3(-)] dev-lua/luafilesystem[lua_targets_lua5-3(-)] ) lua_single_target_lua5-4? ( >=dev-lua/compat53-0.11[lua_targets_lua5-4(-)] dev-lua/lua-argparse[lua_targets_lua5-4(-)] dev-lua/luafilesystem[lua_targets_lua5-4(-)] )
+DESCRIPTION=The compiler for Teal, a typed dialect of Lua
+EAPI=8
+HOMEPAGE=https://github.com/teal-language/tl https://github.com/teal-language
+INHERIT=lua-single
+IUSE=lua_single_target_luajit lua_single_target_lua5-1 lua_single_target_lua5-3 lua_single_target_lua5-4
+KEYWORDS=amd64
+LICENSE=MIT
+RDEPEND=lua_single_target_luajit? ( dev-lang/luajit:= ) lua_single_target_lua5-1? ( dev-lang/lua:5.1 ) lua_single_target_lua5-3? ( dev-lang/lua:5.3 ) lua_single_target_lua5-4? ( dev-lang/lua:5.4 ) lua_single_target_luajit? ( >=dev-lua/compat53-0.11[lua_targets_luajit(-)] dev-lua/lua-argparse[lua_targets_luajit(-)] dev-lua/luafilesystem[lua_targets_luajit(-)] ) lua_single_target_lua5-1? ( >=dev-lua/compat53-0.11[lua_targets_lua5-1(-)] dev-lua/lua-argparse[lua_targets_lua5-1(-)] dev-lua/luafilesystem[lua_targets_lua5-1(-)] ) lua_single_target_lua5-3? ( >=dev-lua/compat53-0.11[lua_targets_lua5-3(-)] dev-lua/lua-argparse[lua_targets_lua5-3(-)] dev-lua/luafilesystem[lua_targets_lua5-3(-)] ) lua_single_target_lua5-4? ( >=dev-lua/compat53-0.11[lua_targets_lua5-4(-)] dev-lua/lua-argparse[lua_targets_lua5-4(-)] dev-lua/luafilesystem[lua_targets_lua5-4(-)] )
+REQUIRED_USE=^^ ( lua_single_target_luajit lua_single_target_lua5-1 lua_single_target_lua5-3 lua_single_target_lua5-4 )
+SLOT=0
+SRC_URI=https://github.com/teal-language/tl/archive/v0.15.3.tar.gz -> teal-0.15.3.tar.gz
+_eclasses_=toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	lua-utils	1f91de68f9a26642216e45d7765fd4fb	lua-single	3ae43cac1bf8275a847245b9a475a54e
+_md5_=5ea6745039d665dbd72bf0b4b3a50b4b

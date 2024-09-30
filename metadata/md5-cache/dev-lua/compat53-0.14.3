@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install prepare
+DEPEND=lua_targets_luajit? ( dev-lang/luajit:= ) lua_targets_lua5-1? ( dev-lang/lua:5.1 ) lua_targets_lua5-3? ( dev-lang/lua:5.3 ) lua_targets_lua5-4? ( dev-lang/lua:5.4 )
+DESCRIPTION=Compatibility module providing Lua-5.3-style APIs for Lua 5.2 and 5.1
+EAPI=8
+HOMEPAGE=https://luarocks.org/modules/lunarmodules/compat53 https://github.com/lunarmodules/lua-compat-5.3
+INHERIT=edo flag-o-matic lua toolchain-funcs
+IUSE=lua_targets_luajit lua_targets_lua5-1 lua_targets_lua5-3 lua_targets_lua5-4
+KEYWORDS=amd64
+LICENSE=MIT
+RDEPEND=lua_targets_luajit? ( dev-lang/luajit:= ) lua_targets_lua5-1? ( dev-lang/lua:5.1 ) lua_targets_lua5-3? ( dev-lang/lua:5.3 ) lua_targets_lua5-4? ( dev-lang/lua:5.4 )
+SLOT=0
+SRC_URI=https://github.com/lunarmodules/lua-compat-5.3/archive/v0.14.3.tar.gz -> lua-compat53-0.14.3.tar.gz
+_eclasses_=edo	367e103a74bf77e6a8da7894d999fa3c	toolchain-funcs	948855ec7ad9f11351edf9066708dfa9	multilib	7e1347c006a76bb812f3a9f663b79991	flag-o-matic	fa33e3696fe4689dda7e9affe92e2c94	out-of-source-utils	a0eb740debe3d472355e8bc52f62e0ac	multibuild	45df57b1877333d70a9e894f6c8fdb3a	lua-utils	1f91de68f9a26642216e45d7765fd4fb	lua	f888faf7a77304e3e6c5c386ae0c34d7
+_md5_=53812bef85dc2baa929ab3ae06f929fe

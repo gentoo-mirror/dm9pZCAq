@@ -15,13 +15,14 @@ app-shells/zsh-you-should-use 1.9.0: ZSH plugin that reminds you to use existing
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/metalang99 1.13.3: Full-blown preprocessor metaprogramming
 dev-lang/moonscript 0.5.0: A programmer friendly language that compiles into Lua
+dev-lang/teal 0.15.3: The compiler for Teal, a typed dialect of Lua
 dev-lang/wren 0.4.0: Wren is a small, fast, class-based concurrent scripting language
 dev-libs/datatype99 1.5.2: Algebraic data types for C99
 dev-libs/interface99 1.0.1: Zero-boilerplate interfaces for C99
 dev-libs/libexecinfo 1.1-r1: BSD licensed clone of the GNU libc backtrace facility
 dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
+dev-lua/compat53 0.14.3: Compatibility module providing Lua-5.3-style APIs for Lua 5.2 and 5.1
 dev-lua/fnlfmt 0.3.2: A formatter for Fennel code
-dev-lua/lpeg 1.1.0: Parsing Expression Grammars for Lua
 dev-python/urwid 2.2.3: Curses-based user interface library for Python
 dev-util/shfmt 3.7.0: A shell parser, formatter, and interpreter with bash support
 dev-util/tokei 13.0.0_alpha5: Count your code, quickly
