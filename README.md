@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `53`
+packages in overlay: `54`
 
 <!--
 ```bash
@@ -59,6 +59,7 @@ diff -du \
 
   - [metalang99](dev-lang/metalang99) - **\[uniq\]** Full-blown preprocessor metaprogramming
   - [moonscript](dev-lang/moonscript) - **\[uniq\]** A programmer friendly language that compiles into Lua
+  - [teal](dev-lang/teal) - **\[uniq\]** The compiler for Teal, a typed dialect of Lua
   - [wren](dev-lang/wren) - **\[maintained\]** Wren is a small, fast, class-based concurrent scripting language
 
 - [dev-libs/](dev-libs/)
