@@ -15,7 +15,7 @@ app-shells/zsh-you-should-use 1.9.0: ZSH plugin that reminds you to use existing
 app-text/smu 1.5: Simple markup - markdown like syntax
 dev-lang/metalang99 1.13.3: Full-blown preprocessor metaprogramming
 dev-lang/moonscript 0.5.0: A programmer friendly language that compiles into Lua
-dev-lang/teal 0.15.3: The compiler for Teal, a typed dialect of Lua
+dev-lang/teal 0.15.3 9999: The compiler for Teal, a typed dialect of Lua
 dev-lang/wren 0.4.0: Wren is a small, fast, class-based concurrent scripting language
 dev-libs/datatype99 1.5.2: Algebraic data types for C99
 dev-libs/interface99 1.0.1: Zero-boilerplate interfaces for C99
