@@ -16,6 +16,6 @@
 	<upstream>
 		<remote-id type="github">skarnet/mdevd</remote-id>
 		<bugs-to>https://github.com/skarnet/mdevd/issues</bugs-to>
-		<changelog>https://github.com/skarnet/mdevd/raw/master/NEWS</changelog>
+		<changelog>https://github.com/skarnet/mdevd/raw/main/NEWS</changelog>
 	</upstream>
 </pkgmetadata>
