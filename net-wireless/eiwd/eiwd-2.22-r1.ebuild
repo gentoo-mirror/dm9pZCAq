@@ -12,11 +12,11 @@ S="${WORKDIR}/${P#e}"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ia64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
 
 IUSE="cpu_flags_x86_aes cpu_flags_x86_ssse3 monitor ofono selinux systemd wired"
 
-DEPEND=">=dev-libs/ell-0.63"
+DEPEND=">=dev-libs/ell-0.69"
 
 RDEPEND="
 	${DEPEND}
