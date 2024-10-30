@@ -13,7 +13,6 @@ HOMEPAGE="
 SRC_URI="
 	https://github.com/${PN%%-*}-network/${PN}/archive/v${PV/_rc/rc}.tar.gz -> ${P}.tar.gz
 	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-deps.tar.xz
-	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-vendor.tar.xz
 "
 S="${WORKDIR}/${P/_rc/rc}"
 
