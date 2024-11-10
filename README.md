@@ -3,7 +3,7 @@
 
 # dm9pZCAq overlay
 
-packages in overlay: `53`
+packages in overlay: `54`
 
 <!--
 ```bash
@@ -80,6 +80,7 @@ diff -du \
 
 - [dev-util/](dev-util/)
 
+  - [sccache](dev-util/sccache) - **\[maintained\]** ccache/distcc like tool with support for rust and cloud storage
   - [shfmt](dev-util/shfmt) - **\[maintained\]** A shell parser, formatter, and interpreter with bash support
   - [tokei](dev-util/tokei) - **\[maintained\]** Count your code, quickly
 
