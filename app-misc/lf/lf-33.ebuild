@@ -10,7 +10,6 @@ HOMEPAGE="https://github.com/gokcehan/lf"
 SRC_URI="
 	https://github.com/gokcehan/lf/archive/r${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-deps.tar.xz
-	https://github.com/dm9pZCAq/gentoo-go-deps/releases/download/${P}/${P}-vendor.tar.xz
 "
 S="${WORKDIR}/${PN}-r${PV}"
 
