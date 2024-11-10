@@ -24,6 +24,7 @@ dev-lua/alt-getopt 0.8.0: Lua bindings to getopt_long
 dev-lua/compat53 0.14.3: Compatibility module providing Lua-5.3-style APIs for Lua 5.2 and 5.1
 dev-lua/fnlfmt 0.3.2: A formatter for Fennel code
 dev-python/urwid 2.2.3: Curses-based user interface library for Python
+dev-util/sccache 0.8.2: ccache/distcc like tool with support for rust and cloud storage
 dev-util/shfmt 3.7.0: A shell parser, formatter, and interpreter with bash support
 dev-util/tokei 13.0.0_alpha5: Count your code, quickly
 dev-vcs/gitui 0.26.3: Blazing fast terminal-ui for git
