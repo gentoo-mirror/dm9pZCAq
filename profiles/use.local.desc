@@ -33,6 +33,7 @@ media-fonts/nerd-fonts:cousine - Install Cousine font
 media-fonts/nerd-fonts:d2coding - Install D2Coding font
 media-fonts/nerd-fonts:daddytimemono - Install DaddyTimeMono font
 media-fonts/nerd-fonts:dejavusansmono - Install DejaVuSansMono font
+media-fonts/nerd-fonts:departuremono - Install DepartureMono font
 media-fonts/nerd-fonts:droidsansmono - Install DroidSansMono font
 media-fonts/nerd-fonts:envycoder - Install EnvyCodeR font
 media-fonts/nerd-fonts:fantasquesansmono - Install FantasqueSansMono font
