@@ -61,20 +61,3 @@ src_install() {
 
 	einstalldocs
 }
-
-pkg_postinst() {
-	local issue=''
-
-	fcaps_pkg_postinst
-
-	einfo "runit service: https://notabug.org/dm9pZCAq/etcfiles/src/master/sv/${PN%-*}"
-	einfo "which can run ${PN%-*} as non-root user"
-	einfo "you can see how it's done there to do so for yours init system"
-	einfo 'contributing patches here to do so for systemd and openrc are appreciated'
-	einfo
-
-	einfo 'also, related upstream issues:'
-	for issue in 927; do
-		einfo " > https://github.com/yggdrasil-network/yggdrasil-go/issues/${issue}"
-	done
-}
