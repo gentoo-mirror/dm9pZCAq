@@ -11,5 +11,5 @@ LICENSE=LGPL-2.1
 RDEPEND=>=dev-libs/ell-0.69 !net-wireless/iwd acct-group/netdev net-wireless/wireless-regdb selinux? ( sec-policy/selinux-networkmanager ) systemd? ( sys-apps/systemd ) !systemd? ( virtual/resolvconf )
 SLOT=0
 SRC_URI=https://github.com/illiliti/eiwd/releases/download/2.22-1/iwd-2.22.tar.xz -> eiwd-2.22-r1.tar.xz
-_eclasses_=toolchain-funcs	a6df79c1e9bc84369dbf3d44206ac772	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	linux-info	efd923656513c879204fec6638eadee5	systemd	a964c0cbe818b5729da1dbfcee5be861
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0	flag-o-matic	a7afe42e95fb46ce9691605acfb24672	linux-info	efd923656513c879204fec6638eadee5	systemd	a964c0cbe818b5729da1dbfcee5be861
 _md5_=8bef8f775ad6d3e8ea4f0c5338212ad3
